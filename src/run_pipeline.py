@@ -88,12 +88,13 @@ def process_one(
         if existing_studies:
             derived["sra_studies"] = "; ".join(sorted(existing_studies))
 
+        clinical_problems: List[str] = []
+
         paper = link_paper(gse, series, derived, cfg)
         if paper.get("lookup_status") == "not_found":
             clinical_problems.append("Publication not resolved from GEO/PubMed search")
 
         row = to_series_row(series, derived, paper)
-        clinical_problems: List[str] = []
         snippets = []
         rule_hits = []
         llm_result = None

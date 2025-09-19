@@ -1,0 +1,10 @@
+pandas>=2.0
+requests>=2.31
+tqdm>=4.66
+lxml>=5.2
+python-dateutil>=2.9
+openpyxl>=3.1
+pdfminer.six>=20231228
+openai>=1.3
+anthropic>=0.25
+pytest>=7.0

@@ -14,38 +14,49 @@ EUTILS_EFETCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
 EUTILS_ESEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 
 
-def _collect_pmids_from_series(series: Dict) -> Set[str]:
-    pmids: Set[str] = set()
+def _collect_pmids_from_series(series: Dict) -> List[str]:
+    pmids: List[str] = []
+
+    def _add(value: Optional[str]) -> None:
+        if not value:
+            return
+        pid = value.strip()
+        if pid and pid not in pmids:
+            pmids.append(pid)
+
     for pid in series.get("pubmed_ids", []) or []:
-        if pid:
-            pmids.add(pid.strip())
+        _add(pid)
     for ref in series.get("references", []) or []:
-        pid = ref.get("pubmed_id")
-        if pid:
-            pmids.add(pid.strip())
+        _add(ref.get("pubmed_id"))
     for rel in series.get("relations", []) or []:
         if isinstance(rel, dict):
             combined = " ".join(filter(None, [rel.get("type"), rel.get("value"), rel.get("target")]))
         else:
             combined = " ".join(rel)
         for match in re.findall(r"PMID:(\d+)", combined):
-            pmids.add(match)
+            _add(match)
     return pmids
 
 
-def _collect_dois_from_series(series: Dict) -> Set[str]:
-    dois: Set[str] = set()
+def _collect_dois_from_series(series: Dict) -> List[str]:
+    dois: List[str] = []
+
+    def _add(value: Optional[str]) -> None:
+        if not value:
+            return
+        doi = value.strip().rstrip('.')
+        if doi and doi not in dois:
+            dois.append(doi)
+
     for ref in series.get("references", []) or []:
-        doi = ref.get("doi") or ""
-        if doi:
-            dois.add(doi.strip())
+        _add(ref.get("doi"))
     for rel in series.get("relations", []) or []:
         if isinstance(rel, dict):
             combined = " ".join(filter(None, [rel.get("type"), rel.get("value"), rel.get("target")]))
         else:
             combined = " ".join(rel)
         for match in re.findall(r"10\.\S+", combined):
-            dois.add(match.rstrip('.'))
+            _add(match)
     return dois
 
 
@@ -167,9 +178,9 @@ def _format_citation(meta: Dict[str, str]) -> str:
     return ". ".join(pieces)
 
 
-def _choose_pmid(series: Dict, cfg: PaperConfig, pmids: Set[str], dois: Set[str]) -> Optional[str]:
+def _choose_pmid(series: Dict, cfg: PaperConfig, pmids: List[str], dois: List[str]) -> Optional[str]:
     if pmids:
-        return sorted(pmids)[0]
+        return pmids[0]
     title = series.get("title") or ""
     if title:
         hits = _esearch_pubmed(title, cfg)
