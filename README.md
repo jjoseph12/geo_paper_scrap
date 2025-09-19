@@ -148,4 +148,4 @@ All raw MINiML/SRA/PubMed responses are cached under `cache/<GSE>/` for reproduc
   - you need tighter integration with institutional PDF repositories.
 - Be mindful of shared login nodes—set threads modestly and rely on caching to avoid repeat downloads.
 
-Happy harvesting! If you need to extend the questionnaire or hook up another downstream format, plug your logic into `derive.py` (GEO-sourced) or `export_clinical.py` (paper-derived fields).
+
