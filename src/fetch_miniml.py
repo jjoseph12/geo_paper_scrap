@@ -1,14 +1,38 @@
-import tarfile, re
+import tarfile
 from pathlib import Path
+
 from .utils import download, safe_mkdir
 
-def _series_bucket(gse: str) -> str:
-    # GSE185119 -> GSE185nnn
-    return gse[:6] + "nnn"
+
+def _normalize_gse(gse: str) -> str:
+    prefix = gse[:3]
+    digits = gse[3:]
+    try:
+        num = int(digits)
+    except ValueError:
+        return gse
+    return f"{prefix}{num}"
+
+
+def _series_bucket(normalized_gse: str) -> str:
+    digits = normalized_gse[3:]
+    try:
+        num = int(digits)
+    except ValueError:
+        return normalized_gse[:6] + "nnn"
+    bucket_prefix = num // 1000
+    if bucket_prefix == 0:
+        return "GSE0nnn"
+    return f"GSE{bucket_prefix}nnn"
+
 
 def miniml_url(gse: str) -> str:
-    bucket = _series_bucket(gse)
-    return f"https://ftp.ncbi.nlm.nih.gov/geo/series/{bucket}/{gse}/miniml/{gse}_family.xml.tgz"
+    normalized = _normalize_gse(gse)
+    bucket = _series_bucket(normalized)
+    return (
+        f"https://ftp.ncbi.nlm.nih.gov/geo/series/{bucket}/{normalized}/miniml/"
+        f"{normalized}_family.xml.tgz"
+    )
 
 def fetch_miniml(gse: str, cache_dir: Path) -> Path:
     series_dir = cache_dir / gse / "miniml"

@@ -4,6 +4,7 @@ import argparse
 import csv
 import logging
 import sys
+import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -14,7 +15,7 @@ from src.fetch_miniml import extract_xml, fetch_miniml
 from .config import PaperConfig
 from .cost_logger import CostLogger
 from .derive import derive_fields
-from .export import to_series_row, write_outputs
+from .export import SERIES_COLUMNS, to_series_row
 from .export_clinical import merge_clinical, write_artifacts
 from .extract_rules import apply_rules
 from .link_paper import link_paper
@@ -27,6 +28,21 @@ from .sra_fetch import resolve_sra_studies
 
 LOGGER = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
+
+SAMPLE_COLUMNS = [
+    "GSE",
+    "GSM",
+    "Title",
+    "Organism",
+    "Library Strategy",
+    "Library Source",
+    "Library Selection",
+    "Platform ID",
+    "Instrument Models",
+    "Tissue/Characteristics",
+]
+
+PROBLEM_COLUMNS = ["GSE", "Problem"]
 
 
 def _missing_llm_fields(rule_hits_fields: List[str]) -> List[str]:
@@ -198,9 +214,49 @@ def main() -> None:
     fallback_client = LLMClient(cfg.fallback_provider, cfg.fallback_model) if args.enable_llm else None
     cost_logger = CostLogger(cfg) if args.enable_llm else None
 
-    series_rows: List[Dict[str, object]] = []
-    sample_rows: List[Dict[str, object]] = []
-    all_problems: List[Tuple[str, str]] = []
+    series_path = out_dir / "series_master.csv"
+    samples_path = out_dir / "samples.csv"
+    problems_path = out_dir / "problems.csv"
+
+    with series_path.open("w", newline="") as f_series:
+        series_writer = csv.DictWriter(f_series, fieldnames=SERIES_COLUMNS)
+        series_writer.writeheader()
+    with samples_path.open("w", newline="") as f_samples:
+        sample_writer = csv.DictWriter(f_samples, fieldnames=SAMPLE_COLUMNS)
+        sample_writer.writeheader()
+    with problems_path.open("w", newline="") as f_probs:
+        prob_writer = csv.DictWriter(f_probs, fieldnames=PROBLEM_COLUMNS)
+        prob_writer.writeheader()
+
+    series_lock = threading.Lock()
+    samples_lock = threading.Lock()
+    problems_lock = threading.Lock()
+
+    def append_series(row: Dict[str, object]) -> None:
+        normalized = {col: row.get(col, "") for col in SERIES_COLUMNS}
+        with series_lock:
+            with series_path.open("a", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=SERIES_COLUMNS)
+                writer.writerow(normalized)
+
+    def append_samples(rows: List[Dict[str, object]]) -> None:
+        if not rows:
+            return
+        with samples_lock:
+            with samples_path.open("a", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=SAMPLE_COLUMNS)
+                for row in rows:
+                    normalized = {col: row.get(col, "") for col in SAMPLE_COLUMNS}
+                    writer.writerow(normalized)
+
+    def append_problems(items: List[Tuple[str, str]]) -> None:
+        if not items:
+            return
+        with problems_lock:
+            with problems_path.open("a", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=PROBLEM_COLUMNS)
+                for gse, message in items:
+                    writer.writerow({"GSE": gse, "Problem": message})
 
     with ThreadPoolExecutor(max_workers=cfg.max_threads) as ex:
         futs = {
@@ -220,11 +276,19 @@ def main() -> None:
         }
         for fut in tqdm(as_completed(futs), total=len(futs), desc="Processing"):
             row, sample_list, problems = fut.result()
-            series_rows.append(row)
-            sample_rows.extend(sample_list)
-            all_problems.extend(problems)
+            append_series(row)
+            append_samples(sample_list)
+            append_problems(problems)
 
-    write_outputs(series_rows, sample_rows, all_problems, out_dir)
+    # Build Excel once at the end from the accumulated CSV
+    try:
+        import pandas as pd
+
+        df = pd.read_csv(series_path)
+        df.to_excel(out_dir / "series_master.xlsx", index=False)
+    except Exception as exc:  # pragma: no cover - Excel is best effort
+        LOGGER.warning("Failed to create Excel export: %s", exc)
+
     if cost_logger:
         cost_logger.write_report(out_dir)
 

@@ -273,7 +273,7 @@ def derive_fields(series, samples):
             parent_hits = re.findall(r"(GSE\d+)", combined)
             if parent_hits:
                 parent = parent_hits[0]
-        if any(k in low for k in ["contains", "series:", "includes"]):
+        if any(k in low for k in ["contains", "series:", "includes", "superseries of"]):
             subseries.update(re.findall(r"(GSE\d+)", combined))
         _collect_sra_tokens(combined)
         biosample_ids.update(re.findall(r"SAM[ENDPRC]\d+", combined))
