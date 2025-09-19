@@ -1,0 +1,1574 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Yosef</First><Last>Buganim</Last></Person>
+    <Email>yossib@ekmd.huji.ac.il</Email>
+    <Phone>(+972)-2-6757075</Phone>
+    <Laboratory>Buganim Lab</Laboratory>
+    <Department>Department of Developmental Biology and Cancer Research</Department>
+    <Organization>The Hebrew University</Organization>
+    <Address>
+      <Line>Hadassah Medical School</Line>
+      <City>Jerusalem</City>
+      <Zip-Code>91120</Zip-Code>
+      <Country>Israel</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Moriyah</First><Last>Naama</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Ahmed</First><Last>Radwan</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Valery</First><Last>Zayat</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Shulamit</First><Last>Sebban</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL16791">
+    <Status database="GEO">
+      <Submission-Date>2013-03-14</Submission-Date>
+      <Release-Date>2013-03-14</Release-Date>
+      <Last-Update-Date>2019-03-27</Last-Update-Date>
+    </Status>
+    <Title>Illumina HiSeq 2500 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL16791</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5516237">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E2_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516237</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Blastocyst-derived trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516237/suppl/GSM5516237_hbdTSC_E2_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749770" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731113" />
+  </Sample>
+
+  <Sample iid="GSM5516238">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E2_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516238</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Blastocyst-derived trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516238/suppl/GSM5516238_hbdTSC_E2_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749761" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731115" />
+  </Sample>
+
+  <Sample iid="GSM5516239">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E2_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516239</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Blastocyst-derived trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516239/suppl/GSM5516239_hbdTSC_E2_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749762" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731117" />
+  </Sample>
+
+  <Sample iid="GSM5516240">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E9_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516240</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Blastocyst-derived trophoblast stem cells, line #9
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516240/suppl/GSM5516240_hbdTSC_E9_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749763" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731060" />
+  </Sample>
+
+  <Sample iid="GSM5516241">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E9_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516241</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Blastocyst-derived trophoblast stem cells, line #9
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516241/suppl/GSM5516241_hbdTSC_E9_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749764" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731062" />
+  </Sample>
+
+  <Sample iid="GSM5516242">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E9_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516242</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Blastocyst-derived trophoblast stem cells, line #9
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516242/suppl/GSM5516242_hbdTSC_E9_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749765" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731064" />
+  </Sample>
+
+  <Sample iid="GSM5516243">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hFF_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516243</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Foreskin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Foreskin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516243/suppl/GSM5516243_KEN_hFF_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749766" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731066" />
+  </Sample>
+
+  <Sample iid="GSM5516244">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hFF_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516244</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Foreskin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Foreskin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516244/suppl/GSM5516244_KEN_hFF_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749767" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731068" />
+  </Sample>
+
+  <Sample iid="GSM5516245">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hFF_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516245</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Foreskin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Foreskin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516245/suppl/GSM5516245_KEN_hFF_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749781" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731070" />
+  </Sample>
+
+  <Sample iid="GSM5516246">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_fibs_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516246</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Adult Skin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Adult female skin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516246/suppl/GSM5516246_GM2_fibs_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749782" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731072" />
+  </Sample>
+
+  <Sample iid="GSM5516247">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_fibs_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516247</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Adult Skin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Adult female skin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516247/suppl/GSM5516247_GM2_fibs_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749783" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731074" />
+  </Sample>
+
+  <Sample iid="GSM5516248">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_fibs_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516248</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Adult Skin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Adult female skin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516248/suppl/GSM5516248_GM2_fibs_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749784" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731076" />
+  </Sample>
+
+  <Sample iid="GSM5516249">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hESCs_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516249</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Embryonic stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Embryonic stem cells
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516249/suppl/GSM5516249_hESCs_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749768" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731077" />
+  </Sample>
+
+  <Sample iid="GSM5516250">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hESCs_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516250</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Embryonic stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Embryonic stem cells
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516250/suppl/GSM5516250_hESCs_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749769" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731079" />
+  </Sample>
+
+  <Sample iid="GSM5516251">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hESCs_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516251</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Embryonic stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Embryonic stem cells
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516251/suppl/GSM5516251_hESCs_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749785" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731081" />
+  </Sample>
+
+  <Sample iid="GSM5516252">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C1_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516252</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #1
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516252/suppl/GSM5516252_KEN_hiTSC_C1_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749786" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731083" />
+  </Sample>
+
+  <Sample iid="GSM5516253">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C1_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516253</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #1
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516253/suppl/GSM5516253_KEN_hiTSC_C1_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749787" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731085" />
+  </Sample>
+
+  <Sample iid="GSM5516254">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C1_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516254</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #1
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516254/suppl/GSM5516254_KEN_hiTSC_C1_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749788" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731087" />
+  </Sample>
+
+  <Sample iid="GSM5516255">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C2_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516255</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516255/suppl/GSM5516255_KEN_hiTSC_C2_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749789" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731089" />
+  </Sample>
+
+  <Sample iid="GSM5516256">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C2_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516256</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516256/suppl/GSM5516256_KEN_hiTSC_C2_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749790" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731091" />
+  </Sample>
+
+  <Sample iid="GSM5516257">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C2_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516257</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516257/suppl/GSM5516257_KEN_hiTSC_C2_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749791" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731093" />
+  </Sample>
+
+  <Sample iid="GSM5516258">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C4_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516258</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #4
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516258/suppl/GSM5516258_KEN_hiTSC_C4_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749792" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731095" />
+  </Sample>
+
+  <Sample iid="GSM5516259">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C4_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516259</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #4
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516259/suppl/GSM5516259_KEN_hiTSC_C4_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749793" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731097" />
+  </Sample>
+
+  <Sample iid="GSM5516260">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C4_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516260</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #4
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516260/suppl/GSM5516260_KEN_hiTSC_C4_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749794" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731099" />
+  </Sample>
+
+  <Sample iid="GSM5516261">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>PCS_hiTSC_C11_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516261</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #11
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516261/suppl/GSM5516261_PCS_hiTSC_C11_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749795" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731101" />
+  </Sample>
+
+  <Sample iid="GSM5516262">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>PCS_hiTSC_C11_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516262</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #11
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516262/suppl/GSM5516262_PCS_hiTSC_C11_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749796" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731103" />
+  </Sample>
+
+  <Sample iid="GSM5516263">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>PCS_hiTSC_C11_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516263</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #11
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516263/suppl/GSM5516263_PCS_hiTSC_C11_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749771" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731105" />
+  </Sample>
+
+  <Sample iid="GSM5516264">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C16_rep1 [RRBS]</Title>
+    <Accession database="GEO">GSM5516264</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #16
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516264/suppl/GSM5516264_GM2_hiTSCs_C16_rep1.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749772" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731107" />
+  </Sample>
+
+  <Sample iid="GSM5516265">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C16_rep2 [RRBS]</Title>
+    <Accession database="GEO">GSM5516265</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #16
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516265/suppl/GSM5516265_GM2_hiTSCs_C16_rep2.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749773" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731109" />
+  </Sample>
+
+  <Sample iid="GSM5516266">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C16_rep3 [RRBS]</Title>
+    <Accession database="GEO">GSM5516266</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iTSCs</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tag">
+Induced trophoblast stem cells, line #16
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hiTSC and hbdTSC cells were passaged twice on matrigel in order to minimize the presence of MEF feeder cells. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+DNA was isolated from samples and incubated in lysis buffer (25mM Tris-HCl at pH8, 2mM EDTA, 0.2%SDS, 200mM NaCl) supplemented with 300μg/mL proteinase K (Roche) followed by phenol:chloroform extraction and ethanol precipitation. hiTSC colonies and hbdTSC colonies were passaged twice on matrigel in order to eliminate the presence of MEF feeder cells.
+Libraries were prepared as previously described in Boyle et al., 2012.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed.
+BSMAP V 2.9 was used to align the paired-end reads to the human genome (hg19)
+The methylation ratio of CpGs with sequencing depth of at least 10 reads were computed based on 100bp tiles.
+Differential analysis was done using the R package Methylkit  (version 1.14.2)
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Bed CpG file
+    </Data-Processing>
+    <Platform-Ref ref="GPL16791" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516266/suppl/GSM5516266_GM2_hiTSCs_C16_rep3.CpG.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749774" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731111" />
+  </Sample>
+
+  <Series iid="GSE182015">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-07-24</Last-Update-Date>
+    </Status>
+    <Title>Pluripotency-Independent Induction of Human Trophoblast Stem Cells from Fibroblasts [RRBS]</Title>
+    <Accession database="GEO">GSE182015</Accession>
+    <Pubmed-ID>37291192</Pubmed-ID>
+    <Web-Link>https://doi.org/10.1101/2021.11.10.468044</Web-Link>
+    <Summary>
+RRBS analysis revealed similarity/dissimilarity between human blastocyst derived trophoblast stem cells (hbdTSCs), human induced trophoblast stem cells (hiTSCs), human foreskin fibroblasts (HFFs) and pluripotent stem cells (hESCs, hiPSCs)
+    </Summary>
+    <Overall-Design>
+HFFs reprogrammed into hiTSC lines by transient ectopic expression of GATA3, OCT4, KLF4, MYC (GOKM) were subjected to RRBS-protocol to assess differentially methylated regions, along with samples of HFFs, hbdTSCs, hESCs and hiPSCs
+    </Overall-Design>
+    <Type>Methylation profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib1" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5516237" />
+    <Sample-Ref ref="GSM5516238" />
+    <Sample-Ref ref="GSM5516239" />
+    <Sample-Ref ref="GSM5516240" />
+    <Sample-Ref ref="GSM5516241" />
+    <Sample-Ref ref="GSM5516242" />
+    <Sample-Ref ref="GSM5516243" />
+    <Sample-Ref ref="GSM5516244" />
+    <Sample-Ref ref="GSM5516245" />
+    <Sample-Ref ref="GSM5516246" />
+    <Sample-Ref ref="GSM5516247" />
+    <Sample-Ref ref="GSM5516248" />
+    <Sample-Ref ref="GSM5516249" />
+    <Sample-Ref ref="GSM5516250" />
+    <Sample-Ref ref="GSM5516251" />
+    <Sample-Ref ref="GSM5516252" />
+    <Sample-Ref ref="GSM5516253" />
+    <Sample-Ref ref="GSM5516254" />
+    <Sample-Ref ref="GSM5516255" />
+    <Sample-Ref ref="GSM5516256" />
+    <Sample-Ref ref="GSM5516257" />
+    <Sample-Ref ref="GSM5516258" />
+    <Sample-Ref ref="GSM5516259" />
+    <Sample-Ref ref="GSM5516260" />
+    <Sample-Ref ref="GSM5516261" />
+    <Sample-Ref ref="GSM5516262" />
+    <Sample-Ref ref="GSM5516263" />
+    <Sample-Ref ref="GSM5516264" />
+    <Sample-Ref ref="GSM5516265" />
+    <Sample-Ref ref="GSM5516266" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE182nnn/GSE182015/suppl/GSE182015_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE182017" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA754182" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP332315" />
+  </Series>
+
+</MINiML>

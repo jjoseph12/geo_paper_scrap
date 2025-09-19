@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Serge</First><Last>McGraw</Last></Person>
+    <Email>Serge.mcgraw@umontreal.ca</Email>
+    <Laboratory>McGraw Lab</Laboratory>
+    <Organization>CHU Ste-Justine Research Center/Université de Montréal</Organization>
+    <Address>
+      <Line>3175 Côte Sainte-Catherine, office 5.17.005</Line>
+      <City>Montreal</City>
+      <State>Qc</State>
+      <Postal-Code>​H3T 1C5</Postal-Code>
+      <Country>Canada</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Lisa-Marie</First><Last>Legault</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Mélanie</First><Last>Breton-Larrivée</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Fannie</First><Last>Filion-Bienvenue</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Anthony</First><Last>Lemieux</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Alexandra</First><Last>Langford-Avelar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Thomas</First><Last>Dupas</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM8058906">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 1 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058906</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058906/suppl/GSM8058906_Pla_Ctl-1.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728941" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499423" />
+  </Sample>
+
+  <Sample iid="GSM8058907">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 2 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058907</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058907/suppl/GSM8058907_Pla_Ctl-2.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728940" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499424" />
+  </Sample>
+
+  <Sample iid="GSM8058908">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 3 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058908</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058908/suppl/GSM8058908_Pla_Ctl-3.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728939" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499425" />
+  </Sample>
+
+  <Sample iid="GSM8058909">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 4 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058909</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058909/suppl/GSM8058909_Pla_Ctl-4.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728938" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499426" />
+  </Sample>
+
+  <Sample iid="GSM8058910">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 5 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058910</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058910/suppl/GSM8058910_Pla_Ctl-5.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728937" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499427" />
+  </Sample>
+
+  <Sample iid="GSM8058911">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 6 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058911</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058911/suppl/GSM8058911_Pla_Ctl-6.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728936" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499428" />
+  </Sample>
+
+  <Sample iid="GSM8058912">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 1 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058912</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058912/suppl/GSM8058912_Pla_Et-1.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728935" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499429" />
+  </Sample>
+
+  <Sample iid="GSM8058913">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 2 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058913</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058913/suppl/GSM8058913_Pla_Et-2.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728934" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499430" />
+  </Sample>
+
+  <Sample iid="GSM8058914">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 3 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058914</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058914/suppl/GSM8058914_Pla_Et-3.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728933" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499431" />
+  </Sample>
+
+  <Sample iid="GSM8058915">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 4 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058915</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058915/suppl/GSM8058915_Pla_Et-4.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728932" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499432" />
+  </Sample>
+
+  <Sample iid="GSM8058916">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 5 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058916</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058916/suppl/GSM8058916_Pla_Et-5.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728931" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499433" />
+  </Sample>
+
+  <Sample iid="GSM8058917">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 6 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058917</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058917/suppl/GSM8058917_Pla_Et-6.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728930" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499434" />
+  </Sample>
+
+  <Sample iid="GSM8058918">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 7 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058918</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058918/suppl/GSM8058918_Pla_Et-7.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728929" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499435" />
+  </Sample>
+
+  <Sample iid="GSM8058919">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 8 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058919</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058919/suppl/GSM8058919_Pla_Et-8.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728928" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499436" />
+  </Sample>
+
+  <Sample iid="GSM8058920">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 9 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058920</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058920/suppl/GSM8058920_Pla_Et-9.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728927" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499437" />
+  </Sample>
+
+  <Sample iid="GSM8058921">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 10 mRNA-Seq</Title>
+    <Accession database="GEO">GSM8058921</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Qiagen Rneasy Mini kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using NEBNext Ultra II Directional RNA Library Prep Kit following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Gene counts matrix and differentially expressed genes (DEGs) were obtained using the R package DESeq2 (v1.24.0)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files including raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058921/suppl/GSM8058921_Pla_Et-10.readcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39728926" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23499438" />
+  </Sample>
+
+  <Series iid="GSE254846">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Sex-Specific DNA Methylation and Gene Expression Changes in Mouse Placentas After Early Preimplantation Alcohol Exposure[RNA-Seq]</Title>
+    <Accession database="GEO">GSE254846</Accession>
+    <Summary>
+Preimplantation alcohol exposure can negatively impact embryonic development through disruption of molecular profiles and lead to fetal alcohol spectrum disorder (FASD). Despite the central role of the placenta in proper embryonic development and successful pregnancy, studies on the placenta in a FASD context are markedly lacking. Here, preimplantation binge-like alcohol exposure was implemented on pregnant C57BL/6 female mice through subcutaneous injection with two doses of either 2.5 g/kg 50% ethanol or an equivalent volume of saline at 2-h intervals on embryonic day 2.5 corresponding to the 8-cell stage. The placental morphology, DNA methylation and gene expression patterns in male and female late-gestation (E18.5) placentas were assessed. While overall placental morphology was not affected, we found a significant decrease in male ethanol-exposed embryo weights. When looking at molecular profiles, we uncovered numerous differentially methylated regions (DMRs ≥10% difference; 991 in males; 1309 in females) and differentially expressed genes (DEGs; 1046 in males; 340 in females) in the placentas. Remarkably, only 21 DMRs and 54 DEGs were common to both sexes, which were enriched for genes involved in growth factor response pathways. Preimplantation alcohol exposure had a greater impact on imprinted genes expression in male placentas (imprinted DEGs: 18 in males; 1 in females). Finally, by using L1-regularized linear regression, we were able to precisely discriminate control and ethanol-exposed placentas based on their specific DNA methylation patterns. This is the first study demonstrating that preimplantation alcohol exposure alters the DNA methylation and transcriptomic profiles of late-gestation placentas in a sex-specific manner. Importantly, it reveals a placental DNA methylation signature that can detect prenatal alcohol exposure in early life in order to provide appropriate support to attenuate and prevent eventual impact.
+    </Summary>
+    <Overall-Design>
+To investigate the impact of prenatal alcohol exposure during preimplantaton on the DNA methylation and gene expression landscape of late-gestation placenta
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib8" position="6" />
+    <Contributor-Ref ref="contrib1" position="7" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM8058906" />
+    <Sample-Ref ref="GSM8058907" />
+    <Sample-Ref ref="GSM8058908" />
+    <Sample-Ref ref="GSM8058909" />
+    <Sample-Ref ref="GSM8058910" />
+    <Sample-Ref ref="GSM8058911" />
+    <Sample-Ref ref="GSM8058912" />
+    <Sample-Ref ref="GSM8058913" />
+    <Sample-Ref ref="GSM8058914" />
+    <Sample-Ref ref="GSM8058915" />
+    <Sample-Ref ref="GSM8058916" />
+    <Sample-Ref ref="GSM8058917" />
+    <Sample-Ref ref="GSM8058918" />
+    <Sample-Ref ref="GSM8058919" />
+    <Sample-Ref ref="GSM8058920" />
+    <Sample-Ref ref="GSM8058921" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE254nnn/GSE254846/suppl/GSE254846_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE254847" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1072071" />
+  </Series>
+
+</MINiML>

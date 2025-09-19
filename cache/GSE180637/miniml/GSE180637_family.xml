@@ -1,0 +1,1316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Xiangxiang</First><Last>Jiang</Last></Person>
+    <Email>jzhongqiang@126.com</Email>
+    <Phone>18810332066</Phone>
+    <Laboratory>State Key Laboratory of Stem Cell and Reproductive Biology</Laboratory>
+    <Organization>Institute of Zoology, Chinese Academy of Sciences</Organization>
+    <Address>
+      <Line>1 Beichen West Road, Chaoyang District</Line>
+      <City>Beijing</City>
+      <State>Beijing</State>
+      <Postal-Code>100101</Postal-Code>
+      <Country>China</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Hongmei</First><Last>Wang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jinglei</First><Last>Zhai</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Zhenyu</First><Last>Xiao</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Haifeng</First><Last>Wan</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Yanhong</First><Last>Xu</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Xulun</First><Last>Wu</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Dan</First><Last>Zhang</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL23096">
+    <Status database="GEO">
+      <Submission-Date>2017-02-22</Submission-Date>
+      <Release-Date>2017-02-22</Release-Date>
+      <Last-Update-Date>2017-02-22</Last-Update-Date>
+    </Status>
+    <Title>HiSeq X Ten (Macaca fascicularis)</Title>
+    <Accession database="GEO">GPL23096</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9541">Macaca fascicularis</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5466489">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E20-V1</Title>
+    <Accession database="GEO">GSM5466489</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 20
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349857" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522627" />
+  </Sample>
+
+  <Sample iid="GSM5466490">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E23-D1</Title>
+    <Accession database="GEO">GSM5466490</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 23
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349856" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522628" />
+  </Sample>
+
+  <Sample iid="GSM5466493">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E23-V1</Title>
+    <Accession database="GEO">GSM5466493</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 23
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349853" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522631" />
+  </Sample>
+
+  <Sample iid="GSM5466494">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E23-V2</Title>
+    <Accession database="GEO">GSM5466494</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 23
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349852" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522632" />
+  </Sample>
+
+  <Sample iid="GSM5466495">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E26-D1</Title>
+    <Accession database="GEO">GSM5466495</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 26
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349851" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522633" />
+  </Sample>
+
+  <Sample iid="GSM5466497">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E26-V1</Title>
+    <Accession database="GEO">GSM5466497</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 26
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349849" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522635" />
+  </Sample>
+
+  <Sample iid="GSM5466499">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E26-V2</Title>
+    <Accession database="GEO">GSM5466499</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 26
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349847" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522637" />
+  </Sample>
+
+  <Sample iid="GSM5466500">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E29-D1</Title>
+    <Accession database="GEO">GSM5466500</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 29
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349846" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522638" />
+  </Sample>
+
+  <Sample iid="GSM5466502">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E29-V1</Title>
+    <Accession database="GEO">GSM5466502</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 29
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349844" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522640" />
+  </Sample>
+
+  <Sample iid="GSM5466503">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E35-D1</Title>
+    <Accession database="GEO">GSM5466503</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 35
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349843" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522641" />
+  </Sample>
+
+  <Sample iid="GSM5466504">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E35-D2</Title>
+    <Accession database="GEO">GSM5466504</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 35
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349842" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522642" />
+  </Sample>
+
+  <Sample iid="GSM5466505">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E35-V1</Title>
+    <Accession database="GEO">GSM5466505</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 35
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349841" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522643" />
+  </Sample>
+
+  <Sample iid="GSM5466506">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E35-V2</Title>
+    <Accession database="GEO">GSM5466506</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 35
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349840" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522644" />
+  </Sample>
+
+  <Sample iid="GSM5466507">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E45-M</Title>
+    <Accession database="GEO">GSM5466507</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 45
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349869" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522645" />
+  </Sample>
+
+  <Sample iid="GSM5466508">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E45-S</Title>
+    <Accession database="GEO">GSM5466508</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 45
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349868" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522646" />
+  </Sample>
+
+  <Sample iid="GSM5466509">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E62-M</Title>
+    <Accession database="GEO">GSM5466509</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 62
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349867" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522647" />
+  </Sample>
+
+  <Sample iid="GSM5466510">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E62-S</Title>
+    <Accession database="GEO">GSM5466510</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 62
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349866" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522648" />
+  </Sample>
+
+  <Sample iid="GSM5466511">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E84-M</Title>
+    <Accession database="GEO">GSM5466511</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 84
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349865" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522649" />
+  </Sample>
+
+  <Sample iid="GSM5466512">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E84-S</Title>
+    <Accession database="GEO">GSM5466512</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 84
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349864" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522650" />
+  </Sample>
+
+  <Sample iid="GSM5466513">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E90-M</Title>
+    <Accession database="GEO">GSM5466513</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 90
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349863" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522651" />
+  </Sample>
+
+  <Sample iid="GSM5466514">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E90-S</Title>
+    <Accession database="GEO">GSM5466514</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 90
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349862" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522652" />
+  </Sample>
+
+  <Sample iid="GSM5466515">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E140-M</Title>
+    <Accession database="GEO">GSM5466515</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 140
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349861" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522653" />
+  </Sample>
+
+  <Sample iid="GSM5466516">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-03-10</Last-Update-Date>
+    </Status>
+    <Title>E140-S</Title>
+    <Accession database="GEO">GSM5466516</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9541">Macaca fascicularis</Organism>
+      <Characteristics tag="developmental stage">
+day 140
+      </Characteristics>
+      <Treatment-Protocol>
+no treatment
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were added to the 10x Chip channels. Captured cells were lysed and the released RNA was barcoded through reverse transcription in individual GEMs.
+RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v2  protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+MF217404.tar.gz
+    </Description>
+    <Data-Processing>
+Raw fastq files were processed with Cell Ranger 3.1.0 with default mapping arguments.
+Reads were mapped to the Macaca_fascicularis_5.0 genome
+The cellranger aggr command was executed to adjust the sequencing depth of different samples to the same level.
+Genome_build: Macaca_fascicularis_5.0
+Supplementary_files_format_and_content: MF217404.tar.gz: raw counts and metadata
+Supplementary_files_format_and_content: MF-filtered.tar: raw counts data filtered by cellranger
+    </Data-Processing>
+    <Platform-Ref ref="GPL23096" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20349860" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11522654" />
+  </Sample>
+
+  <Series iid="GSE180637">
+    <Status database="GEO">
+      <Submission-Date>2021-07-22</Submission-Date>
+      <Release-Date>2023-03-10</Release-Date>
+      <Last-Update-Date>2023-04-14</Last-Update-Date>
+    </Status>
+    <Title>A single-cell transcriptome landscape of the non-human primate placenta across pregnancy.</Title>
+    <Accession database="GEO">GSE180637</Accession>
+    <Pubmed-ID>37054708</Pubmed-ID>
+    <Summary>
+The human placenta, a transient endocrine organ, is vital for successful pregnancy and fetal health, which undergoes dynamic cellular and functional changes during gestation. However, systematic longitudinal analysis of in utero human placenta formation and development across the lifespan is not feasible due to ethical and technical limit. To circumvent those difficulties and reveal the dynamic placentation, we obtain transcriptional snapshots of 217404 single cells from cynomolgus monkey placenta, decidua and embryo tissues spanning ten consecutive but distinct developmental stages across pregnancy. We reveal the development-related changes in the compositions of placental trophoblasts, mesenchymal cells and endothelial cells in different pregnant stage. We pinpoint that the placenta mesenchymal cells are derived from a special extra-embryonic mesoderm. Particularly, we describe the relationship between the embryonic primitive hematopoiesis and the placental endothelial cells, Hofbauer cells and erythrocytes. Besides, we found the cell types and their transcriptome compositions in decidual tissues show insignificant changes during the gestation. Finally, cell-cell interactions between trophoblasts and decidual cells, and between different cell types on villi are performed and suggested the mechanisms in dynamic placentation. Together, the high-resolution atlas we constructed would serve as a valuable resource to extrapolate key events for studies on human placentation and its associated disorders.
+    </Summary>
+    <Overall-Design>
+single cells from cynomolgus monkey placenta, decidua and embryo tissues spanning ten consecutive but distinct developmental stages across pregnancy. RNA libraries were prepared for sequencing using 10x Single Cell 3' Library &amp; Gel Bead Kit v3  protocol
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contributor-Ref ref="contrib8" position="7" />
+    <Contributor-Ref ref="contrib9" position="8" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5466489" />
+    <Sample-Ref ref="GSM5466490" />
+    <Sample-Ref ref="GSM5466493" />
+    <Sample-Ref ref="GSM5466494" />
+    <Sample-Ref ref="GSM5466495" />
+    <Sample-Ref ref="GSM5466497" />
+    <Sample-Ref ref="GSM5466499" />
+    <Sample-Ref ref="GSM5466500" />
+    <Sample-Ref ref="GSM5466502" />
+    <Sample-Ref ref="GSM5466503" />
+    <Sample-Ref ref="GSM5466504" />
+    <Sample-Ref ref="GSM5466505" />
+    <Sample-Ref ref="GSM5466506" />
+    <Sample-Ref ref="GSM5466507" />
+    <Sample-Ref ref="GSM5466508" />
+    <Sample-Ref ref="GSM5466509" />
+    <Sample-Ref ref="GSM5466510" />
+    <Sample-Ref ref="GSM5466511" />
+    <Sample-Ref ref="GSM5466512" />
+    <Sample-Ref ref="GSM5466513" />
+    <Sample-Ref ref="GSM5466514" />
+    <Sample-Ref ref="GSM5466515" />
+    <Sample-Ref ref="GSM5466516" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE180nnn/GSE180637/suppl/GSE180637_MF-filtered.tar.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE180nnn/GSE180637/suppl/GSE180637_MF217404.tar.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA749013" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP329459" />
+  </Series>
+
+</MINiML>

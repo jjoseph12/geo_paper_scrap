@@ -1,0 +1,1897 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jina</First><Last>Kim</Last></Person>
+    <Email>Jinakim2705@gmail.com</Email>
+    <Phone>2138084610</Phone>
+    <Organization>cedars-sinai medical center</Organization>
+    <Address>
+      <Line>8700 Beverly Blvd</Line>
+      <City>Los Angeles</City>
+      <State>CA</State>
+      <Zip-Code>90048</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Yalda</First><Last>Afshar</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL18573">
+    <Status database="GEO">
+      <Submission-Date>2014-04-15</Submission-Date>
+      <Release-Date>2014-04-15</Release-Date>
+      <Last-Update-Date>2019-03-26</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL18573</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7567382">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C01</Title>
+    <Accession database="GEO">GSM7567382</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>No Template Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+No Template Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345052" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928278" />
+  </Sample>
+
+  <Sample iid="GSM7567383">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C02</Title>
+    <Accession database="GEO">GSM7567383</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345051" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928279" />
+  </Sample>
+
+  <Sample iid="GSM7567384">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C03</Title>
+    <Accession database="GEO">GSM7567384</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345050" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928280" />
+  </Sample>
+
+  <Sample iid="GSM7567385">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C04</Title>
+    <Accession database="GEO">GSM7567385</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345049" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928281" />
+  </Sample>
+
+  <Sample iid="GSM7567386">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C05</Title>
+    <Accession database="GEO">GSM7567386</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345048" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928282" />
+  </Sample>
+
+  <Sample iid="GSM7567387">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C06</Title>
+    <Accession database="GEO">GSM7567387</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345047" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928283" />
+  </Sample>
+
+  <Sample iid="GSM7567388">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C07</Title>
+    <Accession database="GEO">GSM7567388</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345046" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928284" />
+  </Sample>
+
+  <Sample iid="GSM7567389">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C08</Title>
+    <Accession database="GEO">GSM7567389</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345045" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928285" />
+  </Sample>
+
+  <Sample iid="GSM7567390">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C09</Title>
+    <Accession database="GEO">GSM7567390</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345044" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928286" />
+  </Sample>
+
+  <Sample iid="GSM7567391">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C10</Title>
+    <Accession database="GEO">GSM7567391</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345043" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928287" />
+  </Sample>
+
+  <Sample iid="GSM7567392">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C11</Title>
+    <Accession database="GEO">GSM7567392</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345042" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928288" />
+  </Sample>
+
+  <Sample iid="GSM7567393">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.C12</Title>
+    <Accession database="GEO">GSM7567393</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345041" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928289" />
+  </Sample>
+
+  <Sample iid="GSM7567394">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D01</Title>
+    <Accession database="GEO">GSM7567394</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Control</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345040" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928290" />
+  </Sample>
+
+  <Sample iid="GSM7567395">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D02</Title>
+    <Accession database="GEO">GSM7567395</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345039" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928291" />
+  </Sample>
+
+  <Sample iid="GSM7567396">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D03</Title>
+    <Accession database="GEO">GSM7567396</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345038" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928292" />
+  </Sample>
+
+  <Sample iid="GSM7567397">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D04</Title>
+    <Accession database="GEO">GSM7567397</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345037" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928293" />
+  </Sample>
+
+  <Sample iid="GSM7567398">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D05</Title>
+    <Accession database="GEO">GSM7567398</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345036" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928294" />
+  </Sample>
+
+  <Sample iid="GSM7567399">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D06</Title>
+    <Accession database="GEO">GSM7567399</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345035" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928295" />
+  </Sample>
+
+  <Sample iid="GSM7567400">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D07</Title>
+    <Accession database="GEO">GSM7567400</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345034" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928296" />
+  </Sample>
+
+  <Sample iid="GSM7567401">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D08</Title>
+    <Accession database="GEO">GSM7567401</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345033" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928297" />
+  </Sample>
+
+  <Sample iid="GSM7567402">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D09</Title>
+    <Accession database="GEO">GSM7567402</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345032" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928298" />
+  </Sample>
+
+  <Sample iid="GSM7567403">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D10</Title>
+    <Accession database="GEO">GSM7567403</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345031" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928299" />
+  </Sample>
+
+  <Sample iid="GSM7567404">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D11</Title>
+    <Accession database="GEO">GSM7567404</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345030" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928300" />
+  </Sample>
+
+  <Sample iid="GSM7567405">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.D12</Title>
+    <Accession database="GEO">GSM7567405</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345029" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928301" />
+  </Sample>
+
+  <Sample iid="GSM7567406">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E01</Title>
+    <Accession database="GEO">GSM7567406</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta opposite</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta opposite
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345028" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928302" />
+  </Sample>
+
+  <Sample iid="GSM7567407">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E02</Title>
+    <Accession database="GEO">GSM7567407</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345027" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928303" />
+  </Sample>
+
+  <Sample iid="GSM7567408">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E03</Title>
+    <Accession database="GEO">GSM7567408</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345026" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928304" />
+  </Sample>
+
+  <Sample iid="GSM7567409">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E04</Title>
+    <Accession database="GEO">GSM7567409</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345025" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928305" />
+  </Sample>
+
+  <Sample iid="GSM7567410">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E05</Title>
+    <Accession database="GEO">GSM7567410</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345024" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928306" />
+  </Sample>
+
+  <Sample iid="GSM7567411">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E06</Title>
+    <Accession database="GEO">GSM7567411</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345023" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928307" />
+  </Sample>
+
+  <Sample iid="GSM7567412">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E07</Title>
+    <Accession database="GEO">GSM7567412</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345022" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928308" />
+  </Sample>
+
+  <Sample iid="GSM7567413">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E08</Title>
+    <Accession database="GEO">GSM7567413</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345021" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928309" />
+  </Sample>
+
+  <Sample iid="GSM7567414">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E09</Title>
+    <Accession database="GEO">GSM7567414</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345020" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928310" />
+  </Sample>
+
+  <Sample iid="GSM7567415">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E10</Title>
+    <Accession database="GEO">GSM7567415</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345019" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928311" />
+  </Sample>
+
+  <Sample iid="GSM7567416">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E11</Title>
+    <Accession database="GEO">GSM7567416</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345018" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928312" />
+  </Sample>
+
+  <Sample iid="GSM7567417">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.E12</Title>
+    <Accession database="GEO">GSM7567417</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345017" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928313" />
+  </Sample>
+
+  <Sample iid="GSM7567418">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-02-02</Last-Update-Date>
+    </Status>
+    <Title>DSP.1001660005046.D.F01</Title>
+    <Accession database="GEO">GSM7567418</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental Tissue -Accreta invasion</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placental Tissue -Accreta invasion
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Control, PAS-invasion, or PAS-opposite were mounted on the same slide (3 matched pairs on 3 slides) before hybridization with the Cancer Transcriptome Atlas (CTA) panel of probes corresponding to 1,825 genes (NanoString).  Following hybridization, the slides were scanned on the GeoMx instrument with the workspace used to select regions of interest (ROI)
+The NanoString GeoMx Digital Spatial Profiler(DSP) protocol
+Spatial transcriptomics
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NanoString GeoMx Digital Spatial Profiler(DSP)
+    </Description>
+    <Data-Processing>
+We used GeoMxWorkflow to preprocess the data using NanoStringNCTools and GeomxTools R packages. We ran running the ROI segmentation and probe quality control process, the genes with a minimum LOQ of 1 and fewer than 5% of segments were removed.
+The expression values of these genes were normalized using upper quartile normalization method, and slide batch effects among the ROIs were corrected using the ComBat-seq R package.
+For further removal of outlier, we performed t-distributed stochastic neighbor embedding (t-SNE) plot analysis and excluded the outlier ROI (DSP.1001660005046.D.C06) from the analysis
+Assembly: GeoMx Human Whole Transcriptome Atlas
+Supplementary files format and content: GeoMx processed expression data,csv format
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN36345016" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20928314" />
+  </Sample>
+
+  <Series iid="GSE236675">
+    <Status database="GEO">
+      <Submission-Date>2023-07-06</Submission-Date>
+      <Release-Date>2024-02-02</Release-Date>
+      <Last-Update-Date>2024-05-24</Last-Update-Date>
+    </Status>
+    <Title>Placenta accreta spectrum disorder at single cell resolution: a loss of boundary limits in the uterine endothelium and decidua.</Title>
+    <Accession database="GEO">GSE236675</Accession>
+    <Pubmed-ID>38296740</Pubmed-ID>
+    <Summary>
+Objective: The objective of this study is to utilize advances in single-cell RNAsequencing to characterize cellular heterogeneity and transcriptomic signatures of PAS. Our findings can elucidate mechanisms of abnormal placental invasion and identify targets for potential diagnostic and therapeutic biomarkers of PAS. Results: Placental samples from PAS participants and non-PAS cesarean births were included. In total, we analyzed 31,406 individual cells expressing an average of 1,493 genes. Clustering analysis of gene expression identified multiple populations of cells representing syncytiotrophoblasts, cytotrophoblasts, extravillous trophoblasts, decidua,endothelial cells, myeloid, natural killer, and lymphoid cells. When analyzed by disease phenotype, AI showed a unique gene signature most prominently in the endothelial population. The highest expression in AI compared to AO and C was seen in the following genes: DLK1, EGFL6, HGF, APOLD1, and EDNRB. Gene set enrichment analysis of AI endothelial cells identified the following key pathways: blood vessel development, response to growth factors and hormones, regulation of cell adhesion and migration, and pathways in cancer. Conclusions: We present a comprehensive single-cell atlas of PAS across the site of invasion and site of non-adherence. By integrating expression from individual genes per cell, we identified endothelial cells as a key subpopulation in invasive accreta, with expression of genes involved in multiple angiogenic, growth, and mechanical-signaling pathways. After validation, these gene targets may be used to refine diagnostic assays for placenta accreta in early gestation, track disease progression over time, and inform Powered by Editorial Manager® and ProduXion Manager® from Aries Systems Corporation therapeutic discoveries.
+    </Summary>
+    <Overall-Design>
+Study Design: We generated a single-cell atlas of gene expression at the site of accreta invasion (AI) versus site of accreta opposite, non-invasion (AO) in PAS placentas versus controls (C). Mechanical and enzymatic dissociation of single cell suspensions of placentas was performed with confirmation of high cell viability and RNA quality prior to library creation. We utilized a high-throughput whole-transcriptome system for single-cell sequencing.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7567382" />
+    <Sample-Ref ref="GSM7567383" />
+    <Sample-Ref ref="GSM7567384" />
+    <Sample-Ref ref="GSM7567385" />
+    <Sample-Ref ref="GSM7567386" />
+    <Sample-Ref ref="GSM7567387" />
+    <Sample-Ref ref="GSM7567388" />
+    <Sample-Ref ref="GSM7567389" />
+    <Sample-Ref ref="GSM7567390" />
+    <Sample-Ref ref="GSM7567391" />
+    <Sample-Ref ref="GSM7567392" />
+    <Sample-Ref ref="GSM7567393" />
+    <Sample-Ref ref="GSM7567394" />
+    <Sample-Ref ref="GSM7567395" />
+    <Sample-Ref ref="GSM7567396" />
+    <Sample-Ref ref="GSM7567397" />
+    <Sample-Ref ref="GSM7567398" />
+    <Sample-Ref ref="GSM7567399" />
+    <Sample-Ref ref="GSM7567400" />
+    <Sample-Ref ref="GSM7567401" />
+    <Sample-Ref ref="GSM7567402" />
+    <Sample-Ref ref="GSM7567403" />
+    <Sample-Ref ref="GSM7567404" />
+    <Sample-Ref ref="GSM7567405" />
+    <Sample-Ref ref="GSM7567406" />
+    <Sample-Ref ref="GSM7567407" />
+    <Sample-Ref ref="GSM7567408" />
+    <Sample-Ref ref="GSM7567409" />
+    <Sample-Ref ref="GSM7567410" />
+    <Sample-Ref ref="GSM7567411" />
+    <Sample-Ref ref="GSM7567412" />
+    <Sample-Ref ref="GSM7567413" />
+    <Sample-Ref ref="GSM7567414" />
+    <Sample-Ref ref="GSM7567415" />
+    <Sample-Ref ref="GSM7567416" />
+    <Sample-Ref ref="GSM7567417" />
+    <Sample-Ref ref="GSM7567418" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE236nnn/GSE236675/suppl/GSE236675_GEO_GeoMx_expression.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA992002" />
+  </Series>
+
+</MINiML>

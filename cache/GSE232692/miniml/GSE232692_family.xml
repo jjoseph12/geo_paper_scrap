@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Samira</First><Last>Azarin</Last></Person>
+    <Department>Chemical Engineering and Materials Science</Department>
+    <Organization>University of Minnesota</Organization>
+    <Address>
+      <Line>421 Washington Ave SE, RM151R Amundson Hall</Line>
+      <City>Minneapolis</City>
+      <State>MN</State>
+      <Zip-Code>55455</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kristen</First><Middle>A</Middle><Last>Lemke</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Casim</First><Middle>A</Middle><Last>Sarkar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Samira</First><Middle>M</Middle><Last>Azarin</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7371858">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>day0_rep1</Title>
+    <Accession database="GEO">GSM7371858</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+cell line
+      </Characteristics>
+      <Characteristics tag="cell line">
+iPS(IMR90)-4
+      </Characteristics>
+      <Characteristics tag="cell type">
+induced pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+trophectoderm differentiation
+      </Characteristics>
+      <Treatment-Protocol>
+For differentiation, 70% confluent stem cells were rinsed with DPBS (Gibco) and pre-warmed Accutase (STEMCELL Technologies) was added to the wells. Cells were then placed at 37°C for 5-7 min, after which they were added to an equal volume of fresh media and spun down at 200xg for 5 min. The cells were then resuspended and seeded on Matrigel- or Cultrex-coated plates at 6,000 cells/cm2 in TeSR-E8 or mTeSR Plus with 5 µM ROCK inhibitor (Y-27632, STEMCELL Technologies). Cells were maintained in E8 or mTeSR Plus for two more days, and then the medium was changed to unconditioned medium (UM): DMEM/F12 with 20% Knockout serum replacement (KOSR), MEM non-essential amino acids (1x), GlutaMAX (1x, Gibco), and 0.1 mM β-mercaptoethanol (Sigma), containing 1 µM retinoic acid (RA, Sigma) and 8 µM CHIR 99021 (CHIR, Tocris). Cell culture media was changed daily for five days.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were collected and lysed using QiaShredder columns (Qiagen). RNA was isolated using the RNeasy Mini Kit (Qiagen) as the manufacturer recommends, including incubation with DNase I (RNAse-free DNase Set, Qiagen).
+RNA libraries for RNA-seq were prepared using TruSeq Stranded mRNA (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 1 biol rep 1
+    </Description>
+    <Data-Processing>
+Reads were trimmed for low quality and adaptors using Trimmomatic.
+Sequences were mapped to the human reference genome (GRCh38.91) using STAR.
+Cfflinks was used to obtain fragments per kilobase of transcript per million (FPKM) files which were converted to transcripts per million (TPM) files.
+Assembly: GRCh38.91
+Supplementary files format and content: comma-separated value file includes TPM values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35130980" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20389060" />
+  </Sample>
+
+  <Sample iid="GSM7371859">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>day0_rep2</Title>
+    <Accession database="GEO">GSM7371859</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+cell line
+      </Characteristics>
+      <Characteristics tag="cell line">
+iPS(IMR90)-4
+      </Characteristics>
+      <Characteristics tag="cell type">
+induced pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+trophectoderm differentiation
+      </Characteristics>
+      <Treatment-Protocol>
+For differentiation, 70% confluent stem cells were rinsed with DPBS (Gibco) and pre-warmed Accutase (STEMCELL Technologies) was added to the wells. Cells were then placed at 37°C for 5-7 min, after which they were added to an equal volume of fresh media and spun down at 200xg for 5 min. The cells were then resuspended and seeded on Matrigel- or Cultrex-coated plates at 6,000 cells/cm2 in TeSR-E8 or mTeSR Plus with 5 µM ROCK inhibitor (Y-27632, STEMCELL Technologies). Cells were maintained in E8 or mTeSR Plus for two more days, and then the medium was changed to unconditioned medium (UM): DMEM/F12 with 20% Knockout serum replacement (KOSR), MEM non-essential amino acids (1x), GlutaMAX (1x, Gibco), and 0.1 mM β-mercaptoethanol (Sigma), containing 1 µM retinoic acid (RA, Sigma) and 8 µM CHIR 99021 (CHIR, Tocris). Cell culture media was changed daily for five days.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were collected and lysed using QiaShredder columns (Qiagen). RNA was isolated using the RNeasy Mini Kit (Qiagen) as the manufacturer recommends, including incubation with DNase I (RNAse-free DNase Set, Qiagen).
+RNA libraries for RNA-seq were prepared using TruSeq Stranded mRNA (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 1 biol rep 2
+    </Description>
+    <Data-Processing>
+Reads were trimmed for low quality and adaptors using Trimmomatic.
+Sequences were mapped to the human reference genome (GRCh38.91) using STAR.
+Cfflinks was used to obtain fragments per kilobase of transcript per million (FPKM) files which were converted to transcripts per million (TPM) files.
+Assembly: GRCh38.91
+Supplementary files format and content: comma-separated value file includes TPM values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35130979" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20389061" />
+  </Sample>
+
+  <Sample iid="GSM7371860">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>day1_rep1</Title>
+    <Accession database="GEO">GSM7371860</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+cell line
+      </Characteristics>
+      <Characteristics tag="cell line">
+iPS(IMR90)-4
+      </Characteristics>
+      <Characteristics tag="cell type">
+induced pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+trophectoderm differentiation
+      </Characteristics>
+      <Treatment-Protocol>
+For differentiation, 70% confluent stem cells were rinsed with DPBS (Gibco) and pre-warmed Accutase (STEMCELL Technologies) was added to the wells. Cells were then placed at 37°C for 5-7 min, after which they were added to an equal volume of fresh media and spun down at 200xg for 5 min. The cells were then resuspended and seeded on Matrigel- or Cultrex-coated plates at 6,000 cells/cm2 in TeSR-E8 or mTeSR Plus with 5 µM ROCK inhibitor (Y-27632, STEMCELL Technologies). Cells were maintained in E8 or mTeSR Plus for two more days, and then the medium was changed to unconditioned medium (UM): DMEM/F12 with 20% Knockout serum replacement (KOSR), MEM non-essential amino acids (1x), GlutaMAX (1x, Gibco), and 0.1 mM β-mercaptoethanol (Sigma), containing 1 µM retinoic acid (RA, Sigma) and 8 µM CHIR 99021 (CHIR, Tocris). Cell culture media was changed daily for five days.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were collected and lysed using QiaShredder columns (Qiagen). RNA was isolated using the RNeasy Mini Kit (Qiagen) as the manufacturer recommends, including incubation with DNase I (RNAse-free DNase Set, Qiagen).
+RNA libraries for RNA-seq were prepared using TruSeq Stranded mRNA (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 2 biol rep 1
+    </Description>
+    <Data-Processing>
+Reads were trimmed for low quality and adaptors using Trimmomatic.
+Sequences were mapped to the human reference genome (GRCh38.91) using STAR.
+Cfflinks was used to obtain fragments per kilobase of transcript per million (FPKM) files which were converted to transcripts per million (TPM) files.
+Assembly: GRCh38.91
+Supplementary files format and content: comma-separated value file includes TPM values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35130978" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20389062" />
+  </Sample>
+
+  <Sample iid="GSM7371861">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>day1_rep2</Title>
+    <Accession database="GEO">GSM7371861</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+cell line
+      </Characteristics>
+      <Characteristics tag="cell line">
+iPS(IMR90)-4
+      </Characteristics>
+      <Characteristics tag="cell type">
+induced pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+trophectoderm differentiation
+      </Characteristics>
+      <Treatment-Protocol>
+For differentiation, 70% confluent stem cells were rinsed with DPBS (Gibco) and pre-warmed Accutase (STEMCELL Technologies) was added to the wells. Cells were then placed at 37°C for 5-7 min, after which they were added to an equal volume of fresh media and spun down at 200xg for 5 min. The cells were then resuspended and seeded on Matrigel- or Cultrex-coated plates at 6,000 cells/cm2 in TeSR-E8 or mTeSR Plus with 5 µM ROCK inhibitor (Y-27632, STEMCELL Technologies). Cells were maintained in E8 or mTeSR Plus for two more days, and then the medium was changed to unconditioned medium (UM): DMEM/F12 with 20% Knockout serum replacement (KOSR), MEM non-essential amino acids (1x), GlutaMAX (1x, Gibco), and 0.1 mM β-mercaptoethanol (Sigma), containing 1 µM retinoic acid (RA, Sigma) and 8 µM CHIR 99021 (CHIR, Tocris). Cell culture media was changed daily for five days.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were collected and lysed using QiaShredder columns (Qiagen). RNA was isolated using the RNeasy Mini Kit (Qiagen) as the manufacturer recommends, including incubation with DNase I (RNAse-free DNase Set, Qiagen).
+RNA libraries for RNA-seq were prepared using TruSeq Stranded mRNA (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 2 biol rep 2
+    </Description>
+    <Data-Processing>
+Reads were trimmed for low quality and adaptors using Trimmomatic.
+Sequences were mapped to the human reference genome (GRCh38.91) using STAR.
+Cfflinks was used to obtain fragments per kilobase of transcript per million (FPKM) files which were converted to transcripts per million (TPM) files.
+Assembly: GRCh38.91
+Supplementary files format and content: comma-separated value file includes TPM values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35130977" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20389063" />
+  </Sample>
+
+  <Sample iid="GSM7371862">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>day3_rep1</Title>
+    <Accession database="GEO">GSM7371862</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+cell line
+      </Characteristics>
+      <Characteristics tag="cell line">
+iPS(IMR90)-4
+      </Characteristics>
+      <Characteristics tag="cell type">
+induced pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+trophectoderm differentiation
+      </Characteristics>
+      <Treatment-Protocol>
+For differentiation, 70% confluent stem cells were rinsed with DPBS (Gibco) and pre-warmed Accutase (STEMCELL Technologies) was added to the wells. Cells were then placed at 37°C for 5-7 min, after which they were added to an equal volume of fresh media and spun down at 200xg for 5 min. The cells were then resuspended and seeded on Matrigel- or Cultrex-coated plates at 6,000 cells/cm2 in TeSR-E8 or mTeSR Plus with 5 µM ROCK inhibitor (Y-27632, STEMCELL Technologies). Cells were maintained in E8 or mTeSR Plus for two more days, and then the medium was changed to unconditioned medium (UM): DMEM/F12 with 20% Knockout serum replacement (KOSR), MEM non-essential amino acids (1x), GlutaMAX (1x, Gibco), and 0.1 mM β-mercaptoethanol (Sigma), containing 1 µM retinoic acid (RA, Sigma) and 8 µM CHIR 99021 (CHIR, Tocris). Cell culture media was changed daily for five days.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were collected and lysed using QiaShredder columns (Qiagen). RNA was isolated using the RNeasy Mini Kit (Qiagen) as the manufacturer recommends, including incubation with DNase I (RNAse-free DNase Set, Qiagen).
+RNA libraries for RNA-seq were prepared using TruSeq Stranded mRNA (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 3 biol rep 1
+    </Description>
+    <Data-Processing>
+Reads were trimmed for low quality and adaptors using Trimmomatic.
+Sequences were mapped to the human reference genome (GRCh38.91) using STAR.
+Cfflinks was used to obtain fragments per kilobase of transcript per million (FPKM) files which were converted to transcripts per million (TPM) files.
+Assembly: GRCh38.91
+Supplementary files format and content: comma-separated value file includes TPM values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35130976" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20389064" />
+  </Sample>
+
+  <Sample iid="GSM7371863">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>day3_rep2</Title>
+    <Accession database="GEO">GSM7371863</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+cell line
+      </Characteristics>
+      <Characteristics tag="cell line">
+iPS(IMR90)-4
+      </Characteristics>
+      <Characteristics tag="cell type">
+induced pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+trophectoderm differentiation
+      </Characteristics>
+      <Treatment-Protocol>
+For differentiation, 70% confluent stem cells were rinsed with DPBS (Gibco) and pre-warmed Accutase (STEMCELL Technologies) was added to the wells. Cells were then placed at 37°C for 5-7 min, after which they were added to an equal volume of fresh media and spun down at 200xg for 5 min. The cells were then resuspended and seeded on Matrigel- or Cultrex-coated plates at 6,000 cells/cm2 in TeSR-E8 or mTeSR Plus with 5 µM ROCK inhibitor (Y-27632, STEMCELL Technologies). Cells were maintained in E8 or mTeSR Plus for two more days, and then the medium was changed to unconditioned medium (UM): DMEM/F12 with 20% Knockout serum replacement (KOSR), MEM non-essential amino acids (1x), GlutaMAX (1x, Gibco), and 0.1 mM β-mercaptoethanol (Sigma), containing 1 µM retinoic acid (RA, Sigma) and 8 µM CHIR 99021 (CHIR, Tocris). Cell culture media was changed daily for five days.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were collected and lysed using QiaShredder columns (Qiagen). RNA was isolated using the RNeasy Mini Kit (Qiagen) as the manufacturer recommends, including incubation with DNase I (RNAse-free DNase Set, Qiagen).
+RNA libraries for RNA-seq were prepared using TruSeq Stranded mRNA (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 3 biol rep 2
+    </Description>
+    <Data-Processing>
+Reads were trimmed for low quality and adaptors using Trimmomatic.
+Sequences were mapped to the human reference genome (GRCh38.91) using STAR.
+Cfflinks was used to obtain fragments per kilobase of transcript per million (FPKM) files which were converted to transcripts per million (TPM) files.
+Assembly: GRCh38.91
+Supplementary files format and content: comma-separated value file includes TPM values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35130975" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20389065" />
+  </Sample>
+
+  <Sample iid="GSM7371864">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>day5_rep1</Title>
+    <Accession database="GEO">GSM7371864</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+cell line
+      </Characteristics>
+      <Characteristics tag="cell line">
+iPS(IMR90)-4
+      </Characteristics>
+      <Characteristics tag="cell type">
+induced pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+trophectoderm differentiation
+      </Characteristics>
+      <Treatment-Protocol>
+For differentiation, 70% confluent stem cells were rinsed with DPBS (Gibco) and pre-warmed Accutase (STEMCELL Technologies) was added to the wells. Cells were then placed at 37°C for 5-7 min, after which they were added to an equal volume of fresh media and spun down at 200xg for 5 min. The cells were then resuspended and seeded on Matrigel- or Cultrex-coated plates at 6,000 cells/cm2 in TeSR-E8 or mTeSR Plus with 5 µM ROCK inhibitor (Y-27632, STEMCELL Technologies). Cells were maintained in E8 or mTeSR Plus for two more days, and then the medium was changed to unconditioned medium (UM): DMEM/F12 with 20% Knockout serum replacement (KOSR), MEM non-essential amino acids (1x), GlutaMAX (1x, Gibco), and 0.1 mM β-mercaptoethanol (Sigma), containing 1 µM retinoic acid (RA, Sigma) and 8 µM CHIR 99021 (CHIR, Tocris). Cell culture media was changed daily for five days.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were collected and lysed using QiaShredder columns (Qiagen). RNA was isolated using the RNeasy Mini Kit (Qiagen) as the manufacturer recommends, including incubation with DNase I (RNAse-free DNase Set, Qiagen).
+RNA libraries for RNA-seq were prepared using TruSeq Stranded mRNA (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 4 biol rep 1
+    </Description>
+    <Data-Processing>
+Reads were trimmed for low quality and adaptors using Trimmomatic.
+Sequences were mapped to the human reference genome (GRCh38.91) using STAR.
+Cfflinks was used to obtain fragments per kilobase of transcript per million (FPKM) files which were converted to transcripts per million (TPM) files.
+Assembly: GRCh38.91
+Supplementary files format and content: comma-separated value file includes TPM values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35130974" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20389066" />
+  </Sample>
+
+  <Sample iid="GSM7371865">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>day5_rep2</Title>
+    <Accession database="GEO">GSM7371865</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+cell line
+      </Characteristics>
+      <Characteristics tag="cell line">
+iPS(IMR90)-4
+      </Characteristics>
+      <Characteristics tag="cell type">
+induced pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+trophectoderm differentiation
+      </Characteristics>
+      <Treatment-Protocol>
+For differentiation, 70% confluent stem cells were rinsed with DPBS (Gibco) and pre-warmed Accutase (STEMCELL Technologies) was added to the wells. Cells were then placed at 37°C for 5-7 min, after which they were added to an equal volume of fresh media and spun down at 200xg for 5 min. The cells were then resuspended and seeded on Matrigel- or Cultrex-coated plates at 6,000 cells/cm2 in TeSR-E8 or mTeSR Plus with 5 µM ROCK inhibitor (Y-27632, STEMCELL Technologies). Cells were maintained in E8 or mTeSR Plus for two more days, and then the medium was changed to unconditioned medium (UM): DMEM/F12 with 20% Knockout serum replacement (KOSR), MEM non-essential amino acids (1x), GlutaMAX (1x, Gibco), and 0.1 mM β-mercaptoethanol (Sigma), containing 1 µM retinoic acid (RA, Sigma) and 8 µM CHIR 99021 (CHIR, Tocris). Cell culture media was changed daily for five days.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cell pellets were collected and lysed using QiaShredder columns (Qiagen). RNA was isolated using the RNeasy Mini Kit (Qiagen) as the manufacturer recommends, including incubation with DNase I (RNAse-free DNase Set, Qiagen).
+RNA libraries for RNA-seq were prepared using TruSeq Stranded mRNA (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 4 biol rep 2
+    </Description>
+    <Data-Processing>
+Reads were trimmed for low quality and adaptors using Trimmomatic.
+Sequences were mapped to the human reference genome (GRCh38.91) using STAR.
+Cfflinks was used to obtain fragments per kilobase of transcript per million (FPKM) files which were converted to transcripts per million (TPM) files.
+Assembly: GRCh38.91
+Supplementary files format and content: comma-separated value file includes TPM values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35130973" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20389067" />
+  </Sample>
+
+  <Series iid="GSE232692">
+    <Status database="GEO">
+      <Submission-Date>2023-05-17</Submission-Date>
+      <Release-Date>2024-08-15</Release-Date>
+      <Last-Update-Date>2024-08-15</Last-Update-Date>
+    </Status>
+    <Title>Rapid retinoic acid-induced trophectoderm model from human induced pluripotent stem cells</Title>
+    <Accession database="GEO">GSE232692</Accession>
+    <Pubmed-ID>39107470</Pubmed-ID>
+    <Summary>
+A limited number of accessible and representative models of human trophoblast cells currently exist for disease modeling and improving our understanding of placentation. Current stem cell models involve either a transition through a naïve stem cell fate or precise dynamic control of multiple interacting growth factor and small molecule cues. Here, we show that simple exposure of hiPSCs to two small molecules, retinoic acid (RA) and the Wnt signaling agonist CHIR 99021 (CHIR), results in rapid, synergistic upregulation of CDX2, an important transcription factor for trophectoderm cell induction and maintenance of the trophoblast cell population. RA+CHIR-treated cells have a transcriptional profile with high similarity to that of primary trophectoderm cells, and they can also be further differentiated into cells with features of syncytiotrophoblasts and extravillous trophoblasts. We assessed RA+CHIR-treated cells for the established set of criteria defining a trophectoderm cell model, and the cells possess all of the features necessary to be considered a valid model. Taken together, our data demonstrate the development of a simple method for the generation of functional trophoblast-like cells that can be used to better understand mechanisms and interactions involving the placenta.
+    </Summary>
+    <Overall-Design>
+Gene expression profiling analysis of RNA-seq data from IMR90-4 iPS cells during differentiation toward trophoectoderm. Samples were collected from days 0, 1, 3, and  5 of the differentiation in duplicate.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7371858" />
+    <Sample-Ref ref="GSM7371859" />
+    <Sample-Ref ref="GSM7371860" />
+    <Sample-Ref ref="GSM7371861" />
+    <Sample-Ref ref="GSM7371862" />
+    <Sample-Ref ref="GSM7371863" />
+    <Sample-Ref ref="GSM7371864" />
+    <Sample-Ref ref="GSM7371865" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE232nnn/GSE232692/suppl/GSE232692_TPM_AllSamples_ver2.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA973592" />
+  </Series>
+
+</MINiML>

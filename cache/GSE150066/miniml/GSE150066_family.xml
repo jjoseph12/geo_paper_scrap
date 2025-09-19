@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>hai</First><Middle>yan</Middle><Last>liu</Last></Person>
+    <Email>haiyan_liu@shbio.com</Email>
+    <Phone>15762258801</Phone>
+    <Organization>bohao</Organization>
+    <Address>
+      <Line>huaxianchanglu</Line>
+      <City>jinan</City>
+      <Postal-Code>251200</Postal-Code>
+      <Country>China</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Person><First>Yuhua</First><Last>Gao</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Chunyu</First><Last>Bai</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL28498">
+    <Status database="GEO">
+      <Submission-Date>2020-05-07</Submission-Date>
+      <Release-Date>2023-05-06</Release-Date>
+      <Last-Update-Date>2023-05-06</Last-Update-Date>
+    </Status>
+    <Title>Agilent-084783 Mus musculus array (circMouse_0410; Agilent Probe Name)</Title>
+    <Accession database="GEO">GPL28498</Accession>
+    <Technology>in situ oligonucleotide</Technology>
+    <Distribution>custom-commercial</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer>Agilent Technologies</Manufacturer>
+    <Manufacture-Protocol>
+see manufacturer's web site at http://www.agilent.com/
+    </Manufacture-Protocol>
+    <Description>
+Arrays of this design have barcodes that begin with 16084783 or 2584783.
+
+Orientation:
+Features are numbered numbered Left-to-Right, Top-to-Bottom as scanned by an Agilent scanner (barcode on the left, DNA on the back surface, scanned through the glass), matching the FeatureNum output from Agilent's Feature Extraction software.
+
+The ID column represents the Agilent Probe Name.
+
+Rows and columns are numbered as scanned by an Axon Scanner (barcode on the bottom, DNA on the front surface).
+
+To match data scanned on an Axon scanner, use the RefNumber column contained in the Agilent-provided GAL file as the ID_REF column in sample submissions.
+
+    </Description>
+    <Contact-Ref ref="contrib1" />
+    <Data-Table>
+      <Column position="1">
+        <Name>ID</Name>
+        <Description>Agilent probe name</Description>
+      </Column>
+      <Column position="2">
+        <Name>CONTROL_TYPE</Name>
+        <Description>Control type</Description>
+      </Column>
+      <Column position="3">
+        <Name>REFSEQ</Name>
+        <Description>RefSeqAccession</Description>
+      </Column>
+      <Column position="4">
+        <Name>GB_ACC</Name>
+        <Description>GenBankAccession</Description>
+      </Column>
+      <Column position="5">
+        <Name>LOCUSLINK_ID</Name>
+        <Description>LocuslinkID</Description>
+      </Column>
+      <Column position="6">
+        <Name>GENE_SYMBOL</Name>
+        <Description>Gene Symbol</Description>
+      </Column>
+      <Column position="7">
+        <Name>GENE_NAME</Name>
+        <Description>Gene Name</Description>
+      </Column>
+      <Column position="8">
+        <Name>UNIGENE_ID</Name>
+        <Description>UnigeneID</Description>
+      </Column>
+      <Column position="9">
+        <Name>ENSEMBL_ID</Name>
+        <Description>EnsemblID</Description>
+      </Column>
+      <Column position="10">
+        <Name>ACCESSION_STRING</Name>
+        <Description>Accession String</Description>
+      </Column>
+      <Column position="11">
+        <Name>CHROMOSOMAL_LOCATION</Name>
+        <Description>Chromosomal Location</Description>
+      </Column>
+      <Column position="12">
+        <Name>CYTOBAND</Name>
+        <Description>Cytoband</Description>
+      </Column>
+      <Column position="13">
+        <Name>DESCRIPTION</Name>
+        <Description>Description</Description>
+      </Column>
+      <Column position="14">
+        <Name>GO_ID</Name>
+        <Description>GoIDs</Description>
+      </Column>
+      <Column position="15">
+        <Name>SEQUENCE</Name>
+        <Description>Sequence</Description>
+      </Column>
+      <Column position="16">
+        <Name>SPOT_ID</Name>
+        <Description>Spot identifier</Description>
+      </Column>
+    <External-Data rows="167431">
+GPL28498-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Platform>
+
+  <Sample iid="GSM4522968">
+    <Status database="GEO">
+      <Submission-Date>2020-05-07</Submission-Date>
+      <Release-Date>2023-05-06</Release-Date>
+      <Last-Update-Date>2023-05-06</Last-Update-Date>
+    </Status>
+    <Title>S1_1_NS</Title>
+    <Accession database="GEO">GSM4522968</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua derived from mice of cesarean sections</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Treatment-Protocol>
+LPS (100 μg/kg body weight) was intraperitoneally injected into the mice at 14 days of pregnancy. PTB has been found after approximately 48 h of treatment. When bleeding found in vagina, the decidua  were selected in asepsis condition. The decidua were analyzed for expression of specific genes compared with cesarean sections.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The total RNA of decidua was extracted using Trizol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Cyanine-3 (Cy3) labeled cRNA was prepared from 0.5 ug RNA using the One-Color Low RNA Input Linear Amplification PLUS kit (Agilent) according to the manufacturer's instructions
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.5 ug of Cy3-labelled cRNA was fragmented at 60°C for 30 minutes in a reaction volume of 250 ml containing 1x Agilent fragmentation buffer and 2x Agilent blocking agent following the manufacturers instructions. On completion of the fragmentation reaction, 250 ml of 2x Agilent hybridization buffer was added to the fragmentation mixture and hybridized to Agilent Whole Genome Oligo Microarrays for 17 hours at 65°C in a rotating Agilent hybridization oven.  After hybridization, microarrays were washed 1 minute at room temperature with GE Wash Buffer 1 (Agilent) and 1 minute with 37°C GE Wash buffer 2 (Agilent), then dried immediately by brief centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing on the Agilent DNA Microarray Scanner using one color scan setting for 8 x 60k array slides (Scan Area 61x21.6 mm, Scan resolution 10um, Dye channel is set to Green and Green PMT is set to 100%).
+    </Scan-Protocol>
+    <Description>
+Competing endogenous RNA expression in decidua derived from cesarean sections
+    </Description>
+    <Data-Processing>
+The scanned images were analyzed with Feature Extraction Software 9.1 (Agilent) using default parameters to obtain background subtracted and spatially detrended Processed Signal intensities.  Features flagged in Feature Extraction as Feature Non-uniform outliers were excluded.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28498" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4522nnn/GSM4522968/suppl/GSM4522968_1_1_258478310048_S001_GE1_1200_Jun14_1_1.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="150373">
+GSM4522968-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM4522969">
+    <Status database="GEO">
+      <Submission-Date>2020-05-07</Submission-Date>
+      <Release-Date>2023-05-06</Release-Date>
+      <Last-Update-Date>2023-05-06</Last-Update-Date>
+    </Status>
+    <Title>S1_2_1_NS</Title>
+    <Accession database="GEO">GSM4522969</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua derived from mice of cesarean sections</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Treatment-Protocol>
+LPS (100 μg/kg body weight) was intraperitoneally injected into the mice at 14 days of pregnancy. PTB has been found after approximately 48 h of treatment. When bleeding found in vagina, the decidua  were selected in asepsis condition. The decidua were analyzed for expression of specific genes compared with cesarean sections.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The total RNA of decidua was extracted using Trizol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Cyanine-3 (Cy3) labeled cRNA was prepared from 0.5 ug RNA using the One-Color Low RNA Input Linear Amplification PLUS kit (Agilent) according to the manufacturer's instructions
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.5 ug of Cy3-labelled cRNA was fragmented at 60°C for 30 minutes in a reaction volume of 250 ml containing 1x Agilent fragmentation buffer and 2x Agilent blocking agent following the manufacturers instructions. On completion of the fragmentation reaction, 250 ml of 2x Agilent hybridization buffer was added to the fragmentation mixture and hybridized to Agilent Whole Genome Oligo Microarrays for 17 hours at 65°C in a rotating Agilent hybridization oven.  After hybridization, microarrays were washed 1 minute at room temperature with GE Wash Buffer 1 (Agilent) and 1 minute with 37°C GE Wash buffer 2 (Agilent), then dried immediately by brief centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing on the Agilent DNA Microarray Scanner using one color scan setting for 8 x 60k array slides (Scan Area 61x21.6 mm, Scan resolution 10um, Dye channel is set to Green and Green PMT is set to 100%).
+    </Scan-Protocol>
+    <Description>
+Competing endogenous RNA expression in decidua derived from cesarean sections
+    </Description>
+    <Data-Processing>
+The scanned images were analyzed with Feature Extraction Software 9.1 (Agilent) using default parameters to obtain background subtracted and spatially detrended Processed Signal intensities.  Features flagged in Feature Extraction as Feature Non-uniform outliers were excluded.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28498" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4522nnn/GSM4522969/suppl/GSM4522969_1_2_1_258478310048_S001_GE1_1200_Jun14_1_2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="150373">
+GSM4522969-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM4522970">
+    <Status database="GEO">
+      <Submission-Date>2020-05-07</Submission-Date>
+      <Release-Date>2023-05-06</Release-Date>
+      <Last-Update-Date>2023-05-06</Last-Update-Date>
+    </Status>
+    <Title>S1_2_2_NS</Title>
+    <Accession database="GEO">GSM4522970</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua derived from mice of cesarean sections</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Treatment-Protocol>
+LPS (100 μg/kg body weight) was intraperitoneally injected into the mice at 14 days of pregnancy. PTB has been found after approximately 48 h of treatment. When bleeding found in vagina, the decidua  were selected in asepsis condition. The decidua were analyzed for expression of specific genes compared with cesarean sections.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The total RNA of decidua was extracted using Trizol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Cyanine-3 (Cy3) labeled cRNA was prepared from 0.5 ug RNA using the One-Color Low RNA Input Linear Amplification PLUS kit (Agilent) according to the manufacturer's instructions
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.5 ug of Cy3-labelled cRNA was fragmented at 60°C for 30 minutes in a reaction volume of 250 ml containing 1x Agilent fragmentation buffer and 2x Agilent blocking agent following the manufacturers instructions. On completion of the fragmentation reaction, 250 ml of 2x Agilent hybridization buffer was added to the fragmentation mixture and hybridized to Agilent Whole Genome Oligo Microarrays for 17 hours at 65°C in a rotating Agilent hybridization oven.  After hybridization, microarrays were washed 1 minute at room temperature with GE Wash Buffer 1 (Agilent) and 1 minute with 37°C GE Wash buffer 2 (Agilent), then dried immediately by brief centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing on the Agilent DNA Microarray Scanner using one color scan setting for 8 x 60k array slides (Scan Area 61x21.6 mm, Scan resolution 10um, Dye channel is set to Green and Green PMT is set to 100%).
+    </Scan-Protocol>
+    <Description>
+Competing endogenous RNA expression in decidua derived from cesarean sections
+    </Description>
+    <Data-Processing>
+The scanned images were analyzed with Feature Extraction Software 9.1 (Agilent) using default parameters to obtain background subtracted and spatially detrended Processed Signal intensities.  Features flagged in Feature Extraction as Feature Non-uniform outliers were excluded.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28498" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4522nnn/GSM4522970/suppl/GSM4522970_1_2_2_258478310048_S001_GE1_1200_Jun14_1_3.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="150373">
+GSM4522970-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM4522971">
+    <Status database="GEO">
+      <Submission-Date>2020-05-07</Submission-Date>
+      <Release-Date>2023-05-06</Release-Date>
+      <Last-Update-Date>2023-05-06</Last-Update-Date>
+    </Status>
+    <Title>S2_4_NS</Title>
+    <Accession database="GEO">GSM4522971</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua derived from mice of LPS treatment</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Treatment-Protocol>
+LPS (100 μg/kg body weight) was intraperitoneally injected into the mice at 14 days of pregnancy. PTB has been found after approximately 48 h of treatment. When bleeding found in vagina, the decidua  were selected in asepsis condition. The decidua were analyzed for expression of specific genes compared with cesarean sections.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The total RNA of decidua was extracted using Trizol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Cyanine-3 (Cy3) labeled cRNA was prepared from 0.5 ug RNA using the One-Color Low RNA Input Linear Amplification PLUS kit (Agilent) according to the manufacturer's instructions
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.5 ug of Cy3-labelled cRNA was fragmented at 60°C for 30 minutes in a reaction volume of 250 ml containing 1x Agilent fragmentation buffer and 2x Agilent blocking agent following the manufacturers instructions. On completion of the fragmentation reaction, 250 ml of 2x Agilent hybridization buffer was added to the fragmentation mixture and hybridized to Agilent Whole Genome Oligo Microarrays for 17 hours at 65°C in a rotating Agilent hybridization oven.  After hybridization, microarrays were washed 1 minute at room temperature with GE Wash Buffer 1 (Agilent) and 1 minute with 37°C GE Wash buffer 2 (Agilent), then dried immediately by brief centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing on the Agilent DNA Microarray Scanner using one color scan setting for 8 x 60k array slides (Scan Area 61x21.6 mm, Scan resolution 10um, Dye channel is set to Green and Green PMT is set to 100%).
+    </Scan-Protocol>
+    <Description>
+Competing endogenous RNA expression in decidua derived from cesarean sections
+    </Description>
+    <Data-Processing>
+The scanned images were analyzed with Feature Extraction Software 9.1 (Agilent) using default parameters to obtain background subtracted and spatially detrended Processed Signal intensities.  Features flagged in Feature Extraction as Feature Non-uniform outliers were excluded.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28498" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4522nnn/GSM4522971/suppl/GSM4522971_2_4_258478310048_S001_GE1_1200_Jun14_1_4.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="150373">
+GSM4522971-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM4522972">
+    <Status database="GEO">
+      <Submission-Date>2020-05-07</Submission-Date>
+      <Release-Date>2023-05-06</Release-Date>
+      <Last-Update-Date>2023-05-06</Last-Update-Date>
+    </Status>
+    <Title>S2_5_NS</Title>
+    <Accession database="GEO">GSM4522972</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua derived from mice of LPS treatment</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Treatment-Protocol>
+LPS (100 μg/kg body weight) was intraperitoneally injected into the mice at 14 days of pregnancy. PTB has been found after approximately 48 h of treatment. When bleeding found in vagina, the decidua  were selected in asepsis condition. The decidua were analyzed for expression of specific genes compared with cesarean sections.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The total RNA of decidua was extracted using Trizol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Cyanine-3 (Cy3) labeled cRNA was prepared from 0.5 ug RNA using the One-Color Low RNA Input Linear Amplification PLUS kit (Agilent) according to the manufacturer's instructions
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.5 ug of Cy3-labelled cRNA was fragmented at 60°C for 30 minutes in a reaction volume of 250 ml containing 1x Agilent fragmentation buffer and 2x Agilent blocking agent following the manufacturers instructions. On completion of the fragmentation reaction, 250 ml of 2x Agilent hybridization buffer was added to the fragmentation mixture and hybridized to Agilent Whole Genome Oligo Microarrays for 17 hours at 65°C in a rotating Agilent hybridization oven.  After hybridization, microarrays were washed 1 minute at room temperature with GE Wash Buffer 1 (Agilent) and 1 minute with 37°C GE Wash buffer 2 (Agilent), then dried immediately by brief centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing on the Agilent DNA Microarray Scanner using one color scan setting for 8 x 60k array slides (Scan Area 61x21.6 mm, Scan resolution 10um, Dye channel is set to Green and Green PMT is set to 100%).
+    </Scan-Protocol>
+    <Description>
+Competing endogenous RNA expression in decidua derived from cesarean sections
+    </Description>
+    <Data-Processing>
+The scanned images were analyzed with Feature Extraction Software 9.1 (Agilent) using default parameters to obtain background subtracted and spatially detrended Processed Signal intensities.  Features flagged in Feature Extraction as Feature Non-uniform outliers were excluded.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28498" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4522nnn/GSM4522972/suppl/GSM4522972_2_5_258478310049_S001_GE1_1200_Jun14_1_1.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="150373">
+GSM4522972-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Sample iid="GSM4522973">
+    <Status database="GEO">
+      <Submission-Date>2020-05-07</Submission-Date>
+      <Release-Date>2023-05-06</Release-Date>
+      <Last-Update-Date>2023-05-06</Last-Update-Date>
+    </Status>
+    <Title>S2_6_NS</Title>
+    <Accession database="GEO">GSM4522973</Accession>
+    <Type>RNA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua derived from mice of LPS treatment</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+17 days of pregnancy
+      </Characteristics>
+      <Treatment-Protocol>
+LPS (100 μg/kg body weight) was intraperitoneally injected into the mice at 14 days of pregnancy. PTB has been found after approximately 48 h of treatment. When bleeding found in vagina, the decidua  were selected in asepsis condition. The decidua were analyzed for expression of specific genes compared with cesarean sections.
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The total RNA of decidua was extracted using Trizol.
+      </Extract-Protocol>
+      <Label>Cy3</Label>
+      <Label-Protocol>
+Cyanine-3 (Cy3) labeled cRNA was prepared from 0.5 ug RNA using the One-Color Low RNA Input Linear Amplification PLUS kit (Agilent) according to the manufacturer's instructions
+      </Label-Protocol>
+    </Channel>
+    <Hybridization-Protocol>
+1.5 ug of Cy3-labelled cRNA was fragmented at 60°C for 30 minutes in a reaction volume of 250 ml containing 1x Agilent fragmentation buffer and 2x Agilent blocking agent following the manufacturers instructions. On completion of the fragmentation reaction, 250 ml of 2x Agilent hybridization buffer was added to the fragmentation mixture and hybridized to Agilent Whole Genome Oligo Microarrays for 17 hours at 65°C in a rotating Agilent hybridization oven.  After hybridization, microarrays were washed 1 minute at room temperature with GE Wash Buffer 1 (Agilent) and 1 minute with 37°C GE Wash buffer 2 (Agilent), then dried immediately by brief centrifugation.
+    </Hybridization-Protocol>
+    <Scan-Protocol>
+Slides were scanned immediately after washing on the Agilent DNA Microarray Scanner using one color scan setting for 8 x 60k array slides (Scan Area 61x21.6 mm, Scan resolution 10um, Dye channel is set to Green and Green PMT is set to 100%).
+    </Scan-Protocol>
+    <Description>
+Competing endogenous RNA expression in decidua derived from cesarean sections
+    </Description>
+    <Data-Processing>
+The scanned images were analyzed with Feature Extraction Software 9.1 (Agilent) using default parameters to obtain background subtracted and spatially detrended Processed Signal intensities.  Features flagged in Feature Extraction as Feature Non-uniform outliers were excluded.
+    </Data-Processing>
+    <Platform-Ref ref="GPL28498" />
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4522nnn/GSM4522973/suppl/GSM4522973_2_6_258478310049_S001_GE1_1200_Jun14_1_2.txt.gz
+    </Supplementary-Data>
+    <Data-Table>
+      <Column position="1">
+        <Name>ID_REF</Name>
+      </Column>
+      <Column position="2">
+        <Name>VALUE</Name>
+        <Description>Normalized signal intensity</Description>
+      </Column>
+    <External-Data rows="150373">
+GSM4522973-tbl-1.txt
+    </External-Data>
+    </Data-Table>
+  </Sample>
+
+  <Series iid="GSE150066">
+    <Status database="GEO">
+      <Submission-Date>2020-05-07</Submission-Date>
+      <Release-Date>2023-05-06</Release-Date>
+      <Last-Update-Date>2025-03-20</Last-Update-Date>
+    </Status>
+    <Title>Competing endogenous RNA expression profiling in decidua after LPS treatment</Title>
+    <Accession database="GEO">GSE150066</Accession>
+    <Pubmed-ID>40033278</Pubmed-ID>
+    <Summary>
+To investigate the competing endogenous RNA expression changes in decidua under the inflammatory reaction, LPS (100 μg/kg body weight) was intraperitoneally injected into the mice at 15 days of pregnancy. Premature births has been found after approximately 48 h of treatment. When bleeding found in vagina, the decidua were selected in asepsis condition, and total RNA was isolated to analyze the expression of competing endogenous RNA compared with cesarean sections.
+    </Summary>
+    <Overall-Design>
+The decidua derived from LPS-treated mice were tested the competing endogenous RNA expression, the decidua derived from cesarean sections as a control.
+    </Overall-Design>
+    <Type>Expression profiling by array</Type>
+    <Contributor-Ref ref="contrib2" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM4522968" />
+    <Sample-Ref ref="GSM4522969" />
+    <Sample-Ref ref="GSM4522970" />
+    <Sample-Ref ref="GSM4522971" />
+    <Sample-Ref ref="GSM4522972" />
+    <Sample-Ref ref="GSM4522973" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE150nnn/GSE150066/suppl/GSE150066_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA631018" />
+  </Series>
+
+</MINiML>

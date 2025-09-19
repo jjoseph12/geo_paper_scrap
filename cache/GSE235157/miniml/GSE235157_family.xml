@@ -1,0 +1,1189 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Boryana</First><Last>Koseva</Last></Person>
+    <Email>bskoseva@cmh.edu</Email>
+    <Laboratory>Grundberg Lab</Laboratory>
+    <Department>CMRI</Department>
+    <Organization>Children's Mercy Hospital</Organization>
+    <Address>
+      <Line>2420 Pershing Road</Line>
+      <City>Kansas City</City>
+      <State>MO</State>
+      <Zip-Code>64108</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kaela</First><Middle>M</Middle><Last>Varberg</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Esteban</First><Middle>M</Middle><Last>Dominguez</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Boryana</First><Middle>S</Middle><Last>Koseva</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Ayelen</First><Last>Moreno-Irusta</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Ross</First><Middle>P</Middle><Last>McNally</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Emily</First><Last>Wesley</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Khursheed</First><Last>Iqbal</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Warren</First><Last>Cheung</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib11">
+    <Person><First>Hiroaki</First><Last>Okae</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib12">
+    <Person><First>Takahiro</First><Last>Arima</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib13">
+    <Person><First>Courtney</First><Last>Marsh</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib14">
+    <Person><First>Michael</First><Middle>J</Middle><Last>Soares</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib15">
+    <Person><First>Elin</First><Last>Grundberg</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7496031">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>EPAS1 knockdown_1</Title>
+    <Accession database="GEO">GSM7496031</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+EPAS1-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496031/suppl/GSM7496031_EPAS_5-2_1_S4.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775196" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709466" />
+  </Sample>
+
+  <Sample iid="GSM7496032">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>EPAS1 knockdown_2</Title>
+    <Accession database="GEO">GSM7496032</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+EPAS1-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496032/suppl/GSM7496032_EPAS_5-2_2_S5.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775195" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709475" />
+  </Sample>
+
+  <Sample iid="GSM7496033">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>EPAS1 knockdown_3</Title>
+    <Accession database="GEO">GSM7496033</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+EPAS1-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496033/suppl/GSM7496033_EPAS_5-2_3_S6.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775194" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709476" />
+  </Sample>
+
+  <Sample iid="GSM7496034">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>EPAS1 control_1</Title>
+    <Accession database="GEO">GSM7496034</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496034/suppl/GSM7496034_EPAS_Scr-1_S1.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775193" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709477" />
+  </Sample>
+
+  <Sample iid="GSM7496035">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>EPAS1 control_2</Title>
+    <Accession database="GEO">GSM7496035</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496035/suppl/GSM7496035_EPAS_Scr-2_S2.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775192" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709478" />
+  </Sample>
+
+  <Sample iid="GSM7496036">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>EPAS1 control_3</Title>
+    <Accession database="GEO">GSM7496036</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496036/suppl/GSM7496036_EPAS_Scr-3_S3.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775191" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709479" />
+  </Sample>
+
+  <Sample iid="GSM7496037">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>SNAI1_control_1</Title>
+    <Accession database="GEO">GSM7496037</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496037/suppl/GSM7496037_SNAI1_C3_S21.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775190" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709480" />
+  </Sample>
+
+  <Sample iid="GSM7496038">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>SNAI1_control_2</Title>
+    <Accession database="GEO">GSM7496038</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496038/suppl/GSM7496038_SNAI1_C4_S23.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775189" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709481" />
+  </Sample>
+
+  <Sample iid="GSM7496039">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>SNAI1_control_3</Title>
+    <Accession database="GEO">GSM7496039</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496039/suppl/GSM7496039_SNAI1_C5_S25.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775188" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709482" />
+  </Sample>
+
+  <Sample iid="GSM7496040">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>SNAI1_knockdown_1</Title>
+    <Accession database="GEO">GSM7496040</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+SNAI1-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496040/suppl/GSM7496040_SNAI1_KD3_S22.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775187" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709467" />
+  </Sample>
+
+  <Sample iid="GSM7496041">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>SNAI1_knockdown_2</Title>
+    <Accession database="GEO">GSM7496041</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+SNAI1-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496041/suppl/GSM7496041_SNAI1_KD4_S24.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775186" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709468" />
+  </Sample>
+
+  <Sample iid="GSM7496042">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>SNAI1_knockdown_3</Title>
+    <Accession database="GEO">GSM7496042</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+extravillous trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+SNAI1-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496042/suppl/GSM7496042_SNAI1_KD5_S26.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775185" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709469" />
+  </Sample>
+
+  <Sample iid="GSM7496049">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>TFAP2C knockdown_1</Title>
+    <Accession database="GEO">GSM7496049</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+stem state trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+TFAP2C-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496049/suppl/GSM7496049_KD-1_S1.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775178" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709484" />
+  </Sample>
+
+  <Sample iid="GSM7496050">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>TFAP2C knockdown_2</Title>
+    <Accession database="GEO">GSM7496050</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+stem state trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+TFAP2C-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496050/suppl/GSM7496050_KD-2_S2.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775177" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709485" />
+  </Sample>
+
+  <Sample iid="GSM7496051">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>TFAP2C knockdown_3</Title>
+    <Accession database="GEO">GSM7496051</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+stem state trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+TFAP2C-specific shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496051/suppl/GSM7496051_KD-3_S3.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775176" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709486" />
+  </Sample>
+
+  <Sample iid="GSM7496052">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>TFAP2C control_1</Title>
+    <Accession database="GEO">GSM7496052</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+stem state trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496052/suppl/GSM7496052_SCR-1_S4.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775175" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709487" />
+  </Sample>
+
+  <Sample iid="GSM7496053">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>TFAP2C control_2</Title>
+    <Accession database="GEO">GSM7496053</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+stem state trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496053/suppl/GSM7496053_SCR-2_S5.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775174" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709488" />
+  </Sample>
+
+  <Sample iid="GSM7496054">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>TFAP2C control_3</Title>
+    <Accession database="GEO">GSM7496054</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>CT27</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="source">
+human trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+stem state trophoblast cell
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control shRNA lentiviral transduction and puromycin selection
+      </Characteristics>
+      <Treatment-Protocol>
+Lentivirus-mediated shRNA delivery was used as a tool to test the biological roles for TFAP2C, EPAS1, SNAI1, DLX5, and DLX6 in human TS cells. Several shRNAs designed for each target were subcloned into pLKO.1 and their efficacy tested by RT-qPCR and western blotting. An shRNA which does not recognize any known mammalian gene, pLKO.1-shSCR (Plasmid 1864) was used as a control (Addgene, Cambridge, MA). Construct design, lentivirus production, and lentiviral transduction were performed as previously described (Varberg et al. 2021).
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human TS cells (Okae et al. 2018) were cultured in 100 mm tissue culture dishes coated with 5 μg/mL collagen IV (CB40233, Thermo-Fisher, Waltham, MA). Human TS cells were maintained in Complete human TS cell medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) fetal bovine serum (FBS), 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 1.5 μg/mL L-ascorbic acid (A8960, Sigma-Aldrich, St. Louis, MO), 50 ng/mL epidermal growth factor (EGF, E9644, Sigma-Aldrich), 2 μM CHIR99021 (04-0004, Reprocell, Beltsville, MD), 0.5 μM A83-01 (04-0014, Reprocell), 1 μM SB431542 (04-0010, Reprocell), 0.8 mM valproic acid (P4543, Sigma-Aldrich), and 5 μM Y27632 (04-0012-02, Reprocell). EVT cell differentiation was induced by plating human TS cells onto 6-well plates pre-coated with 1 μg/mL collagen IV at a density of 80,000 cells per well. Cells were cultured in EVT Differentiation Medium [DMEM/F12 (11320033, Thermo-Fisher), 100 μm 2-mercaptoethanol, 0.2% (vol/vol) FBS, 50 μM penicillin, 50 U/mL streptomycin, 0.3% bovine serum albumin (BP9704100, Thermo-Fisher), 1% Insulin-Transferrin-Selenium-Ethanolamine solution (vol/vol, Thermo-Fisher)], 100 ng/mL of neuregulin 1 (NRG1, 5218SC, Cell Signaling, Danvers, MA), 7.5 μM A83-01 (04-0014, Reprocell, Beltsville, MD), 2.5 μM Y27632 (04-0012, Reprocell), 4% KnockOut Serum Replacement (KSR, 10828028, Thermo-Fisher), and 2% Matrigel® (CB-40234, Thermo-Fisher). On day 3 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and with a reduced Matrigel® concentration of 0.5%. On culture day 6 of EVT cell differentiation, the medium was replaced with EVT Differentiation Medium excluding NRG1 and KSR, and with a Matrigel concentration of 0.5%. Cells were analyzed on day 8 of EVT cell differentiation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzolreagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+The Stranded mRNA-Seq was performed using the Illumina NovaSeq 6000 Sequencing Systemat the University of Kansas Medical Center –Genomics Core (Kansas City, KS). Quality control on RNA submissions was completed using the Agilent TapeStation 4200 using the RNA ScreenTape Assay kit (Agilent Technologies 5067-5576). Total RNA (1ug) was used toinitiatethe library preparation protocol.The total RNA fraction was processed by oligo dT bead capture of mRNA, fragmentation, reverse transcriptioninto cDNA, end repair of cDNA, ligation withthe appropriate Unique Dual Index (UDI) adaptors, strand selection and library amplification by PCR using the Universal Plus mRNA-seq with NuQuant library preparation kit (Tecan Genomics 0520-A01).Library validation was performed using the D1000 ScreenTape Assay kit (Agilent Technologies 5067-5582) on theAgilent TapeStation 4200. Concentration of each library was determined with the NuQuant module of the library prep kit using a Qubit 4 Fluorometer (ThermoFisher/Invitrogen),Libraries were pooled based on equal molar amounts and the multiplexed pool was quantitated, in triplicate, using the Roche Lightcycler96 withFastStart Essential DNA Green Master (Roche 06402712001) and KAPA Library Quant (Illumina) DNA Standards 1-6 (KAPA Biosystems KK4903). Using the qPCR results, theRNA-Seq library pool was adjusted to 2.125nM for multiplexed sequencing.Pooled libraries were denatured with 0.2N NaOH (0.04N final concentration) and neutralized with 400mM Tris-HCl pH 8.0. A dilution of the pooled libraries to 425 pM is performed in the sample tube, on instrument, followed by onboard clonal clustering of the patterned flow cell using the NovaSeq 6000 S1 Reagent Kit (200 cycle) (Illumina 20012864). A 2x101 cycle sequencing profile with dual index reads is completed using the following sequence profile: Read 1 – 101 cycles x Index Read 1 – 8 cycles x Index Read 2 – 8 cycles x Read 2 – 101 cycles. Following collection, sequence data is converted from .bcl file format to fastq file format using bcl2fastq software and de-multiplexed into individual sequences for data distribution using a secure FTP site or Illumina BaseSpace for further downstream analysis.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw FASTQ files were trimmed using default parameters (-r 0.1 -d 0.03) in Skewer (Version 0.2.2), and reads shorter than 18 bp were discarded.
+Transcripts were quantified using Kallisto (Version 0.46.2).
+Differentially expressed genes at FDR of 0.05 were discovered using the Bioconductor package DESeq2 in R (Version 1.32.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7496nnn/GSM7496054/suppl/GSM7496054_SCR-3_S6.abundance.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35775173" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20709489" />
+  </Sample>
+
+  <Series iid="GSE235157">
+    <Status database="GEO">
+      <Submission-Date>2023-06-16</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-23</Last-Update-Date>
+    </Status>
+    <Title>Global Epigenome and Transcriptome Maps of Human Trophoblast Cell Lineage Development [RNA-Seq II]</Title>
+    <Accession database="GEO">GSE235157</Accession>
+    <Summary>
+The extravillous trophoblast (EVT) cell lineage is a key feature of placentation and critical for spiralartery remodeling and successful pregnancy. Our knowledge of transcriptional regulation driving EVT cell development is limited. Here, we mapped the transcriptome and epigenome landscape as well as chromatin interactions of human trophoblast stem (TS) cells and their transition into the differentiated EVT cell lineage. We identified that chromatin accessibility in intergenic regions was more extensive in EVT cells than in TS cells in the stem state, which is indicative of increased enhancer-driven gene regulation. Using reference epigenome annotation, we noted that 18% of the chromatin landscape in EVT cells was uncharted. We linked regulatory regions to their cognate target genes and characterized the three-dimensional organization of the TS cell functional genome by Hi-C. Integrational analysis of chromatin accessibility, long-range chromatin interactions, transcriptomic, and transcription factor binding motif enrichment enabled identification of transcription factors and regulatory mechanisms associated with EVT cell lineage development. Subsequent analyses elucidated functional roles forTFAP2C,EPAS1,SNAI1, andDLX6in the regulation of EVT cell lineage development.EPAS1was identified as an upstream regulator of EVT cell transcription factors, includingSNAI1andDLX6, and was found to be upregulated in idiopathic recurrent pregnancy loss. Collectively, we have revealed activation of a dynamic regulatory network that provides a framework for understanding EVT cell specification in trophoblast cell lineage development and human placentation.
+    </Summary>
+    <Overall-Design>
+RNA-Seq
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib8" position="6" />
+    <Contributor-Ref ref="contrib9" position="7" />
+    <Contributor-Ref ref="contrib10" position="8" />
+    <Contributor-Ref ref="contrib11" position="9" />
+    <Contributor-Ref ref="contrib12" position="10" />
+    <Contributor-Ref ref="contrib13" position="11" />
+    <Contributor-Ref ref="contrib14" position="12" />
+    <Contributor-Ref ref="contrib15" position="13" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7496031" />
+    <Sample-Ref ref="GSM7496032" />
+    <Sample-Ref ref="GSM7496033" />
+    <Sample-Ref ref="GSM7496034" />
+    <Sample-Ref ref="GSM7496035" />
+    <Sample-Ref ref="GSM7496036" />
+    <Sample-Ref ref="GSM7496037" />
+    <Sample-Ref ref="GSM7496038" />
+    <Sample-Ref ref="GSM7496039" />
+    <Sample-Ref ref="GSM7496040" />
+    <Sample-Ref ref="GSM7496041" />
+    <Sample-Ref ref="GSM7496042" />
+    <Sample-Ref ref="GSM7496049" />
+    <Sample-Ref ref="GSM7496050" />
+    <Sample-Ref ref="GSM7496051" />
+    <Sample-Ref ref="GSM7496052" />
+    <Sample-Ref ref="GSM7496053" />
+    <Sample-Ref ref="GSM7496054" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE235nnn/GSE235157/suppl/GSE235157_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE204722" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA984682" />
+  </Series>
+
+</MINiML>

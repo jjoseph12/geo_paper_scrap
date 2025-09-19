@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Jie</First><Last>Zhou</Last></Person>
+    <Laboratory>Reproductive science</Laboratory>
+    <Department>OBGYN</Department>
+    <Organization>Duke University</Organization>
+    <Address>
+      <Line>The Chesterfield Building 701 W. Main Street, Suite 510</Line>
+      <City>Durham</City>
+      <State>North Carolina</State>
+      <Zip-Code>27701</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Ying</First><Last>Qu</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Danny</First><Last>Schust</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7091563">
+    <Status database="GEO">
+      <Submission-Date>2023-03-10</Submission-Date>
+      <Release-Date>2023-03-13</Release-Date>
+      <Last-Update-Date>2023-03-13</Last-Update-Date>
+    </Status>
+    <Title>control 24h, replicate 1, RNAseq</Title>
+    <Accession database="GEO">GSM7091563</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human human embryonic stem cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Human human embryonic stem cell
+      </Characteristics>
+      <Characteristics tag="cell type">
+WT
+      </Characteristics>
+      <Characteristics tag="genotype">
+H1, WA01
+      </Characteristics>
+      <Characteristics tag="treatment">
+BMP4, A83-01 and PD173074 treatment
+      </Characteristics>
+      <Characteristics tag="time">
+Day 4
+      </Characteristics>
+      <Treatment-Protocol>
+For small interfering RNA (siRNA)-mediated knockdown of VTCN1, differentiated hESCs were transfected with either a VTCN1 human siRNA oligo duplex (Origene, SR312516, 10nM) or a control, Trilencer-27 Universal scrambled negative control siRNA duplex (Origene, SR30004, 10 nM) on BAP treatment d 3 by using Lipofectamine 2000 (Invitrogen). After 6 h, the medium was replaced with BAP medium.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human ESCs (H1, WA01) were cultured in Matrigel (BD Bioscience)-coated, six-well tissue culture plates (Thermo Scientific) under an atmosphere of 5% (vol/vol) CO2/air at 37 °C in mTeSR1 medium (STEMCELL Technologies). The culture medium was changed daily and the cells were passaged every 5-6 days. The method for TB differentiation has been described previously[19]. Briefly, on the day after passaging onto Matrigel-coated dishes at 1.2 × 104 cells/cm2, the culture medium was changed to DMEM/F-12 medium (Thermo Scientific) with knock-out serum replacement (KOSR, Invitrogen) that had been conditioned by mouse embryonic fibroblasts (MEF) and supplemented with FGF2 (4 ng/mL).  After 24 h, the conditioned medium was replaced with daily changes of nonconditioned DME/F12/KOSR medium lacking FGF2, but containing BMP4 (10 ng/mL), A83-01 (1 μM), and PD173074 (0.1 μM) (BAP treatment) for up to 8 days. Control cultures were maintained in conditioned medium containing 4 ng/mL FGF2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was obtained from VTCN1 knock down or negative control siRNA transfected cells 24 h, 48 h and 72 h after transfection. RNA was extracted in STAT60 containing 1-bromo-3-chloro-propane (Sigma-Aldrich), and DNA removed by using the TURBO-DNA-free kit (Ambion Inc.).
+cDNA libraries were constructed by standard methods (Illumina TruSeq mRNA stranded kit) with index adapters (Illumina TruSeq indexes).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Human human embryonic stem cell derived trophoblast
+    </Description>
+    <Data-Processing>
+Initial base calling and quality filtering of the mRNA-seq reads generated with the Illumina analysis pipeline (fastQ format) were performed with the FastxToolkit (http://hannonlab.cshl.edu/fastx_toolkit/) and adapters trimmed by using CutAdapt (https://cutadapt.readthedocs.org/en/stable/).
+Reads that mapped either to the human mitochondrial genome or to the internal Phix standard were removed through use of Bowtie software (http://bowtie-bio.sourceforge.net/index.shtml).
+Reads were mapped (TopHat v2.0.13; http://ccb.jhu.edu/software/tophat/index.shtml) to the reference genome (from Ensembl, v78; http://www.ensembl.org/index.html; Homo_sapiens.GRCh38.dna.primary assembly.fa with Homo_sapiens.GRCh38.78.gtf as annotation).
+Tests for differential expression were made by using cuffdiff v2.2.1. Uniquely mapped reads were counted with htseq-count v.011.1.
+Gene expression levels were calculated in FPKM, considering gene length as a sum of all exonic nonoverlapping sequences of all isoforms of a given gene.
+Assembly: GRCh38
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18202678" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31551067" />
+  </Sample>
+
+  <Sample iid="GSM7091564">
+    <Status database="GEO">
+      <Submission-Date>2023-03-10</Submission-Date>
+      <Release-Date>2023-03-13</Release-Date>
+      <Last-Update-Date>2023-03-13</Last-Update-Date>
+    </Status>
+    <Title>control 24h, replicate 2, RNAseq</Title>
+    <Accession database="GEO">GSM7091564</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human human embryonic stem cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Human human embryonic stem cell
+      </Characteristics>
+      <Characteristics tag="cell type">
+WT
+      </Characteristics>
+      <Characteristics tag="genotype">
+H1, WA01
+      </Characteristics>
+      <Characteristics tag="treatment">
+BMP4, A83-01 and PD173074 treatment
+      </Characteristics>
+      <Characteristics tag="time">
+Day 4
+      </Characteristics>
+      <Treatment-Protocol>
+For small interfering RNA (siRNA)-mediated knockdown of VTCN1, differentiated hESCs were transfected with either a VTCN1 human siRNA oligo duplex (Origene, SR312516, 10nM) or a control, Trilencer-27 Universal scrambled negative control siRNA duplex (Origene, SR30004, 10 nM) on BAP treatment d 3 by using Lipofectamine 2000 (Invitrogen). After 6 h, the medium was replaced with BAP medium.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human ESCs (H1, WA01) were cultured in Matrigel (BD Bioscience)-coated, six-well tissue culture plates (Thermo Scientific) under an atmosphere of 5% (vol/vol) CO2/air at 37 °C in mTeSR1 medium (STEMCELL Technologies). The culture medium was changed daily and the cells were passaged every 5-6 days. The method for TB differentiation has been described previously[19]. Briefly, on the day after passaging onto Matrigel-coated dishes at 1.2 × 104 cells/cm2, the culture medium was changed to DMEM/F-12 medium (Thermo Scientific) with knock-out serum replacement (KOSR, Invitrogen) that had been conditioned by mouse embryonic fibroblasts (MEF) and supplemented with FGF2 (4 ng/mL).  After 24 h, the conditioned medium was replaced with daily changes of nonconditioned DME/F12/KOSR medium lacking FGF2, but containing BMP4 (10 ng/mL), A83-01 (1 μM), and PD173074 (0.1 μM) (BAP treatment) for up to 8 days. Control cultures were maintained in conditioned medium containing 4 ng/mL FGF2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was obtained from VTCN1 knock down or negative control siRNA transfected cells 24 h, 48 h and 72 h after transfection. RNA was extracted in STAT60 containing 1-bromo-3-chloro-propane (Sigma-Aldrich), and DNA removed by using the TURBO-DNA-free kit (Ambion Inc.).
+cDNA libraries were constructed by standard methods (Illumina TruSeq mRNA stranded kit) with index adapters (Illumina TruSeq indexes).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Human human embryonic stem cell derived trophoblast
+    </Description>
+    <Data-Processing>
+Initial base calling and quality filtering of the mRNA-seq reads generated with the Illumina analysis pipeline (fastQ format) were performed with the FastxToolkit (http://hannonlab.cshl.edu/fastx_toolkit/) and adapters trimmed by using CutAdapt (https://cutadapt.readthedocs.org/en/stable/).
+Reads that mapped either to the human mitochondrial genome or to the internal Phix standard were removed through use of Bowtie software (http://bowtie-bio.sourceforge.net/index.shtml).
+Reads were mapped (TopHat v2.0.13; http://ccb.jhu.edu/software/tophat/index.shtml) to the reference genome (from Ensembl, v78; http://www.ensembl.org/index.html; Homo_sapiens.GRCh38.dna.primary assembly.fa with Homo_sapiens.GRCh38.78.gtf as annotation).
+Tests for differential expression were made by using cuffdiff v2.2.1. Uniquely mapped reads were counted with htseq-count v.011.1.
+Gene expression levels were calculated in FPKM, considering gene length as a sum of all exonic nonoverlapping sequences of all isoforms of a given gene.
+Assembly: GRCh38
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18202680" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31551069" />
+  </Sample>
+
+  <Sample iid="GSM7091565">
+    <Status database="GEO">
+      <Submission-Date>2023-03-10</Submission-Date>
+      <Release-Date>2023-03-13</Release-Date>
+      <Last-Update-Date>2023-03-13</Last-Update-Date>
+    </Status>
+    <Title>control 24h, replicate 3, RNAseq</Title>
+    <Accession database="GEO">GSM7091565</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human human embryonic stem cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Human human embryonic stem cell
+      </Characteristics>
+      <Characteristics tag="cell type">
+WT
+      </Characteristics>
+      <Characteristics tag="genotype">
+H1, WA01
+      </Characteristics>
+      <Characteristics tag="treatment">
+BMP4, A83-01 and PD173074 treatment
+      </Characteristics>
+      <Characteristics tag="time">
+Day 4
+      </Characteristics>
+      <Treatment-Protocol>
+For small interfering RNA (siRNA)-mediated knockdown of VTCN1, differentiated hESCs were transfected with either a VTCN1 human siRNA oligo duplex (Origene, SR312516, 10nM) or a control, Trilencer-27 Universal scrambled negative control siRNA duplex (Origene, SR30004, 10 nM) on BAP treatment d 3 by using Lipofectamine 2000 (Invitrogen). After 6 h, the medium was replaced with BAP medium.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human ESCs (H1, WA01) were cultured in Matrigel (BD Bioscience)-coated, six-well tissue culture plates (Thermo Scientific) under an atmosphere of 5% (vol/vol) CO2/air at 37 °C in mTeSR1 medium (STEMCELL Technologies). The culture medium was changed daily and the cells were passaged every 5-6 days. The method for TB differentiation has been described previously[19]. Briefly, on the day after passaging onto Matrigel-coated dishes at 1.2 × 104 cells/cm2, the culture medium was changed to DMEM/F-12 medium (Thermo Scientific) with knock-out serum replacement (KOSR, Invitrogen) that had been conditioned by mouse embryonic fibroblasts (MEF) and supplemented with FGF2 (4 ng/mL).  After 24 h, the conditioned medium was replaced with daily changes of nonconditioned DME/F12/KOSR medium lacking FGF2, but containing BMP4 (10 ng/mL), A83-01 (1 μM), and PD173074 (0.1 μM) (BAP treatment) for up to 8 days. Control cultures were maintained in conditioned medium containing 4 ng/mL FGF2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was obtained from VTCN1 knock down or negative control siRNA transfected cells 24 h, 48 h and 72 h after transfection. RNA was extracted in STAT60 containing 1-bromo-3-chloro-propane (Sigma-Aldrich), and DNA removed by using the TURBO-DNA-free kit (Ambion Inc.).
+cDNA libraries were constructed by standard methods (Illumina TruSeq mRNA stranded kit) with index adapters (Illumina TruSeq indexes).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Human human embryonic stem cell derived trophoblast
+    </Description>
+    <Data-Processing>
+Initial base calling and quality filtering of the mRNA-seq reads generated with the Illumina analysis pipeline (fastQ format) were performed with the FastxToolkit (http://hannonlab.cshl.edu/fastx_toolkit/) and adapters trimmed by using CutAdapt (https://cutadapt.readthedocs.org/en/stable/).
+Reads that mapped either to the human mitochondrial genome or to the internal Phix standard were removed through use of Bowtie software (http://bowtie-bio.sourceforge.net/index.shtml).
+Reads were mapped (TopHat v2.0.13; http://ccb.jhu.edu/software/tophat/index.shtml) to the reference genome (from Ensembl, v78; http://www.ensembl.org/index.html; Homo_sapiens.GRCh38.dna.primary assembly.fa with Homo_sapiens.GRCh38.78.gtf as annotation).
+Tests for differential expression were made by using cuffdiff v2.2.1. Uniquely mapped reads were counted with htseq-count v.011.1.
+Gene expression levels were calculated in FPKM, considering gene length as a sum of all exonic nonoverlapping sequences of all isoforms of a given gene.
+Assembly: GRCh38
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18202679" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31551068" />
+  </Sample>
+
+  <Sample iid="GSM7091566">
+    <Status database="GEO">
+      <Submission-Date>2023-03-10</Submission-Date>
+      <Release-Date>2023-03-13</Release-Date>
+      <Last-Update-Date>2023-03-13</Last-Update-Date>
+    </Status>
+    <Title>VTCN1 Knocked down 24h, replicate 1, RNAseq</Title>
+    <Accession database="GEO">GSM7091566</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human human embryonic stem cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Human human embryonic stem cell
+      </Characteristics>
+      <Characteristics tag="cell type">
+VTCN1 knockdown
+      </Characteristics>
+      <Characteristics tag="genotype">
+H1, WA01
+      </Characteristics>
+      <Characteristics tag="treatment">
+BMP4, A83-01 and PD173074 treatment
+      </Characteristics>
+      <Characteristics tag="time">
+Day 4
+      </Characteristics>
+      <Treatment-Protocol>
+For small interfering RNA (siRNA)-mediated knockdown of VTCN1, differentiated hESCs were transfected with either a VTCN1 human siRNA oligo duplex (Origene, SR312516, 10nM) or a control, Trilencer-27 Universal scrambled negative control siRNA duplex (Origene, SR30004, 10 nM) on BAP treatment d 3 by using Lipofectamine 2000 (Invitrogen). After 6 h, the medium was replaced with BAP medium.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human ESCs (H1, WA01) were cultured in Matrigel (BD Bioscience)-coated, six-well tissue culture plates (Thermo Scientific) under an atmosphere of 5% (vol/vol) CO2/air at 37 °C in mTeSR1 medium (STEMCELL Technologies). The culture medium was changed daily and the cells were passaged every 5-6 days. The method for TB differentiation has been described previously[19]. Briefly, on the day after passaging onto Matrigel-coated dishes at 1.2 × 104 cells/cm2, the culture medium was changed to DMEM/F-12 medium (Thermo Scientific) with knock-out serum replacement (KOSR, Invitrogen) that had been conditioned by mouse embryonic fibroblasts (MEF) and supplemented with FGF2 (4 ng/mL).  After 24 h, the conditioned medium was replaced with daily changes of nonconditioned DME/F12/KOSR medium lacking FGF2, but containing BMP4 (10 ng/mL), A83-01 (1 μM), and PD173074 (0.1 μM) (BAP treatment) for up to 8 days. Control cultures were maintained in conditioned medium containing 4 ng/mL FGF2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was obtained from VTCN1 knock down or negative control siRNA transfected cells 24 h, 48 h and 72 h after transfection. RNA was extracted in STAT60 containing 1-bromo-3-chloro-propane (Sigma-Aldrich), and DNA removed by using the TURBO-DNA-free kit (Ambion Inc.).
+cDNA libraries were constructed by standard methods (Illumina TruSeq mRNA stranded kit) with index adapters (Illumina TruSeq indexes).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Human human embryonic stem cell derived trophoblast
+    </Description>
+    <Data-Processing>
+Initial base calling and quality filtering of the mRNA-seq reads generated with the Illumina analysis pipeline (fastQ format) were performed with the FastxToolkit (http://hannonlab.cshl.edu/fastx_toolkit/) and adapters trimmed by using CutAdapt (https://cutadapt.readthedocs.org/en/stable/).
+Reads that mapped either to the human mitochondrial genome or to the internal Phix standard were removed through use of Bowtie software (http://bowtie-bio.sourceforge.net/index.shtml).
+Reads were mapped (TopHat v2.0.13; http://ccb.jhu.edu/software/tophat/index.shtml) to the reference genome (from Ensembl, v78; http://www.ensembl.org/index.html; Homo_sapiens.GRCh38.dna.primary assembly.fa with Homo_sapiens.GRCh38.78.gtf as annotation).
+Tests for differential expression were made by using cuffdiff v2.2.1. Uniquely mapped reads were counted with htseq-count v.011.1.
+Gene expression levels were calculated in FPKM, considering gene length as a sum of all exonic nonoverlapping sequences of all isoforms of a given gene.
+Assembly: GRCh38
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31551070" />
+  </Sample>
+
+  <Sample iid="GSM7091567">
+    <Status database="GEO">
+      <Submission-Date>2023-03-10</Submission-Date>
+      <Release-Date>2023-03-13</Release-Date>
+      <Last-Update-Date>2023-03-13</Last-Update-Date>
+    </Status>
+    <Title>VTCN1 Knocked down 24h, replicate 2, RNAseq</Title>
+    <Accession database="GEO">GSM7091567</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human human embryonic stem cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Human human embryonic stem cell
+      </Characteristics>
+      <Characteristics tag="cell type">
+VTCN1 knockdown
+      </Characteristics>
+      <Characteristics tag="genotype">
+H1, WA01
+      </Characteristics>
+      <Characteristics tag="treatment">
+BMP4, A83-01 and PD173074 treatment
+      </Characteristics>
+      <Characteristics tag="time">
+Day 4
+      </Characteristics>
+      <Treatment-Protocol>
+For small interfering RNA (siRNA)-mediated knockdown of VTCN1, differentiated hESCs were transfected with either a VTCN1 human siRNA oligo duplex (Origene, SR312516, 10nM) or a control, Trilencer-27 Universal scrambled negative control siRNA duplex (Origene, SR30004, 10 nM) on BAP treatment d 3 by using Lipofectamine 2000 (Invitrogen). After 6 h, the medium was replaced with BAP medium.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human ESCs (H1, WA01) were cultured in Matrigel (BD Bioscience)-coated, six-well tissue culture plates (Thermo Scientific) under an atmosphere of 5% (vol/vol) CO2/air at 37 °C in mTeSR1 medium (STEMCELL Technologies). The culture medium was changed daily and the cells were passaged every 5-6 days. The method for TB differentiation has been described previously[19]. Briefly, on the day after passaging onto Matrigel-coated dishes at 1.2 × 104 cells/cm2, the culture medium was changed to DMEM/F-12 medium (Thermo Scientific) with knock-out serum replacement (KOSR, Invitrogen) that had been conditioned by mouse embryonic fibroblasts (MEF) and supplemented with FGF2 (4 ng/mL).  After 24 h, the conditioned medium was replaced with daily changes of nonconditioned DME/F12/KOSR medium lacking FGF2, but containing BMP4 (10 ng/mL), A83-01 (1 μM), and PD173074 (0.1 μM) (BAP treatment) for up to 8 days. Control cultures were maintained in conditioned medium containing 4 ng/mL FGF2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was obtained from VTCN1 knock down or negative control siRNA transfected cells 24 h, 48 h and 72 h after transfection. RNA was extracted in STAT60 containing 1-bromo-3-chloro-propane (Sigma-Aldrich), and DNA removed by using the TURBO-DNA-free kit (Ambion Inc.).
+cDNA libraries were constructed by standard methods (Illumina TruSeq mRNA stranded kit) with index adapters (Illumina TruSeq indexes).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Human human embryonic stem cell derived trophoblast
+    </Description>
+    <Data-Processing>
+Initial base calling and quality filtering of the mRNA-seq reads generated with the Illumina analysis pipeline (fastQ format) were performed with the FastxToolkit (http://hannonlab.cshl.edu/fastx_toolkit/) and adapters trimmed by using CutAdapt (https://cutadapt.readthedocs.org/en/stable/).
+Reads that mapped either to the human mitochondrial genome or to the internal Phix standard were removed through use of Bowtie software (http://bowtie-bio.sourceforge.net/index.shtml).
+Reads were mapped (TopHat v2.0.13; http://ccb.jhu.edu/software/tophat/index.shtml) to the reference genome (from Ensembl, v78; http://www.ensembl.org/index.html; Homo_sapiens.GRCh38.dna.primary assembly.fa with Homo_sapiens.GRCh38.78.gtf as annotation).
+Tests for differential expression were made by using cuffdiff v2.2.1. Uniquely mapped reads were counted with htseq-count v.011.1.
+Gene expression levels were calculated in FPKM, considering gene length as a sum of all exonic nonoverlapping sequences of all isoforms of a given gene.
+Assembly: GRCh38
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18202682" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31551071" />
+  </Sample>
+
+  <Sample iid="GSM7091568">
+    <Status database="GEO">
+      <Submission-Date>2023-03-10</Submission-Date>
+      <Release-Date>2023-03-13</Release-Date>
+      <Last-Update-Date>2023-03-13</Last-Update-Date>
+    </Status>
+    <Title>VTCN1 Knocked down 24h, replicate 3, RNAseq</Title>
+    <Accession database="GEO">GSM7091568</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human human embryonic stem cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Human human embryonic stem cell
+      </Characteristics>
+      <Characteristics tag="cell type">
+VTCN1 knockdown
+      </Characteristics>
+      <Characteristics tag="genotype">
+H1, WA01
+      </Characteristics>
+      <Characteristics tag="treatment">
+BMP4, A83-01 and PD173074 treatment
+      </Characteristics>
+      <Characteristics tag="time">
+Day 4
+      </Characteristics>
+      <Treatment-Protocol>
+For small interfering RNA (siRNA)-mediated knockdown of VTCN1, differentiated hESCs were transfected with either a VTCN1 human siRNA oligo duplex (Origene, SR312516, 10nM) or a control, Trilencer-27 Universal scrambled negative control siRNA duplex (Origene, SR30004, 10 nM) on BAP treatment d 3 by using Lipofectamine 2000 (Invitrogen). After 6 h, the medium was replaced with BAP medium.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Human ESCs (H1, WA01) were cultured in Matrigel (BD Bioscience)-coated, six-well tissue culture plates (Thermo Scientific) under an atmosphere of 5% (vol/vol) CO2/air at 37 °C in mTeSR1 medium (STEMCELL Technologies). The culture medium was changed daily and the cells were passaged every 5-6 days. The method for TB differentiation has been described previously[19]. Briefly, on the day after passaging onto Matrigel-coated dishes at 1.2 × 104 cells/cm2, the culture medium was changed to DMEM/F-12 medium (Thermo Scientific) with knock-out serum replacement (KOSR, Invitrogen) that had been conditioned by mouse embryonic fibroblasts (MEF) and supplemented with FGF2 (4 ng/mL).  After 24 h, the conditioned medium was replaced with daily changes of nonconditioned DME/F12/KOSR medium lacking FGF2, but containing BMP4 (10 ng/mL), A83-01 (1 μM), and PD173074 (0.1 μM) (BAP treatment) for up to 8 days. Control cultures were maintained in conditioned medium containing 4 ng/mL FGF2.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was obtained from VTCN1 knock down or negative control siRNA transfected cells 24 h, 48 h and 72 h after transfection. RNA was extracted in STAT60 containing 1-bromo-3-chloro-propane (Sigma-Aldrich), and DNA removed by using the TURBO-DNA-free kit (Ambion Inc.).
+cDNA libraries were constructed by standard methods (Illumina TruSeq mRNA stranded kit) with index adapters (Illumina TruSeq indexes).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Human human embryonic stem cell derived trophoblast
+    </Description>
+    <Data-Processing>
+Initial base calling and quality filtering of the mRNA-seq reads generated with the Illumina analysis pipeline (fastQ format) were performed with the FastxToolkit (http://hannonlab.cshl.edu/fastx_toolkit/) and adapters trimmed by using CutAdapt (https://cutadapt.readthedocs.org/en/stable/).
+Reads that mapped either to the human mitochondrial genome or to the internal Phix standard were removed through use of Bowtie software (http://bowtie-bio.sourceforge.net/index.shtml).
+Reads were mapped (TopHat v2.0.13; http://ccb.jhu.edu/software/tophat/index.shtml) to the reference genome (from Ensembl, v78; http://www.ensembl.org/index.html; Homo_sapiens.GRCh38.dna.primary assembly.fa with Homo_sapiens.GRCh38.78.gtf as annotation).
+Tests for differential expression were made by using cuffdiff v2.2.1. Uniquely mapped reads were counted with htseq-count v.011.1.
+Gene expression levels were calculated in FPKM, considering gene length as a sum of all exonic nonoverlapping sequences of all isoforms of a given gene.
+Assembly: GRCh38
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18202683" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31551072" />
+  </Sample>
+
+  <Series iid="GSE227094">
+    <Status database="GEO">
+      <Submission-Date>2023-03-10</Submission-Date>
+      <Release-Date>2023-03-13</Release-Date>
+      <Last-Update-Date>2023-03-13</Last-Update-Date>
+    </Status>
+    <Title>The immune checkpoint molecule, B7-H4/VTCN1, guides differentiation and suppresses proinflammatory responses and MHC class I expression in an embryonic stem cell-derived  model of primitive human trophoblast I</Title>
+    <Accession database="GEO">GSE227094</Accession>
+    <Summary>
+VTCN1/B7-H4 is expressed in human embryonic stem cells (hESC) to an in vitro model of primitive trophoblast (TB) and first trimester but not term human placenta and that primitive trophoblast may be uniquely susceptible to certain pathogens.
+    </Summary>
+    <Overall-Design>
+RNA-seq was performed on hESC derived trophoblast cells at 24, 48 and 72 h after VTCN1/B7H4 KD to better define pathways regulated by VTCN1/B7H4. GSM7091566 has no raw data.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7091563" />
+    <Sample-Ref ref="GSM7091564" />
+    <Sample-Ref ref="GSM7091565" />
+    <Sample-Ref ref="GSM7091566" />
+    <Sample-Ref ref="GSM7091567" />
+    <Sample-Ref ref="GSM7091568" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE227nnn/GSE227094/suppl/GSE227094_VTCN1-3_24newcountj-mat.csv.gz
+    </Supplementary-Data>
+  </Series>
+
+</MINiML>

@@ -1,0 +1,1544 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Yosef</First><Last>Buganim</Last></Person>
+    <Email>yossib@ekmd.huji.ac.il</Email>
+    <Phone>(+972)-2-6757075</Phone>
+    <Laboratory>Buganim Lab</Laboratory>
+    <Department>Department of Developmental Biology and Cancer Research</Department>
+    <Organization>The Hebrew University</Organization>
+    <Address>
+      <Line>Hadassah Medical School</Line>
+      <City>Jerusalem</City>
+      <Zip-Code>91120</Zip-Code>
+      <Country>Israel</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Moriyah</First><Last>Naama</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Ahmed</First><Last>Radwan</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Valery</First><Last>Zayat</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Shulamit</First><Last>Sebban</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL18573">
+    <Status database="GEO">
+      <Submission-Date>2014-04-15</Submission-Date>
+      <Release-Date>2014-04-15</Release-Date>
+      <Last-Update-Date>2019-03-26</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL18573</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5516207">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E2_rep1</Title>
+    <Accession database="GEO">GSM5516207</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Blastocyst-derived trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516207/suppl/GSM5516207_hbdTSC_E2_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749740" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731214" />
+  </Sample>
+
+  <Sample iid="GSM5516208">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E2_rep2</Title>
+    <Accession database="GEO">GSM5516208</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Blastocyst-derived trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516208/suppl/GSM5516208_hbdTSC_E2_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749741" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731215" />
+  </Sample>
+
+  <Sample iid="GSM5516209">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E9_rep1</Title>
+    <Accession database="GEO">GSM5516209</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Blastocyst-derived trophoblast stem cells, line #9
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516209/suppl/GSM5516209_hbdTSC_E9_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749742" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731216" />
+  </Sample>
+
+  <Sample iid="GSM5516210">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hbdTSC_E9_rep2</Title>
+    <Accession database="GEO">GSM5516210</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Blastocyst-derived trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Blastocyst-derived trophoblast stem cells, line #9
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516210/suppl/GSM5516210_hbdTSC_E9_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749743" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731217" />
+  </Sample>
+
+  <Sample iid="GSM5516211">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hESCs_rep1</Title>
+    <Accession database="GEO">GSM5516211</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Embryonic stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Embryonic stem cells
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516211/suppl/GSM5516211_hESCs_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749744" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731218" />
+  </Sample>
+
+  <Sample iid="GSM5516212">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hESCs_rep2</Title>
+    <Accession database="GEO">GSM5516212</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Embryonic stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Embryonic stem cells
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516212/suppl/GSM5516212_hESCs_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749745" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731219" />
+  </Sample>
+
+  <Sample iid="GSM5516213">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hiPSC_rep1</Title>
+    <Accession database="GEO">GSM5516213</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced pluripotent stem cells
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516213/suppl/GSM5516213_hiPSC_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749746" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731220" />
+  </Sample>
+
+  <Sample iid="GSM5516214">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>hiPSC_rep2</Title>
+    <Accession database="GEO">GSM5516214</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced pluripotent stem cells
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516214/suppl/GSM5516214_hiPSC_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749747" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731221" />
+  </Sample>
+
+  <Sample iid="GSM5516215">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hFF_rep1</Title>
+    <Accession database="GEO">GSM5516215</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human foreskin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Foreskin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516215/suppl/GSM5516215_KEN_hFF_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749748" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731222" />
+  </Sample>
+
+  <Sample iid="GSM5516216">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hFF_rep2</Title>
+    <Accession database="GEO">GSM5516216</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human foreskin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Foreskin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516216/suppl/GSM5516216_KEN_hFF_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749749" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731223" />
+  </Sample>
+
+  <Sample iid="GSM5516217">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_fib_rep1</Title>
+    <Accession database="GEO">GSM5516217</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human skin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Adult female skin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516217/suppl/GSM5516217_GM2_fibs_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749750" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731224" />
+  </Sample>
+
+  <Sample iid="GSM5516218">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_fib_rep2</Title>
+    <Accession database="GEO">GSM5516218</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human skin fibroblasts</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Adult female skin fibroblasts
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516218/suppl/GSM5516218_GM2_fibs_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749751" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731225" />
+  </Sample>
+
+  <Sample iid="GSM5516219">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C1_rep1</Title>
+    <Accession database="GEO">GSM5516219</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #1
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516219/suppl/GSM5516219_KEN_hiTSC_C1_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749752" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731226" />
+  </Sample>
+
+  <Sample iid="GSM5516220">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C1_rep2</Title>
+    <Accession database="GEO">GSM5516220</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #1
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516220/suppl/GSM5516220_KEN_hiTSC_C1_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749753" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731227" />
+  </Sample>
+
+  <Sample iid="GSM5516221">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C4_rep1</Title>
+    <Accession database="GEO">GSM5516221</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #4
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516221/suppl/GSM5516221_KEN_hiTSC_C4_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749754" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731228" />
+  </Sample>
+
+  <Sample iid="GSM5516222">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C4_rep2</Title>
+    <Accession database="GEO">GSM5516222</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #4
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516222/suppl/GSM5516222_KEN_hiTSC_C4_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749755" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731229" />
+  </Sample>
+
+  <Sample iid="GSM5516223">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C7_rep1</Title>
+    <Accession database="GEO">GSM5516223</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #7
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516223/suppl/GSM5516223_KEN_hiTSC_C7_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749756" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731230" />
+  </Sample>
+
+  <Sample iid="GSM5516224">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_hiTSC_C7_rep2</Title>
+    <Accession database="GEO">GSM5516224</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #7
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516224/suppl/GSM5516224_KEN_hiTSC_C7_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749757" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731231" />
+  </Sample>
+
+  <Sample iid="GSM5516225">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>PCS_hiTSC_C11_rep1</Title>
+    <Accession database="GEO">GSM5516225</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #11
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516225/suppl/GSM5516225_PCS_hiTSC_C11_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749758" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731232" />
+  </Sample>
+
+  <Sample iid="GSM5516226">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>PCS_hiTSC_C11_rep2</Title>
+    <Accession database="GEO">GSM5516226</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #11
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516226/suppl/GSM5516226_PCS_hiTSC_C11_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749759" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731233" />
+  </Sample>
+
+  <Sample iid="GSM5516227">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C13_rep1</Title>
+    <Accession database="GEO">GSM5516227</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #13
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516227/suppl/GSM5516227_GM2_hiTSCs_C13_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749760" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731234" />
+  </Sample>
+
+  <Sample iid="GSM5516228">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C13_rep2</Title>
+    <Accession database="GEO">GSM5516228</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #13
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516228/suppl/GSM5516228_GM2_hiTSCs_C13_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749713" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731235" />
+  </Sample>
+
+  <Sample iid="GSM5516229">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C15_rep1</Title>
+    <Accession database="GEO">GSM5516229</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #15
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516229/suppl/GSM5516229_GM2_hiTSCs_C15_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749714" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731236" />
+  </Sample>
+
+  <Sample iid="GSM5516230">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C15_rep2</Title>
+    <Accession database="GEO">GSM5516230</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #15
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516230/suppl/GSM5516230_GM2_hiTSCs_C15_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749715" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731237" />
+  </Sample>
+
+  <Sample iid="GSM5516231">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C16_rep1</Title>
+    <Accession database="GEO">GSM5516231</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #16
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516231/suppl/GSM5516231_GM2_hiTSCs_C16_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749716" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731238" />
+  </Sample>
+
+  <Sample iid="GSM5516232">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>GM2_hiTSCs_C16_rep2</Title>
+    <Accession database="GEO">GSM5516232</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Induced trophoblast stem cells, line #16
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516232/suppl/GSM5516232_GM2_hiTSCs_C16_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749717" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731239" />
+  </Sample>
+
+  <Sample iid="GSM5516233">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_OSKM_hiTSC_C1_rep1</Title>
+    <Accession database="GEO">GSM5516233</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+OSKM-Induced trophoblast stem cells, line #1
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516233/suppl/GSM5516233_KEN_OSKM_hiTSC_C1_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749718" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731240" />
+  </Sample>
+
+  <Sample iid="GSM5516234">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_OSKM_hiTSC_C1_rep2</Title>
+    <Accession database="GEO">GSM5516234</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+OSKM-Induced trophoblast stem cells, line #1
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516234/suppl/GSM5516234_KEN_OSKM_hiTSC_C1_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749719" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731241" />
+  </Sample>
+
+  <Sample iid="GSM5516235">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_OSKM_hiTSC_C2_rep1</Title>
+    <Accession database="GEO">GSM5516235</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+OSKM-Induced trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516235/suppl/GSM5516235_KEN_OSKM_hiTSC_C2_rep1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749720" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731242" />
+  </Sample>
+
+  <Sample iid="GSM5516236">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-02-21</Last-Update-Date>
+    </Status>
+    <Title>KEN_OSKM_hiTSC_C2_rep2</Title>
+    <Accession database="GEO">GSM5516236</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced trophoblast stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+OSKM-Induced trophoblast stem cells, line #2
+      </Characteristics>
+      <Growth-Protocol>
+hiTSC and hbdTSC cells were grown on a layer of Mitomycin C-treated mouse embryonic fibroblast (MEF) feeder cells and cultured in human TSC medium (Okae et al, 2018). HFFs were grown in DMEM containing 10%FBS, 1% L-glutamine and 1% penicillin-streptomycin. hESCs and hiPSCs were grown in human embryonic stem cell (hES) medium comprised of Knockout DMEM containing 15% KnockOut serum replacement, 0.1 mM 2-mercaptoethanol, 1% L-glutamine, 1% non-essential amino acids and 1% Penicillin-Streptomycin, supplemented with freshly added 4ng/ml bFGF.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the Macherey-Nagel RNA NucleoSpin kit (Ornat)
+mRNA libraries were prepared using the SENSE mRNA-seq library prep kit V2 (Lexogen)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw reads were quality-trimmed and adapters removed using trim_galore (version 0.6.5)
+The processed fastq files were mapped to the mouse transcriptome and genome using HISAT2 (v2.1.0). The genome version was GRCh38.
+Quantification was done using htseq-count (version 0.13.5)
+Differential analysis was done using the R package DESeq2  (version 1.28.1)
+Genome_build: GRCh38
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5516nnn/GSM5516236/suppl/GSM5516236_KEN_OSKM_hiTSC_C2_rep2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20749721" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11731243" />
+  </Sample>
+
+  <Series iid="GSE182014">
+    <Status database="GEO">
+      <Submission-Date>2021-08-12</Submission-Date>
+      <Release-Date>2023-02-21</Release-Date>
+      <Last-Update-Date>2023-07-24</Last-Update-Date>
+    </Status>
+    <Title>Pluripotency-Independent Induction of Human Trophoblast Stem Cells from Fibroblasts [RNA-Seq]</Title>
+    <Accession database="GEO">GSE182014</Accession>
+    <Pubmed-ID>37291192</Pubmed-ID>
+    <Web-Link>https://doi.org/10.1101/2021.11.10.468044</Web-Link>
+    <Summary>
+Transcription profile analysis revealed similarity/dissimilarity between human blastocyst derived trophoblast stem cells (hbdTSCss), human induced trophoblast stem cells (hiTSCs), human foreskin fibroblasts (HFFs) and pluripotent stem cells (hESCs, hiPSCs)
+    </Summary>
+    <Overall-Design>
+HFFs reprogrammed into hiTSC lines by transient ectopic expression of GATA3, OCT4, KLF4, MYC (GOKM) were subjected to RNA-seq, along with samples of HFFs, hbdTSCss, hESCs and hiPSCs
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib1" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5516207" />
+    <Sample-Ref ref="GSM5516208" />
+    <Sample-Ref ref="GSM5516209" />
+    <Sample-Ref ref="GSM5516210" />
+    <Sample-Ref ref="GSM5516211" />
+    <Sample-Ref ref="GSM5516212" />
+    <Sample-Ref ref="GSM5516213" />
+    <Sample-Ref ref="GSM5516214" />
+    <Sample-Ref ref="GSM5516215" />
+    <Sample-Ref ref="GSM5516216" />
+    <Sample-Ref ref="GSM5516217" />
+    <Sample-Ref ref="GSM5516218" />
+    <Sample-Ref ref="GSM5516219" />
+    <Sample-Ref ref="GSM5516220" />
+    <Sample-Ref ref="GSM5516221" />
+    <Sample-Ref ref="GSM5516222" />
+    <Sample-Ref ref="GSM5516223" />
+    <Sample-Ref ref="GSM5516224" />
+    <Sample-Ref ref="GSM5516225" />
+    <Sample-Ref ref="GSM5516226" />
+    <Sample-Ref ref="GSM5516227" />
+    <Sample-Ref ref="GSM5516228" />
+    <Sample-Ref ref="GSM5516229" />
+    <Sample-Ref ref="GSM5516230" />
+    <Sample-Ref ref="GSM5516231" />
+    <Sample-Ref ref="GSM5516232" />
+    <Sample-Ref ref="GSM5516233" />
+    <Sample-Ref ref="GSM5516234" />
+    <Sample-Ref ref="GSM5516235" />
+    <Sample-Ref ref="GSM5516236" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE182nnn/GSE182014/suppl/GSE182014_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE182017" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA754181" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP332316" />
+  </Series>
+
+</MINiML>

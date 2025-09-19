@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Vincent</First><Last>Pasque</Last></Person>
+    <Email>vincent.pasque@kuleuven.be</Email>
+    <Department>Development and Regeneration</Department>
+    <Organization>KU Leuven</Organization>
+    <Address>
+      <Line>Herestraat 49 bus 804</Line>
+      <City>Leuven</City>
+      <Postal-Code>3000</Postal-Code>
+      <Country>Belgium</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL18573">
+    <Status database="GEO">
+      <Submission-Date>2014-04-15</Submission-Date>
+      <Release-Date>2014-04-15</Release-Date>
+      <Last-Update-Date>2019-03-26</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL18573</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5742999">
+    <Status database="GEO">
+      <Submission-Date>2021-12-20</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Naive_primed_D30ASECRiAV_10XscATACseq</Title>
+    <Accession database="GEO">GSM5742999</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Primed and naive hPSCs, hTSCs and EXMCs.</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+mix of human naive pluripotent stem cells (H9 and Sigma), primed pluripotent stem cells (H9 and Sigma), trophoblast stem cells (Sigma) and extraembryonic mesoderm cells (Sigma), all samples were pooled in one.
+      </Characteristics>
+      <Characteristics tag="cell line">
+H9 (primed, and naive hPSCs) and Sigma (primed hPSCs, naive hPSCs, day 30 ASECRiAV conversion (trophobast stem cells and extraembryonic mesoderm cells)
+      </Characteristics>
+      <Growth-Protocol>
+growth protocol for human primed hPSCs: Human primed pluripotent stem cells (H9 hESCs and Sigma hiPSCs) were grown with or without feeder conditions as per the cell lines at normoxia conditions (5% CO2) and under humidified conditions at 37° C. In feeder-free conditions cells were cultured in pre-coated geltrex tissue culture treated plates in complete E8Flex medium (Stem cell technology). Cells were dissociated into smaller clumps every 5-6 days using veresene incubating 5 min at room temperature.
+growth protocol for human naive hPSCs: Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+growth protocol for human TSCs: Human naive to trophoblast and EXMC conversion were done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with Phosphate-buffered Saline (PBS), dissociated from culture dishes by Accutase (7 min. at 37°C) in hypoxic condition for naive hPSCs and TSCs and in normoxic condition for primed hPSCs, and finally diluted with DMEM. Single cell suspensions were filtered through a 40µm cell strainer, centrifuged at 200 rcf for 5 min., resuspended in PBS with 0.04% Bovine Serum Albumin (BSA), and counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). 100 000 – 1 000 000 cells were added to a 2-ml microcentrifuge tube and were centrifuged (300 rcf, 5min at 4°C). Supernatant was removed without disrupting the cell pellet and 100µl chilled lysis buffer (10 mM Tris-HCl (pH 7.4), 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20, 0.1% Nonidet P40 Substitute, 0.01% digitonin and 1% BSA) was added and mixed by pipetting 10 times. The microcentrifuge tube was incubated on ice for 4 min and then 1ml chilled wash buffer (10 mM Tris-HCl (pH 7.4), 10 mM NaCl, 3 mM MgCl2, 0.1% Tween-20 and 1% BSA) was added and mixed by pipetting 5 times. Nuclei were centrifuged (500 rcf, 5 min at 4°C) and the supernatant was removed without disrupting the nuclei pellet. Nuclei were resuspended in a chilled Diluted Nuclei Buffer (10x Genomics; 2000153) at 610-1540 nuclei per µl based on the starting number of cells. The nuclei concentration was determined using a NucleoCounter NC-100 (Chemometec). Nuclei were mixed using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2) and were immediately used to generate scATAC-seq libraries as described in the methods below.
+scATAC-seq libraries were prepared according to the Chromium Single Cell ATAC Reagent Kits User Guide (10x user guide; CG000168, Revision D). Nuclei were loaded onto the 10x Chromium Single Cell Platform (10x Genomics) at a concentration targeting 2000 nuclei, according to the manufacturer's protocol. Nuclei transposition, generation of gel beads in emulsion (GEMs), barcoding, GEM cleanup, and library construction were performed with the Chromium Single Cell ATAC Reagent Kits (v1 Chemistry) according to the manufacturer's protocol. Library Quality control and quantification was assessed using the Tapestation (Agilent) and Qubit 2.0 (ThermoFisher Scientific). The Library was sequenced on a Nextseq500 (Illumina) instrument using the MID output kit (Illumina) (20024904).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scATACseq
+    </Description>
+    <Data-Processing>
+Preprocessing of single-cell chromatin accessibility data was performed using the cellranger-atac pipeline (10X Genomics).
+Read filtering, alignment, cell and peak calling, as well as cell-by-peak count matrix generation were performed using the “count” option (cellranger-atac count) with default parameters.
+Downstream analysis was performed using Signac (Stuart et al. 2021). The count matrix was filtered for cells where at least 15% of all fragments fell within peaks, cells with less than 5% of fragments falling within blacklist regions, cells with less than 4% nucleosome signal, cells with greater than 2% enrichment for transcription start sites, and peaks with a minimum of 2500 fragments and a maximum of 20000 fragments.
+Cell clusters were identified using the FindNeighbors function with parameters “reduction = ‘lsi’, dims = 2:30’ and FindClusters function with parameters “algorithm = 3, resolution = 0.5”. Upon initial clustering, cluster-specific peaks were called with MACS2 using the function CallPeaks with parameters “group.by = ‘idents’”. These peaks were used to generate a final SIGNAC object which was used for all downstream analyses.
+Fragment counts were mapped to peaks using FeatureMatrix with parameters “process_n = 2000”.
+Filtering and clustering were performed on the new object as described above. Peaks were then filtered for mean accessibility, keeping all peaks with greater than 0.1 mean accessibility across cells.
+Genome_build: GRCh38
+Supplementary_files_format_and_content: Processed data files containing the ATAC-seq peaks for each cell are provided in BED format, and metadata pertaining to the cluster of each cell is provided in a tab-deliminated file. A loom file is also provided.
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="LOOM">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5742nnn/GSM5742999/suppl/GSM5742999_Naive_primed_D30TSC_EXMC_seurat_obj.loom.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5742nnn/GSM5742999/suppl/GSM5742999_cluster_label.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BED">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5742nnn/GSM5742999/suppl/GSM5742999_peaks.bed.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24247613" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13456583" />
+  </Sample>
+
+  <Sample iid="GSM5743008">
+    <Status database="GEO">
+      <Submission-Date>2021-12-20</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Naive_primed_D30ASECRiAV_10XscRNAseq</Title>
+    <Accession database="GEO">GSM5743008</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Primed and naive hPSCs, hTSCs and EXMCs.</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+mix of human naive pluripotent stem cells (H9 and Sigma), primed pluripotent stem cells (H9 and Sigma), trophoblast stem cells (Sigma) and extraembryonic mesoderm cells (Sigma), all samples were pooled in one.
+      </Characteristics>
+      <Characteristics tag="cell line">
+H9 (primed, and naive hPSCs) and Sigma (primed hPSCs, naive hPSCs, day 30 ASECRiAV conversion (trophobast stem cells and extraembryonic mesoderm cells)
+      </Characteristics>
+      <Growth-Protocol>
+growth protocol for human primed hPSCs: Human primed pluripotent stem cells (H9 hESCs and Sigma hiPSCs) were grown with or without feeder conditions as per the cell lines at normoxia conditions (5% CO2) and under humidified conditions at 37° C. In feeder-free conditions cells were cultured in pre-coated geltrex tissue culture treated plates in complete E8Flex medium (Stem cell technology). Cells were dissociated into smaller clumps every 5-6 days using veresene incubating 5 min at room temperature.
+growth protocol for human naive hPSCs: Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+growth protocol for human TSCs: Human naive to trophoblast and EXMC conversion were done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Genome_build: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary_files_format_and_content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv)
+Supplementary_files_format_and_content: scRNA-seq_annotation.csv
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5743nnn/GSM5743008/suppl/GSM5743008_scRNA-seq_annotation.csv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5743nnn/GSM5743008/suppl/GSM5743008_scRNA-seq_count_matrix.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24247618" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13456646" />
+  </Sample>
+
+  <Sample iid="GSM6191265">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D0_Naïve_PXGL_scRNAseq</Title>
+    <Accession database="GEO">GSM6191265</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+naive pluripotent stem cells
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+Human naive to trophoblast and EXMC conversion was done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv).
+Supplementary files format and content: loom files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28657020" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15449734" />
+  </Sample>
+
+  <Sample iid="GSM6191266">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D1_ASECRiAV_scRNAseq</Title>
+    <Accession database="GEO">GSM6191266</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+hTSCs and EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+Human naive to trophoblast and EXMC conversion was done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv).
+Supplementary files format and content: loom files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28657019" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15449735" />
+  </Sample>
+
+  <Sample iid="GSM6191267">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D2_ASECRiAV_scRNAseq</Title>
+    <Accession database="GEO">GSM6191267</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+hTSCs and EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+Human naive to trophoblast and EXMC conversion was done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv).
+Supplementary files format and content: loom files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28657018" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15449736" />
+  </Sample>
+
+  <Sample iid="GSM6191268">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D4_ASECRiAV_scRNAseq</Title>
+    <Accession database="GEO">GSM6191268</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+hTSCs and EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+Human naive to trophoblast and EXMC conversion was done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv).
+Supplementary files format and content: loom files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28657017" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15449737" />
+  </Sample>
+
+  <Sample iid="GSM6191269">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D8_ASECRiAV_scRNAseq</Title>
+    <Accession database="GEO">GSM6191269</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+hTSCs and EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+Human naive to trophoblast and EXMC conversion was done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv).
+Supplementary files format and content: loom files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28657016" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15449738" />
+  </Sample>
+
+  <Sample iid="GSM6191270">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D13_ASECRiAV_scRNAseq</Title>
+    <Accession database="GEO">GSM6191270</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+hTSCs and EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+Human naive to trophoblast and EXMC conversion was done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv).
+Supplementary files format and content: loom files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28657015" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15449739" />
+  </Sample>
+
+  <Sample iid="GSM6191271">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D18_ASECRiAV_scRNAseq</Title>
+    <Accession database="GEO">GSM6191271</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+hTSCs and EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+Human naive to trophoblast and EXMC conversion was done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv).
+Supplementary files format and content: loom files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28657014" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15449740" />
+  </Sample>
+
+  <Sample iid="GSM6191272">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D70_sortedEXMC_scRNAseq</Title>
+    <Accession database="GEO">GSM6191272</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Naive hPSCs (H9 hESCs and Sigma hiPSCs) were cultured on mitotically inactivated MEF feeders in 5% O2 and 5% CO2 incubator under humidified conditions at 37°C. All naive hPSCs were cultured in PXGL medium (Bredenkamp/Guo Stem cell reports 2019 (PMID: 31708477) which consists of 1:1 DMEM/F12 and Neurobasal, 0.5% N2-supplement, 1% B27-Supplement, 2 mM L-Glutamine, 0.1 mM β-mercaptoethanol, 1x penicillin-streptomycin, 1 μM PD0325901 (Axon Medchem and Wellcome-MRC Cambridge Stem Cell Institute), 2 μM XAV939 (Sigma), 2 μM Gö6983 (Tocris), 20 ng/mL human LIF (PeproTech and Wellcome-MRC Cambridge Stem Cell Institute) and 10 μM Y-27632 (Tocris and Cell Guidance Systems). Naive hPSCs were passaged every 4-5 days in a ratio 1:2 or 1:3 by single-cell dissociation with Accutase followed by filtering through a 40 μm cell strainer.
+Human naive to trophoblast and EXMC conversion was done using the following previously described protocol (Dong et al. 2020; Cinkornpumin et al. 2020). Naive hPSCs were seeded in such a way that expecting at least 90% confluency by Day 2 on mitomycin C treated MEFs after dissociating in single-cell using TryplE (for 15 min at 37°C) in their respective naive culture conditions supplemented with 10μM Y-27632. The very next day the media was switched from naive to trophoblast stem cell medium (Okae et al. 2018) consisting of DMEM/F12 (Gibco) supplemented with 0.3% BSA, 0.2% FBS, 1% Penicillin-streptomycin, 1% insulin-transferrin-selenium-ethanolamine-X 100 supplement, 1.5 μg/ml L-ascorbic acid, 0.5 μM A83-01, 1μM SB431542, 50ng/ml hEGF, 2uM CHIR99021, 0.8 mM Valproic acid, 0.1 mM β-mercapto-EtOH (Gibco) and 5 μM Y-27632. The medium was changed every two days supplemented with 5 μM Y-27632. From passage 1 onwards cultures were cultured and maintained on 5 μg/ml Collagen IV coated tissue culture treated plates in hypoxia conditions (5% O2 and 5% CO2) and passaged every 4 days in 1:3 or 1:6 splitting ratios.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv).
+Supplementary files format and content: loom files.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28657013" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15449741" />
+  </Sample>
+
+  <Sample iid="GSM6195592">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D6_RACL_scRNAseq</Title>
+    <Accession database="GEO">GSM6195592</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+Primitive endoderm and EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Human naive (Sigma hiPSCs) to primitive endoderm and naive extraembryonic endoderm (nXEN)  conversions were done using the following previously described protocol (Linneberg-Agerholm et al. 2019). Naïve human PSCs were seeded at a high density (split ratio of 1:1 or 2:1) directly in RACL medium, which is Roswell Park Memorial Institute 1640 medium (RPMI; Gibco, 218750-34) supplemented with 1 X GlutaMAX, 1 X B27 minus insulin (Gibco, A18956- 01), 1 % (v/v) Pen/Strep, 100 ng/mL Activin A (PeproTech, 120-14E), 3 μM CHIR99021 and 10 ng/ml recombinant human LIF onto fresh MMC-MEF feeders in hypoxia. Cells were kept in RACL medium for at least 7-8 days and medium was refreshed every day. After primitive endoderm cells reached confluency, they were dissociated with TrypLE or Accutase and re-plated onto fresh MMC-MEF feeders at a ratio of 1:2 to 1:4 in NACL medium, which is composed of N2B27 supplemented with 100 ng/mL Activin A, 3 μM CHIR99021, 10ng/ml recombinant human LIF and 10μM Y-27632. These nXEN cells were subcultivated every 4-7 days with TrypLE or Accutase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28660068" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15456294" />
+  </Sample>
+
+  <Sample iid="GSM6195593">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>D24_NACL_scRNAseq</Title>
+    <Accession database="GEO">GSM6195593</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Human induced pluripotent stem cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+XENs and EXMCs
+      </Characteristics>
+      <Characteristics tag="cell line">
+ICSIG-1 Sigma hiPSC line
+      </Characteristics>
+      <Growth-Protocol>
+Human naive (Sigma hiPSCs) to primitive endoderm and naive extraembryonic endoderm (nXEN)  conversions were done using the following previously described protocol (Linneberg-Agerholm et al. 2019). Naïve human PSCs were seeded at a high density (split ratio of 1:1 or 2:1) directly in RACL medium, which is Roswell Park Memorial Institute 1640 medium (RPMI; Gibco, 218750-34) supplemented with 1 X GlutaMAX, 1 X B27 minus insulin (Gibco, A18956- 01), 1 % (v/v) Pen/Strep, 100 ng/mL Activin A (PeproTech, 120-14E), 3 μM CHIR99021 and 10 ng/ml recombinant human LIF onto fresh MMC-MEF feeders in hypoxia. Cells were kept in RACL medium for at least 7-8 days and medium was refreshed every day. After primitive endoderm cells reached confluency, they were dissociated with TrypLE or Accutase and re-plated onto fresh MMC-MEF feeders at a ratio of 1:2 to 1:4 in NACL medium, which is composed of N2B27 supplemented with 100 ng/mL Activin A, 3 μM CHIR99021, 10ng/ml recombinant human LIF and 10μM Y-27632. These nXEN cells were subcultivated every 4-7 days with TrypLE or Accutase.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Cells were washed with 1X PBS before dissociation from the culture dish by TryplETM Express Enzyme (ThermoFisher, 12605-036) incubation for 8 minutes at 37°C. Single cell suspension was filtered through a Falcon 40 µm Cell Strainer and centrifuged at 200G for 5 min. After resuspension in 1X PBS with 0.04% BSA, the single cell suspension was counted with a Luna-FL automated Fluorescence Cell Counter (Logos Biosystems). TSCs were mixed with primed and naive hPSCs using the following ratio (H9 primed: Sigma primed: H9 naive: Sigma naive: Sigma TSCs = 1:1:1:1:2)
+Cells were loaded onto the 10X Chromium Single Cell Platform (10X Genomics) targeting 2000 cells (Next GEM Single Cell 3’ library and Gel Bead Kit v3.1) according to the manufacturer’s protocol (10x User Guide; CG000204, Revision D). Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT cleanup, complementary DNA amplification and library construction were all performed according to the manufacturer’s protocol. Individual sample quality was assessed using a Tapestation (Agilent). Qubit 2.0 (ThermoFisher Scientific) and KAPA Library Quantification Kit for Illumina Platform (KAPA Biosystems) were used for library quantification before pooling. The final library pool was sequenced on the NovaSeq6000 (Illumina) instrument using NovaSeq SP kit (Illumina) for 2 lanes of 100-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics scRNAseq
+    </Description>
+    <Data-Processing>
+Raw sequence reads were quality-checked using the FastQC software. The CellRanger version 4.0.0 was used to process, align and summarize unique molecular identifier (UMI) counts against the 10X Genomics pre-built human GRCh38 and mouse mm10 reference genome dataset (2020-A, July 7, 2020). Downstream analyses were performed on R using Seurat (v4.0.1) (Satija et al. 2015). Human cells were retained and mouse cells (MEFs) were filtered out by adjusting the number of counts per cell (nCount_RNA) and the number of mapped genes per cell (nFeature_RNA) to only keep cells that were mostly mapped to the human GRCh38 (hg38) genome. Cells with more than 25% of mitochondrial counts were filtered out. Count matrix was normalised with Seurat global-scaling normalization method “LogNormalize'' that normalizes the feature expression measurements for each cell by the total expression, multiplies this by a 10000 scale factor, and log-transforms the result.
+Assembly: Human GRCh38 (hg38) GENCODE v32/Ensembl 98 and mouse GRCm28 (mm10) GENCODE vM23/Ensembl 98 reference genome dataset (version 2020-A, July 7 2020).
+Supplementary files format and content: count matrix includes counts per gene per cell (.csv) and annotations describes (.csv)
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28660067" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15456295" />
+  </Sample>
+
+  <Series iid="GSE191286">
+    <Status database="GEO">
+      <Submission-Date>2021-12-20</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2024-03-03</Last-Update-Date>
+    </Status>
+    <Title>Modeling human extraembryonic mesoderm cells using naive pluripotent stem cells</Title>
+    <Accession database="GEO">GSE191286</Accession>
+    <Pubmed-ID>36055191</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the SubSeries listed below.
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Type>Genome binding/occupancy profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5742999" />
+    <Sample-Ref ref="GSM5743008" />
+    <Sample-Ref ref="GSM6191265" />
+    <Sample-Ref ref="GSM6191266" />
+    <Sample-Ref ref="GSM6191267" />
+    <Sample-Ref ref="GSM6191268" />
+    <Sample-Ref ref="GSM6191269" />
+    <Sample-Ref ref="GSM6191270" />
+    <Sample-Ref ref="GSM6191271" />
+    <Sample-Ref ref="GSM6191272" />
+    <Sample-Ref ref="GSM6195592" />
+    <Sample-Ref ref="GSM6195593" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE191nnn/GSE191286/suppl/GSE191286_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SuperSeries of" target="GSE191282" />
+    <Relation type="SuperSeries of" target="GSE191285" />
+    <Relation type="SuperSeries of" target="GSE204779" />
+    <Relation type="SuperSeries of" target="GSE204819" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA790842" />
+  </Series>
+
+</MINiML>

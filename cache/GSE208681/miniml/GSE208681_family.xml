@@ -1,0 +1,3830 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Noa</First><Last>Novershtern</Last></Person>
+    <Email>noa.novershtern@weizmann.ac.il</Email>
+    <Department>Molecular Genetics</Department>
+    <Organization>Weizmann Institute of Science</Organization>
+    <Address>
+      <Line>Weizmann Institute</Line>
+      <City>Rehovot</City>
+      <Postal-Code>7610001</Postal-Code>
+      <Country>Israel</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6215711">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 48hr, replicate 1</Title>
+    <Accession database="GEO">GSM6215711</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 48hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 48hr, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901992" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625500" />
+  </Sample>
+
+  <Sample iid="GSM6215712">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 48hr, replicate 2</Title>
+    <Accession database="GEO">GSM6215712</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 48hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 48hr, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901991" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625501" />
+  </Sample>
+
+  <Sample iid="GSM6215713">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 48hr, replicate 3</Title>
+    <Accession database="GEO">GSM6215713</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 48hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 48hr, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901990" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625502" />
+  </Sample>
+
+  <Sample iid="GSM6215714">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 72hr, replicate 1</Title>
+    <Accession database="GEO">GSM6215714</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 72hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 72hr, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901989" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625503" />
+  </Sample>
+
+  <Sample iid="GSM6215715">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 72hr, replicate 2</Title>
+    <Accession database="GEO">GSM6215715</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 72hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 72hr, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901988" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625504" />
+  </Sample>
+
+  <Sample iid="GSM6215716">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 72hr, replicate 3</Title>
+    <Accession database="GEO">GSM6215716</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 72hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 72hr, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901987" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625505" />
+  </Sample>
+
+  <Sample iid="GSM6215717">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 96hr, replicate 1</Title>
+    <Accession database="GEO">GSM6215717</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 96hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 96hr, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901986" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625506" />
+  </Sample>
+
+  <Sample iid="GSM6215718">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 96hr, replicate 2</Title>
+    <Accession database="GEO">GSM6215718</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 96hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 96hr, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901985" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625507" />
+  </Sample>
+
+  <Sample iid="GSM6215719">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 96hr, replicate 3</Title>
+    <Accession database="GEO">GSM6215719</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 96hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 96hr, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901984" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625508" />
+  </Sample>
+
+  <Sample iid="GSM6215720">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 5 days, replicate 1</Title>
+    <Accession database="GEO">GSM6215720</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 5 days, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901983" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625509" />
+  </Sample>
+
+  <Sample iid="GSM6215721">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 5 days, replicate 2</Title>
+    <Accession database="GEO">GSM6215721</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 5 days, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901982" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625510" />
+  </Sample>
+
+  <Sample iid="GSM6215722">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 5 days, replicate 3</Title>
+    <Accession database="GEO">GSM6215722</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 5 days, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901981" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625511" />
+  </Sample>
+
+  <Sample iid="GSM6215723">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 6 days, replicate 1</Title>
+    <Accession database="GEO">GSM6215723</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 6 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 6 days, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901980" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625512" />
+  </Sample>
+
+  <Sample iid="GSM6215724">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 6 days, replicate 2</Title>
+    <Accession database="GEO">GSM6215724</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 6 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 6 days, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901979" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625513" />
+  </Sample>
+
+  <Sample iid="GSM6215725">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 6 days, replicate 3</Title>
+    <Accession database="GEO">GSM6215725</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 6 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 6 days, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901978" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625514" />
+  </Sample>
+
+  <Sample iid="GSM6215726">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 7 days, replicate 1</Title>
+    <Accession database="GEO">GSM6215726</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 7 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 7 days, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901977" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625515" />
+  </Sample>
+
+  <Sample iid="GSM6215727">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 7 days, replicate 2</Title>
+    <Accession database="GEO">GSM6215727</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 7 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 7 days, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901976" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625516" />
+  </Sample>
+
+  <Sample iid="GSM6215728">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 7 days, replicate 3</Title>
+    <Accession database="GEO">GSM6215728</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 7 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 7 days, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901975" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625517" />
+  </Sample>
+
+  <Sample iid="GSM6215729">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 4 days DOX + 4days wo DOX , replicate 1</Title>
+    <Accession database="GEO">GSM6215729</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 4 days- 4Days TSC
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 8 days, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901974" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625518" />
+  </Sample>
+
+  <Sample iid="GSM6215730">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 4 days DOX + 4days wo DOX , replicate 2</Title>
+    <Accession database="GEO">GSM6215730</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 4 days- 4Days TSC
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 8 days, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901973" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625519" />
+  </Sample>
+
+  <Sample iid="GSM6215731">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 4 days DOX + 4days wo DOX , replicate 3</Title>
+    <Accession database="GEO">GSM6215731</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, 4 days- 4Days TSC
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 8 days, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901972" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625520" />
+  </Sample>
+
+  <Sample iid="GSM6215732">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Trophoblast Stem Cells, clone 2, passage 3, replicate 1</Title>
+    <Accession database="GEO">GSM6215732</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, passage 3 (12 days)
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Trophoblast Stem Cells, clone 2, passage 3, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901971" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625521" />
+  </Sample>
+
+  <Sample iid="GSM6215733">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Trophoblast Stem Cells, clone 2, passage 3, replicate 2</Title>
+    <Accession database="GEO">GSM6215733</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, passage 3 (12 days)
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Trophoblast Stem Cells, clone 2, passage 3, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901970" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625522" />
+  </Sample>
+
+  <Sample iid="GSM6215734">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Trophoblast Stem Cells, clone 2, passage 3, replicate 3</Title>
+    <Accession database="GEO">GSM6215734</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, passage 3 (12 days)
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Trophoblast Stem Cells, clone 2, passage 3, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901969" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625523" />
+  </Sample>
+
+  <Sample iid="GSM6215735">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Trophoblast Stem Cells, clone 3, passage 3, replicate 1</Title>
+    <Accession database="GEO">GSM6215735</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, passage 3 (12 days)
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Trophoblast Stem Cells, clone 3, passage 3, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901968" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625524" />
+  </Sample>
+
+  <Sample iid="GSM6215736">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Trophoblast Stem Cells, clone 3, passage 3, replicate 2</Title>
+    <Accession database="GEO">GSM6215736</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, passage 3 (12 days)
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Trophoblast Stem Cells, clone 3, passage 3, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901967" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625525" />
+  </Sample>
+
+  <Sample iid="GSM6215737">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Trophoblast Stem Cells, clone 3, passage 3, replicate 3</Title>
+    <Accession database="GEO">GSM6215737</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX, passage 3 (12 days)
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Trophoblast Stem Cells, clone 3, passage 3, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901966" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625526" />
+  </Sample>
+
+  <Sample iid="GSM6215738">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 48hr with LPA, replicate 1</Title>
+    <Accession database="GEO">GSM6215738</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 48hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 48hr with LPA, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901965" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625527" />
+  </Sample>
+
+  <Sample iid="GSM6215739">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 48hr with LPA, replicate 2</Title>
+    <Accession database="GEO">GSM6215739</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 48hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 48hr with LPA, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901964" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625528" />
+  </Sample>
+
+  <Sample iid="GSM6215740">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 48hr with LPA, replicate 3</Title>
+    <Accession database="GEO">GSM6215740</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 48hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 48hr with LPA, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901963" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625529" />
+  </Sample>
+
+  <Sample iid="GSM6215741">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 96hr with LPA, replicate 1</Title>
+    <Accession database="GEO">GSM6215741</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 96hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 96hr with LPA, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901962" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625530" />
+  </Sample>
+
+  <Sample iid="GSM6215742">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 96hr with LPA, replicate 2</Title>
+    <Accession database="GEO">GSM6215742</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 96hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 96hr with LPA, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901961" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625531" />
+  </Sample>
+
+  <Sample iid="GSM6215743">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3, 96hr with LPA, replicate 3</Title>
+    <Accession database="GEO">GSM6215743</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 96hr
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3, 96hr with LPA, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901960" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625532" />
+  </Sample>
+
+  <Sample iid="GSM6215744">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3,8 days with LPA, replicate 1</Title>
+    <Accession database="GEO">GSM6215744</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 8 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3,8 days with LPA, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901959" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625533" />
+  </Sample>
+
+  <Sample iid="GSM6215745">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3,8 days with LPA, replicate 2</Title>
+    <Accession database="GEO">GSM6215745</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 8 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3,8 days with LPA, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901958" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625534" />
+  </Sample>
+
+  <Sample iid="GSM6215746">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>iCdx2 Cells, clone 3,8 days with LPA, replicate 3</Title>
+    <Accession database="GEO">GSM6215746</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>iCdx2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed + induced Cdx2
+      </Characteristics>
+      <Characteristics tag="treatment">
+DOX+LPA, 8 days
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+iCdx2 Cells, clone 3,8 days with LPA, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901957" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625535" />
+  </Sample>
+
+  <Sample iid="GSM6215747">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells, clone 2, replicate 1</Title>
+    <Accession database="GEO">GSM6215747</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+BDF2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells, clone 2, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901956" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625536" />
+  </Sample>
+
+  <Sample iid="GSM6215748">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells, clone 2, replicate 2</Title>
+    <Accession database="GEO">GSM6215748</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+BDF2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells, clone 2, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901955" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625537" />
+  </Sample>
+
+  <Sample iid="GSM6215749">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells, clone 2, replicate 3</Title>
+    <Accession database="GEO">GSM6215749</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+BDF2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells, clone 2, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901954" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625538" />
+  </Sample>
+
+  <Sample iid="GSM6215750">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells, clone 5, replicate 1</Title>
+    <Accession database="GEO">GSM6215750</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+BDF2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells, clone 5, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901953" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625539" />
+  </Sample>
+
+  <Sample iid="GSM6215751">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells, clone 5, replicate 2</Title>
+    <Accession database="GEO">GSM6215751</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+BDF2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells, clone 5, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901952" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625540" />
+  </Sample>
+
+  <Sample iid="GSM6215752">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells, clone 5, replicate 3</Title>
+    <Accession database="GEO">GSM6215752</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+BDF2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells, clone 5, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901951" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625541" />
+  </Sample>
+
+  <Sample iid="GSM6215753">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells from blastocyst, replicate 1</Title>
+    <Accession database="GEO">GSM6215753</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+129S1
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells from blastocyst, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901950" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625542" />
+  </Sample>
+
+  <Sample iid="GSM6215754">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells from blastocyst, replicate 2</Title>
+    <Accession database="GEO">GSM6215754</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+129S1
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells from blastocyst, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901949" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625543" />
+  </Sample>
+
+  <Sample iid="GSM6215755">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Established Trophoblast Stem Cells from blastocyst, replicate 3</Title>
+    <Accession database="GEO">GSM6215755</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+129S1
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Established Trophoblast Stem Cells from blastocyst, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901948" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625544" />
+  </Sample>
+
+  <Sample iid="GSM6215756">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>KH2 Embryonic Stem Cells in 2iLIF, replicate 1</Title>
+    <Accession database="GEO">GSM6215756</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>KH2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+KH2 Embryonic Stem Cells, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901947" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625545" />
+  </Sample>
+
+  <Sample iid="GSM6215757">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>KH2 Embryonic Stem Cells in 2iLIF, replicate 2</Title>
+    <Accession database="GEO">GSM6215757</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>KH2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+KH2 Embryonic Stem Cells, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901946" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625546" />
+  </Sample>
+
+  <Sample iid="GSM6215758">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>KH2 Embryonic Stem Cells in 2iLIF, replicate 3</Title>
+    <Accession database="GEO">GSM6215758</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>KH2 ESCs</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mixed
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+KH2 Embryonic Stem Cells, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901945" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625547" />
+  </Sample>
+
+  <Sample iid="GSM6215759">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Mouse Embryonic Fibroblasts, replicate 1</Title>
+    <Accession database="GEO">GSM6215759</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MEF</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+ICR
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Mouse Embryonic Fibroblasts, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901944" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625548" />
+  </Sample>
+
+  <Sample iid="GSM6215760">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Mouse Embryonic Fibroblasts, replicate 2</Title>
+    <Accession database="GEO">GSM6215760</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MEF</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+ICR
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Mouse Embryonic Fibroblasts, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901943" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625549" />
+  </Sample>
+
+  <Sample iid="GSM6215761">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Mouse Embryonic Fibroblasts, replicate 3</Title>
+    <Accession database="GEO">GSM6215761</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>MEF</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+ICR
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Mouse Embryonic Fibroblasts, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901942" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625550" />
+  </Sample>
+
+  <Sample iid="GSM6215762">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Extra-embryonic Endoderm Stem Cells, replicate 1</Title>
+    <Accession database="GEO">GSM6215762</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Extra-embryonic Endoderm Stem Cells (XEN)</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+ICR
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Extra-embryonic Endoderm Stem Cells, replicate 1
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901941" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625551" />
+  </Sample>
+
+  <Sample iid="GSM6215763">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Extra-embryonic Endoderm Stem Cells, replicate 2</Title>
+    <Accession database="GEO">GSM6215763</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Extra-embryonic Endoderm Stem Cells (XEN)</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+ICR
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Extra-embryonic Endoderm Stem Cells, replicate 2
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901940" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625552" />
+  </Sample>
+
+  <Sample iid="GSM6215764">
+    <Status database="GEO">
+      <Submission-Date>2022-06-07</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-07-31</Last-Update-Date>
+    </Status>
+    <Title>Extra-embryonic Endoderm Stem Cells, replicate 3</Title>
+    <Accession database="GEO">GSM6215764</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Extra-embryonic Endoderm Stem Cells (XEN)</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+ICR
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for different time points decribed in each sample. Some samples were treated with LPA as indicated.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Cell were cultured on MEFs in humdified 5%Co2 , 21% O2 incubator
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNeasy mini RNA kit
+Bulk MARS-seq
+3 primed library
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Extra-embryonic Endoderm Stem Cells, replicate 3
+    </Description>
+    <Data-Processing>
+Samples were analyzed using UTAP software (Kohen et al. 2019). Reads were trimmed using CutAdapt (Martin 2011) (parameters: -a ADAPTER1 -a “A{10}” -a “T{10}” -A “A{10}” -A “T{10}” –times 2 -u 3 -u -3 -q 20 -m 25).
+Reads were mapped to genome mm10 using STAR (Dobin et al. 2013) v2.4.2a (parameters: –alignEndsType EndToEnd, –outFilterMismatchNoverLmax 0.05, –twopassMode Basic - alignSoftClipAtReferenceEnds No).
+Sample counting was done using STAR, quantifying mm10 RefSeq annotated genes. Further analysis was done for genes having a minimum of five reads in at least one sample. Normalization of the counts and differential expression analysis was performed using DESeq2 (Love et al. 2014) with the parameters betaPrior = true, cooksCutoff = false, and independentFiltering = false.
+Assembly: mm10
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28901939" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15625553" />
+  </Sample>
+
+  <Sample iid="GSM6372141">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>2 pooled synthetic-embryos, ex utero, from 3-days induced iCdx2 cells, replicate 1</Title>
+    <Accession database="GEO">GSM6372141</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse synthetic-embryo (sEmbryo)</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+synthetic-embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+ex utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+ESCs, iGata4, iCdx2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Cdx2-3d-2pooled
+2 pooled synthetic embryos, ex utero, from 3-days induced iCdx2 cells.
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879323" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958198" />
+  </Sample>
+
+  <Sample iid="GSM6372142">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>A single synthetic-embryo, ex utero, from 3-days induced iCdx2 cells, replicate 2</Title>
+    <Accession database="GEO">GSM6372142</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse synthetic-embryo (sEmbryo)</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+synthetic-embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+ex utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+ESCs, iGata4, iCdx2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Cdx2-3d-1emb
+synthetic embryo, ex utero, from 3-days induced iCdx2 cells.
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879322" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958199" />
+  </Sample>
+
+  <Sample iid="GSM6372143">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>2 pooled synthetic-embryos, ex utero, from 10-days induced iCdx2 cells, replicate 1</Title>
+    <Accession database="GEO">GSM6372143</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse synthetic-embryo (sEmbryo)</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+synthetic-embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+ex utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+ESCs, iGata4, iCdx2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Cdx2-10d-2pooled-r1
+2 pooled synthetic-embryos, ex utero, from 10-days induced iCdx2 cells.
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879321" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958200" />
+  </Sample>
+
+  <Sample iid="GSM6372144">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>2 pooled synthetic-embryos, ex utero, from 10-days induced iCdx2 cells, replicate 2</Title>
+    <Accession database="GEO">GSM6372144</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse synthetic-embryo (sEmbryo)</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+synthetic-embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+ex utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+ESCs, iGata4, iCdx2
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Cdx2-10d-2pooled-r2
+2 pooled synthetic-embryos, ex utero, from 10-days induced iCdx2 cells.
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879320" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958201" />
+  </Sample>
+
+  <Sample iid="GSM6372145">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>2 pooled synthetic-embryos, ex utero, from established early passage embryo derived TSCs (eTSC)</Title>
+    <Accession database="GEO">GSM6372145</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse synthetic-embryo (sEmbryo)</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+synthetic-embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+ex utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+ESCs, iGata4, eTSCs
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+TSCbl-2pooled
+2 pooled synthetic-embryos, ex utero, from established embryo derived early passage TSCs (eTSCs).
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879319" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958202" />
+  </Sample>
+
+  <Sample iid="GSM6372146">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>A single In-utero natural embryo, E8.5, replicate 1</Title>
+    <Accession database="GEO">GSM6372146</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse embryo</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+in utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+natural
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+InUtE85-1emb-r1
+A single in-utero embryo (natural), E8.5.
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879318" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958203" />
+  </Sample>
+
+  <Sample iid="GSM6372147">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>A single In-utero natural embryo, E8.5, replicate 2</Title>
+    <Accession database="GEO">GSM6372147</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse embryo</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+in utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+natural
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+InUtE85-1emb-r2
+A single in-utero embryo (natural), E8.5.
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879317" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958204" />
+  </Sample>
+
+  <Sample iid="GSM6372148">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>A single In-utero natural embryo, E8.5, replicate 4</Title>
+    <Accession database="GEO">GSM6372148</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse embryo</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+in utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+natural
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+InUtE85-1emb-r4
+A single in-utero natural embryo, E8.5.
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879316" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958205" />
+  </Sample>
+
+  <Sample iid="GSM6372149">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>2 pooled In-utero natural embryos, E8.5</Title>
+    <Accession database="GEO">GSM6372149</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse embryo</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+in utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+natural
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+InUtE85-2pooled
+2 pooled In-utero natural embryos, E8.5.
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879315" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958206" />
+  </Sample>
+
+  <Sample iid="GSM6372150">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>A single In-utero natural embryo, E8.5, replicate 5</Title>
+    <Accession database="GEO">GSM6372150</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse embryo</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+in utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+natural
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+InUtE85-1emb-r5
+A single In-utero natural embryo, E8.5, replicate 5 (same as GSM4498732).
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="Reanalysis of" target="GSM4498732" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879314" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958207" />
+  </Sample>
+
+  <Sample iid="GSM6372151">
+    <Status database="GEO">
+      <Submission-Date>2022-07-21</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2022-10-21</Last-Update-Date>
+    </Status>
+    <Title>3 pooled In-utero natural embryos, E8.5</Title>
+    <Accession database="GEO">GSM6372151</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>E8.5 mouse embryo</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+embryo
+      </Characteristics>
+      <Characteristics tag="embryo growth condition">
+in utero
+      </Characteristics>
+      <Characteristics tag="embryonic day">
+E8.5
+      </Characteristics>
+      <Characteristics tag="original cells">
+natural
+      </Characteristics>
+      <Treatment-Protocol>
+Doxycycline treatment for sEmbryos.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Ex utero culture protocol for sEmbryos. E8.5 in utero control were dissected and used for experiment directly.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA extracted according to 10x Genomics Chromium v3.1 Dual Index system kit instructions.
+10x Genomics Chromium v3.1 Dual Index system (5000 cell target cell recovery).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+InUtE85-3pooled
+3 pooled In-utero natural embryos, E8.5 (same as GSM4498733).
+Single-cell RNA-seq
+    </Description>
+    <Data-Processing>
+Demultiplexing was done with cellranger/3.1.0 mkfastq.
+Alignment and quantification of single cell features was done with cellranger counts.
+Aggregation of multiple GEM wells was done using- cellranger aggr.
+Cells with under 200 expressing genes, over 4000 expressing genes or over 10% mitochondrial gene expression were filtered out for the rest of the analysis.
+Assembly: mm10
+Supplementary files format and content: Processed data is divided into three different matrices created using Seurat 3.0: raw_counts.csv - contains raw counts of all genes across all cells, normalized_counts.csv - contains normalized counts of all genes across all cells, cell2sample.csv - contains information of each of the cells.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="Reanalysis of" target="GSM4498733" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29879313" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17958208" />
+  </Sample>
+
+  <Series iid="GSE208681">
+    <Status database="GEO">
+      <Submission-Date>2022-07-20</Submission-Date>
+      <Release-Date>2022-07-31</Release-Date>
+      <Last-Update-Date>2023-08-17</Last-Update-Date>
+    </Status>
+    <Title>Ex Utero Development of Post-Gastrulation Synthetic Embryos Generated Solely from Naïve Pluripotent Stem Cells</Title>
+    <Accession database="GEO">GSE208681</Accession>
+    <Pubmed-ID>35988542</Pubmed-ID>
+    <Web-Link>https://www.weizmann.ac.il/molgen/hanna/</Web-Link>
+    <Summary>
+This SuperSeries is composed of the SubSeries listed below.
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6215711" />
+    <Sample-Ref ref="GSM6215712" />
+    <Sample-Ref ref="GSM6215713" />
+    <Sample-Ref ref="GSM6215714" />
+    <Sample-Ref ref="GSM6215715" />
+    <Sample-Ref ref="GSM6215716" />
+    <Sample-Ref ref="GSM6215717" />
+    <Sample-Ref ref="GSM6215718" />
+    <Sample-Ref ref="GSM6215719" />
+    <Sample-Ref ref="GSM6215720" />
+    <Sample-Ref ref="GSM6215721" />
+    <Sample-Ref ref="GSM6215722" />
+    <Sample-Ref ref="GSM6215723" />
+    <Sample-Ref ref="GSM6215724" />
+    <Sample-Ref ref="GSM6215725" />
+    <Sample-Ref ref="GSM6215726" />
+    <Sample-Ref ref="GSM6215727" />
+    <Sample-Ref ref="GSM6215728" />
+    <Sample-Ref ref="GSM6215729" />
+    <Sample-Ref ref="GSM6215730" />
+    <Sample-Ref ref="GSM6215731" />
+    <Sample-Ref ref="GSM6215732" />
+    <Sample-Ref ref="GSM6215733" />
+    <Sample-Ref ref="GSM6215734" />
+    <Sample-Ref ref="GSM6215735" />
+    <Sample-Ref ref="GSM6215736" />
+    <Sample-Ref ref="GSM6215737" />
+    <Sample-Ref ref="GSM6215738" />
+    <Sample-Ref ref="GSM6215739" />
+    <Sample-Ref ref="GSM6215740" />
+    <Sample-Ref ref="GSM6215741" />
+    <Sample-Ref ref="GSM6215742" />
+    <Sample-Ref ref="GSM6215743" />
+    <Sample-Ref ref="GSM6215744" />
+    <Sample-Ref ref="GSM6215745" />
+    <Sample-Ref ref="GSM6215746" />
+    <Sample-Ref ref="GSM6215747" />
+    <Sample-Ref ref="GSM6215748" />
+    <Sample-Ref ref="GSM6215749" />
+    <Sample-Ref ref="GSM6215750" />
+    <Sample-Ref ref="GSM6215751" />
+    <Sample-Ref ref="GSM6215752" />
+    <Sample-Ref ref="GSM6215753" />
+    <Sample-Ref ref="GSM6215754" />
+    <Sample-Ref ref="GSM6215755" />
+    <Sample-Ref ref="GSM6215756" />
+    <Sample-Ref ref="GSM6215757" />
+    <Sample-Ref ref="GSM6215758" />
+    <Sample-Ref ref="GSM6215759" />
+    <Sample-Ref ref="GSM6215760" />
+    <Sample-Ref ref="GSM6215761" />
+    <Sample-Ref ref="GSM6215762" />
+    <Sample-Ref ref="GSM6215763" />
+    <Sample-Ref ref="GSM6215764" />
+    <Sample-Ref ref="GSM6372141" />
+    <Sample-Ref ref="GSM6372142" />
+    <Sample-Ref ref="GSM6372143" />
+    <Sample-Ref ref="GSM6372144" />
+    <Sample-Ref ref="GSM6372145" />
+    <Sample-Ref ref="GSM6372146" />
+    <Sample-Ref ref="GSM6372147" />
+    <Sample-Ref ref="GSM6372148" />
+    <Sample-Ref ref="GSM6372149" />
+    <Sample-Ref ref="GSM6372150" />
+    <Sample-Ref ref="GSM6372151" />
+    <Relation type="SuperSeries of" target="GSE205634" />
+    <Relation type="SuperSeries of" target="GSE208680" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA860602" />
+  </Series>
+
+</MINiML>

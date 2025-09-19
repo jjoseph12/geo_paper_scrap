@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Sumedha</First><Middle>S</Middle><Last>Gunewardena</Last></Person>
+    <Phone>9139456878</Phone>
+    <Department>Dept. of Molecular and Integrative Physiology</Department>
+    <Organization>University of kansas medical center</Organization>
+    <Address>
+      <Line>2146 West 39th Avenue</Line>
+      <City>Kansas City</City>
+      <State>Kansas</State>
+      <Zip-Code>66160</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Home</First><Last>Pratik</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Ghosh</First><Last>Ananya</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Ganguly</First><Last>Avishek</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Paul</First><Last>Soumen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Gunewardena</First><Last>Sumedha</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM4976674">
+    <Status database="GEO">
+      <Submission-Date>2020-12-15</Submission-Date>
+      <Release-Date>2023-06-25</Release-Date>
+      <Last-Update-Date>2023-06-25</Last-Update-Date>
+    </Status>
+    <Title>Control #1</Title>
+    <Accession database="GEO">GSM4976674</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Single cells obtained from mouse placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="genotype/variation">
+control
+      </Characteristics>
+      <Characteristics tag="tissue">
+E13.5 Placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were obtained from enzymatic digestion of one mouse E13.5 placenta per sample. Red blood cells were removed using Ter-119 antibody. Cell viability and concentration were measured by Countess II FL Automated Cell Counter (Life Technologies) targeting ≥75% cell viability. The cell emulsification is performed with the 10X Chromium Controller using the Chromium Single Cell 3’ GEM Library &amp; Gel Bead Kit v3 (10X Genomics 1000092) and Chromium Chip B Single Cell Kit (10X Genomics 1000074).
+The RT reaction to generate 10X barcoded single stranded cDNA, in the single cell containing GEMs, is performed using an Eppendorf MasterCycler Pro thermal cycler. Post GEM-RT Cleanup is conducted by breaking the GEMS with 10X Recovery Agent to separate the aqueous phase from the Recovery Agent and Partitioning oil. A cleanup of the sscDNA containing aqueous phase is completed using Dynabeads MyOne Silane beads (Life Technologies 37002D). The second strand cDNA amplification is performed using the cDNA Amplification Mix on the Eppendorf MasterCycler Pro. The 3’ gene expression library construction is initiated with fragmentation, end repair and A-tailing of the dscDNA followed by adapter ligation and a sample index PCR using the Illumina compatible indexed adapters in the Chromium i7 Multiplex kit (10X Genomics 120262). Validation of the single cell library is conducted using the Agilent Tapestation 4200 ScreenTape assay (Agilent 5067-5576).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics Chromium Single Cell Gene Expression data
+    </Description>
+    <Data-Processing>
+The data was analyzed using the 10x Genomics Chromium Single Cell software suite (cellranger-3.0.2).
+The demultiplexing and conversion of Illumina base call files (BCL) to raw FASTQ files was done using &quot;cellranger mkfastq&quot; with default parameters.
+The sequencing reads were aligned to the mouse reference (GRCm38) and analyzed using &quot;cellranger count&quot;.
+Genome_build: mm10
+Supplementary_files_format_and_content: cellranger generated unfiltered feature-barcode matrix file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="H5">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4976nnn/GSM4976674/suppl/GSM4976674_Control-1.raw_feature_bc_matrix.h5
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17087404" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9688665" />
+  </Sample>
+
+  <Sample iid="GSM4976675">
+    <Status database="GEO">
+      <Submission-Date>2020-12-15</Submission-Date>
+      <Release-Date>2023-06-25</Release-Date>
+      <Last-Update-Date>2023-06-25</Last-Update-Date>
+    </Status>
+    <Title>GATA Pl1-KO #1</Title>
+    <Accession database="GEO">GSM4976675</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Single cells obtained from mouse placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="genotype/variation">
+GATA Pl1-KO
+      </Characteristics>
+      <Characteristics tag="tissue">
+E13.5 Placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were obtained from enzymatic digestion of one mouse E13.5 placenta per sample. Red blood cells were removed using Ter-119 antibody. Cell viability and concentration were measured by Countess II FL Automated Cell Counter (Life Technologies) targeting ≥75% cell viability. The cell emulsification is performed with the 10X Chromium Controller using the Chromium Single Cell 3’ GEM Library &amp; Gel Bead Kit v3 (10X Genomics 1000092) and Chromium Chip B Single Cell Kit (10X Genomics 1000074).
+The RT reaction to generate 10X barcoded single stranded cDNA, in the single cell containing GEMs, is performed using an Eppendorf MasterCycler Pro thermal cycler. Post GEM-RT Cleanup is conducted by breaking the GEMS with 10X Recovery Agent to separate the aqueous phase from the Recovery Agent and Partitioning oil. A cleanup of the sscDNA containing aqueous phase is completed using Dynabeads MyOne Silane beads (Life Technologies 37002D). The second strand cDNA amplification is performed using the cDNA Amplification Mix on the Eppendorf MasterCycler Pro. The 3’ gene expression library construction is initiated with fragmentation, end repair and A-tailing of the dscDNA followed by adapter ligation and a sample index PCR using the Illumina compatible indexed adapters in the Chromium i7 Multiplex kit (10X Genomics 120262). Validation of the single cell library is conducted using the Agilent Tapestation 4200 ScreenTape assay (Agilent 5067-5576).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics Chromium Single Cell Gene Expression data
+    </Description>
+    <Data-Processing>
+The data was analyzed using the 10x Genomics Chromium Single Cell software suite (cellranger-3.0.2).
+The demultiplexing and conversion of Illumina base call files (BCL) to raw FASTQ files was done using &quot;cellranger mkfastq&quot; with default parameters.
+The sequencing reads were aligned to the mouse reference (GRCm38) and analyzed using &quot;cellranger count&quot;.
+Genome_build: mm10
+Supplementary_files_format_and_content: cellranger generated unfiltered feature-barcode matrix file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="H5">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4976nnn/GSM4976675/suppl/GSM4976675_GATA.Pl1-KO-1.raw_feature_bc_matrix.h5
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17087380" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9688662" />
+  </Sample>
+
+  <Sample iid="GSM4976676">
+    <Status database="GEO">
+      <Submission-Date>2020-12-15</Submission-Date>
+      <Release-Date>2023-06-25</Release-Date>
+      <Last-Update-Date>2023-06-25</Last-Update-Date>
+    </Status>
+    <Title>Control #2</Title>
+    <Accession database="GEO">GSM4976676</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Single cells obtained from mouse placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="genotype/variation">
+control
+      </Characteristics>
+      <Characteristics tag="tissue">
+E13.5 Placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were obtained from enzymatic digestion of one mouse E13.5 placenta per sample. Red blood cells were removed using Ter-119 antibody. Cell viability and concentration were measured by Countess II FL Automated Cell Counter (Life Technologies) targeting ≥75% cell viability. The cell emulsification is performed with the 10X Chromium Controller using the Chromium Single Cell 3’ GEM Library &amp; Gel Bead Kit v3 (10X Genomics 1000092) and Chromium Chip B Single Cell Kit (10X Genomics 1000074).
+The RT reaction to generate 10X barcoded single stranded cDNA, in the single cell containing GEMs, is performed using an Eppendorf MasterCycler Pro thermal cycler. Post GEM-RT Cleanup is conducted by breaking the GEMS with 10X Recovery Agent to separate the aqueous phase from the Recovery Agent and Partitioning oil. A cleanup of the sscDNA containing aqueous phase is completed using Dynabeads MyOne Silane beads (Life Technologies 37002D). The second strand cDNA amplification is performed using the cDNA Amplification Mix on the Eppendorf MasterCycler Pro. The 3’ gene expression library construction is initiated with fragmentation, end repair and A-tailing of the dscDNA followed by adapter ligation and a sample index PCR using the Illumina compatible indexed adapters in the Chromium i7 Multiplex kit (10X Genomics 120262). Validation of the single cell library is conducted using the Agilent Tapestation 4200 ScreenTape assay (Agilent 5067-5576).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics Chromium Single Cell Gene Expression data
+    </Description>
+    <Data-Processing>
+The data was analyzed using the 10x Genomics Chromium Single Cell software suite (cellranger-3.0.2).
+The demultiplexing and conversion of Illumina base call files (BCL) to raw FASTQ files was done using &quot;cellranger mkfastq&quot; with default parameters.
+The sequencing reads were aligned to the mouse reference (GRCm38) and analyzed using &quot;cellranger count&quot;.
+Genome_build: mm10
+Supplementary_files_format_and_content: cellranger generated unfiltered feature-barcode matrix file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="H5">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4976nnn/GSM4976676/suppl/GSM4976676_Control-2.raw_feature_bc_matrix.h5
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17087406" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9688663" />
+  </Sample>
+
+  <Sample iid="GSM4976677">
+    <Status database="GEO">
+      <Submission-Date>2020-12-15</Submission-Date>
+      <Release-Date>2023-06-25</Release-Date>
+      <Last-Update-Date>2023-06-25</Last-Update-Date>
+    </Status>
+    <Title>GATA Pl1-KO #2</Title>
+    <Accession database="GEO">GSM4976677</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Single cells obtained from mouse placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="genotype/variation">
+GATA Pl1-KO
+      </Characteristics>
+      <Characteristics tag="tissue">
+E13.5 Placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were obtained from enzymatic digestion of one mouse E13.5 placenta per sample. Red blood cells were removed using Ter-119 antibody. Cell viability and concentration were measured by Countess II FL Automated Cell Counter (Life Technologies) targeting ≥75% cell viability. The cell emulsification is performed with the 10X Chromium Controller using the Chromium Single Cell 3’ GEM Library &amp; Gel Bead Kit v3 (10X Genomics 1000092) and Chromium Chip B Single Cell Kit (10X Genomics 1000074).
+The RT reaction to generate 10X barcoded single stranded cDNA, in the single cell containing GEMs, is performed using an Eppendorf MasterCycler Pro thermal cycler. Post GEM-RT Cleanup is conducted by breaking the GEMS with 10X Recovery Agent to separate the aqueous phase from the Recovery Agent and Partitioning oil. A cleanup of the sscDNA containing aqueous phase is completed using Dynabeads MyOne Silane beads (Life Technologies 37002D). The second strand cDNA amplification is performed using the cDNA Amplification Mix on the Eppendorf MasterCycler Pro. The 3’ gene expression library construction is initiated with fragmentation, end repair and A-tailing of the dscDNA followed by adapter ligation and a sample index PCR using the Illumina compatible indexed adapters in the Chromium i7 Multiplex kit (10X Genomics 120262). Validation of the single cell library is conducted using the Agilent Tapestation 4200 ScreenTape assay (Agilent 5067-5576).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics Chromium Single Cell Gene Expression data
+    </Description>
+    <Data-Processing>
+The data was analyzed using the 10x Genomics Chromium Single Cell software suite (cellranger-3.0.2).
+The demultiplexing and conversion of Illumina base call files (BCL) to raw FASTQ files was done using &quot;cellranger mkfastq&quot; with default parameters.
+The sequencing reads were aligned to the mouse reference (GRCm38) and analyzed using &quot;cellranger count&quot;.
+Genome_build: mm10
+Supplementary_files_format_and_content: cellranger generated unfiltered feature-barcode matrix file.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="H5">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM4976nnn/GSM4976677/suppl/GSM4976677_GATA.Pl1-KO-2.raw_feature_bc_matrix.h5
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17087405" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9688664" />
+  </Sample>
+
+  <Series iid="GSE163286">
+    <Status database="GEO">
+      <Submission-Date>2020-12-15</Submission-Date>
+      <Release-Date>2023-06-25</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>A Single Trophoblast Layer Acts as the Gatekeeper at the Endothelial-Hematopoietic Crossroad in the Placenta</Title>
+    <Accession database="GEO">GSE163286</Accession>
+    <Pubmed-ID>39071312</Pubmed-ID>
+    <Summary>
+During embryonic development the placental vasculature acts as a major hematopoietic niche, where endolthelial to hematopoietic transition ensures emergence of hematopoietic stem cells (HSCs). However, the molecular mechanisms that regulate the placental hematoendothelial niche are poorly understood. Using a parietal trophoblast giant cell (TGC)-specific knockout mouse model and single-cell RNA-sequencing, we show that the paracrine factors secreted by this single layer of TGCs are critical in the development of this niche. Disruptions in the TGC specific paracrine signaling leads to the loss of HSC population and the concomitant expansion of a KDR+/DLL4+/PROM1+ hematoendothelial cell-population in the placenta. Combining single-cell transcriptomics and receptor-ligand pair analyses, we also define the parietal TGC-dependent paracrine signaling network and identify Integrin signaling as a fundamental regulator of this process. Our study elucidates novel mechanisms by which non autonomous signaling from the primary parietal TGCs maintains the delicate placental hematopoietic-angiogenic balance and ensures embryonic and extraembryonic development.
+    </Summary>
+    <Overall-Design>
+Gata2f/f;Gata3f/f; Pl1Cre +/- males were crossed to Gata2f/f;Gata3f/f females and the embryos  were analyzed at E13.5. Single cell RNA sequencing of the placental samples were generated by deep sequencing using the 10x Genomics Chromium Single Cell Gene Expression Solution (10xgenomics.com).
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM4976674" />
+    <Sample-Ref ref="GSM4976675" />
+    <Sample-Ref ref="GSM4976676" />
+    <Sample-Ref ref="GSM4976677" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE163nnn/GSE163286/suppl/GSE163286_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA685541" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP298060" />
+  </Series>
+
+</MINiML>

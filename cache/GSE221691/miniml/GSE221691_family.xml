@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Ilia</First><Last>Kurochkin</Last></Person>
+    <Email>ilia.kurochkin@med.lu.se</Email>
+    <Organization>Lund University</Organization>
+    <Address>
+      <Line>BMC A12, Sölvegatan 17</Line>
+      <City>Lund</City>
+      <State>Skane</State>
+      <Postal-Code>221 84</Postal-Code>
+      <Country>Sweden</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Rita</First><Last>Silvério-Alves</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Carlos-Filipe</First><Last>Pereira</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6893110">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF donor A</Title>
+    <Accession database="GEO">GSM6893110</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+A
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+N/A
+      </Characteristics>
+      <Characteristics tag="time">
+N/A
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388717" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840320" />
+  </Sample>
+
+  <Sample iid="GSM6893111">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF donor B</Title>
+    <Accession database="GEO">GSM6893111</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+B
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+N/A
+      </Characteristics>
+      <Characteristics tag="time">
+N/A
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388716" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840321" />
+  </Sample>
+
+  <Sample iid="GSM6893112">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF GATA2-MD+GF d4 - donor A</Title>
+    <Accession database="GEO">GSM6893112</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+A
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+Cells were transducted with MD-GATA2 plus GFI1B and FOS
+      </Characteristics>
+      <Characteristics tag="time">
+Cells were collected 4 days after viral transduction
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388715" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840322" />
+  </Sample>
+
+  <Sample iid="GSM6893113">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF GATA2-MD+GF d4 - donor B</Title>
+    <Accession database="GEO">GSM6893113</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+B
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+Cells were transducted with MD-GATA2 plus GFI1B and FOS
+      </Characteristics>
+      <Characteristics tag="time">
+Cells were collected 4 days after viral transduction
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388714" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840323" />
+  </Sample>
+
+  <Sample iid="GSM6893114">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF GATA2-MD+GF d6 - donor A</Title>
+    <Accession database="GEO">GSM6893114</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+A
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+Cells were transducted with MD-GATA2 plus GFI1B and FOS
+      </Characteristics>
+      <Characteristics tag="time">
+Cells were collected 6 days after viral transduction
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388713" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840324" />
+  </Sample>
+
+  <Sample iid="GSM6893115">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF GATA2-MD+GF d6 - donor B</Title>
+    <Accession database="GEO">GSM6893115</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+B
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+Cells were transducted with MD-GATA2 plus GFI1B and FOS
+      </Characteristics>
+      <Characteristics tag="time">
+Cells were collected 6 days after viral transduction
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388712" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840325" />
+  </Sample>
+
+  <Sample iid="GSM6893116">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF GATA2-MDmut+GF d4 - donor A</Title>
+    <Accession database="GEO">GSM6893116</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+A
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+Cells were transducted with MDmut-GATA2 plus GFI1B and FOS
+      </Characteristics>
+      <Characteristics tag="time">
+Cells were collected 4 days after viral transduction
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388711" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840326" />
+  </Sample>
+
+  <Sample iid="GSM6893117">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF GATA2-MDmut+GF d4 - donor B</Title>
+    <Accession database="GEO">GSM6893117</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+B
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+Cells were transducted with MDmut-GATA2 plus GFI1B and FOS
+      </Characteristics>
+      <Characteristics tag="time">
+Cells were collected 4 days after viral transduction
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388710" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840327" />
+  </Sample>
+
+  <Sample iid="GSM6893118">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF GATA2-MDmut+GF d6 - donor A</Title>
+    <Accession database="GEO">GSM6893118</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+A
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+Cells were transducted with MDmut-GATA2 plus GFI1B and FOS
+      </Characteristics>
+      <Characteristics tag="time">
+Cells were collected 6 days after viral transduction
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388709" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840328" />
+  </Sample>
+
+  <Sample iid="GSM6893119">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-06-27</Last-Update-Date>
+    </Status>
+    <Title>HDF GATA2-MDmut+GF d6 - donor B</Title>
+    <Accession database="GEO">GSM6893119</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Skin</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="donor">
+B
+      </Characteristics>
+      <Characteristics tag="tissue">
+Skin
+      </Characteristics>
+      <Characteristics tag="cell line">
+Human dermal fibroblasts
+      </Characteristics>
+      <Characteristics tag="cell type">
+Fibroblasts
+      </Characteristics>
+      <Characteristics tag="genotype">
+wildtype
+      </Characteristics>
+      <Characteristics tag="treatment">
+Cells were sorted by FACS
+      </Characteristics>
+      <Characteristics tag="transduction">
+Cells were transducted with MDmut-GATA2 plus GFI1B and FOS
+      </Characteristics>
+      <Characteristics tag="time">
+Cells were collected 6 days after viral transduction
+      </Characteristics>
+      <Characteristics tag="sorted cell type">
+sorted live cells (DAPI-)
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cells were isolated using 10x Chromium by 10x Genomics.
+scRNA-seq libraries were prepared with Dual Index Chromium Next GEM Single Cell 3ʹ Kit v3.1 (Dual Index) (10x Genomics) according to manufacturer’s instructions. Library size and quality check was performed using High Sensitivity D1000 ScreenTape with High Sensitivity D1000 Reagents (Agilent) in a 4200 TapeStation System (Agilent), according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+The Cell Ranger v6.0.1 pipeline was used to process data generated using the 10x Chromium platform. Using Cell Ranger, the reads were converted to fastq format, processed, filtered, and then the aligned reads were generated. This pipeline was used with a hg38 genome.
+R1 read is technical; R2 is biological. Barcode position in R1 is 1-16bp; UMI - 17-28bp.
+The resulting expression matrix was used as input to the Seurat library v4.1.0
+Assembly: hg38
+Supplementary files format and content: 10x Gene Expression matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN32388708" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18840329" />
+  </Sample>
+
+  <Series iid="GSE221691">
+    <Status database="GEO">
+      <Submission-Date>2022-12-23</Submission-Date>
+      <Release-Date>2023-06-27</Release-Date>
+      <Last-Update-Date>2023-09-26</Last-Update-Date>
+    </Status>
+    <Title>GATA2 mitotic bookmarking is required for definitive hematopoiesis [scRNA-seq]</Title>
+    <Accession database="GEO">GSE221691</Accession>
+    <Pubmed-ID>37580379</Pubmed-ID>
+    <Summary>
+In mitosis, most transcription factors detach from chromatin, but some are retained and bookmark genomic sites. Mitotic bookmarking has been implicated in lineage inheritance, pluripotency and reprogramming. However, the biological significance of this mechanism in vivo remains unclear. Here, we address mitotic retention of the hemogenic factors GATA2, GFI1B and FOS during haematopoietic specification. We show that GATA2 remains bound to chromatin throughout mitosis, in contrast to GFI1B and FOS, via C-terminal zinc finger-mediated DNA binding. GATA2 bookmarks a subset of its interphase targets that are co-enriched for RUNX1 and other regulators of definitive haematopoiesis. Remarkably, homozygous mice harbouring the cyclin B1 mitosis degradation domain upstream Gata2 partially phenocopy knockout mice. Degradation of GATA2 at mitotic exit abolishes definitive haematopoiesis at aorta-gonad-mesonephros, placenta and foetal liver, but does not impair yolk sac haematopoiesis. Our findings implicate GATA2-mediated mitotic bookmarking as critical for definitive haematopoiesis and highlight a dependency on bookmarkers for lineage commitment. 
+    </Summary>
+    <Overall-Design>
+RNAseq profiling on single cells, generated after induction of hemogenic reprogramming in human dermal fibroblasts (HDFs, 2 donors), day4 and day6 cells after induction in HDFs with MD-GATA2 or MDmut-GATA2, in combination with GFI1B and FOS. Single cell RNAseq profiling of HDFs (2 donors) was used as controls.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6893110" />
+    <Sample-Ref ref="GSM6893111" />
+    <Sample-Ref ref="GSM6893112" />
+    <Sample-Ref ref="GSM6893113" />
+    <Sample-Ref ref="GSM6893114" />
+    <Sample-Ref ref="GSM6893115" />
+    <Sample-Ref ref="GSM6893116" />
+    <Sample-Ref ref="GSM6893117" />
+    <Sample-Ref ref="GSM6893118" />
+    <Sample-Ref ref="GSM6893119" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE221nnn/GSE221691/suppl/GSE221691_hdf_ggf_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA915380" />
+  </Series>
+
+</MINiML>

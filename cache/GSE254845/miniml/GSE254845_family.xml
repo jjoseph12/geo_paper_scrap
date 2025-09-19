@@ -1,0 +1,926 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Serge</First><Last>McGraw</Last></Person>
+    <Email>Serge.mcgraw@umontreal.ca</Email>
+    <Laboratory>McGraw Lab</Laboratory>
+    <Organization>CHU Ste-Justine Research Center/Université de Montréal</Organization>
+    <Address>
+      <Line>3175 Côte Sainte-Catherine, office 5.17.005</Line>
+      <City>Montreal</City>
+      <State>Qc</State>
+      <Postal-Code>​H3T 1C5</Postal-Code>
+      <Country>Canada</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Lisa-Marie</First><Last>Legault</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Mélanie</First><Last>Breton-Larrivée</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Fannie</First><Last>Filion-Bienvenue</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Anthony</First><Last>Lemieux</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Alexandra</First><Last>Langford-Avelar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Thomas</First><Last>Dupas</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM8058890">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 1 Capture</Title>
+    <Accession database="GEO">GSM8058890</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058890/suppl/GSM8058890_Pla_Ctl-1.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732227" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502112" />
+  </Sample>
+
+  <Sample iid="GSM8058891">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 2 Capture</Title>
+    <Accession database="GEO">GSM8058891</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058891/suppl/GSM8058891_Pla_Ctl-2.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732226" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502113" />
+  </Sample>
+
+  <Sample iid="GSM8058892">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 3 Capture</Title>
+    <Accession database="GEO">GSM8058892</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058892/suppl/GSM8058892_Pla_Ctl-3.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732225" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502114" />
+  </Sample>
+
+  <Sample iid="GSM8058893">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 4 Capture</Title>
+    <Accession database="GEO">GSM8058893</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058893/suppl/GSM8058893_Pla_Ctl-4.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732224" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502115" />
+  </Sample>
+
+  <Sample iid="GSM8058894">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 5 Capture</Title>
+    <Accession database="GEO">GSM8058894</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058894/suppl/GSM8058894_Pla_Ctl-5.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732223" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502116" />
+  </Sample>
+
+  <Sample iid="GSM8058895">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ctrl 6 Capture</Title>
+    <Accession database="GEO">GSM8058895</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Saline
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058895/suppl/GSM8058895_Pla_Ctl-6.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732222" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502117" />
+  </Sample>
+
+  <Sample iid="GSM8058896">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 1 Capture</Title>
+    <Accession database="GEO">GSM8058896</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058896/suppl/GSM8058896_Pla_Et-1.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732221" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502118" />
+  </Sample>
+
+  <Sample iid="GSM8058897">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 2 Capture</Title>
+    <Accession database="GEO">GSM8058897</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058897/suppl/GSM8058897_Pla_Et-2.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732220" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502119" />
+  </Sample>
+
+  <Sample iid="GSM8058898">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 3 Capture</Title>
+    <Accession database="GEO">GSM8058898</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058898/suppl/GSM8058898_Pla_Et-3.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732219" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502120" />
+  </Sample>
+
+  <Sample iid="GSM8058899">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 4 Capture</Title>
+    <Accession database="GEO">GSM8058899</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058899/suppl/GSM8058899_Pla_Et-4.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732218" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502121" />
+  </Sample>
+
+  <Sample iid="GSM8058900">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 5 Capture</Title>
+    <Accession database="GEO">GSM8058900</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058900/suppl/GSM8058900_Pla_Et-5.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732217" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502122" />
+  </Sample>
+
+  <Sample iid="GSM8058901">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 6 Capture</Title>
+    <Accession database="GEO">GSM8058901</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058901/suppl/GSM8058901_Pla_Et-6.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732216" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502123" />
+  </Sample>
+
+  <Sample iid="GSM8058902">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 7 Capture</Title>
+    <Accession database="GEO">GSM8058902</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058902/suppl/GSM8058902_Pla_Et-7.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732215" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502124" />
+  </Sample>
+
+  <Sample iid="GSM8058903">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 8 Capture</Title>
+    <Accession database="GEO">GSM8058903</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058903/suppl/GSM8058903_Pla_Et-8.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732214" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502125" />
+  </Sample>
+
+  <Sample iid="GSM8058904">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 9 Capture</Title>
+    <Accession database="GEO">GSM8058904</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058904/suppl/GSM8058904_Pla_Et-9.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732213" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502126" />
+  </Sample>
+
+  <Sample iid="GSM8058905">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Placenta Ethanol 10 Capture</Title>
+    <Accession database="GEO">GSM8058905</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+C57/BL6
+      </Characteristics>
+      <Characteristics tag="treatment">
+Ethanol
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Genomic DNA was extracted using QIAamp DNA Micro Kit (Qiagen) following manufacturer's recommendations
+Libraries were performed using SureSelectXT Methyl-Seq mouse Target Enrichment System (Agilent) following manufacturer's protocol
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Sequence reads were trimmed using Trimmomatic (v0.36)
+Alignment and methylation counts were performed with Bismark (v0.18.1)
+Assembly: mm10
+Supplementary files format and content: tab-delimited files including CpG sites coordinate, coverage, methylation values
+Supplementary files format and content: Input files for the methylKit package
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>RANDOM</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8058nnn/GSM8058905/suppl/GSM8058905_Pla_Et-10.readset_sorted.dedup.map.input.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN39732212" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX23502127" />
+  </Sample>
+
+  <Series iid="GSE254845">
+    <Status database="GEO">
+      <Submission-Date>2024-02-01</Submission-Date>
+      <Release-Date>2024-02-07</Release-Date>
+      <Last-Update-Date>2024-02-07</Last-Update-Date>
+    </Status>
+    <Title>Sex-Specific DNA Methylation and Gene Expression Changes in Mouse Placentas After Early Preimplantation Alcohol Exposure[Methyl-Seq]</Title>
+    <Accession database="GEO">GSE254845</Accession>
+    <Summary>
+Preimplantation alcohol exposure can negatively impact embryonic development through disruption of molecular profiles and lead to fetal alcohol spectrum disorder (FASD). Despite the central role of the placenta in proper embryonic development and successful pregnancy, studies on the placenta in a FASD context are markedly lacking. Here, preimplantation binge-like alcohol exposure was implemented on pregnant C57BL/6 female mice through subcutaneous injection with two doses of either 2.5 g/kg 50% ethanol or an equivalent volume of saline at 2-h intervals on embryonic day 2.5 corresponding to the 8-cell stage. The placental morphology, DNA methylation and gene expression patterns in male and female late-gestation (E18.5) placentas were assessed. While overall placental morphology was not affected, we found a significant decrease in male ethanol-exposed embryo weights. When looking at molecular profiles, we uncovered numerous differentially methylated regions (DMRs ≥10% difference; 991 in males; 1309 in females) and differentially expressed genes (DEGs; 1046 in males; 340 in females) in the placentas. Remarkably, only 21 DMRs and 54 DEGs were common to both sexes, which were enriched for genes involved in growth factor response pathways. Preimplantation alcohol exposure had a greater impact on imprinted genes expression in male placentas (imprinted DEGs: 18 in males; 1 in females). Finally, by using L1-regularized linear regression, we were able to precisely discriminate control and ethanol-exposed placentas based on their specific DNA methylation patterns. This is the first study demonstrating that preimplantation alcohol exposure alters the DNA methylation and transcriptomic profiles of late-gestation placentas in a sex-specific manner. Importantly, it reveals a placental DNA methylation signature that can detect prenatal alcohol exposure in early life in order to provide appropriate support to attenuate and prevent eventual impact.
+    </Summary>
+    <Overall-Design>
+To investigate the impact of prenatal alcohol exposure during preimplantaton on the DNA methylation and gene expression landscape of late-gestation placenta
+    </Overall-Design>
+    <Type>Methylation profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib8" position="6" />
+    <Contributor-Ref ref="contrib1" position="7" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM8058890" />
+    <Sample-Ref ref="GSM8058891" />
+    <Sample-Ref ref="GSM8058892" />
+    <Sample-Ref ref="GSM8058893" />
+    <Sample-Ref ref="GSM8058894" />
+    <Sample-Ref ref="GSM8058895" />
+    <Sample-Ref ref="GSM8058896" />
+    <Sample-Ref ref="GSM8058897" />
+    <Sample-Ref ref="GSM8058898" />
+    <Sample-Ref ref="GSM8058899" />
+    <Sample-Ref ref="GSM8058900" />
+    <Sample-Ref ref="GSM8058901" />
+    <Sample-Ref ref="GSM8058902" />
+    <Sample-Ref ref="GSM8058903" />
+    <Sample-Ref ref="GSM8058904" />
+    <Sample-Ref ref="GSM8058905" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE254nnn/GSE254845/suppl/GSE254845_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE254847" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1072061" />
+  </Series>
+
+</MINiML>

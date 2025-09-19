@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Shubhamoy</First><Last>Ghosh</Last></Person>
+    <Email>sghoshucla@ucla.edu, pshubhamoy@gmail.com</Email>
+    <Phone>3106148536</Phone>
+    <Department>Pediatrics</Department>
+    <Organization>University of California Los Angeles</Organization>
+    <Address>
+      <Line>650 Charles E Young  Dr East</Line>
+      <City>los angeles</City>
+      <State>CA</State>
+      <Zip-Code>90095</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Anela</First><Last>Tosevska</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Sherin</First><Last>Devaskar</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Matteo</First><Last>Pellegrini</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5384913">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_Decidua</Title>
+    <Accession database="GEO">GSM5384913</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – decidua
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712324" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148901" />
+  </Sample>
+
+  <Sample iid="GSM5384914">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_Junction</Title>
+    <Accession database="GEO">GSM5384914</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – junction
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712566" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148902" />
+  </Sample>
+
+  <Sample iid="GSM5384915">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_Labyrinth</Title>
+    <Accession database="GEO">GSM5384915</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – labyrinth
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712565" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148903" />
+  </Sample>
+
+  <Sample iid="GSM5384916">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_Decidua</Title>
+    <Accession database="GEO">GSM5384916</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – decidua
+      </Characteristics>
+      <Characteristics tag="treatment">
+Air pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712564" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148904" />
+  </Sample>
+
+  <Sample iid="GSM5384917">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_Junction</Title>
+    <Accession database="GEO">GSM5384917</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – junction
+      </Characteristics>
+      <Characteristics tag="treatment">
+Air pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712563" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148905" />
+  </Sample>
+
+  <Sample iid="GSM5384918">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_Labyrinth</Title>
+    <Accession database="GEO">GSM5384918</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – labyrinth
+      </Characteristics>
+      <Characteristics tag="treatment">
+Air pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712562" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148906" />
+  </Sample>
+
+  <Series iid="GSE178229">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Examination of cell type specific gene expression pattern in placenta of mouse exposed to Air-pollutant material during gestation.</Title>
+    <Accession database="GEO">GSE178229</Accession>
+    <Pubmed-ID>35589747</Pubmed-ID>
+    <Summary>
+We  are reporting  the expression pattern of placental transcriptome in a celltype specific manner from Gestational D19 mouse exposed to Air -Pollutant material.
+    </Summary>
+    <Overall-Design>
+Placenta was collected from gestational Day19 (D19) of C57BL/6J mouse either exposed to air pollutant material or sterile PBS during the entire gestation period (from D1 of conception to D18). Three different compartments of placenta (Decidua, Junction and Labyrinth) were separated under the microscope and single cell suspension was prepared to make scRNA sequencing library.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5384913" />
+    <Sample-Ref ref="GSM5384914" />
+    <Sample-Ref ref="GSM5384915" />
+    <Sample-Ref ref="GSM5384916" />
+    <Sample-Ref ref="GSM5384917" />
+    <Sample-Ref ref="GSM5384918" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE178nnn/GSE178229/suppl/GSE178229_SeuratExpressionMatrix.csv.gz
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE178233" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA737802" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP324133" />
+  </Series>
+
+</MINiML>

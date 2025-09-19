@@ -1,0 +1,1660 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Emilie</First><Last>Derisoud</Last></Person>
+    <Email>emilie.derisoud@gmail.com, emilie.derisoud@inrae.fr</Email>
+    <Organization>INRAE</Organization>
+    <Address>
+      <Line>26 Rue des Prés,</Line>
+      <City>PALAISEAU</City>
+      <State>Essonne</State>
+      <Zip-Code>91120</Zip-Code>
+      <Country>France</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Luc</First><Last>Jouneau</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Cédric</First><Last>Dubois</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Catherine</First><Last>Archilla</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Yann</First><Last>Jaszczyszyn</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Rachel</First><Last>Legendre</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Nathalie</First><Last>Daniel</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Nathalie</First><Last>Peynot</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Michele</First><Last>Dahirel</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib11">
+    <Person><First>Laurence</First><Last>Wimel</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib12">
+    <Person><First>Véronique</First><Last>Duranthon</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib13">
+    <Person><First>Pascale</First><Last>Chavatte-Palmer</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21401">
+    <Status database="GEO">
+      <Submission-Date>2016-02-03</Submission-Date>
+      <Release-Date>2016-02-03</Release-Date>
+      <Last-Update-Date>2016-02-03</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Equus caballus)</Title>
+    <Accession database="GEO">GPL21401</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9796">Equus caballus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM4964785">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 1, ICM</Title>
+    <Accession database="GEO">GSM4964785</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+10
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+2
+      </Characteristics>
+      <Characteristics tag="embryo size">
+409
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E1_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033668" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653749" />
+  </Sample>
+
+  <Sample iid="GSM4964786">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 1, TE</Title>
+    <Accession database="GEO">GSM4964786</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+10
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+2
+      </Characteristics>
+      <Characteristics tag="embryo size">
+409
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E1_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033667" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653750" />
+  </Sample>
+
+  <Sample iid="GSM4964787">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 2, ICM</Title>
+    <Accession database="GEO">GSM4964787</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+11
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+3
+      </Characteristics>
+      <Characteristics tag="embryo size">
+519
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+male
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E2_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033666" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653751" />
+  </Sample>
+
+  <Sample iid="GSM4964788">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 2, TE</Title>
+    <Accession database="GEO">GSM4964788</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+11
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+3
+      </Characteristics>
+      <Characteristics tag="embryo size">
+519
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+male
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E2_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033665" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653752" />
+  </Sample>
+
+  <Sample iid="GSM4964789">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 3, ICM</Title>
+    <Accession database="GEO">GSM4964789</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+10
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+3
+      </Characteristics>
+      <Characteristics tag="embryo size">
+906
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E3_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033664" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653753" />
+  </Sample>
+
+  <Sample iid="GSM4964790">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 3, TE</Title>
+    <Accession database="GEO">GSM4964790</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+10
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+3
+      </Characteristics>
+      <Characteristics tag="embryo size">
+906
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E3_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033663" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653754" />
+  </Sample>
+
+  <Sample iid="GSM4964791">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 4, ICM</Title>
+    <Accession database="GEO">GSM4964791</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+10
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+2
+      </Characteristics>
+      <Characteristics tag="embryo size">
+1836
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+male
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E4_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033662" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653755" />
+  </Sample>
+
+  <Sample iid="GSM4964792">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 4, TE</Title>
+    <Accession database="GEO">GSM4964792</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+10
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+2
+      </Characteristics>
+      <Characteristics tag="embryo size">
+1836
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+male
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E4_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033684" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653756" />
+  </Sample>
+
+  <Sample iid="GSM4964793">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 5, ICM</Title>
+    <Accession database="GEO">GSM4964793</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+17
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+6
+      </Characteristics>
+      <Characteristics tag="embryo size">
+1922
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E5_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033683" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653757" />
+  </Sample>
+
+  <Sample iid="GSM4964794">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 5, TE</Title>
+    <Accession database="GEO">GSM4964794</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+17
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+6
+      </Characteristics>
+      <Characteristics tag="embryo size">
+1922
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E5_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033682" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653758" />
+  </Sample>
+
+  <Sample iid="GSM4964795">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 6, ICM</Title>
+    <Accession database="GEO">GSM4964795</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+14
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+3
+      </Characteristics>
+      <Characteristics tag="embryo size">
+2063
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+male
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E6_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033676" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653759" />
+  </Sample>
+
+  <Sample iid="GSM4964796">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>OM, Embryo 6, TE</Title>
+    <Accession database="GEO">GSM4964796</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+14
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+3
+      </Characteristics>
+      <Characteristics tag="embryo size">
+2063
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+male
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+OM_E6_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033674" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653760" />
+  </Sample>
+
+  <Sample iid="GSM4964797">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 1, ICM</Title>
+    <Accession database="GEO">GSM4964797</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+603
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E1_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033673" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653761" />
+  </Sample>
+
+  <Sample iid="GSM4964798">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 1, TE</Title>
+    <Accession database="GEO">GSM4964798</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+603
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E1_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033672" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653762" />
+  </Sample>
+
+  <Sample iid="GSM4964799">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 2, ICM</Title>
+    <Accession database="GEO">GSM4964799</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+834
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E2_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033671" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653763" />
+  </Sample>
+
+  <Sample iid="GSM4964800">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 2, TE</Title>
+    <Accession database="GEO">GSM4964800</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+834
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E2_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033670" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653764" />
+  </Sample>
+
+  <Sample iid="GSM4964801">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 3, ICM</Title>
+    <Accession database="GEO">GSM4964801</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+1094
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E3_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033669" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653743" />
+  </Sample>
+
+  <Sample iid="GSM4964802">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 3, TE</Title>
+    <Accession database="GEO">GSM4964802</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+1094
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E3_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033681" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653744" />
+  </Sample>
+
+  <Sample iid="GSM4964803">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 4, ICM</Title>
+    <Accession database="GEO">GSM4964803</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+1313
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+male
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E4_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033680" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653745" />
+  </Sample>
+
+  <Sample iid="GSM4964804">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 4, TE</Title>
+    <Accession database="GEO">GSM4964804</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+1313
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+male
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E4_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033679" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653746" />
+  </Sample>
+
+  <Sample iid="GSM4964805">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 5, ICM</Title>
+    <Accession database="GEO">GSM4964805</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Inner Cell Mass</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Inner Cell Mass
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+2643
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E5_ICM_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033678" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653747" />
+  </Sample>
+
+  <Sample iid="GSM4964806">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-15</Last-Update-Date>
+    </Status>
+    <Title>YM, Embryo 5, TE</Title>
+    <Accession database="GEO">GSM4964806</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Trophoblast</Source>
+      <Organism taxid="9796">Equus caballus</Organism>
+      <Characteristics tag="cell type">
+Blastocyst
+      </Characteristics>
+      <Characteristics tag="tissue">
+Trophoblast
+      </Characteristics>
+      <Characteristics tag="maternal age">
+6
+      </Characteristics>
+      <Characteristics tag="maternal parity">
+1
+      </Characteristics>
+      <Characteristics tag="embryo size">
+2643
+      </Characteristics>
+      <Characteristics tag="embryo sex">
+female
+      </Characteristics>
+      <Growth-Protocol>
+Saddlebred mares (French Anglo-Arabian and Selle Français breeds) were included in this study. They were raised in the “Institut Français du Cheval et de l’Equitation” experimental farm (Chamberet, France, 45° 34’55.17”N, 1°43’16.29”E, 442m). During the protocol period, mares were managed in herds in natural pastures 24h/day with free access to water. The experiments took place from April, the 1st until May 23rd, 2019. All mares remained healthy during this period. The mares’ estrus period was monitored by ultrasound with a 5MHz trans-rectal transducer. During estrus, ovulation was induced with a single 750-1500 IU IV injection of human chorionic gonadotropin (Chrorulon® 5000, MSD Santé animale) as soon as one ovarian follicle &gt;35mm in diameter together with marked uterine edema were observed. At the same time, mares were artificially inseminated with fresh or refrigerated semen containing at least 1 billion motile spermatozoids from a single fertile stallion. Ovulation was confirmed within the next 48 hours by ultrasonography. Embryos were collected 10 days after the insemination (i.e., 8±0.5 days post-ovulation) by non-surgical uterine lavage using prewarmed (37°C) lactated Ringer’s solution (B.Braun) and EZ-Way Filter (IMV Technologies). All embryos were expanded blastocysts grade I or II according to the embryo classification of McKinnon and Squires. They were washed 4 times in commercially available Embryo holding medium (IMV Technologies) and then cut with a microscalpel under binocular magnifying glass to separate pure trophoblast (TE) and inner cell mass enriched hemi-embryo (ICM).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each hemi-embryo was transferred to a DNA LoBind tube (Eppendorf) with extraction buffer from PicoPure RNA isolation kit (Applied Biosystems) and incubated for 30min at 42°C prior to storage at -80°C. The extraction of hemi-embryos RNA was performed using the PicoPure RNA isolation kit (Applied Biosystems), including a DNAse treatment, following the manufacturer’s instructions. RNA quality and quantity were obtained with 2100 bioanalyzer system using RNA 6000 Pico or nano kit (Agilent Technologies) according to the manufacturer's instructions. The RNA Integrity Number median was 9.8 (range from 8.7 to 10).
+Five nanograms of total RNA were mixed with ERCC spike-in mix (Thermofisher) according to the manufacturer recommendations and then used for re-transcription and amplification using the SMART-Seq V4 ultra low input RNA kit (Clontech) according to the manufacturer recommendations. Nine PCR cycles were performed for each hemi-embryo. cDNA quality was assessed on an Agilent Bioanalyzer 2100, using an Agilent High Sensitivity DNA Kit (Agilent Technologies). Libraries were prepared from 0.15 ng cDNA using the Nextera XT Illumina library preparation kit (Illumina). Libraries were pooled in equimolar proportions and sequenced (Paired-end 50-34 pb) on NextSeq500 instrument, using a NextSeq 500 High Output 75 cycles kit (Illumina).
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+YM_E5_TE_CH
+    </Description>
+    <Data-Processing>
+Demultiplexing has been done with bcl2fastq2 version 2.2.18.12 (Illumina) and adapters were trimmed with Cutadapt version 1.15, only reads longer than 10pb were kept.
+A de novo assembly was made using StringTie version 2.1.2 following manufacturer instructions to identify XIST in equine embryo samples. The GTF output was aligned on Ensembl 99 EquCab3.0 assembly using IGV version 2.7.2. As XIST position and length on X chromosome was knew (thanks to Pablo Ross) and as XIST is annotated in human, the more similar contig was selected. Y chromosome is not assembly in the EquCab3.0 assembly but a nucleotide sequence of SRY is available on NCBI website.   Both sequences were added to FASTA file from Ensembl 99 EquCab3.0 assembly. Both genes were added to GTF from Ensembl 99 EquCab3.0 assembly as both unique chromosome with one gene composed of one transcript.
+STAR version 2.6 was used for the alignment (2-pass mapping with GTF file using parameters: --alignSoftClipAtReferenceEnds No --alignEndsType EndToEnd --alignIntronMax 86545 --alignMatesGapMax 86545) on previously modified Ensembl 99 EquCab3.0 assembly. Genes were then counted with featureCounts from Subreads package version 1.6.1 (parameters: -p -B -C -M).
+Genome_build: Ensembl 99 EquCab3.0 assembly + de novo XIST sequence + SRY sequence from NCBI
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+Supplementary_files_format_and_content: gtf for de novo XIST gene and SRY gene from NCBI
+Supplementary_files_format_and_content: fasta file for SRY gene from NCBI (GenBank: AB004572.1)
+Supplementary_files_format_and_content: fasta file for XIST de novo annotated uing StringTie and IGV
+    </Data-Processing>
+    <Platform-Ref ref="GPL21401" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17033677" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9653748" />
+  </Sample>
+
+  <Series iid="GSE162893">
+    <Status database="GEO">
+      <Submission-Date>2020-12-08</Submission-Date>
+      <Release-Date>2022-06-15</Release-Date>
+      <Last-Update-Date>2022-06-23</Last-Update-Date>
+    </Status>
+    <Title>Maternal age affects D8 embryo gene expression both in trophoblast and inner cell</Title>
+    <Accession database="GEO">GSE162893</Accession>
+    <Pubmed-ID>35705916</Pubmed-ID>
+    <Summary>
+The aim of the study was to compare the effects of maternal age on embryos in horses. For that, 11 embryos were collected at 8 days post ovulation (expanded blastocyst stage) from 2 groups of multiparous mares of different age: 5 from young mares (&lt;10 years old) and 6 from old mares (10-17 years old).  Embryos collected were cut in 2 parts: one hemi-embryo containing pure trophoblast and the other one containing trophoblast + inner cell mass. ARN extractions were performed for all samples using PicoPure RNA isolation kit (Applied Biosystem). Five nanograms of both parts of each embryo were sequenced in paired-end with a length of 30-50bp separately using Illumina NextSeq 500 High. Data were trimmed using Cutadapt. Sequences with less than 10bp were removed.
+    </Summary>
+    <Overall-Design>
+11 embryos cut in ICM and TE parts analyzed according to maternal age (Old or young mares)
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contributor-Ref ref="contrib8" position="7" />
+    <Contributor-Ref ref="contrib9" position="8" />
+    <Contributor-Ref ref="contrib10" position="9" />
+    <Contributor-Ref ref="contrib11" position="10" />
+    <Contributor-Ref ref="contrib12" position="11" />
+    <Contributor-Ref ref="contrib13" position="12" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM4964785" />
+    <Sample-Ref ref="GSM4964786" />
+    <Sample-Ref ref="GSM4964787" />
+    <Sample-Ref ref="GSM4964788" />
+    <Sample-Ref ref="GSM4964789" />
+    <Sample-Ref ref="GSM4964790" />
+    <Sample-Ref ref="GSM4964791" />
+    <Sample-Ref ref="GSM4964792" />
+    <Sample-Ref ref="GSM4964793" />
+    <Sample-Ref ref="GSM4964794" />
+    <Sample-Ref ref="GSM4964795" />
+    <Sample-Ref ref="GSM4964796" />
+    <Sample-Ref ref="GSM4964797" />
+    <Sample-Ref ref="GSM4964798" />
+    <Sample-Ref ref="GSM4964799" />
+    <Sample-Ref ref="GSM4964800" />
+    <Sample-Ref ref="GSM4964801" />
+    <Sample-Ref ref="GSM4964802" />
+    <Sample-Ref ref="GSM4964803" />
+    <Sample-Ref ref="GSM4964804" />
+    <Sample-Ref ref="GSM4964805" />
+    <Sample-Ref ref="GSM4964806" />
+    <Supplementary-Data type="GTF">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE162nnn/GSE162893/suppl/GSE162893_XIST_IGV_SRY.gtf.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="FASTA">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE162nnn/GSE162893/suppl/GSE162893_XIST_IGV_stringtie.fasta.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE162nnn/GSE162893/suppl/GSE162893_counts_CH_OMvsYM.txt.gz
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE193676" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA683651" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP297141" />
+  </Series>
+
+</MINiML>

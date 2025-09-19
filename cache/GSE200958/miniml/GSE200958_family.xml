@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Giovanni</First><Last>Sestini</Last></Person>
+    <Organization>IMBA - Institute of Molecular Biotechnology</Organization>
+    <Address>
+      <Line>Dr.-Bohr-Gasse 3, 1030 Wien</Line>
+      <City>Vienna</City>
+      <Postal-Code>1030</Postal-Code>
+      <Country>Austria</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Nicolas</First><Last>Rivron</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jinwoo</First><Last>Seong</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Javier</First><Last>Frias-Aldeguer</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Viktoria</First><Last>Holzmann</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Harunobu</First><Last>Kagawa</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Heidar</First><Middle>H</Middle><Last>Khoei</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Yvonne</First><Middle>S</Middle><Last>ReimerOp</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Maarten</First><Last>Kip</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib11">
+    <Person><First>Lucas</First><Last>Verwegen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib12">
+    <Person><First>Judith</First><Last>Vivié</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib13">
+    <Person><First>Linfeng</First><Last>Li</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib14">
+    <Person><First>Anna</First><Last>Alemany</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib15">
+    <Person><First>Jeroen</First><Last>Korving</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib16">
+    <Person><First>Frank</First><Last>Darmis</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib17">
+    <Person><First>Alexander</First><Last>van Oudenaarden</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib18">
+    <Person><First>Derk</First><Last>ten Berge</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib19">
+    <Person><First>Niels</First><Last>Geijsen</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL17021">
+    <Status database="GEO">
+      <Submission-Date>2013-04-16</Submission-Date>
+      <Release-Date>2013-04-16</Release-Date>
+      <Last-Update-Date>2019-03-21</Last-Update-Date>
+    </Status>
+    <Title>Illumina HiSeq 2500 (Mus musculus)</Title>
+    <Accession database="GEO">GPL17021</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6047332">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>IMB-NR-001_HM5V5BGXC_TSC_36hours</Title>
+    <Accession database="GEO">GSM6047332</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse trophoblast stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+Mouse trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+removal of FGF4/TGFβ1 growth factors
+      </Characteristics>
+      <Characteristics tag="differentiation time">
+differentiation 36 hours
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+CEL-Seq protocol
+CEL-Seq2
+Single cell RNA seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IMB-NR-001_HM5V5BGXC
+    </Description>
+    <Data-Processing>
+To analyze CEL-Seq single cell sequencing experiments, mouse genomic sequence and annotation from NCBI GRCm38.p6 were used. Reads were trimmed using trim_galore v0.6.4 and subsequently aligned to the mouse genome (GRCm38.p6) using STAR v2.7.6a. UMI quantification and raw count matrixes generation were performed using umi_tools v1.0.1.
+Assembly: GRCm38.p6
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047332/suppl/GSM6047332_IMB-NR-001_HM5V5BGXC_extracted_aligned_assigned_sorted.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620181" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889914" />
+  </Sample>
+
+  <Sample iid="GSM6047333">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>IMB-NR-003_HM5V5BGXC_TSC_48hours</Title>
+    <Accession database="GEO">GSM6047333</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse trophoblast stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+Mouse trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+removal of FGF4/TGFβ1 growth factors
+      </Characteristics>
+      <Characteristics tag="differentiation time">
+differentiation 48 hours
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+CEL-Seq protocol
+CEL-Seq2
+Single cell RNA seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IMB-NR-003_HM5V5BGXC
+    </Description>
+    <Data-Processing>
+To analyze CEL-Seq single cell sequencing experiments, mouse genomic sequence and annotation from NCBI GRCm38.p6 were used. Reads were trimmed using trim_galore v0.6.4 and subsequently aligned to the mouse genome (GRCm38.p6) using STAR v2.7.6a. UMI quantification and raw count matrixes generation were performed using umi_tools v1.0.1.
+Assembly: GRCm38.p6
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047333/suppl/GSM6047333_IMB-NR-003_HM5V5BGXC_extracted_aligned_assigned_sorted.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620180" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889915" />
+  </Sample>
+
+  <Sample iid="GSM6047334">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>IMB-NR-005_HM5V5BGXC_TSC_0hours</Title>
+    <Accession database="GEO">GSM6047334</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse trophoblast stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+Mouse trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+removal of FGF4/TGFβ1 growth factors
+      </Characteristics>
+      <Characteristics tag="differentiation time">
+differentiation 0 hours
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+CEL-Seq protocol
+CEL-Seq2
+Single cell RNA seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IMB-NR-005_HM5V5BGXC
+    </Description>
+    <Data-Processing>
+To analyze CEL-Seq single cell sequencing experiments, mouse genomic sequence and annotation from NCBI GRCm38.p6 were used. Reads were trimmed using trim_galore v0.6.4 and subsequently aligned to the mouse genome (GRCm38.p6) using STAR v2.7.6a. UMI quantification and raw count matrixes generation were performed using umi_tools v1.0.1.
+Assembly: GRCm38.p6
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047334/suppl/GSM6047334_IMB-NR-005_HM5V5BGXC_extracted_aligned_assigned_sorted.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620179" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889916" />
+  </Sample>
+
+  <Sample iid="GSM6047335">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>IMB-NR-006_HM5V5BGXC_TSC_4hours</Title>
+    <Accession database="GEO">GSM6047335</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse trophoblast stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+Mouse trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+removal of FGF4/TGFβ1 growth factors
+      </Characteristics>
+      <Characteristics tag="differentiation time">
+differentiation 4 hours
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+CEL-Seq protocol
+CEL-Seq2
+Single cell RNA seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IMB-NR-006_HM5FVBGXC
+    </Description>
+    <Data-Processing>
+To analyze CEL-Seq single cell sequencing experiments, mouse genomic sequence and annotation from NCBI GRCm38.p6 were used. Reads were trimmed using trim_galore v0.6.4 and subsequently aligned to the mouse genome (GRCm38.p6) using STAR v2.7.6a. UMI quantification and raw count matrixes generation were performed using umi_tools v1.0.1.
+Assembly: GRCm38.p6
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047335/suppl/GSM6047335_IMB-NR-006_HM5FVBGXC_extracted_aligned_assigned_sorted.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620178" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889917" />
+  </Sample>
+
+  <Sample iid="GSM6047336">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>IMB-NR-007_HM5V5BGXC_TSC_12hours</Title>
+    <Accession database="GEO">GSM6047336</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse trophoblast stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+Mouse trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+removal of FGF4/TGFβ1 growth factors
+      </Characteristics>
+      <Characteristics tag="differentiation time">
+differentiation 12 hours
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+CEL-Seq protocol
+CEL-Seq2
+Single cell RNA seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IMB-NR-007_HM5FVBGXC
+    </Description>
+    <Data-Processing>
+To analyze CEL-Seq single cell sequencing experiments, mouse genomic sequence and annotation from NCBI GRCm38.p6 were used. Reads were trimmed using trim_galore v0.6.4 and subsequently aligned to the mouse genome (GRCm38.p6) using STAR v2.7.6a. UMI quantification and raw count matrixes generation were performed using umi_tools v1.0.1.
+Assembly: GRCm38.p6
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047336/suppl/GSM6047336_IMB-NR-007_HM5FVBGXC_extracted_aligned_assigned_sorted.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620177" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889918" />
+  </Sample>
+
+  <Sample iid="GSM6047337">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>IMB-NR-008_HM5V5BGXC_TSC_24hours</Title>
+    <Accession database="GEO">GSM6047337</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse trophoblast stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+Mouse trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+removal of FGF4/TGFβ1 growth factors
+      </Characteristics>
+      <Characteristics tag="differentiation time">
+differentiation 24 hours
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+CEL-Seq protocol
+CEL-Seq2
+Single cell RNA seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IMB-NR-008_HM5FVBGXC
+    </Description>
+    <Data-Processing>
+To analyze CEL-Seq single cell sequencing experiments, mouse genomic sequence and annotation from NCBI GRCm38.p6 were used. Reads were trimmed using trim_galore v0.6.4 and subsequently aligned to the mouse genome (GRCm38.p6) using STAR v2.7.6a. UMI quantification and raw count matrixes generation were performed using umi_tools v1.0.1.
+Assembly: GRCm38.p6
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047337/suppl/GSM6047337_IMB-NR-008_HM5FVBGXC_extracted_aligned_assigned_sorted.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620176" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889919" />
+  </Sample>
+
+  <Series iid="GSE200958">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-07-08</Last-Update-Date>
+    </Status>
+    <Title>Epiblast inducers capture mouse Trophectoderm Stem Cells in vitro and pattern blastoids for implantation in utero. [scRNAseq]</Title>
+    <Accession database="GEO">GSE200958</Accession>
+    <Summary>
+The embryo instructs the allocation of cell states to spatially regulate growth and functions. In the blastocyst, the formation and divergence of the trophoblast lineage ensures successful implantation and placental development. Here, we defined an optimal set of molecules secreted by the inner epiblast cells (inducers) that captures stable, highly self-renewing, pre-implantation-like mouse trophectoderm stem cells (TESCs). When exposed to suboptimal inducers, these stem cells form interconvertible subpopulations with reduced self-renewal, known as trophoblast stem cells (TSCs), and resembling peri-implantation progenitors. TECSs have an enhanced capacity to form blastoids that implant more efficiently in utero. We find that this enhanced capacity is due to epiblast inducers not only controlling trophoblast growth but also trophoblast secretion of WNT6/7B that stimulates uterine decidualization. Thus, the embryo leverages epiblast inductions to drive both the growth and decidualization potential of trophoblasts required for implantation and development.
+    </Summary>
+    <Overall-Design>
+To delineate the trophoblast stem cells (TSCs) heterogenity, single cell RNA seq analysis was performed. After the removal of FGF4 and TGFβ1, TSCs were let to differentiate. Samples were collected at different time points (0, 4, 12, 24, 48 and 36 hours) and subsequentially sequenced. Library preparation was performed by following CEL-Seq2 protocol.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib1" position="6" />
+    <Contributor-Ref ref="contrib8" position="7" />
+    <Contributor-Ref ref="contrib9" position="8" />
+    <Contributor-Ref ref="contrib10" position="9" />
+    <Contributor-Ref ref="contrib11" position="10" />
+    <Contributor-Ref ref="contrib12" position="11" />
+    <Contributor-Ref ref="contrib13" position="12" />
+    <Contributor-Ref ref="contrib14" position="13" />
+    <Contributor-Ref ref="contrib15" position="14" />
+    <Contributor-Ref ref="contrib16" position="15" />
+    <Contributor-Ref ref="contrib17" position="16" />
+    <Contributor-Ref ref="contrib18" position="17" />
+    <Contributor-Ref ref="contrib19" position="18" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6047332" />
+    <Sample-Ref ref="GSM6047333" />
+    <Sample-Ref ref="GSM6047334" />
+    <Sample-Ref ref="GSM6047335" />
+    <Sample-Ref ref="GSM6047336" />
+    <Sample-Ref ref="GSM6047337" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE200nnn/GSE200958/suppl/GSE200958_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE200961" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA827775" />
+  </Series>
+
+</MINiML>

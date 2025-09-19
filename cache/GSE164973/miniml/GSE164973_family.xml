@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Antti</First><Last>Haapalainen</Last></Person>
+    <Email>antti.haapalainen@oulu.fi</Email>
+    <Laboratory>Pediatrics</Laboratory>
+    <Department>CRC</Department>
+    <Organization>University of Oulu</Organization>
+    <Address>
+      <Line>Aapistie 5A</Line>
+      <City>Oulu</City>
+      <Zip-Code>90220</Zip-Code>
+      <Country>Finland</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Heli</First><Last>Tiensuu</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Pinja</First><Last>Tissarinen</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5024009">
+    <Status database="GEO">
+      <Submission-Date>2021-01-17</Submission-Date>
+      <Release-Date>2023-02-07</Release-Date>
+      <Last-Update-Date>2023-02-07</Last-Update-Date>
+    </Status>
+    <Title>HSPA5_1</Title>
+    <Accession database="GEO">GSM5024009</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HTR8/SVNeo
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="treatment">
+silenced with siRNA of HSPA5
+      </Characteristics>
+      <Treatment-Protocol>
+The transfection with siRNA was done either with 10 nM siRNA pair or 10 nM siRNA universal negative control and using approximately 100 000 cells and duoble transfection. The first transfection was done in suspension and the second transfection in adherent cells.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The HTR-8/Svneo cells were cultured in RPMI 1640 medium supplemented with 10 % fetal bovine serum, 100 U/ml penicillin, 100 mg/ml streptomycin, 2 mM glutamine and 1 mM sodium pyruvate.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated by using RNeasy Micro Kit
+TruSeq® Stranded mRNA Sample Preparation, Illumina (15031047)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Base-calling was done with bcl2fastq2 conversion software (NovaSeq 6000)
+Read alignment and counting was done using Rsubread package (v. 2.0) using in-built RefSeq gene annotation.
+Genome_build: hg38
+Supplementary_files_format_and_content: Processed data file rsubread_featureCounts.csv is tab delimited text file containing the genewise read counts for each sample.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17367656" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9863186" />
+  </Sample>
+
+  <Sample iid="GSM5024010">
+    <Status database="GEO">
+      <Submission-Date>2021-01-17</Submission-Date>
+      <Release-Date>2023-02-07</Release-Date>
+      <Last-Update-Date>2023-02-07</Last-Update-Date>
+    </Status>
+    <Title>HSPA5_2</Title>
+    <Accession database="GEO">GSM5024010</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HTR8/SVNeo
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="treatment">
+silenced with siRNA of HSPA5
+      </Characteristics>
+      <Treatment-Protocol>
+The transfection with siRNA was done either with 10 nM siRNA pair or 10 nM siRNA universal negative control and using approximately 100 000 cells and duoble transfection. The first transfection was done in suspension and the second transfection in adherent cells.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The HTR-8/Svneo cells were cultured in RPMI 1640 medium supplemented with 10 % fetal bovine serum, 100 U/ml penicillin, 100 mg/ml streptomycin, 2 mM glutamine and 1 mM sodium pyruvate.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated by using RNeasy Micro Kit
+TruSeq® Stranded mRNA Sample Preparation, Illumina (15031047)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Base-calling was done with bcl2fastq2 conversion software (NovaSeq 6000)
+Read alignment and counting was done using Rsubread package (v. 2.0) using in-built RefSeq gene annotation.
+Genome_build: hg38
+Supplementary_files_format_and_content: Processed data file rsubread_featureCounts.csv is tab delimited text file containing the genewise read counts for each sample.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17367655" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9863187" />
+  </Sample>
+
+  <Sample iid="GSM5024011">
+    <Status database="GEO">
+      <Submission-Date>2021-01-17</Submission-Date>
+      <Release-Date>2023-02-07</Release-Date>
+      <Last-Update-Date>2023-02-07</Last-Update-Date>
+    </Status>
+    <Title>HSPA5_3</Title>
+    <Accession database="GEO">GSM5024011</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HTR8/SVNeo
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="treatment">
+silenced with siRNA of HSPA5
+      </Characteristics>
+      <Treatment-Protocol>
+The transfection with siRNA was done either with 10 nM siRNA pair or 10 nM siRNA universal negative control and using approximately 100 000 cells and duoble transfection. The first transfection was done in suspension and the second transfection in adherent cells.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The HTR-8/Svneo cells were cultured in RPMI 1640 medium supplemented with 10 % fetal bovine serum, 100 U/ml penicillin, 100 mg/ml streptomycin, 2 mM glutamine and 1 mM sodium pyruvate.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated by using RNeasy Micro Kit
+TruSeq® Stranded mRNA Sample Preparation, Illumina (15031047)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Base-calling was done with bcl2fastq2 conversion software (NovaSeq 6000)
+Read alignment and counting was done using Rsubread package (v. 2.0) using in-built RefSeq gene annotation.
+Genome_build: hg38
+Supplementary_files_format_and_content: Processed data file rsubread_featureCounts.csv is tab delimited text file containing the genewise read counts for each sample.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17367654" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9863188" />
+  </Sample>
+
+  <Sample iid="GSM5024012">
+    <Status database="GEO">
+      <Submission-Date>2021-01-17</Submission-Date>
+      <Release-Date>2023-02-07</Release-Date>
+      <Last-Update-Date>2023-02-07</Last-Update-Date>
+    </Status>
+    <Title>NEG_4</Title>
+    <Accession database="GEO">GSM5024012</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HTR8/SVNeo
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA universal negative control
+      </Characteristics>
+      <Treatment-Protocol>
+The transfection with siRNA was done either with 10 nM siRNA pair or 10 nM siRNA universal negative control and using approximately 100 000 cells and duoble transfection. The first transfection was done in suspension and the second transfection in adherent cells.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The HTR-8/Svneo cells were cultured in RPMI 1640 medium supplemented with 10 % fetal bovine serum, 100 U/ml penicillin, 100 mg/ml streptomycin, 2 mM glutamine and 1 mM sodium pyruvate.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated by using RNeasy Micro Kit
+TruSeq® Stranded mRNA Sample Preparation, Illumina (15031047)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Base-calling was done with bcl2fastq2 conversion software (NovaSeq 6000)
+Read alignment and counting was done using Rsubread package (v. 2.0) using in-built RefSeq gene annotation.
+Genome_build: hg38
+Supplementary_files_format_and_content: Processed data file rsubread_featureCounts.csv is tab delimited text file containing the genewise read counts for each sample.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17367653" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9863189" />
+  </Sample>
+
+  <Sample iid="GSM5024013">
+    <Status database="GEO">
+      <Submission-Date>2021-01-17</Submission-Date>
+      <Release-Date>2023-02-07</Release-Date>
+      <Last-Update-Date>2023-02-07</Last-Update-Date>
+    </Status>
+    <Title>NEG_5</Title>
+    <Accession database="GEO">GSM5024013</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HTR8/SVNeo
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA universal negative control
+      </Characteristics>
+      <Treatment-Protocol>
+The transfection with siRNA was done either with 10 nM siRNA pair or 10 nM siRNA universal negative control and using approximately 100 000 cells and duoble transfection. The first transfection was done in suspension and the second transfection in adherent cells.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The HTR-8/Svneo cells were cultured in RPMI 1640 medium supplemented with 10 % fetal bovine serum, 100 U/ml penicillin, 100 mg/ml streptomycin, 2 mM glutamine and 1 mM sodium pyruvate.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated by using RNeasy Micro Kit
+TruSeq® Stranded mRNA Sample Preparation, Illumina (15031047)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Base-calling was done with bcl2fastq2 conversion software (NovaSeq 6000)
+Read alignment and counting was done using Rsubread package (v. 2.0) using in-built RefSeq gene annotation.
+Genome_build: hg38
+Supplementary_files_format_and_content: Processed data file rsubread_featureCounts.csv is tab delimited text file containing the genewise read counts for each sample.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17367652" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9863190" />
+  </Sample>
+
+  <Sample iid="GSM5024014">
+    <Status database="GEO">
+      <Submission-Date>2021-01-17</Submission-Date>
+      <Release-Date>2023-02-07</Release-Date>
+      <Last-Update-Date>2023-02-07</Last-Update-Date>
+    </Status>
+    <Title>NEG_6</Title>
+    <Accession database="GEO">GSM5024014</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HTR8/SVNeo
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA universal negative control
+      </Characteristics>
+      <Treatment-Protocol>
+The transfection with siRNA was done either with 10 nM siRNA pair or 10 nM siRNA universal negative control and using approximately 100 000 cells and duoble transfection. The first transfection was done in suspension and the second transfection in adherent cells.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+The HTR-8/Svneo cells were cultured in RPMI 1640 medium supplemented with 10 % fetal bovine serum, 100 U/ml penicillin, 100 mg/ml streptomycin, 2 mM glutamine and 1 mM sodium pyruvate.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated by using RNeasy Micro Kit
+TruSeq® Stranded mRNA Sample Preparation, Illumina (15031047)
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Base-calling was done with bcl2fastq2 conversion software (NovaSeq 6000)
+Read alignment and counting was done using Rsubread package (v. 2.0) using in-built RefSeq gene annotation.
+Genome_build: hg38
+Supplementary_files_format_and_content: Processed data file rsubread_featureCounts.csv is tab delimited text file containing the genewise read counts for each sample.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN17367651" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX9863191" />
+  </Sample>
+
+  <Series iid="GSE164973">
+    <Status database="GEO">
+      <Submission-Date>2021-01-17</Submission-Date>
+      <Release-Date>2023-02-07</Release-Date>
+      <Last-Update-Date>2023-05-11</Last-Update-Date>
+    </Status>
+    <Title>Functional role of HSPA5 in trophoblasts</Title>
+    <Accession database="GEO">GSE164973</Accession>
+    <Pubmed-ID>36788289</Pubmed-ID>
+    <Summary>
+Analysis of the effect of HSPA5 siRNA experiment
+    </Summary>
+    <Overall-Design>
+RNA-seq analysis of silenced HSPA5 (n = 3) and negative control (n=3) samples
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5024009" />
+    <Sample-Ref ref="GSM5024010" />
+    <Sample-Ref ref="GSM5024011" />
+    <Sample-Ref ref="GSM5024012" />
+    <Sample-Ref ref="GSM5024013" />
+    <Sample-Ref ref="GSM5024014" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE164nnn/GSE164973/suppl/GSE164973_rsubread_featureCounts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA692716" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP302097" />
+  </Series>
+
+</MINiML>

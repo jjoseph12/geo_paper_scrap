@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Helen</First><Middle>N</Middle><Last>Jones</Last></Person>
+    <Email>Jonesh@ufl.edu</Email>
+    <Phone>3528461503</Phone>
+    <Laboratory>Jones</Laboratory>
+    <Department>Physiology and FUnctional Genomics</Department>
+    <Organization>University of Florida</Organization>
+    <Address>
+      <Line>1345 Center Dr</Line>
+      <City>Gainesville</City>
+      <State>Florida</State>
+      <Zip-Code>32610</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21697">
+    <Status database="GEO">
+      <Submission-Date>2016-04-05</Submission-Date>
+      <Release-Date>2016-04-05</Release-Date>
+      <Last-Update-Date>2018-12-05</Last-Update-Date>
+    </Status>
+    <Title>NextSeq 550 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL21697</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6428107">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Hand 1 KO 1</Title>
+    <Accession database="GEO">GSM6428107</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 10
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102400" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769925" />
+  </Sample>
+
+  <Sample iid="GSM6428108">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Hand 1 KO 2</Title>
+    <Accession database="GEO">GSM6428108</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 11
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102399" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769926" />
+  </Sample>
+
+  <Sample iid="GSM6428109">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Hand 1 KO 3</Title>
+    <Accession database="GEO">GSM6428109</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 12
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102398" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769927" />
+  </Sample>
+
+  <Sample iid="GSM6428110">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Hand 1 KO 4</Title>
+    <Accession database="GEO">GSM6428110</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 13
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102397" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769928" />
+  </Sample>
+
+  <Sample iid="GSM6428111">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Allstar 1</Title>
+    <Accession database="GEO">GSM6428111</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 14
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102396" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769929" />
+  </Sample>
+
+  <Sample iid="GSM6428112">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Allstar 2</Title>
+    <Accession database="GEO">GSM6428112</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 15
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102395" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769930" />
+  </Sample>
+
+  <Sample iid="GSM6428113">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Allstar 4</Title>
+    <Accession database="GEO">GSM6428113</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 17
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102394" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769931" />
+  </Sample>
+
+  <Sample iid="GSM6428114">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Opti Only 1</Title>
+    <Accession database="GEO">GSM6428114</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 18
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102393" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769932" />
+  </Sample>
+
+  <Sample iid="GSM6428115">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Opti Only 2</Title>
+    <Accession database="GEO">GSM6428115</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 19
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102392" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769933" />
+  </Sample>
+
+  <Sample iid="GSM6428116">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Opti Only 3</Title>
+    <Accession database="GEO">GSM6428116</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 20
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102391" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769934" />
+  </Sample>
+
+  <Sample iid="GSM6428117">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Opti Only 4</Title>
+    <Accession database="GEO">GSM6428117</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 21
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102390" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769935" />
+  </Sample>
+
+  <Series iid="GSE210318">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HAND1 knockdown disrupts trophoblast gene expression in vitro- human vascular endothelial cell</Title>
+    <Accession database="GEO">GSE210318</Accession>
+    <Summary>
+Congenital heart disease (CHD) affects nearly 1% of births annually, and neonatal and perinatal outcomes in cases of CHD are strongly impacted by pregnancy outcomes. CHD pregnancies carry increased risk of developing pathologies of abnormal placentation including fetal growth restriction, preeclampsia, preterm birth, and stillbirth. HAND1 is a gene associated with CHD.  In this study, we aimed characterize the mechanistic impacts of disrupting HAND1 on human  vascular endothelial cell gene expression.
+    </Summary>
+    <Overall-Design>
+To silence HAND1 gene expression,  isolated human placental microvascular endothelial cells (HPMVEC; n = 3 passages), were treated for 96 h with HAND1/2 siRNA. Cells were harvested and mRNA isolated. RNA sequencing was performed using the Illumina NextSeq 550 platform (single end reads 85-101bp, read depth 25M). The Galaxy Bioinformatic Platform was used for quality control, alignment and generation of read counts. Normalization and differential gene expression analyses were conducted using general linear modeling in edgeR packages. Statistical significance was determined using a log2 fold change cut off &gt;1.0 or &lt;-1.0 and unadjusted ≤0.05. Overrepresentation analysis was performed using Panther DB for Reactome pathways and GO Biological Processes, and String DB for protein association network analysis.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6428107" />
+    <Sample-Ref ref="GSM6428108" />
+    <Sample-Ref ref="GSM6428109" />
+    <Sample-Ref ref="GSM6428110" />
+    <Sample-Ref ref="GSM6428111" />
+    <Sample-Ref ref="GSM6428112" />
+    <Sample-Ref ref="GSM6428113" />
+    <Sample-Ref ref="GSM6428114" />
+    <Sample-Ref ref="GSM6428115" />
+    <Sample-Ref ref="GSM6428116" />
+    <Sample-Ref ref="GSM6428117" />
+    <Supplementary-Data type="XLSX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE210nnn/GSE210318/suppl/GSE210318_HPMVEC_raw_count_matrix.xlsx
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE210319" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA865264" />
+  </Series>
+
+</MINiML>

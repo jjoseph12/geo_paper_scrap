@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Huzaifa</First><Last>Hassan</Last></Person>
+    <Organization>Stowers Institute for Medical Research</Organization>
+    <Address>
+      <Line>1000 E 50th St</Line>
+      <City>Kansas City</City>
+      <State>MO</State>
+      <Zip-Code>64110</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL19057">
+    <Status database="GEO">
+      <Submission-Date>2014-08-07</Submission-Date>
+      <Release-Date>2014-08-07</Release-Date>
+      <Last-Update-Date>2019-03-25</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Mus musculus)</Title>
+    <Accession database="GEO">GPL19057</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6634666">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_277_KO</Title>
+    <Accession database="GEO">GSM6634666</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+c-Myc null
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269174" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877401" />
+  </Sample>
+
+  <Sample iid="GSM6634667">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_279_KO</Title>
+    <Accession database="GEO">GSM6634667</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+c-Myc null
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269173" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877402" />
+  </Sample>
+
+  <Sample iid="GSM6634668">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_281_KO</Title>
+    <Accession database="GEO">GSM6634668</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+c-Myc null
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269172" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877403" />
+  </Sample>
+
+  <Sample iid="GSM6634669">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_289_KO</Title>
+    <Accession database="GEO">GSM6634669</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+c-Myc null
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269171" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877404" />
+  </Sample>
+
+  <Sample iid="GSM6634670">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_296_KO</Title>
+    <Accession database="GEO">GSM6634670</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+c-Myc null
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269170" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877405" />
+  </Sample>
+
+  <Sample iid="GSM6634671">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_280_WT</Title>
+    <Accession database="GEO">GSM6634671</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269169" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877406" />
+  </Sample>
+
+  <Sample iid="GSM6634672">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_282_WT</Title>
+    <Accession database="GEO">GSM6634672</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269168" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877407" />
+  </Sample>
+
+  <Sample iid="GSM6634673">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_283_WT</Title>
+    <Accession database="GEO">GSM6634673</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269167" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877408" />
+  </Sample>
+
+  <Sample iid="GSM6634674">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_290_WT</Title>
+    <Accession database="GEO">GSM6634674</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269166" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877409" />
+  </Sample>
+
+  <Sample iid="GSM6634675">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-12</Last-Update-Date>
+    </Status>
+    <Title>MZ_294_WT</Title>
+    <Accession database="GEO">GSM6634675</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from TGCs was isolated using TRIzol (#15596026, Thermo Fisher Scientific).
+rRNA was depleted using NEBNext rRNA Depletion Kit (Human/Mouse/Rat) (NEB # E6310L). cDNA synthesis was performed using NEBNext Ultra II Directional RNA Library Prep Kit (NEB #E7760S) and NEBNext Multiplex Oligos for Illumina (Index Primer Set 1) (NEB # E7335S). Sequencing was performed using an Illumina NextSeq 500  with 75bp single read runs.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Libraries were normalized, pooled, multiplexed, and sequenced on an Illumina NextSeq 500  with 75bp single read runs.
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format allowing up to one mismatch using Illumina bcl-convert 3.10.5 Reads were aligned to UCSC genome mm10 with STAR aligner (version 2.7.3a ), using Ensembl 102 gene models. TPM values were generated using RSEM (version v1.3.0 )
+Assembly: mm10
+Supplementary files format and content: TPM gene expression in text file
+    </Data-Processing>
+    <Platform-Ref ref="GPL19057" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269165" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877410" />
+  </Sample>
+
+  <Sample iid="GSM6634676">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-14</Last-Update-Date>
+    </Status>
+    <Title>Wild type  replicate 1</Title>
+    <Accession database="GEO">GSM6634676</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Chromium Next GEM Single Cell 3' Reagent Kits v3.1 was used for making cDNA library using 10X Genomic reagents.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format using cellranger (v 3.0.0)  mkfastq. Alignment, filtering, barcode counting, and UMI counting was done using cellranger’s count pipeline
+Assembly: mm10
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634676/suppl/GSM6634676_wt_rep1.barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634676/suppl/GSM6634676_wt_rep1.features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634676/suppl/GSM6634676_wt_rep1.matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269236" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877526" />
+  </Sample>
+
+  <Sample iid="GSM6634677">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-14</Last-Update-Date>
+    </Status>
+    <Title>Wild type  replicate 2</Title>
+    <Accession database="GEO">GSM6634677</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Chromium Next GEM Single Cell 3' Reagent Kits v3.1 was used for making cDNA library using 10X Genomic reagents.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format using cellranger (v 3.0.0)  mkfastq. Alignment, filtering, barcode counting, and UMI counting was done using cellranger’s count pipeline
+Assembly: mm10
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634677/suppl/GSM6634677_wt_rep2.barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634677/suppl/GSM6634677_wt_rep2.features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634677/suppl/GSM6634677_wt_rep2.matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269235" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877527" />
+  </Sample>
+
+  <Series iid="GSE215382">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-06-30</Last-Update-Date>
+    </Status>
+    <Title>c-Myc supports polyploidy and prevents senescence in the murine placenta</Title>
+    <Accession database="GEO">GSE215382</Accession>
+    <Pubmed-ID>37278344</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the SubSeries listed below.
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6634666" />
+    <Sample-Ref ref="GSM6634667" />
+    <Sample-Ref ref="GSM6634668" />
+    <Sample-Ref ref="GSM6634669" />
+    <Sample-Ref ref="GSM6634670" />
+    <Sample-Ref ref="GSM6634671" />
+    <Sample-Ref ref="GSM6634672" />
+    <Sample-Ref ref="GSM6634673" />
+    <Sample-Ref ref="GSM6634674" />
+    <Sample-Ref ref="GSM6634675" />
+    <Sample-Ref ref="GSM6634676" />
+    <Sample-Ref ref="GSM6634677" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE215nnn/GSE215382/suppl/GSE215382_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SuperSeries of" target="GSE215380" />
+    <Relation type="SuperSeries of" target="GSE215381" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA890160" />
+  </Series>
+
+</MINiML>

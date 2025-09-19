@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Michael</First><Last>Cowley</Last></Person>
+    <Email>macowley@ncsu.edu</Email>
+    <Organization>North Carolina State University</Organization>
+    <Address>
+      <Line>Campus Box 7633</Line>
+      <City>Raleigh</City>
+      <State>NC</State>
+      <Zip-Code>27695</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Mark</First><Middle>D</Middle><Last>Simmers</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Kathleen</First><Middle>M</Middle><Last>Hudson</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Marine</First><Last>Baptissart</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21626">
+    <Status database="GEO">
+      <Submission-Date>2016-03-22</Submission-Date>
+      <Release-Date>2016-03-22</Release-Date>
+      <Last-Update-Date>2019-01-15</Last-Update-Date>
+    </Status>
+    <Title>NextSeq 550 (Mus musculus)</Title>
+    <Accession database="GEO">GPL21626</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6245719">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-06-18</Last-Update-Date>
+    </Status>
+    <Title>Mouse Placenta, Control, e18.5, Rep1</Title>
+    <Accession database="GEO">GSM6245719</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+e18.5
+      </Characteristics>
+      <Characteristics tag="genotype">
+C57Bl/6J x CAST/EiJ hybrid
+      </Characteristics>
+      <Characteristics tag="treatment">
+0 ppm cadmium chloride
+      </Characteristics>
+      <Characteristics tag="molecule subtype">
+Bisulfite-treated gDNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Tissues were homogenized and DNA was isolated with an AllPrep DNA/RNA/miRNA kit (Qiagen).
+Ovation RRBS Methyl-Seq System
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Illumina adapter reads were trimmed using Trim Galore! and a custom script was used to trim additional bases added during library creation to facilitate sequencing. Reads were mapped to the genome using Bismark and Bowtie 2 allowing for no mismatches. Following alignment, PCR duplicates were removed using a custom script. Each unique read had a randomized 6-mer barcode and if more than one read had the same start and end coordinates and the same barcode, all but one of the reads were discarded. Methylation at CpG sites were extracted using Bismark and CpG sites covered by at least 10 reads were analyzed using the methylKit R package. Differentially methylated bases and regions were identified using a Fisher’s exact test for pairwise comparisons and a Chi-squared test for analyses with more than two groups.
+Assembly: mm10
+Supplementary files format and content: *.bedgraph
+Supplementary files format and content: CpG_report.txt.gz
+    </Data-Processing>
+    <Platform-Ref ref="GPL21626" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245719/suppl/GSM6245719_1_4816NCSU_1-371_RRBS_mm_i110.CpG_report.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BEDGRAPH">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245719/suppl/GSM6245719_1_4816NCSU_1-371_RRBS_mm_i110.bedGraph.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29094092" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15712467" />
+  </Sample>
+
+  <Sample iid="GSM6245720">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-06-18</Last-Update-Date>
+    </Status>
+    <Title>Mouse Placenta, Control, e18.5, Rep2</Title>
+    <Accession database="GEO">GSM6245720</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+e18.5
+      </Characteristics>
+      <Characteristics tag="genotype">
+C57Bl/6J x CAST/EiJ hybrid
+      </Characteristics>
+      <Characteristics tag="treatment">
+0 ppm cadmium chloride
+      </Characteristics>
+      <Characteristics tag="molecule subtype">
+Bisulfite-treated gDNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Tissues were homogenized and DNA was isolated with an AllPrep DNA/RNA/miRNA kit (Qiagen).
+Ovation RRBS Methyl-Seq System
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Illumina adapter reads were trimmed using Trim Galore! and a custom script was used to trim additional bases added during library creation to facilitate sequencing. Reads were mapped to the genome using Bismark and Bowtie 2 allowing for no mismatches. Following alignment, PCR duplicates were removed using a custom script. Each unique read had a randomized 6-mer barcode and if more than one read had the same start and end coordinates and the same barcode, all but one of the reads were discarded. Methylation at CpG sites were extracted using Bismark and CpG sites covered by at least 10 reads were analyzed using the methylKit R package. Differentially methylated bases and regions were identified using a Fisher’s exact test for pairwise comparisons and a Chi-squared test for analyses with more than two groups.
+Assembly: mm10
+Supplementary files format and content: *.bedgraph
+Supplementary files format and content: CpG_report.txt.gz
+    </Data-Processing>
+    <Platform-Ref ref="GPL21626" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245720/suppl/GSM6245720_2_4816NCSU_2-206_RRBS_mm_i102.CpG_report.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BEDGRAPH">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245720/suppl/GSM6245720_2_4816NCSU_2-206_RRBS_mm_i102.bedGraph.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29094091" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15712468" />
+  </Sample>
+
+  <Sample iid="GSM6245721">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-06-18</Last-Update-Date>
+    </Status>
+    <Title>Mouse Placenta, Control, e18.5, Rep3</Title>
+    <Accession database="GEO">GSM6245721</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+e18.5
+      </Characteristics>
+      <Characteristics tag="genotype">
+C57Bl/6J x CAST/EiJ hybrid
+      </Characteristics>
+      <Characteristics tag="treatment">
+0 ppm cadmium chloride
+      </Characteristics>
+      <Characteristics tag="molecule subtype">
+Bisulfite-treated gDNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Tissues were homogenized and DNA was isolated with an AllPrep DNA/RNA/miRNA kit (Qiagen).
+Ovation RRBS Methyl-Seq System
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Illumina adapter reads were trimmed using Trim Galore! and a custom script was used to trim additional bases added during library creation to facilitate sequencing. Reads were mapped to the genome using Bismark and Bowtie 2 allowing for no mismatches. Following alignment, PCR duplicates were removed using a custom script. Each unique read had a randomized 6-mer barcode and if more than one read had the same start and end coordinates and the same barcode, all but one of the reads were discarded. Methylation at CpG sites were extracted using Bismark and CpG sites covered by at least 10 reads were analyzed using the methylKit R package. Differentially methylated bases and regions were identified using a Fisher’s exact test for pairwise comparisons and a Chi-squared test for analyses with more than two groups.
+Assembly: mm10
+Supplementary files format and content: *.bedgraph
+Supplementary files format and content: CpG_report.txt.gz
+    </Data-Processing>
+    <Platform-Ref ref="GPL21626" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245721/suppl/GSM6245721_3_4816NCSU_3-231_RRBS_mm_i112.CpG_report.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BEDGRAPH">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245721/suppl/GSM6245721_3_4816NCSU_3-231_RRBS_mm_i112.bedGraph.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29094090" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15712469" />
+  </Sample>
+
+  <Sample iid="GSM6245722">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-06-18</Last-Update-Date>
+    </Status>
+    <Title>Mouse Placenta, Control, e18.5, Rep4</Title>
+    <Accession database="GEO">GSM6245722</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+e18.5
+      </Characteristics>
+      <Characteristics tag="genotype">
+C57Bl/6J x CAST/EiJ hybrid
+      </Characteristics>
+      <Characteristics tag="treatment">
+0 ppm cadmium chloride
+      </Characteristics>
+      <Characteristics tag="molecule subtype">
+Bisulfite-treated gDNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Tissues were homogenized and DNA was isolated with an AllPrep DNA/RNA/miRNA kit (Qiagen).
+Ovation RRBS Methyl-Seq System
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Illumina adapter reads were trimmed using Trim Galore! and a custom script was used to trim additional bases added during library creation to facilitate sequencing. Reads were mapped to the genome using Bismark and Bowtie 2 allowing for no mismatches. Following alignment, PCR duplicates were removed using a custom script. Each unique read had a randomized 6-mer barcode and if more than one read had the same start and end coordinates and the same barcode, all but one of the reads were discarded. Methylation at CpG sites were extracted using Bismark and CpG sites covered by at least 10 reads were analyzed using the methylKit R package. Differentially methylated bases and regions were identified using a Fisher’s exact test for pairwise comparisons and a Chi-squared test for analyses with more than two groups.
+Assembly: mm10
+Supplementary files format and content: *.bedgraph
+Supplementary files format and content: CpG_report.txt.gz
+    </Data-Processing>
+    <Platform-Ref ref="GPL21626" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245722/suppl/GSM6245722_4_4816NCSU_4-360_RRBS_mm_i113.CpG_report.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BEDGRAPH">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245722/suppl/GSM6245722_4_4816NCSU_4-360_RRBS_mm_i113.bedGraph.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29094089" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15712470" />
+  </Sample>
+
+  <Sample iid="GSM6245723">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-06-18</Last-Update-Date>
+    </Status>
+    <Title>Mouse Placenta, 50 ppm Cadmium Exposed, e18.5, Rep1</Title>
+    <Accession database="GEO">GSM6245723</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+e18.5
+      </Characteristics>
+      <Characteristics tag="genotype">
+C57Bl/6J x CAST/EiJ hybrid
+      </Characteristics>
+      <Characteristics tag="treatment">
+50 ppm cadmium chloride
+      </Characteristics>
+      <Characteristics tag="molecule subtype">
+Bisulfite-treated gDNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Tissues were homogenized and DNA was isolated with an AllPrep DNA/RNA/miRNA kit (Qiagen).
+Ovation RRBS Methyl-Seq System
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Illumina adapter reads were trimmed using Trim Galore! and a custom script was used to trim additional bases added during library creation to facilitate sequencing. Reads were mapped to the genome using Bismark and Bowtie 2 allowing for no mismatches. Following alignment, PCR duplicates were removed using a custom script. Each unique read had a randomized 6-mer barcode and if more than one read had the same start and end coordinates and the same barcode, all but one of the reads were discarded. Methylation at CpG sites were extracted using Bismark and CpG sites covered by at least 10 reads were analyzed using the methylKit R package. Differentially methylated bases and regions were identified using a Fisher’s exact test for pairwise comparisons and a Chi-squared test for analyses with more than two groups.
+Assembly: mm10
+Supplementary files format and content: *.bedgraph
+Supplementary files format and content: CpG_report.txt.gz
+    </Data-Processing>
+    <Platform-Ref ref="GPL21626" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245723/suppl/GSM6245723_5_4816NCSU_5-242_RRBS_mm_i114.CpG_report.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BEDGRAPH">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245723/suppl/GSM6245723_5_4816NCSU_5-242_RRBS_mm_i114.bedGraph.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29094088" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15712471" />
+  </Sample>
+
+  <Sample iid="GSM6245724">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-06-18</Last-Update-Date>
+    </Status>
+    <Title>Mouse Placenta, 50 ppm Cadmium Exposed, e18.5, Rep2</Title>
+    <Accession database="GEO">GSM6245724</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+e18.5
+      </Characteristics>
+      <Characteristics tag="genotype">
+C57Bl/6J x CAST/EiJ hybrid
+      </Characteristics>
+      <Characteristics tag="treatment">
+50 ppm cadmium chloride
+      </Characteristics>
+      <Characteristics tag="molecule subtype">
+Bisulfite-treated gDNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Tissues were homogenized and DNA was isolated with an AllPrep DNA/RNA/miRNA kit (Qiagen).
+Ovation RRBS Methyl-Seq System
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Illumina adapter reads were trimmed using Trim Galore! and a custom script was used to trim additional bases added during library creation to facilitate sequencing. Reads were mapped to the genome using Bismark and Bowtie 2 allowing for no mismatches. Following alignment, PCR duplicates were removed using a custom script. Each unique read had a randomized 6-mer barcode and if more than one read had the same start and end coordinates and the same barcode, all but one of the reads were discarded. Methylation at CpG sites were extracted using Bismark and CpG sites covered by at least 10 reads were analyzed using the methylKit R package. Differentially methylated bases and regions were identified using a Fisher’s exact test for pairwise comparisons and a Chi-squared test for analyses with more than two groups.
+Assembly: mm10
+Supplementary files format and content: *.bedgraph
+Supplementary files format and content: CpG_report.txt.gz
+    </Data-Processing>
+    <Platform-Ref ref="GPL21626" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245724/suppl/GSM6245724_6_4816NCSU_6-217_RRBS_mm_i115.CpG_report.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BEDGRAPH">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245724/suppl/GSM6245724_6_4816NCSU_6-217_RRBS_mm_i115.bedGraph.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29094087" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15712472" />
+  </Sample>
+
+  <Sample iid="GSM6245725">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-06-18</Last-Update-Date>
+    </Status>
+    <Title>Mouse Placenta, 50 ppm Cadmium Exposed, e18.5, Rep3</Title>
+    <Accession database="GEO">GSM6245725</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+e18.5
+      </Characteristics>
+      <Characteristics tag="genotype">
+C57Bl/6J x CAST/EiJ hybrid
+      </Characteristics>
+      <Characteristics tag="treatment">
+50 ppm cadmium chloride
+      </Characteristics>
+      <Characteristics tag="molecule subtype">
+Bisulfite-treated gDNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Tissues were homogenized and DNA was isolated with an AllPrep DNA/RNA/miRNA kit (Qiagen).
+Ovation RRBS Methyl-Seq System
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Illumina adapter reads were trimmed using Trim Galore! and a custom script was used to trim additional bases added during library creation to facilitate sequencing. Reads were mapped to the genome using Bismark and Bowtie 2 allowing for no mismatches. Following alignment, PCR duplicates were removed using a custom script. Each unique read had a randomized 6-mer barcode and if more than one read had the same start and end coordinates and the same barcode, all but one of the reads were discarded. Methylation at CpG sites were extracted using Bismark and CpG sites covered by at least 10 reads were analyzed using the methylKit R package. Differentially methylated bases and regions were identified using a Fisher’s exact test for pairwise comparisons and a Chi-squared test for analyses with more than two groups.
+Assembly: mm10
+Supplementary files format and content: *.bedgraph
+Supplementary files format and content: CpG_report.txt.gz
+    </Data-Processing>
+    <Platform-Ref ref="GPL21626" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245725/suppl/GSM6245725_7_4816NCSU_7-354_RRBS_mm_i116.CpG_report.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BEDGRAPH">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245725/suppl/GSM6245725_7_4816NCSU_7-354_RRBS_mm_i116.bedGraph.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29094086" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15712473" />
+  </Sample>
+
+  <Sample iid="GSM6245726">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-06-18</Last-Update-Date>
+    </Status>
+    <Title>Mouse Placenta, 50 ppm Cadmium Exposed, e18.5, Rep4</Title>
+    <Accession database="GEO">GSM6245726</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+e18.5
+      </Characteristics>
+      <Characteristics tag="genotype">
+C57Bl/6J x CAST/EiJ hybrid
+      </Characteristics>
+      <Characteristics tag="treatment">
+50 ppm cadmium chloride
+      </Characteristics>
+      <Characteristics tag="molecule subtype">
+Bisulfite-treated gDNA
+      </Characteristics>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+Tissues were homogenized and DNA was isolated with an AllPrep DNA/RNA/miRNA kit (Qiagen).
+Ovation RRBS Methyl-Seq System
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Illumina adapter reads were trimmed using Trim Galore! and a custom script was used to trim additional bases added during library creation to facilitate sequencing. Reads were mapped to the genome using Bismark and Bowtie 2 allowing for no mismatches. Following alignment, PCR duplicates were removed using a custom script. Each unique read had a randomized 6-mer barcode and if more than one read had the same start and end coordinates and the same barcode, all but one of the reads were discarded. Methylation at CpG sites were extracted using Bismark and CpG sites covered by at least 10 reads were analyzed using the methylKit R package. Differentially methylated bases and regions were identified using a Fisher’s exact test for pairwise comparisons and a Chi-squared test for analyses with more than two groups.
+Assembly: mm10
+Supplementary files format and content: *.bedgraph
+Supplementary files format and content: CpG_report.txt.gz
+    </Data-Processing>
+    <Platform-Ref ref="GPL21626" />
+    <Library-Strategy>Bisulfite-Seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>Reduced Representation</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245726/suppl/GSM6245726_8_4816NCSU_8-329_RRBS_mm_i101.CpG_report.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="BEDGRAPH">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6245nnn/GSM6245726/suppl/GSM6245726_8_4816NCSU_8-329_RRBS_mm_i101.bedGraph.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29094085" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15712474" />
+  </Sample>
+
+  <Series iid="GSE206182">
+    <Status database="GEO">
+      <Submission-Date>2022-06-15</Submission-Date>
+      <Release-Date>2022-06-18</Release-Date>
+      <Last-Update-Date>2022-08-10</Last-Update-Date>
+    </Status>
+    <Title>Reduced representation bisulfite sequencing of cadmium-exposed mouse placentas</Title>
+    <Accession database="GEO">GSE206182</Accession>
+    <Pubmed-ID>35770551</Pubmed-ID>
+    <Summary>
+The goal of the study was to identify regions of differential methylation between e18.5 mouse placentas exposed to cadmium and control placentas.
+    </Summary>
+    <Overall-Design>
+Animal work was approved by the North Carolina State University Institutional Animal Care and Use Committee, under protocols 16-045-B and 19-049-B. All mice were on a 14-hour/10-hour light/dark cycle at 30-70 % humidity, 22°C ± 4°C. 5-week-old C57Bl/6J (B) female mice were exposed for 5 weeks to 0, 1, or 50 ppm CdCl2 through drinking water (Sigma-Aldrich, 202908). At 10 weeks B mice were mated with unexposed CAST/EiJ (C) males. Cd exposure continued throughout mating and gestation. Embryos and placentae were dissected at e18.5; collected tissues were weighed, snap-frozen immediately upon dissection and stored at -80°C. Genomic DNA was isolated from four female 0 ppm and four female 50 ppm exposed placentae using the AllPrep DNA/RNA/miRNA kit (Qiagen). 100 ng of gDNA was digested with TaqaI (NEB) at 65⁰C for 2 hours followed by MspI (NEB) at 37⁰C overnight. Following enzymatic digestion, samples were used for library generation using the Ovation RRBS Methyl-Seq System (Tecan) following the manufacturer’s instructions. In brief, digested DNA was randomly ligated, and, following fragment end repair, bisulfite converted using the EpiTect Fast DNA Bisulfite Kit (Qiagen) following the Qiagen protocol. After conversion and clean-up, samples were amplified resuming the Ovation RRBS Methyl-Seq System protocol for library amplification and purification. Libraries were measured using the Agilent 2200 TapeStation System and quantified using the KAPA Library Quant Kit ABI Prism qPCR Mix (Roche). Libraries were sequenced on a NextSeq 550 using single end 75 bp sequencing.
+    </Overall-Design>
+    <Type>Methylation profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib1" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6245719" />
+    <Sample-Ref ref="GSM6245720" />
+    <Sample-Ref ref="GSM6245721" />
+    <Sample-Ref ref="GSM6245722" />
+    <Sample-Ref ref="GSM6245723" />
+    <Sample-Ref ref="GSM6245724" />
+    <Sample-Ref ref="GSM6245725" />
+    <Sample-Ref ref="GSM6245726" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE206nnn/GSE206182/suppl/GSE206182_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA849571" />
+  </Series>
+
+</MINiML>

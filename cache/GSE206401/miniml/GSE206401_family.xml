@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Ryan</First><Last>Lintao</Last></Person>
+    <Email>rvlintao@up.edu.ph</Email>
+    <Department>College of Medicine</Department>
+    <Organization>University of the Philippines Manila</Organization>
+    <Address>
+      <Line>547 Pedro Gil Street</Line>
+      <City>Manila</City>
+      <Postal-Code>1000</Postal-Code>
+      <Country>Philippines</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Ananth</First><Middle>K</Middle><Last>Kammala</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Kamil</First><Last>Khanipov</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>George</First><Last>Golovko</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Ramkumar</First><Last>Menon</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21697">
+    <Status database="GEO">
+      <Submission-Date>2016-04-05</Submission-Date>
+      <Release-Date>2016-04-05</Release-Date>
+      <Last-Update-Date>2018-12-05</Last-Update-Date>
+    </Status>
+    <Title>NextSeq 550 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL21697</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6253097">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human placenta, term not in labor, rep1</Title>
+    <Accession database="GEO">GSM6253097</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+715PLAC
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181016" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783618" />
+  </Sample>
+
+  <Sample iid="GSM6253098">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human placenta, term not in labor, rep2</Title>
+    <Accession database="GEO">GSM6253098</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+895PLAC
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181015" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783619" />
+  </Sample>
+
+  <Sample iid="GSM6253099">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human placenta, term not in labor, rep3</Title>
+    <Accession database="GEO">GSM6253099</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+896PLAC
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181014" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783620" />
+  </Sample>
+
+  <Sample iid="GSM6253100">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human placenta, term not in labor, rep4</Title>
+    <Accession database="GEO">GSM6253100</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+902PLAC
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181013" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783621" />
+  </Sample>
+
+  <Sample iid="GSM6253101">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human placenta, term not in labor, rep5</Title>
+    <Accession database="GEO">GSM6253101</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+PLA
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181012" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783622" />
+  </Sample>
+
+  <Sample iid="GSM6253102">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human fetal membrane, term not in labor, rep1</Title>
+    <Accession database="GEO">GSM6253102</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Fetal membrane</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Fetal membrane
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+895FM
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181011" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783623" />
+  </Sample>
+
+  <Sample iid="GSM6253103">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human fetal membrane, term not in labor, rep2</Title>
+    <Accession database="GEO">GSM6253103</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Fetal membrane</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Fetal membrane
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+902FM
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181010" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783624" />
+  </Sample>
+
+  <Sample iid="GSM6253104">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human fetal membrane, term not in labor, rep3</Title>
+    <Accession database="GEO">GSM6253104</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Fetal membrane</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Fetal membrane
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+913FM
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181009" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783625" />
+  </Sample>
+
+  <Sample iid="GSM6253105">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human fetal membrane, term not in labor, rep4</Title>
+    <Accession database="GEO">GSM6253105</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Fetal membrane</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Fetal membrane
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+FM
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181008" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783626" />
+  </Sample>
+
+  <Sample iid="GSM6253106">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human fetal membrane, term not in labor, rep5</Title>
+    <Accession database="GEO">GSM6253106</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Fetal membrane</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Fetal membrane
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+TNLFM
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181007" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783627" />
+  </Sample>
+
+  <Sample iid="GSM6253107">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized amnion epithelial cells, term not in labor, rep1</Title>
+    <Accession database="GEO">GSM6253107</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-AEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-AEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Amnion epithelial cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+AEC1
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181006" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783628" />
+  </Sample>
+
+  <Sample iid="GSM6253108">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized amnion epithelial cells, term not in labor, rep2</Title>
+    <Accession database="GEO">GSM6253108</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-AEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-AEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Amnion epithelial cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+AEC2
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181005" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783629" />
+  </Sample>
+
+  <Sample iid="GSM6253109">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized amnion epithelial cells, term not in labor, rep3</Title>
+    <Accession database="GEO">GSM6253109</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-AEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-AEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Amnion epithelial cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+AEC3
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181004" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783630" />
+  </Sample>
+
+  <Sample iid="GSM6253110">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized amnion mesenchymal cells, term not in labor, rep1</Title>
+    <Accession database="GEO">GSM6253110</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-AMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-AMC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Amnion mesenchymal cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+AMC1
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181003" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783631" />
+  </Sample>
+
+  <Sample iid="GSM6253111">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized amnion mesenchymal cells, term not in labor, rep2</Title>
+    <Accession database="GEO">GSM6253111</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-AMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-AMC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Amnion mesenchymal cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+AMC2
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181002" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783632" />
+  </Sample>
+
+  <Sample iid="GSM6253112">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized amnion mesenchymal cells, term not in labor, rep3</Title>
+    <Accession database="GEO">GSM6253112</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-AMC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-AMC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Amnion mesenchymal cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+AMC3
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181001" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783633" />
+  </Sample>
+
+  <Sample iid="GSM6253113">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>BeWo cells, rep1</Title>
+    <Accession database="GEO">GSM6253113</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>BeWo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+BeWo
+      </Characteristics>
+      <Characteristics tag="cell type">
+Choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+BEWO1
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29181000" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783634" />
+  </Sample>
+
+  <Sample iid="GSM6253114">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>BeWo cells, rep2</Title>
+    <Accession database="GEO">GSM6253114</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>BeWo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+BeWo
+      </Characteristics>
+      <Characteristics tag="cell type">
+Choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+BEWO2
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29180999" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783635" />
+  </Sample>
+
+  <Sample iid="GSM6253115">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>BeWo cells, rep3</Title>
+    <Accession database="GEO">GSM6253115</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>BeWo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+BeWo
+      </Characteristics>
+      <Characteristics tag="cell type">
+Choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+BEWO3
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29180998" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783636" />
+  </Sample>
+
+  <Sample iid="GSM6253116">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized chorion trophoblast cells, term not in labor, rep1</Title>
+    <Accession database="GEO">GSM6253116</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-CTC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-CTC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Chorion trophoblast cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+CTC1
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29180997" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783637" />
+  </Sample>
+
+  <Sample iid="GSM6253117">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized chorion trophoblast cells, term not in labor, rep2</Title>
+    <Accession database="GEO">GSM6253117</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-CTC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-CTC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Chorion trophoblast cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+CTC2
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29180996" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783638" />
+  </Sample>
+
+  <Sample iid="GSM6253118">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized chorion trophoblast cells, term not in labor, rep3</Title>
+    <Accession database="GEO">GSM6253118</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-CTC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-CTC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Chorion trophoblast cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+CTC3
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29180995" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783639" />
+  </Sample>
+
+  <Sample iid="GSM6253119">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized decidual cells, term not in labor, rep1</Title>
+    <Accession database="GEO">GSM6253119</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-DEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-DEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Decidual cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+DECI1
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29180994" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783640" />
+  </Sample>
+
+  <Sample iid="GSM6253120">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized decidual cells, term not in labor, rep2</Title>
+    <Accession database="GEO">GSM6253120</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-DEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-DEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Decidual cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+DECI2
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29180993" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783641" />
+  </Sample>
+
+  <Sample iid="GSM6253121">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-08-05</Last-Update-Date>
+    </Status>
+    <Title>Human immortalized decidual cells, term not in labor, rep3</Title>
+    <Accession database="GEO">GSM6253121</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>hFM-DEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+hFM-DEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Decidual cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild-type
+      </Characteristics>
+      <Characteristics tag="treatment">
+control conditions
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was isolated from placental and FM tissues and cell lines using RNeasy Mini Kit (QIAGEN, Germantown, MD) according to the manufacturer’s instructions.
+Using RNA extracted from placental and FM tissues (n=5 per tissue) and cells (n=3 per cell type), a cDNA library was prepared according to the Smart-3SEQ protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+DECI3
+    </Description>
+    <Data-Processing>
+Base calling was using Illumina's bcl2fastq2-v2.20 converter
+Adapter and polyA sequences were trimmed with cutadapt version 1.15
+UMIs were removed from the reads and added to the read name with the extract_umi.py software provided by the Smart-3SEQ authors
+Reads were aligned to the human assembly GCA_000001405.15 using STAR version 2.7.5c using the parameters recommended by the software authors for the Encode consortium
+The dedup.py Smart-3SEQ software was used to mark and remove duplicated reads
+FeatureCounts software was used to count reads per gene using the Gencode annotation release 35
+Assembly: GCA_000001405.15
+Supplementary files format and content: Tab-separated values files output containing normalized raw counts from edgeR
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29180992" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15783642" />
+  </Sample>
+
+  <Series iid="GSE206401">
+    <Status database="GEO">
+      <Submission-Date>2022-06-17</Submission-Date>
+      <Release-Date>2022-08-05</Release-Date>
+      <Last-Update-Date>2022-09-28</Last-Update-Date>
+    </Status>
+    <Title>Role of human fetal membranes in xenobiotic metabolism and nutrient transport</Title>
+    <Accession database="GEO">GSE206401</Accession>
+    <Pubmed-ID>35940219</Pubmed-ID>
+    <Summary>
+This study characterized CYP450 and nutrient transport expression in human fetal membranes.
+RNA sequencing (RNA-Seq) of RNA derived from human placental and fetal membrane tissues and cells was done.
+    </Summary>
+    <Overall-Design>
+Comparative gene expression profiling analysis of RNA-seq data for human placental and fetal membrane tissues and cells from term not in labor women
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6253097" />
+    <Sample-Ref ref="GSM6253098" />
+    <Sample-Ref ref="GSM6253099" />
+    <Sample-Ref ref="GSM6253100" />
+    <Sample-Ref ref="GSM6253101" />
+    <Sample-Ref ref="GSM6253102" />
+    <Sample-Ref ref="GSM6253103" />
+    <Sample-Ref ref="GSM6253104" />
+    <Sample-Ref ref="GSM6253105" />
+    <Sample-Ref ref="GSM6253106" />
+    <Sample-Ref ref="GSM6253107" />
+    <Sample-Ref ref="GSM6253108" />
+    <Sample-Ref ref="GSM6253109" />
+    <Sample-Ref ref="GSM6253110" />
+    <Sample-Ref ref="GSM6253111" />
+    <Sample-Ref ref="GSM6253112" />
+    <Sample-Ref ref="GSM6253113" />
+    <Sample-Ref ref="GSM6253114" />
+    <Sample-Ref ref="GSM6253115" />
+    <Sample-Ref ref="GSM6253116" />
+    <Sample-Ref ref="GSM6253117" />
+    <Sample-Ref ref="GSM6253118" />
+    <Sample-Ref ref="GSM6253119" />
+    <Sample-Ref ref="GSM6253120" />
+    <Sample-Ref ref="GSM6253121" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE206nnn/GSE206401/suppl/GSE206401_cells_edgeR_normcounts.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE206nnn/GSE206401/suppl/GSE206401_tissues_edgeR_normcounts.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA850439" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Xiaoya</First><Last>Zhao</Last></Person>
+    <Email>zxyyy618@126.com</Email>
+    <Phone>15859101922</Phone>
+    <Organization>School of Medicine, Shanghai Jiaotong University</Organization>
+    <Address>
+      <Line>No. 910, Hengshan Rd</Line>
+      <City>Shanghai</City>
+      <State>-- None selected --</State>
+      <Postal-Code>200030</Postal-Code>
+      <Country>China</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>X</First><Middle>Y</Middle><Last>Zhao</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Q</First><Last>Zhu</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>J</First><Last>Zhang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>M</First><Middle>Q</Middle><Last>Li</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6304121">
+    <Status database="GEO">
+      <Submission-Date>2022-07-07</Submission-Date>
+      <Release-Date>2023-06-18</Release-Date>
+      <Last-Update-Date>2023-06-18</Last-Update-Date>
+    </Status>
+    <Title>intrauterine pregnancy 01 [IP1]</Title>
+    <Accession database="GEO">GSM6304121</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua and placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+decidua and placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+42
+      </Characteristics>
+      <Characteristics tag="sample group">
+intrauterine pregnancy
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The tissues of maternal-fetal interface were isolated and obtained for single cell sequence, with a proportion of 1 to 2 (maternal to fetus). Freshly collected tissues were flushed with ice-cold PBS. In details, for decidua and fallopian tube were digested with 20ml type I collagenase at 1.0 mg/ml in RPIM 1640 medium/10% fetal bovine serum (FBS) with gentle shaking at 37 °C for 1h and 20ml type I DNase at 0.1mg/ml for 5 mins in a shaking incubator. For placenta were digested twice for 30 min each at 37 °C with 30 ml mix digestive enzyme (15ml TrypLE and 15ml ACCUMAX) with gentle shaking. The digested suspension was filtered through a 100-µm cell strainer and 40-µm cell strainer, then the enzymatic reaction was stopped by adding 10% FBS. If the red cells were visualized, the RBC lysis step was performed: 1-2ml of RBC lysis buffer were added and triturated several times, then incubated for 1-2 minutes on ice. Cells were analyzed with a hemocytometer using trypan blue, and which survival rate is generally above 90%.
+This process was performed by Genergy Bio-Technology Corporation and in accordance with the manufacturer's protocol. Cells were counted and loaded onto the Chromium Controller (10X Genomics) for a target recovery of 8000 single cells. Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT clean-up, complementary DNA amplification and library construction were performed. Qubit was used for library quantification before pooling. The final library pool was sequenced on an Illumina Nova6000 platform using 150-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v6.0 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+Assembly: GRCh38
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304121/suppl/GSM6304121_IP1barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304121/suppl/GSM6304121_IP1features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304121/suppl/GSM6304121_IP1matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29554953" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16056633" />
+  </Sample>
+
+  <Sample iid="GSM6304122">
+    <Status database="GEO">
+      <Submission-Date>2022-07-07</Submission-Date>
+      <Release-Date>2023-06-18</Release-Date>
+      <Last-Update-Date>2023-06-18</Last-Update-Date>
+    </Status>
+    <Title>intrauterine pregnancy 02 [IP2]</Title>
+    <Accession database="GEO">GSM6304122</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua and placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+decidua and placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+42
+      </Characteristics>
+      <Characteristics tag="sample group">
+intrauterine pregnancy
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The tissues of maternal-fetal interface were isolated and obtained for single cell sequence, with a proportion of 1 to 2 (maternal to fetus). Freshly collected tissues were flushed with ice-cold PBS. In details, for decidua and fallopian tube were digested with 20ml type I collagenase at 1.0 mg/ml in RPIM 1640 medium/10% fetal bovine serum (FBS) with gentle shaking at 37 °C for 1h and 20ml type I DNase at 0.1mg/ml for 5 mins in a shaking incubator. For placenta were digested twice for 30 min each at 37 °C with 30 ml mix digestive enzyme (15ml TrypLE and 15ml ACCUMAX) with gentle shaking. The digested suspension was filtered through a 100-µm cell strainer and 40-µm cell strainer, then the enzymatic reaction was stopped by adding 10% FBS. If the red cells were visualized, the RBC lysis step was performed: 1-2ml of RBC lysis buffer were added and triturated several times, then incubated for 1-2 minutes on ice. Cells were analyzed with a hemocytometer using trypan blue, and which survival rate is generally above 90%.
+This process was performed by Genergy Bio-Technology Corporation and in accordance with the manufacturer's protocol. Cells were counted and loaded onto the Chromium Controller (10X Genomics) for a target recovery of 8000 single cells. Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT clean-up, complementary DNA amplification and library construction were performed. Qubit was used for library quantification before pooling. The final library pool was sequenced on an Illumina Nova6000 platform using 150-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v6.0 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+Assembly: GRCh38
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304122/suppl/GSM6304122_IP2barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304122/suppl/GSM6304122_IP2features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304122/suppl/GSM6304122_IP2matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29554952" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16056635" />
+  </Sample>
+
+  <Sample iid="GSM6304123">
+    <Status database="GEO">
+      <Submission-Date>2022-07-07</Submission-Date>
+      <Release-Date>2023-06-18</Release-Date>
+      <Last-Update-Date>2023-06-18</Last-Update-Date>
+    </Status>
+    <Title>ruptured tubal ectopic pregnancy 01 [REP1]</Title>
+    <Accession database="GEO">GSM6304123</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>fallopian tube and placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+fallopian tube and placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+41
+      </Characteristics>
+      <Characteristics tag="sample group">
+ruptured tubal ectopic pregnancy
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The tissues of maternal-fetal interface were isolated and obtained for single cell sequence, with a proportion of 1 to 2 (maternal to fetus). Freshly collected tissues were flushed with ice-cold PBS. In details, for decidua and fallopian tube were digested with 20ml type I collagenase at 1.0 mg/ml in RPIM 1640 medium/10% fetal bovine serum (FBS) with gentle shaking at 37 °C for 1h and 20ml type I DNase at 0.1mg/ml for 5 mins in a shaking incubator. For placenta were digested twice for 30 min each at 37 °C with 30 ml mix digestive enzyme (15ml TrypLE and 15ml ACCUMAX) with gentle shaking. The digested suspension was filtered through a 100-µm cell strainer and 40-µm cell strainer, then the enzymatic reaction was stopped by adding 10% FBS. If the red cells were visualized, the RBC lysis step was performed: 1-2ml of RBC lysis buffer were added and triturated several times, then incubated for 1-2 minutes on ice. Cells were analyzed with a hemocytometer using trypan blue, and which survival rate is generally above 90%.
+This process was performed by Genergy Bio-Technology Corporation and in accordance with the manufacturer's protocol. Cells were counted and loaded onto the Chromium Controller (10X Genomics) for a target recovery of 8000 single cells. Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT clean-up, complementary DNA amplification and library construction were performed. Qubit was used for library quantification before pooling. The final library pool was sequenced on an Illumina Nova6000 platform using 150-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v6.0 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+Assembly: GRCh38
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304123/suppl/GSM6304123_REP1barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304123/suppl/GSM6304123_REP1features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304123/suppl/GSM6304123_REP1matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29554951" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16056634" />
+  </Sample>
+
+  <Sample iid="GSM6304124">
+    <Status database="GEO">
+      <Submission-Date>2022-07-07</Submission-Date>
+      <Release-Date>2023-06-18</Release-Date>
+      <Last-Update-Date>2023-06-18</Last-Update-Date>
+    </Status>
+    <Title>ruptured tubal ectopic pregnancy 02 [REP2]</Title>
+    <Accession database="GEO">GSM6304124</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>fallopian tube and placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+fallopian tube and placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+52
+      </Characteristics>
+      <Characteristics tag="sample group">
+ruptured tubal ectopic pregnancy
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The tissues of maternal-fetal interface were isolated and obtained for single cell sequence, with a proportion of 1 to 2 (maternal to fetus). Freshly collected tissues were flushed with ice-cold PBS. In details, for decidua and fallopian tube were digested with 20ml type I collagenase at 1.0 mg/ml in RPIM 1640 medium/10% fetal bovine serum (FBS) with gentle shaking at 37 °C for 1h and 20ml type I DNase at 0.1mg/ml for 5 mins in a shaking incubator. For placenta were digested twice for 30 min each at 37 °C with 30 ml mix digestive enzyme (15ml TrypLE and 15ml ACCUMAX) with gentle shaking. The digested suspension was filtered through a 100-µm cell strainer and 40-µm cell strainer, then the enzymatic reaction was stopped by adding 10% FBS. If the red cells were visualized, the RBC lysis step was performed: 1-2ml of RBC lysis buffer were added and triturated several times, then incubated for 1-2 minutes on ice. Cells were analyzed with a hemocytometer using trypan blue, and which survival rate is generally above 90%.
+This process was performed by Genergy Bio-Technology Corporation and in accordance with the manufacturer's protocol. Cells were counted and loaded onto the Chromium Controller (10X Genomics) for a target recovery of 8000 single cells. Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT clean-up, complementary DNA amplification and library construction were performed. Qubit was used for library quantification before pooling. The final library pool was sequenced on an Illumina Nova6000 platform using 150-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v6.0 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+Assembly: GRCh38
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304124/suppl/GSM6304124_REP2barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304124/suppl/GSM6304124_REP2features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304124/suppl/GSM6304124_REP2matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29554950" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16056636" />
+  </Sample>
+
+  <Sample iid="GSM6304125">
+    <Status database="GEO">
+      <Submission-Date>2022-07-07</Submission-Date>
+      <Release-Date>2023-06-18</Release-Date>
+      <Last-Update-Date>2023-06-18</Last-Update-Date>
+    </Status>
+    <Title>ruptured tubal ectopic pregnancy 03 [REP3]</Title>
+    <Accession database="GEO">GSM6304125</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>fallopian tube and placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+fallopian tube and placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+43
+      </Characteristics>
+      <Characteristics tag="sample group">
+ruptured tubal ectopic pregnancy
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The tissues of maternal-fetal interface were isolated and obtained for single cell sequence, with a proportion of 1 to 2 (maternal to fetus). Freshly collected tissues were flushed with ice-cold PBS. In details, for decidua and fallopian tube were digested with 20ml type I collagenase at 1.0 mg/ml in RPIM 1640 medium/10% fetal bovine serum (FBS) with gentle shaking at 37 °C for 1h and 20ml type I DNase at 0.1mg/ml for 5 mins in a shaking incubator. For placenta were digested twice for 30 min each at 37 °C with 30 ml mix digestive enzyme (15ml TrypLE and 15ml ACCUMAX) with gentle shaking. The digested suspension was filtered through a 100-µm cell strainer and 40-µm cell strainer, then the enzymatic reaction was stopped by adding 10% FBS. If the red cells were visualized, the RBC lysis step was performed: 1-2ml of RBC lysis buffer were added and triturated several times, then incubated for 1-2 minutes on ice. Cells were analyzed with a hemocytometer using trypan blue, and which survival rate is generally above 90%.
+This process was performed by Genergy Bio-Technology Corporation and in accordance with the manufacturer's protocol. Cells were counted and loaded onto the Chromium Controller (10X Genomics) for a target recovery of 8000 single cells. Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT clean-up, complementary DNA amplification and library construction were performed. Qubit was used for library quantification before pooling. The final library pool was sequenced on an Illumina Nova6000 platform using 150-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v6.0 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+Assembly: GRCh38
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304125/suppl/GSM6304125_REP3barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304125/suppl/GSM6304125_REP3features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304125/suppl/GSM6304125_REP3matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29554949" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16056637" />
+  </Sample>
+
+  <Sample iid="GSM6304126">
+    <Status database="GEO">
+      <Submission-Date>2022-07-07</Submission-Date>
+      <Release-Date>2023-06-18</Release-Date>
+      <Last-Update-Date>2023-06-18</Last-Update-Date>
+    </Status>
+    <Title>abortive tubal ectopic pregnancy 01 [AEP1]</Title>
+    <Accession database="GEO">GSM6304126</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>fallopian tube and placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+fallopian tube and placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+43
+      </Characteristics>
+      <Characteristics tag="sample group">
+abortive tubal ectopic pregnancy
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The tissues of maternal-fetal interface were isolated and obtained for single cell sequence, with a proportion of 1 to 2 (maternal to fetus). Freshly collected tissues were flushed with ice-cold PBS. In details, for decidua and fallopian tube were digested with 20ml type I collagenase at 1.0 mg/ml in RPIM 1640 medium/10% fetal bovine serum (FBS) with gentle shaking at 37 °C for 1h and 20ml type I DNase at 0.1mg/ml for 5 mins in a shaking incubator. For placenta were digested twice for 30 min each at 37 °C with 30 ml mix digestive enzyme (15ml TrypLE and 15ml ACCUMAX) with gentle shaking. The digested suspension was filtered through a 100-µm cell strainer and 40-µm cell strainer, then the enzymatic reaction was stopped by adding 10% FBS. If the red cells were visualized, the RBC lysis step was performed: 1-2ml of RBC lysis buffer were added and triturated several times, then incubated for 1-2 minutes on ice. Cells were analyzed with a hemocytometer using trypan blue, and which survival rate is generally above 90%.
+This process was performed by Genergy Bio-Technology Corporation and in accordance with the manufacturer's protocol. Cells were counted and loaded onto the Chromium Controller (10X Genomics) for a target recovery of 8000 single cells. Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT clean-up, complementary DNA amplification and library construction were performed. Qubit was used for library quantification before pooling. The final library pool was sequenced on an Illumina Nova6000 platform using 150-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v6.0 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+Assembly: GRCh38
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304126/suppl/GSM6304126_AEP1barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304126/suppl/GSM6304126_AEP1features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304126/suppl/GSM6304126_AEP1matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29554948" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16056638" />
+  </Sample>
+
+  <Sample iid="GSM6304127">
+    <Status database="GEO">
+      <Submission-Date>2022-07-07</Submission-Date>
+      <Release-Date>2023-06-18</Release-Date>
+      <Last-Update-Date>2023-06-18</Last-Update-Date>
+    </Status>
+    <Title>abortive tubal ectopic pregnancy 02 [AEP2]</Title>
+    <Accession database="GEO">GSM6304127</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>fallopian tube and placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+fallopian tube and placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+51
+      </Characteristics>
+      <Characteristics tag="sample group">
+abortive tubal ectopic pregnancy
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+The tissues of maternal-fetal interface were isolated and obtained for single cell sequence, with a proportion of 1 to 2 (maternal to fetus). Freshly collected tissues were flushed with ice-cold PBS. In details, for decidua and fallopian tube were digested with 20ml type I collagenase at 1.0 mg/ml in RPIM 1640 medium/10% fetal bovine serum (FBS) with gentle shaking at 37 °C for 1h and 20ml type I DNase at 0.1mg/ml for 5 mins in a shaking incubator. For placenta were digested twice for 30 min each at 37 °C with 30 ml mix digestive enzyme (15ml TrypLE and 15ml ACCUMAX) with gentle shaking. The digested suspension was filtered through a 100-µm cell strainer and 40-µm cell strainer, then the enzymatic reaction was stopped by adding 10% FBS. If the red cells were visualized, the RBC lysis step was performed: 1-2ml of RBC lysis buffer were added and triturated several times, then incubated for 1-2 minutes on ice. Cells were analyzed with a hemocytometer using trypan blue, and which survival rate is generally above 90%.
+This process was performed by Genergy Bio-Technology Corporation and in accordance with the manufacturer's protocol. Cells were counted and loaded onto the Chromium Controller (10X Genomics) for a target recovery of 8000 single cells. Generation of gel beads in emulsion (GEMs), barcoding, GEM-RT clean-up, complementary DNA amplification and library construction were performed. Qubit was used for library quantification before pooling. The final library pool was sequenced on an Illumina Nova6000 platform using 150-base-pair paired-end reads.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+The demultiplexing, barcoded processing, gene counting and aggregation were made using the Cell Ranger software v6.0 (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger)
+Assembly: GRCh38
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304127/suppl/GSM6304127_AEP2barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304127/suppl/GSM6304127_AEP2features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6304nnn/GSM6304127/suppl/GSM6304127_AEP2matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29554947" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16056639" />
+  </Sample>
+
+  <Series iid="GSE207630">
+    <Status database="GEO">
+      <Submission-Date>2022-07-07</Submission-Date>
+      <Release-Date>2023-06-18</Release-Date>
+      <Last-Update-Date>2023-06-20</Last-Update-Date>
+    </Status>
+    <Title>A human maternal-fetus interface transcriptome atlas</Title>
+    <Accession database="GEO">GSE207630</Accession>
+    <Summary>
+Trophoblasts undergos dynamic differentiation and self-renewal during pregnancy. Expecially, EVTs anchor the placenta to the uterus to ensure pregnancy success, and its invasive excessiveness is a probable consequence of ruptured tubal ectopic pregnancy (REP), that resulting in maternal infertile and/or even deaths. We present REP, abortive tubal ectopic pregnancy (AEP)and intrauterine pregnancy (IP) atlas by integrating single-cell RNA-seq. We define cell subtypes within EVTs and each of the feature genes. Further, we utilize monocle3 and RNA velocty to identify the developmental trajectories of EVT subsets. CellPhoneDB and cell-chat unravel secretion of CSF1 by falloppian tubal secretory epithelial cells directly interact with CSF1R of EVT to strengthens the invasive ability.
+    </Summary>
+    <Overall-Design>
+Expression profiling by high throughput sequencing
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6304121" />
+    <Sample-Ref ref="GSM6304122" />
+    <Sample-Ref ref="GSM6304123" />
+    <Sample-Ref ref="GSM6304124" />
+    <Sample-Ref ref="GSM6304125" />
+    <Sample-Ref ref="GSM6304126" />
+    <Sample-Ref ref="GSM6304127" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE207nnn/GSE207630/suppl/GSE207630_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA856470" />
+  </Series>
+
+</MINiML>

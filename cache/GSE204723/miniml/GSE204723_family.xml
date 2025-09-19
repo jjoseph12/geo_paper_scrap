@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Boryana</First><Last>Koseva</Last></Person>
+    <Email>bskoseva@cmh.edu</Email>
+    <Laboratory>Grundberg Lab</Laboratory>
+    <Department>CMRI</Department>
+    <Organization>Children's Mercy Hospital</Organization>
+    <Address>
+      <Line>2420 Pershing Road</Line>
+      <City>Kansas City</City>
+      <State>MO</State>
+      <Zip-Code>64108</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Elin</First><Last>Grundberg</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Emily</First><Last>Wesley</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Warren</First><Last>Cheung</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Courtney</First><Last>Marsh</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6189369">
+    <Status database="GEO">
+      <Submission-Date>2022-05-24</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>Villous tissue 1, RPL, replicate 1, scRNAseq</Title>
+    <Accession database="GEO">GSM6189369</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Villous tissue of fetal placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Villous tissue of fetal placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="disease state">
+Idiopathic recurrent pregnancy loss
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+6w1d
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Product of conception (POC) including placental and decidual tissue were collected from 3 patients (Supplementary Table 17) suffering from idiopathic (unexplained) recurrent pregnancy loss defined as 2 or more failed pregnancies where common risk factors were excluded (i.e. obesity, use of alcohol/tobacco/drugs, Mullerian anomaly (septum), balanced translocation, uncontrolled diabetes, uncontrolled hypothyroidism, anti-phospholipid antibody syndrome (or other coagulopathy). All samples had normal karyotype based on clinical cytogenetics testing including chromosomal analysis (GTG banded chromosomes analyzed at the 450-550 band levels) and array comparative genomic hybridization performed in accordance with current International Standing Committee on Human Cytogenetic Nomenclature (ISCN 2009). Prior to single-cell capture, samples were thawed in 10ml of Thawing Medium consisting of DMEM/F-12 (Thermo Fisher Cat No. 11320033) supplemented with 10% FBS and 100 units/mL of penicillin and 100 µg/mL of streptomycin (Thermo Fisher Cat No. 15140122) that was prewarmed in a 37°C bead bath and centrifuged at 300 x g for 8 min. The supernatant was carefully removed without disturbing the cell pellets. The cell pellets were each resuspended in 0.5 mL of Thawing Medium, and the cell suspensions were placed on ice and passed through a prewetted 40-µm nylon mesh cell strainer. Cell suspensions were centrifuged at 300 x g for 8 min at 4°C, and the supernatant was carefully aspirated without disturbing the cell pellets.Each sample was rinsed in PBS before the addition of 5ml of digestion media (MEM/F12 +10% FBS +P/S with 2.0mg/mL collagenase type 1A) and incubated for 50min at 37⁰C. The sample was strained through a pre-wetted 100um filter in a 50ml conical tube and rinsed twice with 5 mL of DMEM/F12 +10% FBS +P/S and centrifuged at 300g for 8 min. The cell pellets were resuspended in 1 mL of cold Recovery Cell Culture Freezing Medium (Thermo Fisher Cat No. 12648010) , and the cell suspension was transferred to a cryogenic storage vial. The cryogenic storage vial was placed in a Corning CoolCell FTS30, which was then placed in a -80°C freezer overnight. Samples were stored at -80°C before being thawed and processed for single-cell RNA-Seq.
+The cell pellets were resuspended in 100 µL of cold Thawing Medium, and cell count and viability were assessed using 0.4% Trypan Blue and a Countess II automated cell counter. For each sample, Chromium Chip B (10x Genomics Cat No. 1000153) were loaded (Supplementary Table 17). Following cell loading, cDNA and library preparation was performed identically for all samples using the Chromium Single Cell 3’ Library &amp; Gel Bead Kit v3 (10x Genomics Cat No. 1000075) according to the manufacturer’s protocol. Libraries were sequenced using an Illumina NovaSeq 6000 using 2x94 cycle paired-end.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+Sequenced reads were initially processed by the CellRanger pipeline which includes FASTQ creation, read alignment, gene counting, and cell calling. The Cell Ranger GRCh38(v2020-A) genome was used as the reference for alignment.
+Assembly: Cell Ranger GRCh38(v2020-A) genome
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189369/suppl/GSM6189369_10x_cmh002898-01A_S1_scRNA_Cap1_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189369/suppl/GSM6189369_10x_cmh002898-01A_S1_scRNA_Cap1_features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189369/suppl/GSM6189369_10x_cmh002898-01A_S1_scRNA_Cap1_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28639410" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15438659" />
+  </Sample>
+
+  <Sample iid="GSM6189370">
+    <Status database="GEO">
+      <Submission-Date>2022-05-24</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>Villous tissue 2, RPL, replicate 1, scRNAseq</Title>
+    <Accession database="GEO">GSM6189370</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Villous tissue of fetal placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Villous tissue of fetal placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="disease state">
+Idiopathic recurrent pregnancy loss
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+5w
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Product of conception (POC) including placental and decidual tissue were collected from 3 patients (Supplementary Table 17) suffering from idiopathic (unexplained) recurrent pregnancy loss defined as 2 or more failed pregnancies where common risk factors were excluded (i.e. obesity, use of alcohol/tobacco/drugs, Mullerian anomaly (septum), balanced translocation, uncontrolled diabetes, uncontrolled hypothyroidism, anti-phospholipid antibody syndrome (or other coagulopathy). All samples had normal karyotype based on clinical cytogenetics testing including chromosomal analysis (GTG banded chromosomes analyzed at the 450-550 band levels) and array comparative genomic hybridization performed in accordance with current International Standing Committee on Human Cytogenetic Nomenclature (ISCN 2009). Prior to single-cell capture, samples were thawed in 10ml of Thawing Medium consisting of DMEM/F-12 (Thermo Fisher Cat No. 11320033) supplemented with 10% FBS and 100 units/mL of penicillin and 100 µg/mL of streptomycin (Thermo Fisher Cat No. 15140122) that was prewarmed in a 37°C bead bath and centrifuged at 300 x g for 8 min. The supernatant was carefully removed without disturbing the cell pellets. The cell pellets were each resuspended in 0.5 mL of Thawing Medium, and the cell suspensions were placed on ice and passed through a prewetted 40-µm nylon mesh cell strainer. Cell suspensions were centrifuged at 300 x g for 8 min at 4°C, and the supernatant was carefully aspirated without disturbing the cell pellets.Each sample was rinsed in PBS before the addition of 5ml of digestion media (MEM/F12 +10% FBS +P/S with 2.0mg/mL collagenase type 1A) and incubated for 50min at 37⁰C. The sample was strained through a pre-wetted 100um filter in a 50ml conical tube and rinsed twice with 5 mL of DMEM/F12 +10% FBS +P/S and centrifuged at 300g for 8 min. The cell pellets were resuspended in 1 mL of cold Recovery Cell Culture Freezing Medium (Thermo Fisher Cat No. 12648010) , and the cell suspension was transferred to a cryogenic storage vial. The cryogenic storage vial was placed in a Corning CoolCell FTS30, which was then placed in a -80°C freezer overnight. Samples were stored at -80°C before being thawed and processed for single-cell RNA-Seq.
+The cell pellets were resuspended in 100 µL of cold Thawing Medium, and cell count and viability were assessed using 0.4% Trypan Blue and a Countess II automated cell counter. For each sample, Chromium Chip B (10x Genomics Cat No. 1000153) were loaded (Supplementary Table 17). Following cell loading, cDNA and library preparation was performed identically for all samples using the Chromium Single Cell 3’ Library &amp; Gel Bead Kit v3 (10x Genomics Cat No. 1000075) according to the manufacturer’s protocol. Libraries were sequenced using an Illumina NovaSeq 6000 using 2x94 cycle paired-end.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+Sequenced reads were initially processed by the CellRanger pipeline which includes FASTQ creation, read alignment, gene counting, and cell calling. The Cell Ranger GRCh38(v2020-A) genome was used as the reference for alignment.
+Assembly: Cell Ranger GRCh38(v2020-A) genome
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189370/suppl/GSM6189370_10x_cmh003068-01A_S1_scRNA_Cap1_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189370/suppl/GSM6189370_10x_cmh003068-01A_S1_scRNA_Cap1_features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189370/suppl/GSM6189370_10x_cmh003068-01A_S1_scRNA_Cap1_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28639409" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15438660" />
+  </Sample>
+
+  <Sample iid="GSM6189371">
+    <Status database="GEO">
+      <Submission-Date>2022-05-24</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>Villous tissue 2, RPL, replicate 2, scRNAseq</Title>
+    <Accession database="GEO">GSM6189371</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Villous tissue of fetal placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Villous tissue of fetal placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="disease state">
+Idiopathic recurrent pregnancy loss
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+5w
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Product of conception (POC) including placental and decidual tissue were collected from 3 patients (Supplementary Table 17) suffering from idiopathic (unexplained) recurrent pregnancy loss defined as 2 or more failed pregnancies where common risk factors were excluded (i.e. obesity, use of alcohol/tobacco/drugs, Mullerian anomaly (septum), balanced translocation, uncontrolled diabetes, uncontrolled hypothyroidism, anti-phospholipid antibody syndrome (or other coagulopathy). All samples had normal karyotype based on clinical cytogenetics testing including chromosomal analysis (GTG banded chromosomes analyzed at the 450-550 band levels) and array comparative genomic hybridization performed in accordance with current International Standing Committee on Human Cytogenetic Nomenclature (ISCN 2009). Prior to single-cell capture, samples were thawed in 10ml of Thawing Medium consisting of DMEM/F-12 (Thermo Fisher Cat No. 11320033) supplemented with 10% FBS and 100 units/mL of penicillin and 100 µg/mL of streptomycin (Thermo Fisher Cat No. 15140122) that was prewarmed in a 37°C bead bath and centrifuged at 300 x g for 8 min. The supernatant was carefully removed without disturbing the cell pellets. The cell pellets were each resuspended in 0.5 mL of Thawing Medium, and the cell suspensions were placed on ice and passed through a prewetted 40-µm nylon mesh cell strainer. Cell suspensions were centrifuged at 300 x g for 8 min at 4°C, and the supernatant was carefully aspirated without disturbing the cell pellets.Each sample was rinsed in PBS before the addition of 5ml of digestion media (MEM/F12 +10% FBS +P/S with 2.0mg/mL collagenase type 1A) and incubated for 50min at 37⁰C. The sample was strained through a pre-wetted 100um filter in a 50ml conical tube and rinsed twice with 5 mL of DMEM/F12 +10% FBS +P/S and centrifuged at 300g for 8 min. The cell pellets were resuspended in 1 mL of cold Recovery Cell Culture Freezing Medium (Thermo Fisher Cat No. 12648010) , and the cell suspension was transferred to a cryogenic storage vial. The cryogenic storage vial was placed in a Corning CoolCell FTS30, which was then placed in a -80°C freezer overnight. Samples were stored at -80°C before being thawed and processed for single-cell RNA-Seq.
+The cell pellets were resuspended in 100 µL of cold Thawing Medium, and cell count and viability were assessed using 0.4% Trypan Blue and a Countess II automated cell counter. For each sample, Chromium Chip B (10x Genomics Cat No. 1000153) were loaded (Supplementary Table 17). Following cell loading, cDNA and library preparation was performed identically for all samples using the Chromium Single Cell 3’ Library &amp; Gel Bead Kit v3 (10x Genomics Cat No. 1000075) according to the manufacturer’s protocol. Libraries were sequenced using an Illumina NovaSeq 6000 using 2x94 cycle paired-end.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+Sequenced reads were initially processed by the CellRanger pipeline which includes FASTQ creation, read alignment, gene counting, and cell calling. The Cell Ranger GRCh38(v2020-A) genome was used as the reference for alignment.
+Assembly: Cell Ranger GRCh38(v2020-A) genome
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189371/suppl/GSM6189371_10x_cmh003068-01A_S1_scRNA_Cap2_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189371/suppl/GSM6189371_10x_cmh003068-01A_S1_scRNA_Cap2_features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189371/suppl/GSM6189371_10x_cmh003068-01A_S1_scRNA_Cap2_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28639408" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15438661" />
+  </Sample>
+
+  <Sample iid="GSM6189372">
+    <Status database="GEO">
+      <Submission-Date>2022-05-24</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>Villous tissue 3, RPL, replicate 1, scRNAseq</Title>
+    <Accession database="GEO">GSM6189372</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Villous tissue of fetal placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Villous tissue of fetal placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="disease state">
+Idiopathic recurrent pregnancy loss
+      </Characteristics>
+      <Characteristics tag="developmental stage">
+6w1d
+      </Characteristics>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+Product of conception (POC) including placental and decidual tissue were collected from 3 patients (Supplementary Table 17) suffering from idiopathic (unexplained) recurrent pregnancy loss defined as 2 or more failed pregnancies where common risk factors were excluded (i.e. obesity, use of alcohol/tobacco/drugs, Mullerian anomaly (septum), balanced translocation, uncontrolled diabetes, uncontrolled hypothyroidism, anti-phospholipid antibody syndrome (or other coagulopathy). All samples had normal karyotype based on clinical cytogenetics testing including chromosomal analysis (GTG banded chromosomes analyzed at the 450-550 band levels) and array comparative genomic hybridization performed in accordance with current International Standing Committee on Human Cytogenetic Nomenclature (ISCN 2009). Prior to single-cell capture, samples were thawed in 10ml of Thawing Medium consisting of DMEM/F-12 (Thermo Fisher Cat No. 11320033) supplemented with 10% FBS and 100 units/mL of penicillin and 100 µg/mL of streptomycin (Thermo Fisher Cat No. 15140122) that was prewarmed in a 37°C bead bath and centrifuged at 300 x g for 8 min. The supernatant was carefully removed without disturbing the cell pellets. The cell pellets were each resuspended in 0.5 mL of Thawing Medium, and the cell suspensions were placed on ice and passed through a prewetted 40-µm nylon mesh cell strainer. Cell suspensions were centrifuged at 300 x g for 8 min at 4°C, and the supernatant was carefully aspirated without disturbing the cell pellets.Each sample was rinsed in PBS before the addition of 5ml of digestion media (MEM/F12 +10% FBS +P/S with 2.0mg/mL collagenase type 1A) and incubated for 50min at 37⁰C. The sample was strained through a pre-wetted 100um filter in a 50ml conical tube and rinsed twice with 5 mL of DMEM/F12 +10% FBS +P/S and centrifuged at 300g for 8 min. The cell pellets were resuspended in 1 mL of cold Recovery Cell Culture Freezing Medium (Thermo Fisher Cat No. 12648010) , and the cell suspension was transferred to a cryogenic storage vial. The cryogenic storage vial was placed in a Corning CoolCell FTS30, which was then placed in a -80°C freezer overnight. Samples were stored at -80°C before being thawed and processed for single-cell RNA-Seq.
+The cell pellets were resuspended in 100 µL of cold Thawing Medium, and cell count and viability were assessed using 0.4% Trypan Blue and a Countess II automated cell counter. For each sample, Chromium Chip B (10x Genomics Cat No. 1000153) were loaded (Supplementary Table 17). Following cell loading, cDNA and library preparation was performed identically for all samples using the Chromium Single Cell 3’ Library &amp; Gel Bead Kit v3 (10x Genomics Cat No. 1000075) according to the manufacturer’s protocol. Libraries were sequenced using an Illumina NovaSeq 6000 using 2x94 cycle paired-end.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+Sequenced reads were initially processed by the CellRanger pipeline which includes FASTQ creation, read alignment, gene counting, and cell calling. The Cell Ranger GRCh38(v2020-A) genome was used as the reference for alignment.
+Assembly: Cell Ranger GRCh38(v2020-A) genome
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189372/suppl/GSM6189372_10x_cmh003961-01A_S1_scRNA_Cap1_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189372/suppl/GSM6189372_10x_cmh003961-01A_S1_scRNA_Cap1_features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6189nnn/GSM6189372/suppl/GSM6189372_10x_cmh003961-01A_S1_scRNA_Cap1_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28639407" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15438662" />
+  </Sample>
+
+  <Series iid="GSE204723">
+    <Status database="GEO">
+      <Submission-Date>2022-05-24</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-09-20</Last-Update-Date>
+    </Status>
+    <Title>Single-Cell Gene Expression Analysis of First Trimester Placenta Samples Linked to Idiopathic Recurrent Pregnancy Loss</Title>
+    <Accession database="GEO">GSE204723</Accession>
+    <Pubmed-ID>37563143</Pubmed-ID>
+    <Summary>
+The extravillous trophoblast (EVT) cell lineage is a key feature of placentation and critical for spiral artery remodeling and successful pregnancy. Our knowledge of transcriptional regulation driving EVT cell development is limited. Here, we mapped the transcriptome and epigenome landscape as well as chromatin interactions of human trophoblast stem (TS) cells and their transition into the differentiated EVT cell lineage. Chromatin accessibility in intergenic regions was more extensive in EVT cells than in TS cells in the stem state, which is consistent with increased enhancer-driven gene regulation. Using reference epigenome annotation, we noted that 18% of the chromatin landscape in EVT cells was uncharted.  We linked regulatory regions to their cognate target genes and characterized the three-dimensional organization of the TS cell functional genome by high throughput chromosome conformation capture. Integration of chromatin accessibility, long-range chromatin interactions, transcriptomic, and transcription factor binding motif enrichment enabled identification of transcription factors and regulatory mechanisms associated with EVT cell lineage development. Subsequent analyses elucidated functional roles for   TFAP2C, SNAI1 and EPAS1 in the regulation of EVT cell lineage development.  EPAS1 was identified as an upstream regulator of key EVT cell transcription factors, including ASCL2  and SNAI1 and was together with its targets linked to diseases of pregnancy, including  idiopathic recurrent pregnancy loss and low birth weight. Collectively, we have revealed activation of a dynamic regulatory network that provides a framework for understanding EVT cell specification in trophoblast cell lineage development and human placentation.
+    </Summary>
+    <Overall-Design>
+Villous tissue was isolated from the product of conception derived from patients with idopathic recurrent pregnancy loss (RPL) and analyzed using scRNAseq.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib1" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6189369" />
+    <Sample-Ref ref="GSM6189370" />
+    <Sample-Ref ref="GSM6189371" />
+    <Sample-Ref ref="GSM6189372" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE204nnn/GSE204723/suppl/GSE204723_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA842012" />
+  </Series>
+
+</MINiML>

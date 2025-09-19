@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Guannan</First><Last>Yang</Last></Person>
+    <Email>guannany@student.unimelb.edu.au</Email>
+    <Organization>University of Melbourne</Organization>
+    <Address>
+      <Line>Grattan Street</Line>
+      <City>Parkville</City>
+      <Postal-Code>3010</Postal-Code>
+      <Country>Australia</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Ellen</First><Middle>M</Middle><Last>Menkhorst</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Leilanie</First><Middle>L</Middle><Last>Santos</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Wei</First><Last>Zhou</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Kim-Anh</First><Last>Lê Cao</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Evdokia</First><Last>Dimitriadis</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5818622">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta ASC KO  PEGIL11 rep1</Title>
+    <Accession database="GEO">GSM5818622</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+ASC -/-
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG IL11
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+1009
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975968" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788751" />
+  </Sample>
+
+  <Sample iid="GSM5818623">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta ASC KO  PEG rep1</Title>
+    <Accession database="GEO">GSM5818623</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+ASC-/-
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+1083
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975967" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788752" />
+  </Sample>
+
+  <Sample iid="GSM5818624">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta ASC KO  PEG rep2</Title>
+    <Accession database="GEO">GSM5818624</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+ASC -/-
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+1084
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975966" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788753" />
+  </Sample>
+
+  <Sample iid="GSM5818625">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta ASC KO  PEGIL11 rep2</Title>
+    <Accession database="GEO">GSM5818625</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+ASC-/-
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG IL11
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+1085
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975965" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788754" />
+  </Sample>
+
+  <Sample iid="GSM5818626">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta ASC KO  PEGIL11 rep3</Title>
+    <Accession database="GEO">GSM5818626</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+ASC -/-
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG IL11
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+1087
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975964" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788755" />
+  </Sample>
+
+  <Sample iid="GSM5818627">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta ASC KO  PEG rep3</Title>
+    <Accession database="GEO">GSM5818627</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+ASC-/-
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+1092
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975963" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788756" />
+  </Sample>
+
+  <Sample iid="GSM5818628">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta ASC KO  PEG rep4</Title>
+    <Accession database="GEO">GSM5818628</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+ASC -/-
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+1096
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975962" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788757" />
+  </Sample>
+
+  <Sample iid="GSM5818629">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta ASC KO PEGIL11  rep4</Title>
+    <Accession database="GEO">GSM5818629</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+ASC-/-
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG IL11
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+1148
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975961" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788758" />
+  </Sample>
+
+  <Sample iid="GSM5818630">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta WT PEGIL11  rep1</Title>
+    <Accession database="GEO">GSM5818630</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild type
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG IL11
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+74
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975960" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788759" />
+  </Sample>
+
+  <Sample iid="GSM5818631">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta WT PEG rep1</Title>
+    <Accession database="GEO">GSM5818631</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild type
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+75
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975959" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788760" />
+  </Sample>
+
+  <Sample iid="GSM5818632">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta WT PEGIL11  rep2</Title>
+    <Accession database="GEO">GSM5818632</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild type
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG IL11
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+76
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975958" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788761" />
+  </Sample>
+
+  <Sample iid="GSM5818633">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta WT PEG rep2</Title>
+    <Accession database="GEO">GSM5818633</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild type
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+77
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975957" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788762" />
+  </Sample>
+
+  <Sample iid="GSM5818634">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta WT PEG rep3</Title>
+    <Accession database="GEO">GSM5818634</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild type
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+79
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975956" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788763" />
+  </Sample>
+
+  <Sample iid="GSM5818635">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta WT PEGIL11  rep3</Title>
+    <Accession database="GEO">GSM5818635</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild type
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG IL11
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+80
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975955" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788764" />
+  </Sample>
+
+  <Sample iid="GSM5818636">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta WT PEG rep4</Title>
+    <Accession database="GEO">GSM5818636</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild type
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+81
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975954" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788765" />
+  </Sample>
+
+  <Sample iid="GSM5818637">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Placenta WT PEGIL11 rep4</Title>
+    <Accession database="GEO">GSM5818637</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="age">
+embryonic day 13
+      </Characteristics>
+      <Characteristics tag="genotype">
+wild type
+      </Characteristics>
+      <Characteristics tag="treatment">
+PEG IL11
+      </Characteristics>
+      <Treatment-Protocol>
+Mated female mice received once daily sub-cutaneous injections of 500µg/kg/day PEGIL11 or PEG control from embryonic day (E) 10 to E12 before being killed on E13 and the placenta collected.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL6 (WEHI, Kew, VIC, Australia), Asc null (kindly provided by Millennium Pharmaceuticals) and Nlrp3 null (kindly provided by the University of Lausanne) female (virgin 8-12 weeks) and male (8-52 weeks) were housed under conventional conditions, had ad libitum food and water and were maintained in a 12h: light-dark cycle.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta's were removed, flash frozen on dry ice before RNA was harvested using the RNeasy Mini kit (QIAGEN).
+RNA libraries were prepared using Illumina's Ribo-zero Gold protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+83
+    </Description>
+    <Data-Processing>
+The primary sequence data was generated using the Illumina bcl2fastq 2.20.0.422 pipeline
+The sequence reads from all samples were analysed according to AGRF quality  control measures (Australian Genome Research Facility Ltd.). The reads were also screened for the presence of any Illumina adapter/overrepresented sequences and cross-species contamination. The cleaned sequence reads were then aligned against the mm10 genome. The STAR aligner v2.5.3a was used to map reads to the genomic sequences.
+mRNA were identified and kept according to MGI-Mouse Gene Expression Database (GXD). Genes with low raw counts (lower than 15 in 13 samples or more) were removed. For each sample, counts were scaled and normalized by TMM (trimmed mean of M-values) and CPM (counts per million) using the R package edgeR.
+Genome_build: mm10
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every gene in total RNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with raw RNA counts for every mRNA and every sample
+Supplementary_files_format_and_content: comma-separated values file with filtered and normalised CPM values for every mRNA and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN24975953" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13788766" />
+  </Sample>
+
+  <Series iid="GSE193685">
+    <Status database="GEO">
+      <Submission-Date>2022-01-14</Submission-Date>
+      <Release-Date>2023-05-09</Release-Date>
+      <Last-Update-Date>2023-05-09</Last-Update-Date>
+    </Status>
+    <Title>Next-generation sequencing reveals IL11 drives preeclampsia by disrupting trophoblast differentiation and activating the placental inflammasome</Title>
+    <Accession database="GEO">GSE193685</Accession>
+    <Summary>
+Preeclampsia is a life-threatening disorder of pregnancy unique to humans. Interleukin (IL)11 is elevated in serum from pregnancies that subsequently develop early-onset preeclampsia and pharmacological elevation of IL11 in pregnant mice causes the development of preeclampsia-like features (hypertension and proteinuria), however, the mechanism by which IL11 drives preeclampsia-like features is unknown. Using Next-generation sequencing we demonstrate that treatment with PEGylated IL11 (PEGIL11) inhibited placental expression of markers of spongiotrophoblast and syncytiotrophoblast linages and increased placental cathepsin production in wild-type and Asc-/- mice. Function studies showed that IL11 acts via Asc inflammasomes to induce tissue fibrosis and preeclampsia in mice. This study has far-reaching implications on our understanding of the underlying etiology of preeclampsia and the mechanism by which IL11 causes inflammation and fibrosis in many tissues and disease states.
+    </Summary>
+    <Overall-Design>
+mRNA profiles of embryonic day 13 placenta following PEGylated (PEG) interleukin (IL)11 treatment in wild-type and Asc-/- (Pycard-/-) mice.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib1" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5818622" />
+    <Sample-Ref ref="GSM5818623" />
+    <Sample-Ref ref="GSM5818624" />
+    <Sample-Ref ref="GSM5818625" />
+    <Sample-Ref ref="GSM5818626" />
+    <Sample-Ref ref="GSM5818627" />
+    <Sample-Ref ref="GSM5818628" />
+    <Sample-Ref ref="GSM5818629" />
+    <Sample-Ref ref="GSM5818630" />
+    <Sample-Ref ref="GSM5818631" />
+    <Sample-Ref ref="GSM5818632" />
+    <Sample-Ref ref="GSM5818633" />
+    <Sample-Ref ref="GSM5818634" />
+    <Sample-Ref ref="GSM5818635" />
+    <Sample-Ref ref="GSM5818636" />
+    <Sample-Ref ref="GSM5818637" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE193nnn/GSE193685/suppl/GSE193685_E13_mouse_placenta_RNA_seq.csv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE193nnn/GSE193685/suppl/GSE193685_mRNA-placenta.csv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE193nnn/GSE193685/suppl/GSE193685_preprocessed_mRNA.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA797243" />
+  </Series>
+
+</MINiML>

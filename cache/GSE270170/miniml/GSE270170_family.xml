@@ -1,0 +1,915 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Robert</First><Middle>E</Middle><Last>Morey</Last></Person>
+    <Email>robmoreyucsd@gmail.com, remorey@health.ucsd.edu</Email>
+    <Laboratory>Parast</Laboratory>
+    <Department>Pathology</Department>
+    <Organization>UCSD</Organization>
+    <Address>
+      <Line>2880 Torrey Pines Scenic Dr</Line>
+      <City>La Jolla</City>
+      <State>CA</State>
+      <Zip-Code>92037</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Robert</First><Last>Morey</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Francesca</First><Last>Soncin</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Mana</First><Last>Parast</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM8335886">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Whole Placenta, patient 856, 5000, rep1</Title>
+    <Accession database="GEO">GSM8335886</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>whole placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+whole placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+8w4d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335886/suppl/GSM8335886_856p_5k_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335886/suppl/GSM8335886_856p_5k_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335886/suppl/GSM8335886_856p_5k_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966269" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895603" />
+  </Sample>
+
+  <Sample iid="GSM8335887">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Whole Placenta, patient 856, 10000, rep2</Title>
+    <Accession database="GEO">GSM8335887</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>whole placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+whole placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+8w4d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335887/suppl/GSM8335887_856p_10k_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335887/suppl/GSM8335887_856p_10k_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335887/suppl/GSM8335887_856p_10k_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966272" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895602" />
+  </Sample>
+
+  <Sample iid="GSM8335888">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Whole Placenta, patient 860, 5000, rep1</Title>
+    <Accession database="GEO">GSM8335888</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>whole placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+whole placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+6w5d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335888/suppl/GSM8335888_860p_5k_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335888/suppl/GSM8335888_860p_5k_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335888/suppl/GSM8335888_860p_5k_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966270" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895601" />
+  </Sample>
+
+  <Sample iid="GSM8335889">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Whole Placenta, patient 860, 10000, rep2</Title>
+    <Accession database="GEO">GSM8335889</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>whole placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+whole placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+6w5d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335889/suppl/GSM8335889_860p_10k_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335889/suppl/GSM8335889_860p_10k_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335889/suppl/GSM8335889_860p_10k_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966271" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895600" />
+  </Sample>
+
+  <Sample iid="GSM8335890">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Whole Placenta, patient 861, 10000, rep1</Title>
+    <Accession database="GEO">GSM8335890</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>whole placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+whole placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+12w2d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335890/suppl/GSM8335890_861p_10k_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335890/suppl/GSM8335890_861p_10k_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335890/suppl/GSM8335890_861p_10k_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966273" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895599" />
+  </Sample>
+
+  <Sample iid="GSM8335891">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Whole Placenta, patient 866, 10000, rep1</Title>
+    <Accession database="GEO">GSM8335891</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>whole placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+whole placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+13w0d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335891/suppl/GSM8335891_866p_10k_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335891/suppl/GSM8335891_866p_10k_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335891/suppl/GSM8335891_866p_10k_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966274" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895598" />
+  </Sample>
+
+  <Sample iid="GSM8335892">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Basal Plate, patient 1276</Title>
+    <Accession database="GEO">GSM8335892</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Basal Plate placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Basal Plate placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+6w5d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335892/suppl/GSM8335892_1276bp_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335892/suppl/GSM8335892_1276bp_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335892/suppl/GSM8335892_1276bp_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966275" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895597" />
+  </Sample>
+
+  <Sample iid="GSM8335893">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Chorionic Plate, patient 1276</Title>
+    <Accession database="GEO">GSM8335893</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>chorionic plate placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+chorionic plate placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+6w5d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335893/suppl/GSM8335893_1276cp_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335893/suppl/GSM8335893_1276cp_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335893/suppl/GSM8335893_1276cp_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966276" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895596" />
+  </Sample>
+
+  <Sample iid="GSM8335894">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Basal Plate, patient 1290</Title>
+    <Accession database="GEO">GSM8335894</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Basal Plate placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Basal Plate placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+6w2d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335894/suppl/GSM8335894_1290bp_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335894/suppl/GSM8335894_1290bp_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335894/suppl/GSM8335894_1290bp_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966277" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895595" />
+  </Sample>
+
+  <Sample iid="GSM8335895">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>Chorionic Plate, patient 1290</Title>
+    <Accession database="GEO">GSM8335895</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>chorionic plate placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+chorionic plate placenta
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+6w2d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335895/suppl/GSM8335895_1290cp_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335895/suppl/GSM8335895_1290cp_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335895/suppl/GSM8335895_1290cp_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966278" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895594" />
+  </Sample>
+
+  <Sample iid="GSM8335896">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>TSC, patient 906</Title>
+    <Accession database="GEO">GSM8335896</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>TSC_906</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+TSC_906
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+5w5d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335896/suppl/GSM8335896_906tsc_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335896/suppl/GSM8335896_906tsc_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335896/suppl/GSM8335896_906tsc_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966279" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895593" />
+  </Sample>
+
+  <Sample iid="GSM8335897">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>TSC, patient 1000</Title>
+    <Accession database="GEO">GSM8335897</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>TSC_1000</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+TSC_1000
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+6w3d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335897/suppl/GSM8335897_1000tsc_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335897/suppl/GSM8335897_1000tsc_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335897/suppl/GSM8335897_1000tsc_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966280" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895592" />
+  </Sample>
+
+  <Sample iid="GSM8335898">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-16</Last-Update-Date>
+    </Status>
+    <Title>TSC, patient 1278</Title>
+    <Accession database="GEO">GSM8335898</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>TSC_1278</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+TSC_1278
+      </Characteristics>
+      <Characteristics tag="gestational age_(weeksdays)">
+6w4d
+      </Characteristics>
+      <Treatment-Protocol>
+hTSCs were derived as explained in PMID: 34791028, PMID: 3454082.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All tissue samples were processed within 2 hours of sample collection. Tissues were minced and subjected to sequential digestion with Trypsin and DNase, followed by Percoll gradient separation as previously described (PMID: 28167044). For trophoblast stem cell derivation, the CTBs were MACS-purified with with either a PE-conjugated anti-ITGA6 antibody (Biolegend #313612) or an APC-conjugated anti-EGFR antibody (Biolegend #352906).
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single cell suspensions were washed, filtered for cell debris, counted, and stained with a viability marker to ensure correct loading concentration and a high percentage of live cells. Cell suspensions were then loaded onto the 10x Genomics Controller for GEM generation.
+Library was performed according to the manufacturer’s instructions (single cell 3’ v2 protocol, 10x Genomics). Briefly, GCs were resuspended in the master mix and loaded together with partitioning oil and gel beads into the chip to generate the gel bead-in-emulsion (GEM). The poly-A RNA from the cell lysate contained in every single GEM was retrotranscripted to cDNA, which contains an Ilumina R1 primer sequence, Unique Molecular Identifier (UMI) and the 10x Barcode. The pooled barcoded cDNA was then cleaned up with Silane DynaBeads, amplified by PCR and the apropiated sized fragments were selected with SPRIselect reagent for subsequent library construction. During the library construction Ilumina R2 primer sequence, paired-end constructs with P5 and P7 sequences and a sample index were added.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x genomics
+    </Description>
+    <Data-Processing>
+Data was mapped using the STARsolo function of STAR (v.2.7.10a) (Dobin, 2013). STARsolo performed error correction and demultiplexing of cell barcodes using user-input whitelist (3M-february-2018.txt for version 3 of the 10X Genomics Chromium System and 737K-august-2016.txt for version 2 data), mapped reads to the reference genome (GRCh38, version 32, Ensembl 98), deduplicated and error corrected UMIs, quantified per-cell gene expression, and spliced and unspliced reads similar to Velocyto. The following are the CellRanger mimicking commands used: --outFilterScoreMin 30 --readFilesCommand zcat --soloCBmatchWLtype 1MM_multi_Nbase_pseudocounts --soloUMIfiltering MultiGeneUMI_CR --soloUMIdedup 1MM_CR --soloCellFilter EmptyDrops_CR --soloUMIlen 12 --soloType CB_UMI_Simple --soloCBwhitelist 3M-february-2018.txt --clipAdapterType CellRanger4 --outFileNamePrefix name --outSAMattributes All --outSAMtype BAM SortedByCoordinate --quantMode GeneCounts --soloCBlen 16 --soloCBstart 1 --soloUMIstart 17 --soloFeatures Gene GeneFull SJ Velocyto.
+Assembly: GRCh38, version 32, Ensembl 98
+Supplementary files format and content: barcodes.tsv.gz:  tab-separated values for cell barcodes
+Supplementary files format and content: features.tsv.gz:  tab-separated values list of gene IDs
+Supplementary files format and content: matrix.mtx.gz:  gene expression count data in Matrix Market Exchange Format
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335898/suppl/GSM8335898_1278tsc_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335898/suppl/GSM8335898_1278tsc_genes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM8335nnn/GSM8335898/suppl/GSM8335898_1278tsc_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX24966281" />
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN41895591" />
+  </Sample>
+
+  <Series iid="GSE270170">
+    <Status database="GEO">
+      <Submission-Date>2024-06-18</Submission-Date>
+      <Release-Date>2024-08-16</Release-Date>
+      <Last-Update-Date>2024-08-17</Last-Update-Date>
+    </Status>
+    <Title>Trajectory modeling of first trimester placenta highlight differences between cytotrophoblast progenitors and trophoblast stem cells [scRNA-seq]</Title>
+    <Accession database="GEO">GSE270170</Accession>
+    <Pubmed-ID>39071344</Pubmed-ID>
+    <Summary>
+Cytotrophoblast (CTB) are bipotent progenitor epithelial cells of the human placenta, which can differentiate into invasive extravillous trophoblast (EVT) and multinucleated syncytiotrophoblast (STB). Trophoblast stem cells (TSC) have also been shown to be bipotential. In this study, we set out to probe the transcriptional diversity of first trimester CTB and compare TSC to various subgroups of CTB.  We performed single-cell RNA sequencing on six normal placentae, four 6-week placentae, two of which were separated into basal and chorionic fractions prior to sequencing, and two 13-week placentae. We also sequenced three TSC lines, derived from 6-8 week placentae, to evaluate similarities and differences between primary CTB and TSC.  CTB clusters displayed notable distinctions based on gestational age, with 6-week placentae showing enrichment for specific CTB subtypes, further influenced by origin from the basal or chorionic plate. Differential expression analysis of CTB from basal versus chorionic plate highlighted pathways associated with proliferation, unfolded protein response, and oxidative phosphorylation. We identified trophoblast states representing initial progenitor CTB, precursor STB, precursor and mature EVT, and multiple CTB subtypes. CTB progenitors were enriched at 6-weeks, with basal plate cells biased toward EVT, and chorionic plate cells toward STB, precursors. Clustering and trajectory inference analysis indicated that TSC were most like EVT precursor cells, with only a small percentage of TSC on the pre-STB differentiation trajectory. This was confirmed by flow cytometric analysis of 6 different TSC lines, which showed uniform expression of proximal column markers ITGA2 and ITGA5. Additionally, we found that only ITGA5+ CTB could be plated in 2D, and these cells formed only EVT upon spontaneous differentiation.  Our findings suggest that distinct CTB states exist in different regions of the placenta as early as six weeks gestation and that current TSC lines most closely resemble ITGA5+ CTB, biased toward the EVT lineage.
+    </Summary>
+    <Overall-Design>
+For whole placental samples, chorionic villi were minced and subjected to three sequential enzymatic digestions. After filtration, cells were counted and loaded on the 10x Genomics chip. For basal and chorion samples, under a microscope we collected the tips (basal fraction) and the base (chorionic fraction) of the villi while the middle section was discarded. The two fractions were subjected to the same sequential enzymatic digestion and after filtration cells were separated on a Percoll (Sigma-Aldrich) gradient.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM8335886" />
+    <Sample-Ref ref="GSM8335887" />
+    <Sample-Ref ref="GSM8335888" />
+    <Sample-Ref ref="GSM8335889" />
+    <Sample-Ref ref="GSM8335890" />
+    <Sample-Ref ref="GSM8335891" />
+    <Sample-Ref ref="GSM8335892" />
+    <Sample-Ref ref="GSM8335893" />
+    <Sample-Ref ref="GSM8335894" />
+    <Sample-Ref ref="GSM8335895" />
+    <Sample-Ref ref="GSM8335896" />
+    <Sample-Ref ref="GSM8335897" />
+    <Sample-Ref ref="GSM8335898" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE270nnn/GSE270170/suppl/GSE270170_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE270174" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1125368" />
+  </Series>
+
+</MINiML>

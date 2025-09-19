@@ -1,0 +1,1623 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Johan</First><Last>Siewiera</Last></Person>
+    <Email>johan.siewiera@gmail.com</Email>
+    <Organization>UCSF</Organization>
+    <Address>
+      <Line>513 Parnassus Avenue</Line>
+      <City>San Francisco</City>
+      <Zip-Code>94143</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kelly</First><Middle>M</Middle><Last>Cautivo</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Karim</First><Last>Mahiddine</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Damon</First><Last>Rideaux</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Ari</First><Middle>B</Middle><Last>Molofsky</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Adrian</First><Last>Erlebacher</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21103">
+    <Status database="GEO">
+      <Submission-Date>2015-11-04</Submission-Date>
+      <Release-Date>2015-11-04</Release-Date>
+      <Last-Update-Date>2019-03-19</Last-Update-Date>
+    </Status>
+    <Title>Illumina HiSeq 4000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL21103</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5514087">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 dec 1</Title>
+    <Accession database="GEO">GSM5514087</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712916" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719212" />
+  </Sample>
+
+  <Sample iid="GSM5514088">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 dec 2</Title>
+    <Accession database="GEO">GSM5514088</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712917" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719213" />
+  </Sample>
+
+  <Sample iid="GSM5514089">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 dec 3</Title>
+    <Accession database="GEO">GSM5514089</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712918" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719214" />
+  </Sample>
+
+  <Sample iid="GSM5514090">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 dec 4</Title>
+    <Accession database="GEO">GSM5514090</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712919" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719215" />
+  </Sample>
+
+  <Sample iid="GSM5514091">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 dec 5</Title>
+    <Accession database="GEO">GSM5514091</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712920" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719216" />
+  </Sample>
+
+  <Sample iid="GSM5514092">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 myo 1</Title>
+    <Accession database="GEO">GSM5514092</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712921" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719217" />
+  </Sample>
+
+  <Sample iid="GSM5514093">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 myo 2</Title>
+    <Accession database="GEO">GSM5514093</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712922" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719218" />
+  </Sample>
+
+  <Sample iid="GSM5514094">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 myo 3</Title>
+    <Accession database="GEO">GSM5514094</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712913" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719219" />
+  </Sample>
+
+  <Sample iid="GSM5514095">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 myo 4</Title>
+    <Accession database="GEO">GSM5514095</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712914" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719220" />
+  </Sample>
+
+  <Sample iid="GSM5514096">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 myo 5</Title>
+    <Accession database="GEO">GSM5514096</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712915" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719221" />
+  </Sample>
+
+  <Sample iid="GSM5514097">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 mt 1</Title>
+    <Accession database="GEO">GSM5514097</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712903" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719222" />
+  </Sample>
+
+  <Sample iid="GSM5514098">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 mt 3</Title>
+    <Accession database="GEO">GSM5514098</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712904" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719223" />
+  </Sample>
+
+  <Sample iid="GSM5514099">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 mt 4</Title>
+    <Accession database="GEO">GSM5514099</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712905" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719224" />
+  </Sample>
+
+  <Sample iid="GSM5514100">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>B6 mt 5</Title>
+    <Accession database="GEO">GSM5514100</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+B6 control
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712906" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719225" />
+  </Sample>
+
+  <Sample iid="GSM5514101">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 dec 1</Title>
+    <Accession database="GEO">GSM5514101</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712907" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719226" />
+  </Sample>
+
+  <Sample iid="GSM5514102">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 dec 2</Title>
+    <Accession database="GEO">GSM5514102</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712908" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719227" />
+  </Sample>
+
+  <Sample iid="GSM5514103">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 dec 3</Title>
+    <Accession database="GEO">GSM5514103</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712909" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719228" />
+  </Sample>
+
+  <Sample iid="GSM5514104">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 dec 4</Title>
+    <Accession database="GEO">GSM5514104</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_dec
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712910" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719229" />
+  </Sample>
+
+  <Sample iid="GSM5514105">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 myo 1</Title>
+    <Accession database="GEO">GSM5514105</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712911" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719230" />
+  </Sample>
+
+  <Sample iid="GSM5514106">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 myo 2</Title>
+    <Accession database="GEO">GSM5514106</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712912" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719231" />
+  </Sample>
+
+  <Sample iid="GSM5514107">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 myo 3</Title>
+    <Accession database="GEO">GSM5514107</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712895" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719232" />
+  </Sample>
+
+  <Sample iid="GSM5514108">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 myo 4</Title>
+    <Accession database="GEO">GSM5514108</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712896" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719233" />
+  </Sample>
+
+  <Sample iid="GSM5514109">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il33 myo 5</Title>
+    <Accession database="GEO">GSM5514109</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue myometrium</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Myometrium
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_myo
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712901" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719234" />
+  </Sample>
+
+  <Sample iid="GSM5514110">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il 33 mt 1</Title>
+    <Accession database="GEO">GSM5514110</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712902" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719235" />
+  </Sample>
+
+  <Sample iid="GSM5514111">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il 33 mt 2</Title>
+    <Accession database="GEO">GSM5514111</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712897" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719236" />
+  </Sample>
+
+  <Sample iid="GSM5514112">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il 33 mt 3</Title>
+    <Accession database="GEO">GSM5514112</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712898" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719237" />
+  </Sample>
+
+  <Sample iid="GSM5514113">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il 33 mt 4</Title>
+    <Accession database="GEO">GSM5514113</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712899" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719238" />
+  </Sample>
+
+  <Sample iid="GSM5514114">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-02-06</Last-Update-Date>
+    </Status>
+    <Title>Il 33 mt 5</Title>
+    <Accession database="GEO">GSM5514114</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Homogenized whole tissue mesometrial triangle</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="genotype">
+Il33Gt/Gt (Il33-/-)
+      </Characteristics>
+      <Characteristics tag="tissue">
+Mesometrial triangle
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Implantation site from gestation day 18.5 were dissected to separate decidua, myometrium and mesometrial triangle. Each layer was washed in cold PBS and homogenized in TRIzol. RNA was subsequently purified by phenol chloroform extraction.
+RNA libraries were prepared according to Illumona's instructions, using Nugen Universal Plus mRNA
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+All_genes.0960_mt
+    </Description>
+    <Data-Processing>
+Reads were aligned to the mouse genome using the Splice-aware STAR aligner STAR_2.7.2b
+Raw counts were determined using STAR_2.7.2b
+Reads uniquely mapped to known mRNAs were used to identify genes with differential expression (praw&lt;0,05) using DESeq2 R package v1.24. Three analyses were performed to compared each tissue layer to their counterparts.
+Genome_build: Ensembl Mouse GRCm38.96
+Supplementary_files_format_and_content: xlsx tables of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN20712900" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11719239" />
+  </Sample>
+
+  <Series iid="GSE181904">
+    <Status database="GEO">
+      <Submission-Date>2021-08-11</Submission-Date>
+      <Release-Date>2023-02-06</Release-Date>
+      <Last-Update-Date>2023-05-08</Last-Update-Date>
+    </Status>
+    <Title>Gene expression in late gestation uterine layers in pregnant IL-33 KO mice</Title>
+    <Accession database="GEO">GSE181904</Accession>
+    <Pubmed-ID>36750100</Pubmed-ID>
+    <Web-Link>https://www.cell.com/immunity/fulltext/S1074-7613(23)00015-8?_returnURL=https%3A%2F%2Flinkinghub.elsevier.com%2Fretrieve%2Fpii%2FS1074761323000158%3Fshowall%3Dtrue</Web-Link>
+    <Summary>
+Our objective was to identify gene differentially expressed between B6 and IL-33 KO decidua, myometrium and mesometrial triangle one day prior to parturition.
+    </Summary>
+    <Overall-Design>
+RNA was isolated from whole tissue decidua, myometrium and mesometrial of B6 control (n=5) and IL-33 KO (5) mice on gestation day 18.5, one day prior to parturition.One IL-33 KO decidua and one B6 mesometrial triangle were excluded due to failed QC.Next generation sequencing was performed using Illumina HiSeq 4000
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5514087" />
+    <Sample-Ref ref="GSM5514088" />
+    <Sample-Ref ref="GSM5514089" />
+    <Sample-Ref ref="GSM5514090" />
+    <Sample-Ref ref="GSM5514091" />
+    <Sample-Ref ref="GSM5514092" />
+    <Sample-Ref ref="GSM5514093" />
+    <Sample-Ref ref="GSM5514094" />
+    <Sample-Ref ref="GSM5514095" />
+    <Sample-Ref ref="GSM5514096" />
+    <Sample-Ref ref="GSM5514097" />
+    <Sample-Ref ref="GSM5514098" />
+    <Sample-Ref ref="GSM5514099" />
+    <Sample-Ref ref="GSM5514100" />
+    <Sample-Ref ref="GSM5514101" />
+    <Sample-Ref ref="GSM5514102" />
+    <Sample-Ref ref="GSM5514103" />
+    <Sample-Ref ref="GSM5514104" />
+    <Sample-Ref ref="GSM5514105" />
+    <Sample-Ref ref="GSM5514106" />
+    <Sample-Ref ref="GSM5514107" />
+    <Sample-Ref ref="GSM5514108" />
+    <Sample-Ref ref="GSM5514109" />
+    <Sample-Ref ref="GSM5514110" />
+    <Sample-Ref ref="GSM5514111" />
+    <Sample-Ref ref="GSM5514112" />
+    <Sample-Ref ref="GSM5514113" />
+    <Sample-Ref ref="GSM5514114" />
+    <Supplementary-Data type="XLSX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181904/suppl/GSE181904_All_genes.0960_dec.xlsx
+    </Supplementary-Data>
+    <Supplementary-Data type="XLSX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181904/suppl/GSE181904_All_genes.0960_mt.xlsx
+    </Supplementary-Data>
+    <Supplementary-Data type="XLSX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE181nnn/GSE181904/suppl/GSE181904_All_genes.0960_myo.xlsx
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA753836" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP332104" />
+  </Series>
+
+</MINiML>

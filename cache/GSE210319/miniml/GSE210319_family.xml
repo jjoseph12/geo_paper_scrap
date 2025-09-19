@@ -1,0 +1,1160 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Helen</First><Middle>N</Middle><Last>Jones</Last></Person>
+    <Email>Jonesh@ufl.edu</Email>
+    <Phone>3528461503</Phone>
+    <Laboratory>Jones</Laboratory>
+    <Department>Physiology and FUnctional Genomics</Department>
+    <Organization>University of Florida</Organization>
+    <Address>
+      <Line>1345 Center Dr</Line>
+      <City>Gainesville</City>
+      <State>Florida</State>
+      <Zip-Code>32610</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21697">
+    <Status database="GEO">
+      <Submission-Date>2016-04-05</Submission-Date>
+      <Release-Date>2016-04-05</Release-Date>
+      <Last-Update-Date>2018-12-05</Last-Update-Date>
+    </Status>
+    <Title>NextSeq 550 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL21697</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6380764">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Hand 1 KO 1</Title>
+    <Accession database="GEO">GSM6380764</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 1
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928032" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600625" />
+  </Sample>
+
+  <Sample iid="GSM6380765">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Hand 1 KO 2</Title>
+    <Accession database="GEO">GSM6380765</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 2
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928031" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600626" />
+  </Sample>
+
+  <Sample iid="GSM6380766">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Hand 1 KO 3</Title>
+    <Accession database="GEO">GSM6380766</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 3
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928030" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600627" />
+  </Sample>
+
+  <Sample iid="GSM6380767">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Allstar 1</Title>
+    <Accession database="GEO">GSM6380767</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 4
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928029" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600628" />
+  </Sample>
+
+  <Sample iid="GSM6380768">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Allstar 2</Title>
+    <Accession database="GEO">GSM6380768</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 5
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928028" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600629" />
+  </Sample>
+
+  <Sample iid="GSM6380769">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Allstar 3</Title>
+    <Accession database="GEO">GSM6380769</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 6
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928027" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600630" />
+  </Sample>
+
+  <Sample iid="GSM6380770">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Opti Only 1</Title>
+    <Accession database="GEO">GSM6380770</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 7
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928026" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600631" />
+  </Sample>
+
+  <Sample iid="GSM6380771">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Opti Only 2</Title>
+    <Accession database="GEO">GSM6380771</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 8
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928025" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600632" />
+  </Sample>
+
+  <Sample iid="GSM6380772">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Opti Only 3</Title>
+    <Accession database="GEO">GSM6380772</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 9
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928024" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600633" />
+  </Sample>
+
+  <Sample iid="GSM6428107">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Hand 1 KO 1</Title>
+    <Accession database="GEO">GSM6428107</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 10
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102400" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769925" />
+  </Sample>
+
+  <Sample iid="GSM6428108">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Hand 1 KO 2</Title>
+    <Accession database="GEO">GSM6428108</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 11
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102399" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769926" />
+  </Sample>
+
+  <Sample iid="GSM6428109">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Hand 1 KO 3</Title>
+    <Accession database="GEO">GSM6428109</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 12
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102398" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769927" />
+  </Sample>
+
+  <Sample iid="GSM6428110">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Hand 1 KO 4</Title>
+    <Accession database="GEO">GSM6428110</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 13
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102397" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769928" />
+  </Sample>
+
+  <Sample iid="GSM6428111">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Allstar 1</Title>
+    <Accession database="GEO">GSM6428111</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 14
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102396" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769929" />
+  </Sample>
+
+  <Sample iid="GSM6428112">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Allstar 2</Title>
+    <Accession database="GEO">GSM6428112</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 15
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102395" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769930" />
+  </Sample>
+
+  <Sample iid="GSM6428113">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Allstar 4</Title>
+    <Accession database="GEO">GSM6428113</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 17
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102394" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769931" />
+  </Sample>
+
+  <Sample iid="GSM6428114">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Opti Only 1</Title>
+    <Accession database="GEO">GSM6428114</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 18
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102393" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769932" />
+  </Sample>
+
+  <Sample iid="GSM6428115">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Opti Only 2</Title>
+    <Accession database="GEO">GSM6428115</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 19
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102392" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769933" />
+  </Sample>
+
+  <Sample iid="GSM6428116">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Opti Only 3</Title>
+    <Accession database="GEO">GSM6428116</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 20
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102391" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769934" />
+  </Sample>
+
+  <Sample iid="GSM6428117">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2022-08-03</Last-Update-Date>
+    </Status>
+    <Title>HPMVEC Opti Only 4</Title>
+    <Accession database="GEO">GSM6428117</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>HPMVEC</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+HPMVEC
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human Placenta Microvascular Endothelial Cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 21
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30102390" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16769935" />
+  </Sample>
+
+  <Series iid="GSE210319">
+    <Status database="GEO">
+      <Submission-Date>2022-08-02</Submission-Date>
+      <Release-Date>2022-08-03</Release-Date>
+      <Last-Update-Date>2023-02-08</Last-Update-Date>
+    </Status>
+    <Title>HAND1 knockdown disrupts trophoblast global gene expression</Title>
+    <Accession database="GEO">GSE210319</Accession>
+    <Pubmed-ID>36695714</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the SubSeries listed below.
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6380764" />
+    <Sample-Ref ref="GSM6380765" />
+    <Sample-Ref ref="GSM6380766" />
+    <Sample-Ref ref="GSM6380767" />
+    <Sample-Ref ref="GSM6380768" />
+    <Sample-Ref ref="GSM6380769" />
+    <Sample-Ref ref="GSM6380770" />
+    <Sample-Ref ref="GSM6380771" />
+    <Sample-Ref ref="GSM6380772" />
+    <Sample-Ref ref="GSM6428107" />
+    <Sample-Ref ref="GSM6428108" />
+    <Sample-Ref ref="GSM6428109" />
+    <Sample-Ref ref="GSM6428110" />
+    <Sample-Ref ref="GSM6428111" />
+    <Sample-Ref ref="GSM6428112" />
+    <Sample-Ref ref="GSM6428113" />
+    <Sample-Ref ref="GSM6428114" />
+    <Sample-Ref ref="GSM6428115" />
+    <Sample-Ref ref="GSM6428116" />
+    <Sample-Ref ref="GSM6428117" />
+    <Relation type="SuperSeries of" target="GSE209620" />
+    <Relation type="SuperSeries of" target="GSE210318" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA865258" />
+  </Series>
+
+</MINiML>

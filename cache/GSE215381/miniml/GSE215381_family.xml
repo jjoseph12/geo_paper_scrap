@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Huzaifa</First><Last>Hassan</Last></Person>
+    <Organization>Stowers Institute for Medical Research</Organization>
+    <Address>
+      <Line>1000 E 50th St</Line>
+      <City>Kansas City</City>
+      <State>MO</State>
+      <Zip-Code>64110</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Vijay</First><Middle>P</Middle><Last>Singh</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jennifer</First><Middle>L</Middle><Last>Gerton</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6634676">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-14</Last-Update-Date>
+    </Status>
+    <Title>Wild type  replicate 1</Title>
+    <Accession database="GEO">GSM6634676</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Chromium Next GEM Single Cell 3' Reagent Kits v3.1 was used for making cDNA library using 10X Genomic reagents.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format using cellranger (v 3.0.0)  mkfastq. Alignment, filtering, barcode counting, and UMI counting was done using cellranger’s count pipeline
+Assembly: mm10
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634676/suppl/GSM6634676_wt_rep1.barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634676/suppl/GSM6634676_wt_rep1.features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634676/suppl/GSM6634676_wt_rep1.matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269236" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877526" />
+  </Sample>
+
+  <Sample iid="GSM6634677">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-05-14</Last-Update-Date>
+    </Status>
+    <Title>Wild type  replicate 2</Title>
+    <Accession database="GEO">GSM6634677</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Trophoblast cells
+      </Characteristics>
+      <Characteristics tag="genotype">
+Wild type
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Chromium Next GEM Single Cell 3' Reagent Kits v3.1 was used for making cDNA library using 10X Genomic reagents.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10x Genomics
+    </Description>
+    <Data-Processing>
+Raw reads were demultiplexed into Fastq format using cellranger (v 3.0.0)  mkfastq. Alignment, filtering, barcode counting, and UMI counting was done using cellranger’s count pipeline
+Assembly: mm10
+Supplementary files format and content: Tab-separated values files and matrix files
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634677/suppl/GSM6634677_wt_rep2.barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634677/suppl/GSM6634677_wt_rep2.features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6634nnn/GSM6634677/suppl/GSM6634677_wt_rep2.matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31269235" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17877527" />
+  </Sample>
+
+  <Series iid="GSE215381">
+    <Status database="GEO">
+      <Submission-Date>2022-10-13</Submission-Date>
+      <Release-Date>2023-05-12</Release-Date>
+      <Last-Update-Date>2023-06-30</Last-Update-Date>
+    </Status>
+    <Title>c-Myc supports polyploidy and prevents senescence in the murine placenta [scRNA-Seq]</Title>
+    <Accession database="GEO">GSE215381</Accession>
+    <Pubmed-ID>37278344</Pubmed-ID>
+    <Summary>
+Placenta is essential for reproductive success and placental abnormalities are the leading cause of low birth weight and preterm birth. The placenta includes polyploid cells that are crucial for its function. Polyploidy occurs broadly in nature but the regulators that enable polyploidy to arise in a spatiotemporally regulated manner in the placenta are unknown. We used scRNA seq to understand molecular regulators of polyploidy.
+    </Summary>
+    <Overall-Design>
+14.5 dpc placenta was isolated in D-PBS (Thermo Fisher Scientific (#14287072) and adult brain dissociation kit (#130-107-677) was used to make single cell suspension as per manufacturer instructions. Each 14.5 dpc placenta was cut into four small pieces using scalpel blades. Placental pieces were transferred in gentleMACS™ C tube (Miltenyi Biotec- #130-093-237) and 1950 l of Enzyme mix 1 (Buffer Z 1900 l + Enzyme P 50 l) was added. Further 30 l of Enzyme mix 2 (Buffer Y 20 l + Enzyme A 10 l) to the same tube was added. 37C_ABDK_01 program of gentleMACS was used and once program is completed, cells were centrifuged at 300Xg for 5 minutes. Pellet was resuspended in cold 10 ml D-PBS and filtered it through 70 m MACS SmartStrainer (Miltenyi Biotec- #130-098-462) using 50 mL falcon tube. C tube was washed again with 10 ml cold D-PBS and filter with the same SmartStrainer. MACS SmartStrainer was discarded and cell suspension was centrifuged at 300Xg for 10 minutes at 4°C. Supernatant was removed and pellet was resuspended in cold 1550 l D-PBS and transferred it to 15 mL falcon tube. 450 l of debris removal solution was added and mixed well. Gently 2 mL of cold D-PBS was overlayed, and tube was centrifuged at 4°C and 3000Xg for 10 minutes. Three phases were formed after centrifugation. Top two layers were discarded, and tube was filled with 10 mL cold D-PBS. Tube was gently mixed and centrifuged at 4°C and 1000Xg for 10 minutes. Pellet was resuspended in 0.5 mL of 1X red blood cell removal solution and incubated for 10 minutes at 4°C. 5 mL of cold -DPBS was added and centrifuged at 4°C and 300Xg for 10 minutes. Pellet was resuspended in 0.5 ml of cold PBS and acridine orange (AO)/ propidium iodide (PI) method was used to cell viability. Samples with viability above 87% were used for further sequencing. Chromium Next GEM Single Cell 3' Reagent Kits v3.1 was used for making cDNA library using 10X Genomic reagents (Next GEM Chip G Single Cell Kit #1000120, Next GEM Single Cell 3' Gel Bead Kit v3.1 #1000122,  Single Cell 3' Gel Beads v3.1#2000164, Next GEM Single Cell 3' GEM Kit v3.1 #1000123, Next GEM Single Cell 3' Library Kit v3.1 #1000157, i7 Multiplex Kit #120262, DynaBead - MyOne Silane Beads #2000048 and SPRIselect Beads #17201600).  Sequencing was performed using Illumina Nova-Seq-SP.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6634676" />
+    <Sample-Ref ref="GSM6634677" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE215nnn/GSE215381/suppl/GSE215381_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE215382" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA890164" />
+  </Series>
+
+</MINiML>

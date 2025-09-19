@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Xiaoya</First><Last>Zhao</Last></Person>
+    <Email>zhaoxiaoya@sjtu.edu.cn</Email>
+    <Phone>15859101922</Phone>
+    <Department>Department of Obstetrics and Gynecology, International Peace Maternity and Child Health Hospital</Department>
+    <Organization>School of Medicine, Shanghai Jiaotong University</Organization>
+    <Address>
+      <Line>No. 910, Hengshan Rd</Line>
+      <City>Shanghai</City>
+      <State>shanghai</State>
+      <Postal-Code>200030</Postal-Code>
+      <Country>China</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>X</First><Middle>Y</Middle><Last>Zhao</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Z</First><Middle>W</Middle><Last>Zhang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>J</First><Last>Zhang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>C</First><Middle>P</Middle><Last>Lin</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL20301">
+    <Status database="GEO">
+      <Submission-Date>2015-06-09</Submission-Date>
+      <Release-Date>2015-06-09</Release-Date>
+      <Last-Update-Date>2019-03-21</Last-Update-Date>
+    </Status>
+    <Title>Illumina HiSeq 4000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL20301</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5606769">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>intrauterine pregnancy rep1</Title>
+    <Accession database="GEO">GSM5606769</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+49
+      </Characteristics>
+      <Characteristics tag="maternal age">
+36
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P3
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IP1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924140" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418815" />
+  </Sample>
+
+  <Sample iid="GSM5606770">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>intrauterine pregnancy rep2</Title>
+    <Accession database="GEO">GSM5606770</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+52
+      </Characteristics>
+      <Characteristics tag="maternal age">
+20
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P3
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IP2
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924139" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418816" />
+  </Sample>
+
+  <Sample iid="GSM5606771">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>intrauterine pregnancy rep3</Title>
+    <Accession database="GEO">GSM5606771</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+46
+      </Characteristics>
+      <Characteristics tag="maternal age">
+42
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P3
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IP3
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924138" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418817" />
+  </Sample>
+
+  <Sample iid="GSM5606772">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>intrauterine pregnancy rep4</Title>
+    <Accession database="GEO">GSM5606772</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+53
+      </Characteristics>
+      <Characteristics tag="maternal age">
+26
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P3
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IP4
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924137" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418818" />
+  </Sample>
+
+  <Sample iid="GSM5606773">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>intrauterine pregnancy rep5</Title>
+    <Accession database="GEO">GSM5606773</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+45
+      </Characteristics>
+      <Characteristics tag="maternal age">
+33
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+IP5
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924136" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418819" />
+  </Sample>
+
+  <Sample iid="GSM5606774">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>tubal ectopic pregnancy rep1</Title>
+    <Accession database="GEO">GSM5606774</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+50
+      </Characteristics>
+      <Characteristics tag="maternal age">
+27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+TEP1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924135" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418820" />
+  </Sample>
+
+  <Sample iid="GSM5606775">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>tubal ectopic pregnancy rep2</Title>
+    <Accession database="GEO">GSM5606775</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+54
+      </Characteristics>
+      <Characteristics tag="maternal age">
+32
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+TEP2
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924134" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418821" />
+  </Sample>
+
+  <Sample iid="GSM5606776">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>tubal ectopic pregnancy rep3</Title>
+    <Accession database="GEO">GSM5606776</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+45
+      </Characteristics>
+      <Characteristics tag="maternal age">
+31
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+TEP3
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924133" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418822" />
+  </Sample>
+
+  <Sample iid="GSM5606777">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>tubal ectopic pregnancy rep4</Title>
+    <Accession database="GEO">GSM5606777</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="geatational days">
+50
+      </Characteristics>
+      <Characteristics tag="maternal age">
+28
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblastic organoid
+      </Characteristics>
+      <Characteristics tag="passages">
+P4
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+placental villi were removed, digested, then the trophoblastic organoids were cultured, and RNA was harvested using Trizol reagent. NEBNext® Ultra™ RNA Library Prep Kit for Illumina® (#E7530L, NEB, USA) was used with 2 ug of total RNA for the construction of sequencing libraries.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+TEP4
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+Sequenced reads were trimmed for adaptor sequence, and masked for low-complexity or low-quality sequence, then mapped to genome using HISAT2 with parameters -  dta t p 4
+Normalized data were clculated using DEseq2 from Love, M.I., et al., 2014.
+Genome_build: Homo_sapiens.GRCh38.99
+Supplementary_files_format_and_content: tab-delimited text files include Normalized values for each sample
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL20301" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN21924132" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX12418823" />
+  </Sample>
+
+  <Series iid="GSE185119">
+    <Status database="GEO">
+      <Submission-Date>2021-09-30</Submission-Date>
+      <Release-Date>2024-09-02</Release-Date>
+      <Last-Update-Date>2024-09-02</Last-Update-Date>
+    </Status>
+    <Title>Gene expression profiling of trophoblastic organoid from the placental villi of intrauterine and tubal ectopic pregnancies</Title>
+    <Accession database="GEO">GSE185119</Accession>
+    <Summary>
+The tubal ectopic pregnancy (TEP) is a severe pregnancy complication accounted for 10-15% pregnancy-related deaths owing to the implantation and growth of embryos in fallopian tubes. Placental villi from TEP exhibit significant difference compared with that from intrauterine pregnancy (IP) in total volumes, trophoblast differentiation and intravillous vascularization.  To investigate the difference in expression profiles of placental villi from IP and TEP, placental villi were collected from each phenotype, separated from maternal tissues and analyzed by high-throughput sequencing.  generated a mouse model in which p53 is activated in neural crest cells due to the expression of a mutant p53 protein (p53-25,26) that can bind to and stabilize wild-type p53. Here, we performed gene expression profiling on neural crest cells isolated from these embryos, to identify the transcriptional response to p53 activation during embryogenesis.
+    </Summary>
+    <Overall-Design>
+RNA-seq was performed on trophonblastic organoid from pregnant women at 6-8 gestational weeks. Exclusion criteria for all samples are: IP with EP histories, miscarriage, preeclampsia, and preterm delivery. EP with some risk factors associated with fallopian tubal abnormalities, e.g., smoking, obvious tubal inflammatory adhesions, previous fallopian tubal diseases, and tubal surgery histories, were also excluded for avoiding complications. In each case, gestational days was 40-64 days confirmed from the last menstrual period. n=5 for both IP and TEP.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5606769" />
+    <Sample-Ref ref="GSM5606770" />
+    <Sample-Ref ref="GSM5606771" />
+    <Sample-Ref ref="GSM5606772" />
+    <Sample-Ref ref="GSM5606773" />
+    <Sample-Ref ref="GSM5606774" />
+    <Sample-Ref ref="GSM5606775" />
+    <Sample-Ref ref="GSM5606776" />
+    <Sample-Ref ref="GSM5606777" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE185nnn/GSE185119/suppl/GSE185119_Raw_gene_counts_matrix.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE185nnn/GSE185119/suppl/GSE185119_genenormalized_rlog.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA767678" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP339552" />
+  </Series>
+
+</MINiML>

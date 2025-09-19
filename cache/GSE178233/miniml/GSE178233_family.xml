@@ -1,0 +1,1344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Shubhamoy</First><Last>Ghosh</Last></Person>
+    <Email>sghoshucla@ucla.edu, pshubhamoy@gmail.com</Email>
+    <Phone>3106148536</Phone>
+    <Department>Pediatrics</Department>
+    <Organization>University of California Los Angeles</Organization>
+    <Address>
+      <Line>650 Charles E Young  Dr East</Line>
+      <City>los angeles</City>
+      <State>CA</State>
+      <Zip-Code>90095</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21103">
+    <Status database="GEO">
+      <Submission-Date>2015-11-04</Submission-Date>
+      <Release-Date>2015-11-04</Release-Date>
+      <Last-Update-Date>2019-03-19</Last-Update-Date>
+    </Status>
+    <Title>Illumina HiSeq 4000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL21103</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5380054">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_rep1</Title>
+    <Accession database="GEO">GSM5380054</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692632" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136919" />
+  </Sample>
+
+  <Sample iid="GSM5380055">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_rep2</Title>
+    <Accession database="GEO">GSM5380055</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692654" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136920" />
+  </Sample>
+
+  <Sample iid="GSM5380056">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_rep3</Title>
+    <Accession database="GEO">GSM5380056</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692653" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136921" />
+  </Sample>
+
+  <Sample iid="GSM5380057">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_rep4</Title>
+    <Accession database="GEO">GSM5380057</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692652" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136922" />
+  </Sample>
+
+  <Sample iid="GSM5380058">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_rep1</Title>
+    <Accession database="GEO">GSM5380058</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Air Pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692651" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136923" />
+  </Sample>
+
+  <Sample iid="GSM5380059">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_rep2</Title>
+    <Accession database="GEO">GSM5380059</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Air Pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692634" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136924" />
+  </Sample>
+
+  <Sample iid="GSM5380060">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_rep3</Title>
+    <Accession database="GEO">GSM5380060</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Air Pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692633" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136925" />
+  </Sample>
+
+  <Sample iid="GSM5380061">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_rep4</Title>
+    <Accession database="GEO">GSM5380061</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Air Pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692650" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136926" />
+  </Sample>
+
+  <Sample iid="GSM5380062">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Fish_Oil_rep1</Title>
+    <Accession database="GEO">GSM5380062</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Fis Oil
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692649" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136927" />
+  </Sample>
+
+  <Sample iid="GSM5380063">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Fish_Oil_rep2</Title>
+    <Accession database="GEO">GSM5380063</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Fis Oil
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692648" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136928" />
+  </Sample>
+
+  <Sample iid="GSM5380064">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Fish_Oil_rep3</Title>
+    <Accession database="GEO">GSM5380064</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Fis Oil
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692647" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136929" />
+  </Sample>
+
+  <Sample iid="GSM5380065">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Fish_Oil_rep5</Title>
+    <Accession database="GEO">GSM5380065</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Fis Oil
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692646" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136930" />
+  </Sample>
+
+  <Sample iid="GSM5380066">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pol+Fish_Oil_rep1</Title>
+    <Accession database="GEO">GSM5380066</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Fish Oil + Air Polution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692645" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136931" />
+  </Sample>
+
+  <Sample iid="GSM5380067">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pol+Fish_Oil_rep2</Title>
+    <Accession database="GEO">GSM5380067</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Fish Oil + Air Polution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692644" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136932" />
+  </Sample>
+
+  <Sample iid="GSM5380068">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pol+Fish_Oil_rep3</Title>
+    <Accession database="GEO">GSM5380068</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Fish Oil + Air Polution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692643" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136933" />
+  </Sample>
+
+  <Sample iid="GSM5380069">
+    <Status database="GEO">
+      <Submission-Date>2021-06-14</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pol+Fish_Oil_rep5</Title>
+    <Accession database="GEO">GSM5380069</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tag">
+Placenta
+      </Characteristics>
+      <Characteristics tag="agent">
+Fish Oil + Air Polution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed  with SRM1649b particle (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from D19 placenta of  CON or Air Pollution particle exposed mice with Dirct Zol RNA MiniPrep kit from Zymo following manufacturer's protocol.
+Libraries were prepared according to Illumina's instructions accompanying the KAPA Stranded mRNA sequencing kit (# KK8420; Kapa Biosystem, Cape Town, South Africa). Briefly,100ng of total RNA from each sample was used as the starting material with quadruplicate biological replicate from each group. mRNA was captured using magnetic oligo-dT, fragmented by heat and Mg and reverse transcribed to cDNA using random primers. After 2nd strand synthesis, cDNA was then end-repaired, index adapter-ligated and PCR amplified. SPRIselect beads (# B23318, Beckman Coulter, Indianapolis, IN, USA) were used to purify nucleic acids after each step of the library preparation. RNA sequencing libraries were sequenced by the HiSeq-4000 (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq.gz files were aligned using STAR aligner against the mm10 referece, to obtain uniquly aligned reads.
+Output from featureCounts has been used as an input for differential expression analysis by DESEq2 package from R
+ggplot2 was used for visulazation of RNAseq data
+Genome_build: mm10
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL21103" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 4000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19692642" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11136934" />
+  </Sample>
+
+  <Sample iid="GSM5384913">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_Decidua</Title>
+    <Accession database="GEO">GSM5384913</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – decidua
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712324" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148901" />
+  </Sample>
+
+  <Sample iid="GSM5384914">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_Junction</Title>
+    <Accession database="GEO">GSM5384914</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – junction
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712566" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148902" />
+  </Sample>
+
+  <Sample iid="GSM5384915">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>CONTROL_Labyrinth</Title>
+    <Accession database="GEO">GSM5384915</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – labyrinth
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712565" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148903" />
+  </Sample>
+
+  <Sample iid="GSM5384916">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_Decidua</Title>
+    <Accession database="GEO">GSM5384916</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – decidua
+      </Characteristics>
+      <Characteristics tag="treatment">
+Air pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712564" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148904" />
+  </Sample>
+
+  <Sample iid="GSM5384917">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_Junction</Title>
+    <Accession database="GEO">GSM5384917</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – junction
+      </Characteristics>
+      <Characteristics tag="treatment">
+Air pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712563" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148905" />
+  </Sample>
+
+  <Sample iid="GSM5384918">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>Air_Pollution_Labyrinth</Title>
+    <Accession database="GEO">GSM5384918</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placental cell at Gestational D19</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57BL/6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta – labyrinth
+      </Characteristics>
+      <Characteristics tag="treatment">
+Air pollution
+      </Characteristics>
+      <Treatment-Protocol>
+Female mice were exposed to SRM1649b particles (resuspend in sterile PBS and sonicated to obtain a concentration of 15μg/µl) intranasally either starting from 2months prior to gestation followed by 18th day of gestation.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+C57BL/6J mouse were obtained from Jackson Laboratories housed under dark: light 12:12(h) conditions with free access to water and chow in the University of California Animal Facility
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For scRNA-seq library prep, single suspension of each placental compartment was prepared separately by enzymatic digestion of the tissue followed by passing the cell suspension through 100μm cell strainer (MACS, Smart Steiner)
+Single-cell RNA-Seq libraries were prepared using the Chromium Single Cell 3′ Library &amp; Gel Bead Kit (P/N 1000075, 10x Genomics) following manufacturer’s instructions. scRNA sequencing libraries were sequenced by the NovaSeq-6000  (Illumina Inc.; San Diego, CA, USA).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Demultiplexed fastq files were processed using cellranger count against the mm10 referece, to obtain single cell feature counts.
+Cellranger count output files were aggregated using the cellranger aggr
+Output from cellranger aggr has been used to create a Seurat object and a standard Seurat pipeline was used for downstream analysis.
+Supplementary_files_format_and_content: Expression Matrix
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN19712562" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX11148906" />
+  </Sample>
+
+  <Series iid="GSE178233">
+    <Status database="GEO">
+      <Submission-Date>2021-06-15</Submission-Date>
+      <Release-Date>2022-05-25</Release-Date>
+      <Last-Update-Date>2022-05-25</Last-Update-Date>
+    </Status>
+    <Title>placental transcriptome</Title>
+    <Accession database="GEO">GSE178233</Accession>
+    <Pubmed-ID>35589747</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the SubSeries listed below.
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5380054" />
+    <Sample-Ref ref="GSM5380055" />
+    <Sample-Ref ref="GSM5380056" />
+    <Sample-Ref ref="GSM5380057" />
+    <Sample-Ref ref="GSM5380058" />
+    <Sample-Ref ref="GSM5380059" />
+    <Sample-Ref ref="GSM5380060" />
+    <Sample-Ref ref="GSM5380061" />
+    <Sample-Ref ref="GSM5380062" />
+    <Sample-Ref ref="GSM5380063" />
+    <Sample-Ref ref="GSM5380064" />
+    <Sample-Ref ref="GSM5380065" />
+    <Sample-Ref ref="GSM5380066" />
+    <Sample-Ref ref="GSM5380067" />
+    <Sample-Ref ref="GSM5380068" />
+    <Sample-Ref ref="GSM5380069" />
+    <Sample-Ref ref="GSM5384913" />
+    <Sample-Ref ref="GSM5384914" />
+    <Sample-Ref ref="GSM5384915" />
+    <Sample-Ref ref="GSM5384916" />
+    <Sample-Ref ref="GSM5384917" />
+    <Sample-Ref ref="GSM5384918" />
+    <Relation type="SuperSeries of" target="GSE178098" />
+    <Relation type="SuperSeries of" target="GSE178229" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA737774" />
+  </Series>
+
+</MINiML>

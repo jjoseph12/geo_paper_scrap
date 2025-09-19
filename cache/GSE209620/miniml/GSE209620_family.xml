@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Helen</First><Middle>N</Middle><Last>Jones</Last></Person>
+    <Email>Jonesh@ufl.edu</Email>
+    <Phone>3528461503</Phone>
+    <Laboratory>Jones</Laboratory>
+    <Department>Physiology and FUnctional Genomics</Department>
+    <Organization>University of Florida</Organization>
+    <Address>
+      <Line>1345 Center Dr</Line>
+      <City>Gainesville</City>
+      <State>Florida</State>
+      <Zip-Code>32610</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21697">
+    <Status database="GEO">
+      <Submission-Date>2016-04-05</Submission-Date>
+      <Release-Date>2016-04-05</Release-Date>
+      <Last-Update-Date>2018-12-05</Last-Update-Date>
+    </Status>
+    <Title>NextSeq 550 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL21697</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6380764">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Hand 1 KO 1</Title>
+    <Accession database="GEO">GSM6380764</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 1
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928032" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600625" />
+  </Sample>
+
+  <Sample iid="GSM6380765">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Hand 1 KO 2</Title>
+    <Accession database="GEO">GSM6380765</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 2
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928031" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600626" />
+  </Sample>
+
+  <Sample iid="GSM6380766">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Hand 1 KO 3</Title>
+    <Accession database="GEO">GSM6380766</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA - HAND1/2
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 3
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928030" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600627" />
+  </Sample>
+
+  <Sample iid="GSM6380767">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Allstar 1</Title>
+    <Accession database="GEO">GSM6380767</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 4
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928029" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600628" />
+  </Sample>
+
+  <Sample iid="GSM6380768">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Allstar 2</Title>
+    <Accession database="GEO">GSM6380768</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 5
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928028" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600629" />
+  </Sample>
+
+  <Sample iid="GSM6380769">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Allstar 3</Title>
+    <Accession database="GEO">GSM6380769</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+siRNA- negative control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 6
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928027" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600630" />
+  </Sample>
+
+  <Sample iid="GSM6380770">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Opti Only 1</Title>
+    <Accession database="GEO">GSM6380770</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 7
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928026" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600631" />
+  </Sample>
+
+  <Sample iid="GSM6380771">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Opti Only 2</Title>
+    <Accession database="GEO">GSM6380771</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 8
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928025" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600632" />
+  </Sample>
+
+  <Sample iid="GSM6380772">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2022-08-02</Last-Update-Date>
+    </Status>
+    <Title>BeWo Opti Only 3</Title>
+    <Accession database="GEO">GSM6380772</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bewo</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Bewo
+      </Characteristics>
+      <Characteristics tag="cell type">
+choriocarcinoma
+      </Characteristics>
+      <Characteristics tag="treatment">
+no treatment
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated using the RNeasy Mini Kit, QIAshredder, and on-column DNA digest (Qiagen) following the protocol provided by the manufacturer
+poly-A RNA libraries were generated using (NEBNext Ultra Directional RNA Library Prep kit, New England Biolabs, Ipswich, MA and the TruSeq SR Cluster kit v3 Illumina
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample 9
+    </Description>
+    <Data-Processing>
+FastQ-QC: FASTQC,Trimmomatic
+RNA seq mapping/count: Bowtie2, FeatureCounts,
+Differential Expression analyses: EdgeR
+Assembly: hg38
+Supplementary files format and content: data matrix of raw count data, not filtered, not normalized
+    </Data-Processing>
+    <Platform-Ref ref="GPL21697" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 550</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN29928024" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX16600633" />
+  </Sample>
+
+  <Series iid="GSE209620">
+    <Status database="GEO">
+      <Submission-Date>2022-07-24</Submission-Date>
+      <Release-Date>2022-08-02</Release-Date>
+      <Last-Update-Date>2023-02-08</Last-Update-Date>
+    </Status>
+    <Title>HAND1 knockdown disrupts trophoblast gene expression in vitro in Bewo cells</Title>
+    <Accession database="GEO">GSE209620</Accession>
+    <Pubmed-ID>36695714</Pubmed-ID>
+    <Summary>
+Congenital heart disease (CHD) affects nearly 1% of births annually, and neonatal and perinatal outcomes in cases of CHD are strongly impacted by pregnancy outcomes. CHD pregnancies carry increased risk of developing pathologies of abnormal placentation including fetal growth restriction, preeclampsia, preterm birth, and stillbirth. HAND1 is a gene associated with CHD.  In this study, we aimed characterize the mechanistic impacts of disrupting HAND1 on human placenta trophoblast cell lines.
+    </Summary>
+    <Overall-Design>
+To silence HAND1 gene expression, BeWo cells, a choriocarcinoma model of human cytotrophoblasts, were treated for 96 h with HAND1/2 siRNA. Cells were harvested and mRNA isolated. RNA sequencing was performed using the Illumina NextSeq 550 platform (single end reads 85-101bp, read depth 25M). The Galaxy Bioinformatic Platform was used for quality control, alignment and generation of read counts. Normalization and differential gene expression analyses were conducted using general linear modeling in edgeR packages. Statistical significance was determined using a log2 fold change cut off &gt;1.0 or &lt;-1.0 and unadjusted ≤0.05. Overrepresentation analysis was performed using Panther DB for Reactome pathways and GO Biological Processes, and String DB for protein association network analysis.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6380764" />
+    <Sample-Ref ref="GSM6380765" />
+    <Sample-Ref ref="GSM6380766" />
+    <Sample-Ref ref="GSM6380767" />
+    <Sample-Ref ref="GSM6380768" />
+    <Sample-Ref ref="GSM6380769" />
+    <Sample-Ref ref="GSM6380770" />
+    <Sample-Ref ref="GSM6380771" />
+    <Sample-Ref ref="GSM6380772" />
+    <Supplementary-Data type="XLSX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE209nnn/GSE209620/suppl/GSE209620_Bewo_Raw_count_matrix.xlsx
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE210319" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA861834" />
+  </Series>
+
+</MINiML>

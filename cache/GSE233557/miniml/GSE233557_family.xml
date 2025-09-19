@@ -1,0 +1,1687 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Nageswara Rao</First><Last>Boggavarapu</Last></Person>
+    <Email>nagsdsh@gmail.com</Email>
+    <Laboratory>Bioclinicum J9:30</Laboratory>
+    <Department>Women and Children health</Department>
+    <Organization>Karolinska Institutet</Organization>
+    <Address>
+      <Line>Visionsgatan 4</Line>
+      <City>Solna</City>
+      <State>stockholm</State>
+      <Zip-Code>17164</Zip-Code>
+      <Country>Sweden</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Nageswara</First><Last>Rao Boggavarapu</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7430320">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 11M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430320</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439096" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523811" />
+  </Sample>
+
+  <Sample iid="GSM7430321">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 12M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430321</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439095" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523812" />
+  </Sample>
+
+  <Sample iid="GSM7430322">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 13M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430322</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439094" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523813" />
+  </Sample>
+
+  <Sample iid="GSM7430323">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 14M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430323</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439093" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523814" />
+  </Sample>
+
+  <Sample iid="GSM7430324">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 16M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430324</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439092" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523815" />
+  </Sample>
+
+  <Sample iid="GSM7430325">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 17M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430325</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439091" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523816" />
+  </Sample>
+
+  <Sample iid="GSM7430326">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 1M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430326</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439090" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523817" />
+  </Sample>
+
+  <Sample iid="GSM7430327">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 2M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430327</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439089" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523818" />
+  </Sample>
+
+  <Sample iid="GSM7430328">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 3M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430328</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439088" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523819" />
+  </Sample>
+
+  <Sample iid="GSM7430329">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 4M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430329</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439087" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523820" />
+  </Sample>
+
+  <Sample iid="GSM7430330">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 5M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430330</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439086" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523821" />
+  </Sample>
+
+  <Sample iid="GSM7430331">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 7M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430331</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439085" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523822" />
+  </Sample>
+
+  <Sample iid="GSM7430332">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 8M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430332</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439084" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523823" />
+  </Sample>
+
+  <Sample iid="GSM7430333">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 9M, RNA-seq</Title>
+    <Accession database="GEO">GSM7430333</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Maternal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Maternal_Normalised_counts.txt
+Maternal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439083" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523824" />
+  </Sample>
+
+  <Sample iid="GSM7430334">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 11F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430334</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439082" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523825" />
+  </Sample>
+
+  <Sample iid="GSM7430335">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 12F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430335</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439081" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523826" />
+  </Sample>
+
+  <Sample iid="GSM7430336">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 14F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430336</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439080" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523827" />
+  </Sample>
+
+  <Sample iid="GSM7430337">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 15F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430337</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439079" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523828" />
+  </Sample>
+
+  <Sample iid="GSM7430338">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 16F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430338</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439078" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523829" />
+  </Sample>
+
+  <Sample iid="GSM7430339">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 17F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430339</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439077" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523830" />
+  </Sample>
+
+  <Sample iid="GSM7430340">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 1F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430340</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439076" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523831" />
+  </Sample>
+
+  <Sample iid="GSM7430341">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 2F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430341</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439075" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523832" />
+  </Sample>
+
+  <Sample iid="GSM7430342">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 3F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430342</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439074" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523833" />
+  </Sample>
+
+  <Sample iid="GSM7430343">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Sars-CoV-2 Placenta, 4F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430343</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Sars-CoV-2
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439073" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523834" />
+  </Sample>
+
+  <Sample iid="GSM7430344">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 5F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430344</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439072" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523835" />
+  </Sample>
+
+  <Sample iid="GSM7430345">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 7F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430345</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439071" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523836" />
+  </Sample>
+
+  <Sample iid="GSM7430346">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Control Placenta, 9F, RNA-seq</Title>
+    <Accession database="GEO">GSM7430346</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="compartment">
+Fetal Placental Compartment
+      </Characteristics>
+      <Characteristics tag="infection">
+Control
+      </Characteristics>
+      <Characteristics tag="time">
+immediately after term delivery
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA is extracted from the placental samples by zymo quick RNA microprep kit with proteinase K as per the manufacturers protocol
+cDNA library were constructed using well established Smart-seq2 protocol (Picelli et al. 2013, Picelli et al. 2014) and  miRNA sequencing was performed as per the Hagemann et al 2018 protocol
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Fetal_filtered_counts.txt
+Fetal_Raw_counts.txt
+    </Description>
+    <Data-Processing>
+Bioinformatic analyses were performed using Partek Flow Genomic Analysis Software (Partek, St. Louis, Missouri, USA).
+Sequenced raw FASTQ files were trimmed for Nextera transposase adapters and small RNA adapters.
+Trimmed reads were mapped to the reference genome hg38 using STAR aligner for mRNA seqeuncing data and Bowtie 2 for small RNA sequencing with default parameters.
+Mapped reads were further filtered and quantified to transcripts and genes using hg38 assembly and Ensemble transcripts release 107 for mRNA data and small RNA data was quantified to miRbase v.22 in the partek software.
+Assembly: hg38
+Supplementary files format and content: tab-delimited text files include filtered counts for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN35439070" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20523837" />
+  </Sample>
+
+  <Series iid="GSE233557">
+    <Status database="GEO">
+      <Submission-Date>2023-05-26</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Global transcriptomic analysis of placenta from women with gestational SARS-CoV-2 infection during the 3rd trimester of pregnancy</Title>
+    <Accession database="GEO">GSE233557</Accession>
+    <Pubmed-ID>38338886</Pubmed-ID>
+    <Summary>
+Transcriptomic analysis of the placenta in both maternal and fetal compartments was performed  to investigate the impact of maternal SARS-CoV-2 infection.
+    </Summary>
+    <Overall-Design>
+16 placental samples from women immediately after term delivery were collected, of which seven had confirmed SARS-CoV-2 infection by PCR before parturition. Extracted total RNA from placental tissues, separately from maternal and fetal compartments, constructed cDNA libraries, and sequenced them to assess mRNA and small RNA expression.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7430320" />
+    <Sample-Ref ref="GSM7430321" />
+    <Sample-Ref ref="GSM7430322" />
+    <Sample-Ref ref="GSM7430323" />
+    <Sample-Ref ref="GSM7430324" />
+    <Sample-Ref ref="GSM7430325" />
+    <Sample-Ref ref="GSM7430326" />
+    <Sample-Ref ref="GSM7430327" />
+    <Sample-Ref ref="GSM7430328" />
+    <Sample-Ref ref="GSM7430329" />
+    <Sample-Ref ref="GSM7430330" />
+    <Sample-Ref ref="GSM7430331" />
+    <Sample-Ref ref="GSM7430332" />
+    <Sample-Ref ref="GSM7430333" />
+    <Sample-Ref ref="GSM7430334" />
+    <Sample-Ref ref="GSM7430335" />
+    <Sample-Ref ref="GSM7430336" />
+    <Sample-Ref ref="GSM7430337" />
+    <Sample-Ref ref="GSM7430338" />
+    <Sample-Ref ref="GSM7430339" />
+    <Sample-Ref ref="GSM7430340" />
+    <Sample-Ref ref="GSM7430341" />
+    <Sample-Ref ref="GSM7430342" />
+    <Sample-Ref ref="GSM7430343" />
+    <Sample-Ref ref="GSM7430344" />
+    <Sample-Ref ref="GSM7430345" />
+    <Sample-Ref ref="GSM7430346" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE233nnn/GSE233557/suppl/GSE233557_Fetal_Raw_Counts.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE233nnn/GSE233557/suppl/GSE233557_Fetal_filtered_counts.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE233nnn/GSE233557/suppl/GSE233557_Maternal_Normalised_counts.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE233nnn/GSE233557/suppl/GSE233557_Maternal_Raw_Counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA976658" />
+  </Series>
+
+</MINiML>

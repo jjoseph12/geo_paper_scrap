@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Soumen</First><Last>Paul</Last></Person>
+    <Email>spaul2@kumc.edu</Email>
+    <Phone>9135887236</Phone>
+    <Laboratory>Paul Lab 3010</Laboratory>
+    <Department>Department of Pathology &amp; Laboratory Medicine</Department>
+    <Organization>University of Kansas Medical Center</Organization>
+    <Address>
+      <Line>Hemenway Building 3901 Rainbow Boulevard</Line>
+      <City>Kansas City</City>
+      <State>KS</State>
+      <Zip-Code>66160</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Rajnish</First><Last>Kumar</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5723087">
+    <Status database="GEO">
+      <Submission-Date>2021-12-07</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-08-08</Last-Update-Date>
+    </Status>
+    <Title>Control HTS cell (replicate 1) [HTS_ctrl-1_S1_L001]</Title>
+    <Accession database="GEO">GSM5723087</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue source">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+Control
+      </Characteristics>
+      <Growth-Protocol>
+Cell culture protocol was published earlier (Saha et al. Proc Natl Acad Sci U S A. 2020 Jul 28;117(30):17864-17875. doi: 10.1073/pnas.2002449117)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For RNA extraction we used Qiagen RNeasy Kit (Catalog#74104) following manufacturer's protocol. For each experimental conditions, 1 million cells were used to isolate total RNA.
+For sequencing, libraries were prepared using the SMART-Seq v4 Ultra Low Input RNA Kit (Clontech) designed for transcriptome analysis from samples as small as a single cell.  For library preparation, the mRNA fraction was enriched, fragmented, sized, reverse transcribed into cDNA and ligated with the appropriate adaptors. Finally, deep sequencing was performed using the Illumine NovaSeq 6000 sequencing system at the University of Kansas Genome Sequencing Facility to generate pair-end reads with read length 101 bp.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HTS_ctrl-1_S1_L001
+    </Description>
+    <Data-Processing>
+Illumina bcl2fastq2 conversion software used for basecalling.
+reads were aligned using the subread-2.0.3
+count values containg file were obtained using featureCounts of subread-2.0.3
+differential expression was obtained using DESeq2
+mean insert length and standdard deviation calculated using picard 2.26.6
+Genome_build: UCSC hg38(iGenomes illumina)
+Supplementary_files_format_and_content: tab-delimited text files of raw count values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23744492" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13343751" />
+  </Sample>
+
+  <Sample iid="GSM5723088">
+    <Status database="GEO">
+      <Submission-Date>2021-12-07</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-08-08</Last-Update-Date>
+    </Status>
+    <Title>Control HTS cell (replicate 2) [HTS_ctrl-1_S1_L002]</Title>
+    <Accession database="GEO">GSM5723088</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue source">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+Control
+      </Characteristics>
+      <Growth-Protocol>
+Cell culture protocol was published earlier (Saha et al. Proc Natl Acad Sci U S A. 2020 Jul 28;117(30):17864-17875. doi: 10.1073/pnas.2002449117)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For RNA extraction we used Qiagen RNeasy Kit (Catalog#74104) following manufacturer's protocol. For each experimental conditions, 1 million cells were used to isolate total RNA.
+For sequencing, libraries were prepared using the SMART-Seq v4 Ultra Low Input RNA Kit (Clontech) designed for transcriptome analysis from samples as small as a single cell.  For library preparation, the mRNA fraction was enriched, fragmented, sized, reverse transcribed into cDNA and ligated with the appropriate adaptors. Finally, deep sequencing was performed using the Illumine NovaSeq 6000 sequencing system at the University of Kansas Genome Sequencing Facility to generate pair-end reads with read length 101 bp.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HTS_ctrl-1_S1_L002
+    </Description>
+    <Data-Processing>
+Illumina bcl2fastq2 conversion software used for basecalling.
+reads were aligned using the subread-2.0.3
+count values containg file were obtained using featureCounts of subread-2.0.3
+differential expression was obtained using DESeq2
+mean insert length and standdard deviation calculated using picard 2.26.6
+Genome_build: UCSC hg38(iGenomes illumina)
+Supplementary_files_format_and_content: tab-delimited text files of raw count values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23750349" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13343752" />
+  </Sample>
+
+  <Sample iid="GSM5723089">
+    <Status database="GEO">
+      <Submission-Date>2021-12-07</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-08-08</Last-Update-Date>
+    </Status>
+    <Title>Control HTS cell (replicate 3) [HTS_ctrl-3_S3_L001]</Title>
+    <Accession database="GEO">GSM5723089</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue source">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+Control
+      </Characteristics>
+      <Growth-Protocol>
+Cell culture protocol was published earlier (Saha et al. Proc Natl Acad Sci U S A. 2020 Jul 28;117(30):17864-17875. doi: 10.1073/pnas.2002449117)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For RNA extraction we used Qiagen RNeasy Kit (Catalog#74104) following manufacturer's protocol. For each experimental conditions, 1 million cells were used to isolate total RNA.
+For sequencing, libraries were prepared using the SMART-Seq v4 Ultra Low Input RNA Kit (Clontech) designed for transcriptome analysis from samples as small as a single cell.  For library preparation, the mRNA fraction was enriched, fragmented, sized, reverse transcribed into cDNA and ligated with the appropriate adaptors. Finally, deep sequencing was performed using the Illumine NovaSeq 6000 sequencing system at the University of Kansas Genome Sequencing Facility to generate pair-end reads with read length 101 bp.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HTS_ctrl-3_S3_L001
+    </Description>
+    <Data-Processing>
+Illumina bcl2fastq2 conversion software used for basecalling.
+reads were aligned using the subread-2.0.3
+count values containg file were obtained using featureCounts of subread-2.0.3
+differential expression was obtained using DESeq2
+mean insert length and standdard deviation calculated using picard 2.26.6
+Genome_build: UCSC hg38(iGenomes illumina)
+Supplementary_files_format_and_content: tab-delimited text files of raw count values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23750358" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13343753" />
+  </Sample>
+
+  <Sample iid="GSM5723090">
+    <Status database="GEO">
+      <Submission-Date>2021-12-07</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-08-08</Last-Update-Date>
+    </Status>
+    <Title>Control HTS cell (replicate 4) [HTS_ctrl-3_S3_L002]</Title>
+    <Accession database="GEO">GSM5723090</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue source">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+Control
+      </Characteristics>
+      <Growth-Protocol>
+Cell culture protocol was published earlier (Saha et al. Proc Natl Acad Sci U S A. 2020 Jul 28;117(30):17864-17875. doi: 10.1073/pnas.2002449117)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For RNA extraction we used Qiagen RNeasy Kit (Catalog#74104) following manufacturer's protocol. For each experimental conditions, 1 million cells were used to isolate total RNA.
+For sequencing, libraries were prepared using the SMART-Seq v4 Ultra Low Input RNA Kit (Clontech) designed for transcriptome analysis from samples as small as a single cell.  For library preparation, the mRNA fraction was enriched, fragmented, sized, reverse transcribed into cDNA and ligated with the appropriate adaptors. Finally, deep sequencing was performed using the Illumine NovaSeq 6000 sequencing system at the University of Kansas Genome Sequencing Facility to generate pair-end reads with read length 101 bp.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HTS_ctrl-3_S3_L002
+    </Description>
+    <Data-Processing>
+Illumina bcl2fastq2 conversion software used for basecalling.
+reads were aligned using the subread-2.0.3
+count values containg file were obtained using featureCounts of subread-2.0.3
+differential expression was obtained using DESeq2
+mean insert length and standdard deviation calculated using picard 2.26.6
+Genome_build: UCSC hg38(iGenomes illumina)
+Supplementary_files_format_and_content: tab-delimited text files of raw count values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23750367" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13343754" />
+  </Sample>
+
+  <Sample iid="GSM5723091">
+    <Status database="GEO">
+      <Submission-Date>2021-12-07</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-08-08</Last-Update-Date>
+    </Status>
+    <Title>TAZ knock Down HTS cell (replicate 1) [HTS_TAZKD-1_S46_L001]</Title>
+    <Accession database="GEO">GSM5723091</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue source">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+TAZ knock Down
+      </Characteristics>
+      <Growth-Protocol>
+Cell culture protocol was published earlier (Saha et al. Proc Natl Acad Sci U S A. 2020 Jul 28;117(30):17864-17875. doi: 10.1073/pnas.2002449117)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For RNA extraction we used Qiagen RNeasy Kit (Catalog#74104) following manufacturer's protocol. For each experimental conditions, 1 million cells were used to isolate total RNA.
+For sequencing, libraries were prepared using the SMART-Seq v4 Ultra Low Input RNA Kit (Clontech) designed for transcriptome analysis from samples as small as a single cell.  For library preparation, the mRNA fraction was enriched, fragmented, sized, reverse transcribed into cDNA and ligated with the appropriate adaptors. Finally, deep sequencing was performed using the Illumine NovaSeq 6000 sequencing system at the University of Kansas Genome Sequencing Facility to generate pair-end reads with read length 101 bp.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HTS_TAZKD-1_S46_L001
+    </Description>
+    <Data-Processing>
+Illumina bcl2fastq2 conversion software used for basecalling.
+reads were aligned using the subread-2.0.3
+count values containg file were obtained using featureCounts of subread-2.0.3
+differential expression was obtained using DESeq2
+mean insert length and standdard deviation calculated using picard 2.26.6
+Genome_build: UCSC hg38(iGenomes illumina)
+Supplementary_files_format_and_content: tab-delimited text files of raw count values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23750376" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13343755" />
+  </Sample>
+
+  <Sample iid="GSM5723092">
+    <Status database="GEO">
+      <Submission-Date>2021-12-07</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-08-08</Last-Update-Date>
+    </Status>
+    <Title>TAZ knock Down HTS cell (replicate 2) [HTS_TAZKD-1_S46_L002]</Title>
+    <Accession database="GEO">GSM5723092</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue source">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+TAZ knock Down
+      </Characteristics>
+      <Growth-Protocol>
+Cell culture protocol was published earlier (Saha et al. Proc Natl Acad Sci U S A. 2020 Jul 28;117(30):17864-17875. doi: 10.1073/pnas.2002449117)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For RNA extraction we used Qiagen RNeasy Kit (Catalog#74104) following manufacturer's protocol. For each experimental conditions, 1 million cells were used to isolate total RNA.
+For sequencing, libraries were prepared using the SMART-Seq v4 Ultra Low Input RNA Kit (Clontech) designed for transcriptome analysis from samples as small as a single cell.  For library preparation, the mRNA fraction was enriched, fragmented, sized, reverse transcribed into cDNA and ligated with the appropriate adaptors. Finally, deep sequencing was performed using the Illumine NovaSeq 6000 sequencing system at the University of Kansas Genome Sequencing Facility to generate pair-end reads with read length 101 bp.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HTS_TAZKD-1_S46_L002
+    </Description>
+    <Data-Processing>
+Illumina bcl2fastq2 conversion software used for basecalling.
+reads were aligned using the subread-2.0.3
+count values containg file were obtained using featureCounts of subread-2.0.3
+differential expression was obtained using DESeq2
+mean insert length and standdard deviation calculated using picard 2.26.6
+Genome_build: UCSC hg38(iGenomes illumina)
+Supplementary_files_format_and_content: tab-delimited text files of raw count values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23750386" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13343756" />
+  </Sample>
+
+  <Sample iid="GSM5723093">
+    <Status database="GEO">
+      <Submission-Date>2021-12-07</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-08-08</Last-Update-Date>
+    </Status>
+    <Title>TAZ knock Down HTS cell (replicate 3) [HTS_TAZKD-3_S48_L001]</Title>
+    <Accession database="GEO">GSM5723093</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue source">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+TAZ knock Down
+      </Characteristics>
+      <Growth-Protocol>
+Cell culture protocol was published earlier (Saha et al. Proc Natl Acad Sci U S A. 2020 Jul 28;117(30):17864-17875. doi: 10.1073/pnas.2002449117)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For RNA extraction we used Qiagen RNeasy Kit (Catalog#74104) following manufacturer's protocol. For each experimental conditions, 1 million cells were used to isolate total RNA.
+For sequencing, libraries were prepared using the SMART-Seq v4 Ultra Low Input RNA Kit (Clontech) designed for transcriptome analysis from samples as small as a single cell.  For library preparation, the mRNA fraction was enriched, fragmented, sized, reverse transcribed into cDNA and ligated with the appropriate adaptors. Finally, deep sequencing was performed using the Illumine NovaSeq 6000 sequencing system at the University of Kansas Genome Sequencing Facility to generate pair-end reads with read length 101 bp.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HTS_TAZKD-3_S48_L001
+    </Description>
+    <Data-Processing>
+Illumina bcl2fastq2 conversion software used for basecalling.
+reads were aligned using the subread-2.0.3
+count values containg file were obtained using featureCounts of subread-2.0.3
+differential expression was obtained using DESeq2
+mean insert length and standdard deviation calculated using picard 2.26.6
+Genome_build: UCSC hg38(iGenomes illumina)
+Supplementary_files_format_and_content: tab-delimited text files of raw count values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23750396" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13343757" />
+  </Sample>
+
+  <Sample iid="GSM5723094">
+    <Status database="GEO">
+      <Submission-Date>2021-12-07</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-08-08</Last-Update-Date>
+    </Status>
+    <Title>TAZ knock Down HTS cell (replicate 4) [HTS_TAZKD-3_S48_L002]</Title>
+    <Accession database="GEO">GSM5723094</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>cell line</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue source">
+Placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+CT27
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast stem cells
+      </Characteristics>
+      <Characteristics tag="genotype/variation">
+TAZ knock Down
+      </Characteristics>
+      <Growth-Protocol>
+Cell culture protocol was published earlier (Saha et al. Proc Natl Acad Sci U S A. 2020 Jul 28;117(30):17864-17875. doi: 10.1073/pnas.2002449117)
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+For RNA extraction we used Qiagen RNeasy Kit (Catalog#74104) following manufacturer's protocol. For each experimental conditions, 1 million cells were used to isolate total RNA.
+For sequencing, libraries were prepared using the SMART-Seq v4 Ultra Low Input RNA Kit (Clontech) designed for transcriptome analysis from samples as small as a single cell.  For library preparation, the mRNA fraction was enriched, fragmented, sized, reverse transcribed into cDNA and ligated with the appropriate adaptors. Finally, deep sequencing was performed using the Illumine NovaSeq 6000 sequencing system at the University of Kansas Genome Sequencing Facility to generate pair-end reads with read length 101 bp.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HTS_TAZKD-3_S48_L002
+    </Description>
+    <Data-Processing>
+Illumina bcl2fastq2 conversion software used for basecalling.
+reads were aligned using the subread-2.0.3
+count values containg file were obtained using featureCounts of subread-2.0.3
+differential expression was obtained using DESeq2
+mean insert length and standdard deviation calculated using picard 2.26.6
+Genome_build: UCSC hg38(iGenomes illumina)
+Supplementary_files_format_and_content: tab-delimited text files of raw count values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN23750405" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13343758" />
+  </Sample>
+
+  <Series iid="GSE188738">
+    <Status database="GEO">
+      <Submission-Date>2021-11-12</Submission-Date>
+      <Release-Date>2022-08-08</Release-Date>
+      <Last-Update-Date>2022-09-15</Last-Update-Date>
+    </Status>
+    <Title>RNA-Seq analysis in human trophoblast stem cells (CT27) upon depletion of Hippo signaling Component TAZ (WWTR1)</Title>
+    <Accession database="GEO">GSE188738</Accession>
+    <Pubmed-ID>36037374</Pubmed-ID>
+    <Summary>
+The hippo signaling cofactor TAZ (Also known as WWTR1) regulates expression of genes upon interaction with TEAD transcription factors. Among the TEAD transcription factors, TEAD4 is implicated in regulation of the self-renewal process of human trophoblast stem cells. However, we have a poor understanding about the contribution of TAZ, a co-factor of TEAD4, in that process. Thus, the goal of this study is to define the importance of TAZ in orchestrating global gene expression program in human trophoblast stem cells. Using a RNA interference strategy (RNAi), we depleted TAZ expression in human trophoblast stem cells and compared global gene expression patterns via RNA sequencing (RNA-seq).   Three individual experiments were performed. The submitted files contain the data (raw fastq files, count data and deseq2 output) from  those experiments.
+    </Summary>
+    <Overall-Design>
+TAZ expression was depleted in CT27 human TSC lines via RNA interference using  shRNA. Global gene expressions were monitored by culturing control and TAZ-depleted cells in stem state culture condition.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5723087" />
+    <Sample-Ref ref="GSM5723088" />
+    <Sample-Ref ref="GSM5723089" />
+    <Sample-Ref ref="GSM5723090" />
+    <Sample-Ref ref="GSM5723091" />
+    <Sample-Ref ref="GSM5723092" />
+    <Sample-Ref ref="GSM5723093" />
+    <Sample-Ref ref="GSM5723094" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE188nnn/GSE188738/suppl/GSE188738_DESeq2Out.csv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE188nnn/GSE188738/suppl/GSE188738_Raw_Counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA780018" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP345888" />
+  </Series>
+
+</MINiML>

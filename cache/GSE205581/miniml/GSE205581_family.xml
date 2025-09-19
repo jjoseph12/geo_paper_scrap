@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Gil</First><Middle>G.</Middle><Last>Mor</Last></Person>
+    <Email>gmor@med.wayne.edu</Email>
+    <Laboratory>Reproductive Immunology Unit</Laboratory>
+    <Department>C.S. Mott Center for Human Growth and Development</Department>
+    <Organization>Wayne State University School of Medicine</Organization>
+    <Address>
+      <Line>275 E. Hancock</Line>
+      <City>Detroit</City>
+      <State>Michigan</State>
+      <Zip-Code>48201</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jiahui</First><Last>Ding</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Anthony</First><Last>Maxwell</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Nicholas</First><Last>Adzibolosu</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Katherine</First><Last>Gurdziel</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Douglas</First><Last>Ruden</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Gil</First><Last>Mor</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21273">
+    <Status database="GEO">
+      <Submission-Date>2015-12-22</Submission-Date>
+      <Release-Date>2015-12-22</Release-Date>
+      <Last-Update-Date>2019-03-01</Last-Update-Date>
+    </Status>
+    <Title>HiSeq X Ten (Mus musculus)</Title>
+    <Accession database="GEO">GPL21273</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6215058">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Female, Benzene, rep1 [B5L1]</Title>
+    <Accession database="GEO">GSM6215058</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Female
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+B5
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Benzene.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887620" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612841" />
+  </Sample>
+
+  <Sample iid="GSM6215059">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Male, Benzene, rep1 [B5L2]</Title>
+    <Accession database="GEO">GSM6215059</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Male
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+B5
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Benzene.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887619" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612842" />
+  </Sample>
+
+  <Sample iid="GSM6215060">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Male, Benzene, rep2 [B5R1]</Title>
+    <Accession database="GEO">GSM6215060</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Male
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+B5
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Benzene.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887618" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612843" />
+  </Sample>
+
+  <Sample iid="GSM6215061">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Female, Benzene, rep2 [B5R2]</Title>
+    <Accession database="GEO">GSM6215061</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Female
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+B5
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Benzene.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887617" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612844" />
+  </Sample>
+
+  <Sample iid="GSM6215062">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Female, Benzene, rep3 [B7L1]</Title>
+    <Accession database="GEO">GSM6215062</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Female
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+B7
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Benzene.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887616" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612845" />
+  </Sample>
+
+  <Sample iid="GSM6215063">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Male, Benzene, rep3 [B7L2]</Title>
+    <Accession database="GEO">GSM6215063</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Male
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+B7
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Benzene.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887615" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612846" />
+  </Sample>
+
+  <Sample iid="GSM6215064">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Male, Benzene, rep4 [B7R2]</Title>
+    <Accession database="GEO">GSM6215064</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Male
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+B7
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Benzene.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887614" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612847" />
+  </Sample>
+
+  <Sample iid="GSM6215065">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Female, Benzene, rep4 [B7R4]</Title>
+    <Accession database="GEO">GSM6215065</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Female
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+B7
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Benzene.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887613" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612848" />
+  </Sample>
+
+  <Sample iid="GSM6215066">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Female, Control, rep1 [C1L2]</Title>
+    <Accession database="GEO">GSM6215066</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Female
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+C1
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Control.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887612" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612849" />
+  </Sample>
+
+  <Sample iid="GSM6215067">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Male, Control, rep1 [C1L3]</Title>
+    <Accession database="GEO">GSM6215067</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Male
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+C1
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Control.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887611" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612850" />
+  </Sample>
+
+  <Sample iid="GSM6215068">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Male, Control, rep2 [C1R1]</Title>
+    <Accession database="GEO">GSM6215068</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Male
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+C1
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Control.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887610" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612851" />
+  </Sample>
+
+  <Sample iid="GSM6215069">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Female, Control, rep2 [C1R3]</Title>
+    <Accession database="GEO">GSM6215069</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Female
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+C1
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Control.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887609" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612852" />
+  </Sample>
+
+  <Sample iid="GSM6215070">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Male, Control, rep3 [C2L3]</Title>
+    <Accession database="GEO">GSM6215070</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Male
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+C2
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Control.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887608" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612853" />
+  </Sample>
+
+  <Sample iid="GSM6215071">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Female, Control, rep3 [C2R1]</Title>
+    <Accession database="GEO">GSM6215071</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Female
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+C2
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Control.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887607" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612854" />
+  </Sample>
+
+  <Sample iid="GSM6215072">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Male, Control, rep4 [C2R2]</Title>
+    <Accession database="GEO">GSM6215072</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Male
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+C2
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Control.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887606" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612855" />
+  </Sample>
+
+  <Sample iid="GSM6215073">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Placenta, Female, Control, rep4 [C2R3]</Title>
+    <Accession database="GEO">GSM6215073</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+Female
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+C2
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Placenta_Raw_Counts_Control.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887605" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612856" />
+  </Sample>
+
+  <Sample iid="GSM6215074">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Decidua, Benzene, rep1 [B2_Decidua_S85_L002]</Title>
+    <Accession database="GEO">GSM6215074</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="Sex">
+n/a
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+n/a
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Decidua_Raw_Counts.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887604" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612857" />
+  </Sample>
+
+  <Sample iid="GSM6215075">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Decidua, Benzene, rep2 [B3_Decidua_S6_L001]</Title>
+    <Accession database="GEO">GSM6215075</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="Sex">
+n/a
+      </Characteristics>
+      <Characteristics tag="treatment">
+Benzene
+      </Characteristics>
+      <Characteristics tag="mother">
+n/a
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Decidua_Raw_Counts.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887603" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612858" />
+  </Sample>
+
+  <Sample iid="GSM6215076">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Decidua, Control, rep1 [B1_Decidua_S4_L001]</Title>
+    <Accession database="GEO">GSM6215076</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="Sex">
+n/a
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+n/a
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Decidua_Raw_Counts.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887602" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612859" />
+  </Sample>
+
+  <Sample iid="GSM6215077">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-06-21</Last-Update-Date>
+    </Status>
+    <Title>Decidua, Control, rep2 [Th158_Decidua_S2_L001]</Title>
+    <Accession database="GEO">GSM6215077</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Decidua</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="strain">
+C57B/l6
+      </Characteristics>
+      <Characteristics tag="tissue">
+Decidua
+      </Characteristics>
+      <Characteristics tag="Sex">
+n/a
+      </Characteristics>
+      <Characteristics tag="treatment">
+Control
+      </Characteristics>
+      <Characteristics tag="mother">
+n/a
+      </Characteristics>
+      <Treatment-Protocol>
+C57B/l6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 1.3 ug of total RNA was used for the construction of sequencing libraries.
+RNA libraries for Placental RNA-seq were prepared using NEBNext Ultra II RNA Library Prep Kit following manufacturer's protocols. RNA libraries for Decidua RNA-seq were prepared using Lexogen QuantSeq 3' mRNA-Seq FWD with UDI 12 nt (Unique Dual Indexing) kit according to manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Decidua_Raw_Counts.txt
+    </Description>
+    <Data-Processing>
+Base calling was conducted using HiSeq Control Software (placenta) or NovaSeq Control Software (decidua), converted to fastq files and de-multiplexed using Illumina bcl2fastq 2.17 software
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using Trimmomatic v.0.36 (Placenta) or BBDUK from BBMap package v.38.90 (Decidua)
+Trimmed sequence reads were mapped to GRCm38/mm10 using STAR aligner v.2.5.2b
+Read count extraction was performed using Subread package v.1.5.2 (Placenta) or HTSeq-count v.2.0.1 (Decidua)
+Read count normalization was performed using DESeq2 package (Placenta) or edgeR (Decidua)
+Assembly: mm10
+Supplementary files format and content: tab-delimited text files include raw count values for each sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28887601" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15612860" />
+  </Sample>
+
+  <Series iid="GSE205581">
+    <Status database="GEO">
+      <Submission-Date>2022-06-06</Submission-Date>
+      <Release-Date>2023-06-21</Release-Date>
+      <Last-Update-Date>2023-08-02</Last-Update-Date>
+    </Status>
+    <Title>Intrinsic sexual dimorphism in the placenta determines the differential response to benzene exposure</Title>
+    <Accession database="GEO">GSE205581</Accession>
+    <Pubmed-ID>37153445</Pubmed-ID>
+    <Summary>
+To investigate the impact of benzene exposure during pregnancy on the placenta and fetal development
+    </Summary>
+    <Overall-Design>
+C57/BL6 mice were exposed to 50ppm benzene for 5 hours a day from E0.5 to E17.5. Tissues were collected on E17.5
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib8" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6215058" />
+    <Sample-Ref ref="GSM6215059" />
+    <Sample-Ref ref="GSM6215060" />
+    <Sample-Ref ref="GSM6215061" />
+    <Sample-Ref ref="GSM6215062" />
+    <Sample-Ref ref="GSM6215063" />
+    <Sample-Ref ref="GSM6215064" />
+    <Sample-Ref ref="GSM6215065" />
+    <Sample-Ref ref="GSM6215066" />
+    <Sample-Ref ref="GSM6215067" />
+    <Sample-Ref ref="GSM6215068" />
+    <Sample-Ref ref="GSM6215069" />
+    <Sample-Ref ref="GSM6215070" />
+    <Sample-Ref ref="GSM6215071" />
+    <Sample-Ref ref="GSM6215072" />
+    <Sample-Ref ref="GSM6215073" />
+    <Sample-Ref ref="GSM6215074" />
+    <Sample-Ref ref="GSM6215075" />
+    <Sample-Ref ref="GSM6215076" />
+    <Sample-Ref ref="GSM6215077" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE205nnn/GSE205581/suppl/GSE205581_Decidua_Raw_Counts.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE205nnn/GSE205581/suppl/GSE205581_Placenta_Raw_Counts_Benzene.txt.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE205nnn/GSE205581/suppl/GSE205581_Placenta_Raw_Counts_Control.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA846503" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Xiaoguo</First><Last>Zheng</Last></Person>
+    <Email>zxg@sagc.org.cn</Email>
+    <Phone>+86-15021928432</Phone>
+    <Organization>Shanghai Jiaotong University</Organization>
+    <Address>
+      <Line>145 Guangyuan Road</Line>
+      <City>Shanghai</City>
+      <Postal-Code>200030</Postal-Code>
+      <Country>China</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Xiaojun</First><Last>Chen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Hefeng</First><Last>Huang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Jing</First><Last>Lin</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Yuchuan</First><Last>Zhou</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Huihui</First><Last>Wang</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Chengliang</First><Last>Zhou</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Xinmei</First><Last>Liu</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL21273">
+    <Status database="GEO">
+      <Submission-Date>2015-12-22</Submission-Date>
+      <Release-Date>2015-12-22</Release-Date>
+      <Last-Update-Date>2019-03-01</Last-Update-Date>
+    </Status>
+    <Title>HiSeq X Ten (Mus musculus)</Title>
+    <Accession database="GEO">GPL21273</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6597704">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, normal control, female, rep1</Title>
+    <Accession database="GEO">GSM6597704</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+normal control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NC1F
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974467" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680348" />
+  </Sample>
+
+  <Sample iid="GSM6597705">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, normal control, female, rep2</Title>
+    <Accession database="GEO">GSM6597705</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+normal control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NC2F
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974466" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680349" />
+  </Sample>
+
+  <Sample iid="GSM6597706">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, normal control, female, rep3</Title>
+    <Accession database="GEO">GSM6597706</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+normal control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NC3F
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974465" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680350" />
+  </Sample>
+
+  <Sample iid="GSM6597707">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, normal control, male, rep1</Title>
+    <Accession database="GEO">GSM6597707</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+normal control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NC1M
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974464" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680351" />
+  </Sample>
+
+  <Sample iid="GSM6597708">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, normal control, male, rep2</Title>
+    <Accession database="GEO">GSM6597708</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+normal control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NC2M
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974463" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680352" />
+  </Sample>
+
+  <Sample iid="GSM6597709">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, normal control, male, rep3</Title>
+    <Accession database="GEO">GSM6597709</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+normal control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+NC3M
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974462" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680353" />
+  </Sample>
+
+  <Sample iid="GSM6597710">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, high E2 prenatal exposure, female, rep1</Title>
+    <Accession database="GEO">GSM6597710</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+high E2 prenatal exposure
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HE1F
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974461" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680354" />
+  </Sample>
+
+  <Sample iid="GSM6597711">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, high E2 prenatal exposure, female, rep2</Title>
+    <Accession database="GEO">GSM6597711</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+high E2 prenatal exposure
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HE2F
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974460" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680355" />
+  </Sample>
+
+  <Sample iid="GSM6597712">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, high E2 prenatal exposure, female, rep3</Title>
+    <Accession database="GEO">GSM6597712</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+high E2 prenatal exposure
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HE3F
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974459" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680356" />
+  </Sample>
+
+  <Sample iid="GSM6597713">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, high E2 prenatal exposure, male, rep1</Title>
+    <Accession database="GEO">GSM6597713</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+high E2 prenatal exposure
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HE1M
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974458" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680357" />
+  </Sample>
+
+  <Sample iid="GSM6597714">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, high E2 prenatal exposure, male, rep2</Title>
+    <Accession database="GEO">GSM6597714</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+high E2 prenatal exposure
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HE2M
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974457" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680358" />
+  </Sample>
+
+  <Sample iid="GSM6597715">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>mouse, high E2 prenatal exposure, male, rep3</Title>
+    <Accession database="GEO">GSM6597715</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+high E2 prenatal exposure
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Three male and three female placenta samples per group were randomly selected for RNA isolation, which was performed by using TRIzol Reagent (Invitrogen) under the manufacturer’s instructions. Extracted RNA was dissolved in RNase-free water and quantified using Qubit○R RNA Assay Kit in Qubit○R 2.0 Flurometer (Life Technologies, CA, USA). RNA integrity was assessed using the RNA Nano 6000 Assay Kit of the Bioanalyzer 2100 system (Agilent Technologies, CA, USA).
+A total amount of 3 μg RNA per sample was used as input material for RNA sample preparations. Sequencing libraries were generated using NEBXext○R UltraTM RNA Library Prep Kit for Illumina○R (NEB, USA) following manufacturer’s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEBNest First Strand Synthesis Reaction Buffer (5×). First strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3’ ends of DNA fragments, NEBNext Adaptor with hairpin loop structure were ligated to prepare for hybridization. In order to select cDNA fragments of preferentially 250~300 bp in length, the library fragments were purified with AMPure XP system (Beckman Coulter, Beverly, USA). Then 3 μl USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37℃ for 15 min followed by 5 min at 95℃ before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent bioanalyzer 2100 system.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+HE3M
+    </Description>
+    <Data-Processing>
+fastp 0.20.1
+Sequence reads were trimmed for adaptor sequence/low-quality sequence using fastp 0.20.1 with default parameters
+Clean read were aligned to reference genome with hisat2 version 2.1.0 (--rna-strandness rf --fr)
+htseq-count (version 0.11.2;-s reverse) was used to analysis FPKM values
+DESeq2 (Version 1.22.2)was used to analyze differentially expressed genes (cutoff qvalue(pvalue)&lt;0.05, |log2FoldChange|&gt;1)
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include RPKM values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL21273" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN30974456" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX17680359" />
+  </Sample>
+
+  <Series iid="GSE214007">
+    <Status database="GEO">
+      <Submission-Date>2022-09-23</Submission-Date>
+      <Release-Date>2024-09-01</Release-Date>
+      <Last-Update-Date>2024-09-01</Last-Update-Date>
+    </Status>
+    <Title>The Transcriptome Analysis Reveals the Underlying Mechanism of Low Fetal Weight due to Prenatal High Estradiol Exposure in Mice</Title>
+    <Accession database="GEO">GSE214007</Accession>
+    <Summary>
+To reveal differences in transcriptome profiles of mouse placentas between HE placentas and NC placentas, aiming to identify the important genes and critical pathways associated with the underlying mechanism for the risk of low birth weight induced by high maternal serum E2 levels.
+We used the mouse model of high E2 prenatal exposure or pure core oil exposure and collect the pups and placentas. In total, 12 samples were sequenced, including 3 placentas derived from male pups and 3 placentas obtained from female pups in both control and E2-treated groups.
+    </Summary>
+    <Overall-Design>
+Comparative gene expression profiling analysis of RNA-seq data for 12 samples including 3 placentas derived from male pups and 3 placentas obtained from female pups in both control and E2-treated groups.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib1" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contributor-Ref ref="contrib8" position="7" />
+    <Contributor-Ref ref="contrib9" position="8" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6597704" />
+    <Sample-Ref ref="GSM6597705" />
+    <Sample-Ref ref="GSM6597706" />
+    <Sample-Ref ref="GSM6597707" />
+    <Sample-Ref ref="GSM6597708" />
+    <Sample-Ref ref="GSM6597709" />
+    <Sample-Ref ref="GSM6597710" />
+    <Sample-Ref ref="GSM6597711" />
+    <Sample-Ref ref="GSM6597712" />
+    <Sample-Ref ref="GSM6597713" />
+    <Sample-Ref ref="GSM6597714" />
+    <Sample-Ref ref="GSM6597715" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE214nnn/GSE214007/suppl/GSE214007_FPKM_allsamples.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA883619" />
+  </Series>
+
+</MINiML>

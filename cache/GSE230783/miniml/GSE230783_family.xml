@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Geetu</First><Last>Tuteja</Last></Person>
+    <Email>arnstrm@iastate.edu, geetu@iastate.edu</Email>
+    <Phone>5152943417</Phone>
+    <Laboratory>Tuteja Lab</Laboratory>
+    <Department>Genetics Development &amp; Cell Biology</Department>
+    <Organization>Iowa State University</Organization>
+    <Address>
+      <Line>2437 PAMMEL DR</Line>
+      <City>Ames</City>
+      <State>IA</State>
+      <Zip-Code>50011</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Jessica</First><Middle>A</Middle><Last>Kinkade</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Arun</First><Middle>S</Middle><Last>Seetharam</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Shrikesh</First><Last>Sachdev</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Nathan</First><Middle>J</Middle><Last>Bivens</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Brett</First><Middle>S</Middle><Last>Phinney</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Gabriela</First><Last>Grigorean</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>R</First><Middle>M</Middle><Last>Roberts</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Cheryl</First><Middle>S</Middle><Last>Rosenfeld</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7234225">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_No_EV_1</Title>
+    <Accession database="GEO">GSM7234225</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment given
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs given no placental EVs
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412858" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121838" />
+  </Sample>
+
+  <Sample iid="GSM7234226">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_No_EV_2</Title>
+    <Accession database="GEO">GSM7234226</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment given
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs given no placental EVs
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412857" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121839" />
+  </Sample>
+
+  <Sample iid="GSM7234227">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_No_EV_3</Title>
+    <Accession database="GEO">GSM7234227</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment given
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs given no placental EVs
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412856" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121840" />
+  </Sample>
+
+  <Sample iid="GSM7234228">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_No_EV_4</Title>
+    <Accession database="GEO">GSM7234228</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+No treatment given
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs given no placental EVs
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412855" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121841" />
+  </Sample>
+
+  <Sample iid="GSM7234229">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_mTSC_EV_1</Title>
+    <Accession database="GEO">GSM7234229</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+Incubated with EVs from mTSCs for ~ 24 hours
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs incubated with EVs from Mouse trophoblast stem cells
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412854" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121842" />
+  </Sample>
+
+  <Sample iid="GSM7234230">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_mTSC_EV_2</Title>
+    <Accession database="GEO">GSM7234230</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+Incubated with EVs from mTSCs for ~ 24 hours
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs incubated with EVs from Mouse trophoblast stem cells
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412853" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121843" />
+  </Sample>
+
+  <Sample iid="GSM7234231">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_mTSC_EV_3</Title>
+    <Accession database="GEO">GSM7234231</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+Incubated with EVs from mTSCs for ~ 24 hours
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs incubated with EVs from Mouse trophoblast stem cells
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412852" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121844" />
+  </Sample>
+
+  <Sample iid="GSM7234232">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_mTSC_EV_4</Title>
+    <Accession database="GEO">GSM7234232</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+Incubated with EVs from mTSCs for ~ 24 hours
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs incubated with EVs from Mouse trophoblast stem cells
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412851" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121845" />
+  </Sample>
+
+  <Sample iid="GSM7234233">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_pTGC_EV_1</Title>
+    <Accession database="GEO">GSM7234233</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+Incubated with EVs from pTGCs for ~24 hours
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs incubated with EVs from Mouse trophoblast giant cells
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412850" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121846" />
+  </Sample>
+
+  <Sample iid="GSM7234234">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_pTGC_EV_2</Title>
+    <Accession database="GEO">GSM7234234</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+Incubated with EVs from pTGCs for ~24 hours
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs incubated with EVs from Mouse trophoblast giant cells
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412849" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121847" />
+  </Sample>
+
+  <Sample iid="GSM7234235">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_pTGC_EV_3</Title>
+    <Accession database="GEO">GSM7234235</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+Incubated with EVs from pTGCs for ~24 hours
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs incubated with EVs from Mouse trophoblast giant cells
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412848" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121848" />
+  </Sample>
+
+  <Sample iid="GSM7234236">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>mNCSC_pTGC_EV_4</Title>
+    <Accession database="GEO">GSM7234236</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Mouse Neural Cortical Stem Cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell line">
+Mouse Neural Cortical Stem Cells
+      </Characteristics>
+      <Characteristics tag="cell type">
+Neural stem cell
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Characteristics tag="treatment">
+Incubated with EVs from pTGCs for ~24 hours
+      </Characteristics>
+      <Treatment-Protocol>
+mNCSCs in the negative control group were not given any EVs from placental cells before having their RNA collected
+mNCSCs in this treatment group were given EVs isolated from undifferentiated mTSCs, and incubated with the EVs for ~24 hours prior to RNA collection
+mNCSCs in this treatment group were given EVs isolated from undifferentiated pTGCs, and incubated with the EVs for ~24 hours prior to RNA collection
+      </Treatment-Protocol>
+      <Growth-Protocol>
+mNCSCs were maintained in an undifferentiated state in mNCSC medium with FGF4, EGF, and heparin; cells were passaged ~24 hours before receiving treatment; mNCSCs given; pTGCs were differentiated from mTSCs for 6 days in exosome-free 70% MEF-conditioned medium with retinoic acid and had EVs isolated from their culture medium at day 6 of differentiation; mTSCs were cultured for 2 days in exosome-free 70% MEF-conditioned medium with FGF4 and heparin to maintain undifferentiated state and had EVs isolated from their clulture medium at day 2 of growth
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was harvested using Rneasy mini plus kit (Qiagen). 500ng of total RNA was used for the construction of sequencing libraries.
+RNA libraries for RNA-seq were prepared using the Illumina Stranded mRNA  Library Prep Kit following manufacturer's protocols.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+mNCSCs incubated with EVs from Mouse trophoblast giant cells
+    </Description>
+    <Data-Processing>
+raw reads were were mapped to GRCm39 using STAR v.2.7.10b (with options --outFilterScoreMinOverLread 0.3 and --outFilterMatchNminOverLread 0.3 )
+featureCounts v.2.0.3 was used for generating raw counts using gencode.vM30 GTF file, at exon level, per gene. Reads were treated as pairs and merged counts for all sampled were created
+Read count extraction and normalization were performed using DESeq2 on Rstudio.
+Enrichment tests on the differentially expressed genes were performed using TissueEnrich against the mouse Encode dataset and using enrichR databases
+Assembly: GRCm39
+Supplementary files format and content: tab-delimited text files include raw counts values for each Sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN34412847" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX20121849" />
+  </Sample>
+
+  <Series iid="GSE230783">
+    <Status database="GEO">
+      <Submission-Date>2023-04-27</Submission-Date>
+      <Release-Date>2024-08-28</Release-Date>
+      <Last-Update-Date>2024-08-28</Last-Update-Date>
+    </Status>
+    <Title>Extracellular Vesicle contents of mouse trophoblast cells and their predicted influence on fetal brain development</Title>
+    <Accession database="GEO">GSE230783</Accession>
+    <Pubmed-ID>37883444</Pubmed-ID>
+    <Summary>
+Current work characterizes mRNA expression derived from mouse neural cortical stem cells incubated with and without EVs derived from either mouse parietal trophoblast giant cells or mouse trophoblast stem cells
+    </Summary>
+    <Overall-Design>
+Four replicates each for three different treatments, total of 12 samples and 3 conditions (1 control).
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib8" position="6" />
+    <Contributor-Ref ref="contrib9" position="7" />
+    <Contributor-Ref ref="contrib1" position="8" />
+    <Contributor-Ref ref="contrib10" position="9" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7234225" />
+    <Sample-Ref ref="GSM7234226" />
+    <Sample-Ref ref="GSM7234227" />
+    <Sample-Ref ref="GSM7234228" />
+    <Sample-Ref ref="GSM7234229" />
+    <Sample-Ref ref="GSM7234230" />
+    <Sample-Ref ref="GSM7234231" />
+    <Sample-Ref ref="GSM7234232" />
+    <Sample-Ref ref="GSM7234233" />
+    <Sample-Ref ref="GSM7234234" />
+    <Sample-Ref ref="GSM7234235" />
+    <Sample-Ref ref="GSM7234236" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE230nnn/GSE230783/suppl/GSE230783_featureCounts_merged_mouse.ev.RNAseq.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA962560" />
+  </Series>
+
+</MINiML>

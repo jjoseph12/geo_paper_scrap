@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Yuyin</First><Last>Yi</Last></Person>
+    <Email>yuyinyi0805@gmail.com</Email>
+    <Organization>University of British Columbia, BC Children’s Hospital Research Institute</Organization>
+    <Address>
+      <Line>4500 Oak St</Line>
+      <City>Vancouver</City>
+      <Postal-Code>V5Z 1P4</Postal-Code>
+      <Country>Canada</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Peter</First><Middle>C</Middle><Last>Leung</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Faten</First><Middle>F</Middle><Last>AbdelHafez</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL18573">
+    <Status database="GEO">
+      <Submission-Date>2014-04-15</Submission-Date>
+      <Release-Date>2014-04-15</Release-Date>
+      <Last-Update-Date>2019-03-26</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL18573</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7047703">
+    <Status database="GEO">
+      <Submission-Date>2023-02-15</Submission-Date>
+      <Release-Date>2023-02-18</Release-Date>
+      <Last-Update-Date>2023-02-19</Last-Update-Date>
+    </Status>
+    <Title>MSTN-treated 24h rep1</Title>
+    <Accession database="GEO">GSM7047703</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>First-trimester Placenta Trophoblast</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+First-trimester Placenta Trophoblast
+      </Characteristics>
+      <Characteristics tag="treatment">
+MSTN
+      </Characteristics>
+      <Characteristics tag="time">
+24 hrs
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from human primary trophoblasts was extracted using the RNeasy Mini Kit (Qiagen) according to the manufacturer's instructions. Sample quality control was performed using the Agilent 2100 Bioanalyzer.
+Qualifying samples were then prepped following the standard protocol for the NEBnext Ultra ii Stranded mRNA (New England Biolabs).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+De-multiplexed sequences were aligned to the Homo sapiens (UCSC hg19) reference sequence using STAR aligner
+Fragments per kilobase of exon per million reads (FPKM) estimation of reference genes and transcripts using Cufflinks 2
+Assembly of novel transcripts with Cufflinks 2
+Differential expression of novel and reference transcripts with Cuffdiff 2
+Assembly: GRCh37 (hg19)
+Supplementary files format and content: *.genes.fpkm_tracking: Tab-delimited text files include FPKM values for each gene.
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="FPKM_TRACKING">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7047nnn/GSM7047703/suppl/GSM7047703_26-G.genes.fpkm_tracking.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN33314746" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX19381410" />
+  </Sample>
+
+  <Sample iid="GSM7047704">
+    <Status database="GEO">
+      <Submission-Date>2023-02-15</Submission-Date>
+      <Release-Date>2023-02-18</Release-Date>
+      <Last-Update-Date>2023-02-19</Last-Update-Date>
+    </Status>
+    <Title>MSTN-treated 24h rep2</Title>
+    <Accession database="GEO">GSM7047704</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>First-trimester Placenta Trophoblast</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+First-trimester Placenta Trophoblast
+      </Characteristics>
+      <Characteristics tag="treatment">
+MSTN
+      </Characteristics>
+      <Characteristics tag="time">
+24 hrs
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from human primary trophoblasts was extracted using the RNeasy Mini Kit (Qiagen) according to the manufacturer's instructions. Sample quality control was performed using the Agilent 2100 Bioanalyzer.
+Qualifying samples were then prepped following the standard protocol for the NEBnext Ultra ii Stranded mRNA (New England Biolabs).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+De-multiplexed sequences were aligned to the Homo sapiens (UCSC hg19) reference sequence using STAR aligner
+Fragments per kilobase of exon per million reads (FPKM) estimation of reference genes and transcripts using Cufflinks 2
+Assembly of novel transcripts with Cufflinks 2
+Differential expression of novel and reference transcripts with Cuffdiff 2
+Assembly: GRCh37 (hg19)
+Supplementary files format and content: *.genes.fpkm_tracking: Tab-delimited text files include FPKM values for each gene.
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="FPKM_TRACKING">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7047nnn/GSM7047704/suppl/GSM7047704_28-G.genes.fpkm_tracking.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN33314745" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX19381411" />
+  </Sample>
+
+  <Sample iid="GSM7047705">
+    <Status database="GEO">
+      <Submission-Date>2023-02-15</Submission-Date>
+      <Release-Date>2023-02-18</Release-Date>
+      <Last-Update-Date>2023-02-19</Last-Update-Date>
+    </Status>
+    <Title>MSTN-treated 24h rep3</Title>
+    <Accession database="GEO">GSM7047705</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>First-trimester Placenta Trophoblast</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+First-trimester Placenta Trophoblast
+      </Characteristics>
+      <Characteristics tag="treatment">
+MSTN
+      </Characteristics>
+      <Characteristics tag="time">
+24 hrs
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from human primary trophoblasts was extracted using the RNeasy Mini Kit (Qiagen) according to the manufacturer's instructions. Sample quality control was performed using the Agilent 2100 Bioanalyzer.
+Qualifying samples were then prepped following the standard protocol for the NEBnext Ultra ii Stranded mRNA (New England Biolabs).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+De-multiplexed sequences were aligned to the Homo sapiens (UCSC hg19) reference sequence using STAR aligner
+Fragments per kilobase of exon per million reads (FPKM) estimation of reference genes and transcripts using Cufflinks 2
+Assembly of novel transcripts with Cufflinks 2
+Differential expression of novel and reference transcripts with Cuffdiff 2
+Assembly: GRCh37 (hg19)
+Supplementary files format and content: *.genes.fpkm_tracking: Tab-delimited text files include FPKM values for each gene.
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="FPKM_TRACKING">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7047nnn/GSM7047705/suppl/GSM7047705_30-G.genes.fpkm_tracking.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN33314744" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX19381412" />
+  </Sample>
+
+  <Sample iid="GSM7047706">
+    <Status database="GEO">
+      <Submission-Date>2023-02-15</Submission-Date>
+      <Release-Date>2023-02-18</Release-Date>
+      <Last-Update-Date>2023-02-19</Last-Update-Date>
+    </Status>
+    <Title>MSTN-treated 24h rep4</Title>
+    <Accession database="GEO">GSM7047706</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>First-trimester Placenta Trophoblast</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+First-trimester Placenta Trophoblast
+      </Characteristics>
+      <Characteristics tag="treatment">
+MSTN
+      </Characteristics>
+      <Characteristics tag="time">
+24 hrs
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from human primary trophoblasts was extracted using the RNeasy Mini Kit (Qiagen) according to the manufacturer's instructions. Sample quality control was performed using the Agilent 2100 Bioanalyzer.
+Qualifying samples were then prepped following the standard protocol for the NEBnext Ultra ii Stranded mRNA (New England Biolabs).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+De-multiplexed sequences were aligned to the Homo sapiens (UCSC hg19) reference sequence using STAR aligner
+Fragments per kilobase of exon per million reads (FPKM) estimation of reference genes and transcripts using Cufflinks 2
+Assembly of novel transcripts with Cufflinks 2
+Differential expression of novel and reference transcripts with Cuffdiff 2
+Assembly: GRCh37 (hg19)
+Supplementary files format and content: *.genes.fpkm_tracking: Tab-delimited text files include FPKM values for each gene.
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="FPKM_TRACKING">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7047nnn/GSM7047706/suppl/GSM7047706_33-G.genes.fpkm_tracking.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN33314743" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX19381413" />
+  </Sample>
+
+  <Sample iid="GSM7047707">
+    <Status database="GEO">
+      <Submission-Date>2023-02-15</Submission-Date>
+      <Release-Date>2023-02-18</Release-Date>
+      <Last-Update-Date>2023-02-19</Last-Update-Date>
+    </Status>
+    <Title>MSTN-treated 24h rep5</Title>
+    <Accession database="GEO">GSM7047707</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>First-trimester Placenta Trophoblast</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell type">
+First-trimester Placenta Trophoblast
+      </Characteristics>
+      <Characteristics tag="treatment">
+MSTN
+      </Characteristics>
+      <Characteristics tag="time">
+24 hrs
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA from human primary trophoblasts was extracted using the RNeasy Mini Kit (Qiagen) according to the manufacturer's instructions. Sample quality control was performed using the Agilent 2100 Bioanalyzer.
+Qualifying samples were then prepped following the standard protocol for the NEBnext Ultra ii Stranded mRNA (New England Biolabs).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+De-multiplexed sequences were aligned to the Homo sapiens (UCSC hg19) reference sequence using STAR aligner
+Fragments per kilobase of exon per million reads (FPKM) estimation of reference genes and transcripts using Cufflinks 2
+Assembly of novel transcripts with Cufflinks 2
+Differential expression of novel and reference transcripts with Cuffdiff 2
+Assembly: GRCh37 (hg19)
+Supplementary files format and content: *.genes.fpkm_tracking: Tab-delimited text files include FPKM values for each gene.
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="FPKM_TRACKING">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7047nnn/GSM7047707/suppl/GSM7047707_35-Grep2.genes.fpkm_tracking.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN33314742" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX19381414" />
+  </Sample>
+
+  <Series iid="GSE225378">
+    <Status database="GEO">
+      <Submission-Date>2023-02-15</Submission-Date>
+      <Release-Date>2023-02-18</Release-Date>
+      <Last-Update-Date>2023-02-20</Last-Update-Date>
+    </Status>
+    <Title>Myostatin Increases Trophoblast Cell Invasion Through Regulating Epithelial Mesenchymal Transition Genes</Title>
+    <Accession database="GEO">GSE225378</Accession>
+    <Summary>
+Myostatin (MSTN) is a TGF-β superfamily member and was recently shown to be secreted and functioning in the placenta. In this study, we perfomed mRNA sequencing on control and MSTN-treated primary trophoblast cells to decipher the underlying molecular mechanisms involved in MSTN-induced human trophoblast cell invasion.
+    </Summary>
+    <Overall-Design>
+Primary human trophoblasts from first-trimester placentas (n=5) were isolated and cultured with or without 50 ng/mL MSTN for 24 hours. Total RNA was extracted for transcriptomic analysis.
+Please note that the samples have been analyzed with the control group previously deposited in GSE172040.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7047703" />
+    <Sample-Ref ref="GSM7047704" />
+    <Sample-Ref ref="GSM7047705" />
+    <Sample-Ref ref="GSM7047706" />
+    <Sample-Ref ref="GSM7047707" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE225nnn/GSE225378/suppl/GSE225378_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA935369" />
+  </Series>
+
+</MINiML>

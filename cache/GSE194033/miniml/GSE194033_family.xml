@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Mehdi</First><Last>Moradi</Last></Person>
+    <Department>Animal Science</Department>
+    <Organization>University of Tehran</Organization>
+    <Address>
+      <Line>Daneshkadeh st.</Line>
+      <City>Karaj</City>
+      <State>Alborz</State>
+      <Postal-Code>31587-77871</Postal-Code>
+      <Country>Iran</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Mahdi</First><Last>Zhandi</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Mohsen</First><Last>Sharafi</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Arvand</First><Last>Akbari</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Mohammad</First><Last>Jafari Atrabi</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Mehdi</First><Last>Totonchi</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24230">
+    <Status database="GEO">
+      <Submission-Date>2017-11-05</Submission-Date>
+      <Release-Date>2017-11-05</Release-Date>
+      <Last-Update-Date>2017-11-05</Last-Update-Date>
+    </Status>
+    <Title>HiSeq X Ten (Bos taurus)</Title>
+    <Accession database="GEO">GPL24230</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9913">Bos taurus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5825781">
+    <Status database="GEO">
+      <Submission-Date>2022-01-19</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Healthy cow - rep1</Title>
+    <Accession database="GEO">GSM5825781</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Healthy cow</Source>
+      <Organism taxid="9913">Bos taurus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placentome were collected after parturtion. Small cuboid samples were taken from the fetomaternal conjunction sites of placentome. The samples from each cow pooled and snap frozen in liquid nitrogen. RNAs harvested from the samples were used for RNA-sequencing using Illumina HiSeq 2500 platform.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+SO_Healthy1_1633_R1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+The adaptor sequences were trimmed and the adaptor-trimmed-reads (&gt;= 15nt) were left for further analyzes. Then, the sequences were mapped to ARS-UCD1.2 whole bovine genome using HISAT2.
+Read counts obtained using featureCounts and finally raw read counts were used for DEG analysis using edgeR.
+Genome_build: HISAT2
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24230" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN25124859" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13833710" />
+  </Sample>
+
+  <Sample iid="GSM5825782">
+    <Status database="GEO">
+      <Submission-Date>2022-01-19</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Healthy cow - rep2</Title>
+    <Accession database="GEO">GSM5825782</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Healthy cow</Source>
+      <Organism taxid="9913">Bos taurus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placentome were collected after parturtion. Small cuboid samples were taken from the fetomaternal conjunction sites of placentome. The samples from each cow pooled and snap frozen in liquid nitrogen. RNAs harvested from the samples were used for RNA-sequencing using Illumina HiSeq 2500 platform.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+SO_Healthy2_1960_R1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+The adaptor sequences were trimmed and the adaptor-trimmed-reads (&gt;= 15nt) were left for further analyzes. Then, the sequences were mapped to ARS-UCD1.2 whole bovine genome using HISAT2.
+Read counts obtained using featureCounts and finally raw read counts were used for DEG analysis using edgeR.
+Genome_build: HISAT2
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24230" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN25124858" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13833711" />
+  </Sample>
+
+  <Sample iid="GSM5825783">
+    <Status database="GEO">
+      <Submission-Date>2022-01-19</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Healthy cow - rep3</Title>
+    <Accession database="GEO">GSM5825783</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Healthy cow</Source>
+      <Organism taxid="9913">Bos taurus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placentome were collected after parturtion. Small cuboid samples were taken from the fetomaternal conjunction sites of placentome. The samples from each cow pooled and snap frozen in liquid nitrogen. RNAs harvested from the samples were used for RNA-sequencing using Illumina HiSeq 2500 platform.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+SO_Healthy3_1881_R1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+The adaptor sequences were trimmed and the adaptor-trimmed-reads (&gt;= 15nt) were left for further analyzes. Then, the sequences were mapped to ARS-UCD1.2 whole bovine genome using HISAT2.
+Read counts obtained using featureCounts and finally raw read counts were used for DEG analysis using edgeR.
+Genome_build: HISAT2
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24230" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN25124857" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13833712" />
+  </Sample>
+
+  <Sample iid="GSM5825784">
+    <Status database="GEO">
+      <Submission-Date>2022-01-19</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Retained placenta cow - rep1</Title>
+    <Accession database="GEO">GSM5825784</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Retained placenta cow</Source>
+      <Organism taxid="9913">Bos taurus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placentome were collected after parturtion. Small cuboid samples were taken from the fetomaternal conjunction sites of placentome. The samples from each cow pooled and snap frozen in liquid nitrogen. RNAs harvested from the samples were used for RNA-sequencing using Illumina HiSeq 2500 platform.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+SO_RP1_2086_R1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+The adaptor sequences were trimmed and the adaptor-trimmed-reads (&gt;= 15nt) were left for further analyzes. Then, the sequences were mapped to ARS-UCD1.2 whole bovine genome using HISAT2.
+Read counts obtained using featureCounts and finally raw read counts were used for DEG analysis using edgeR.
+Genome_build: HISAT2
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24230" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN25124856" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13833713" />
+  </Sample>
+
+  <Sample iid="GSM5825785">
+    <Status database="GEO">
+      <Submission-Date>2022-01-19</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Retained placenta cow - rep2</Title>
+    <Accession database="GEO">GSM5825785</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Retained placenta cow</Source>
+      <Organism taxid="9913">Bos taurus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placentome were collected after parturtion. Small cuboid samples were taken from the fetomaternal conjunction sites of placentome. The samples from each cow pooled and snap frozen in liquid nitrogen. RNAs harvested from the samples were used for RNA-sequencing using Illumina HiSeq 2500 platform.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+SO_RP2_2103_R1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+The adaptor sequences were trimmed and the adaptor-trimmed-reads (&gt;= 15nt) were left for further analyzes. Then, the sequences were mapped to ARS-UCD1.2 whole bovine genome using HISAT2.
+Read counts obtained using featureCounts and finally raw read counts were used for DEG analysis using edgeR.
+Genome_build: HISAT2
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24230" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN25124855" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13833714" />
+  </Sample>
+
+  <Sample iid="GSM5825786">
+    <Status database="GEO">
+      <Submission-Date>2022-01-19</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Retained placenta cow - rep3</Title>
+    <Accession database="GEO">GSM5825786</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Retained placenta cow</Source>
+      <Organism taxid="9913">Bos taurus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placentome were collected after parturtion. Small cuboid samples were taken from the fetomaternal conjunction sites of placentome. The samples from each cow pooled and snap frozen in liquid nitrogen. RNAs harvested from the samples were used for RNA-sequencing using Illumina HiSeq 2500 platform.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+SO_RP3_1978_R1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+The adaptor sequences were trimmed and the adaptor-trimmed-reads (&gt;= 15nt) were left for further analyzes. Then, the sequences were mapped to ARS-UCD1.2 whole bovine genome using HISAT2.
+Read counts obtained using featureCounts and finally raw read counts were used for DEG analysis using edgeR.
+Genome_build: HISAT2
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24230" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN25124854" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13833715" />
+  </Sample>
+
+  <Sample iid="GSM5825787">
+    <Status database="GEO">
+      <Submission-Date>2022-01-19</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-08-01</Last-Update-Date>
+    </Status>
+    <Title>Retained placenta cow - rep4</Title>
+    <Accession database="GEO">GSM5825787</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Retained placenta cow</Source>
+      <Organism taxid="9913">Bos taurus</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placentome were collected after parturtion. Small cuboid samples were taken from the fetomaternal conjunction sites of placentome. The samples from each cow pooled and snap frozen in liquid nitrogen. RNAs harvested from the samples were used for RNA-sequencing using Illumina HiSeq 2500 platform.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+SO_RP4_1944_R1
+    </Description>
+    <Data-Processing>
+Illumina Casava1.7 software used for basecalling.
+The adaptor sequences were trimmed and the adaptor-trimmed-reads (&gt;= 15nt) were left for further analyzes. Then, the sequences were mapped to ARS-UCD1.2 whole bovine genome using HISAT2.
+Read counts obtained using featureCounts and finally raw read counts were used for DEG analysis using edgeR.
+Genome_build: HISAT2
+Supplementary_files_format_and_content: Matrix table with raw gene counts for every gene and every sample
+    </Data-Processing>
+    <Platform-Ref ref="GPL24230" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>HiSeq X Ten</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN25124853" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX13833716" />
+  </Sample>
+
+  <Series iid="GSE194033">
+    <Status database="GEO">
+      <Submission-Date>2022-01-19</Submission-Date>
+      <Release-Date>2022-08-01</Release-Date>
+      <Last-Update-Date>2022-11-22</Last-Update-Date>
+    </Status>
+    <Title>RNA-seq study on the placentomes collected from the cows with or without retained placenta</Title>
+    <Accession database="GEO">GSE194033</Accession>
+    <Pubmed-ID>36411408</Pubmed-ID>
+    <Summary>
+We conducted an RNA-sequencing on the placentomes that were collected from 4 and 3 cows with and without retained placenta, respectively. Placentomes were collected from the cows within 30 minutes after parturition and samples were taken from the feto-maternal junction sites of the placentomes. These samples were used for RNA-sequencing and the results showed 240 genes that were differentially expressed between the two groups. These genes could be candidate genes that are involved in the development of placental retention in cattle.
+    </Summary>
+    <Overall-Design>
+Identifying the genes that are differentially expressed in the placentome of cows with or without retained placenta.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5825781" />
+    <Sample-Ref ref="GSM5825782" />
+    <Sample-Ref ref="GSM5825783" />
+    <Sample-Ref ref="GSM5825784" />
+    <Sample-Ref ref="GSM5825785" />
+    <Sample-Ref ref="GSM5825786" />
+    <Sample-Ref ref="GSM5825787" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE194nnn/GSE194033/suppl/GSE194033_Raw_gene_counts_matrix.csv.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA798768" />
+  </Series>
+
+</MINiML>

@@ -1,0 +1,3220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Elana</First><Middle>R</Middle><Last>Elkin</Last></Person>
+    <Laboratory>Elkin</Laboratory>
+    <Department>School of Public Health</Department>
+    <Organization>San Diego State University</Organization>
+    <Address>
+      <Line>5500 Campanile Drive</Line>
+      <City>San Diego</City>
+      <State>CA</State>
+      <Zip-Code>92182</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kelly</First><Middle>M</Middle><Last>Bakulski</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Anthony</First><Middle>L</Middle><Last>Su</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>John</First><Middle>F</Middle><Last>Dou</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Rita</First><Last>Loch-Caruso</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL25947">
+    <Status database="GEO">
+      <Submission-Date>2018-12-18</Submission-Date>
+      <Release-Date>2018-12-18</Release-Date>
+      <Last-Update-Date>2018-12-18</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Rattus norvegicus)</Title>
+    <Accession database="GEO">GPL25947</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10116">Rattus norvegicus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM5134366">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Male_Rat3_AS</Title>
+    <Accession database="GEO">GSM5134366</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 3
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134366/suppl/GSM5134366_Sample_577-EE-1_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138828" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237673" />
+  </Sample>
+
+  <Sample iid="GSM5134367">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Male_Rat11_AS</Title>
+    <Accession database="GEO">GSM5134367</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 11
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134367/suppl/GSM5134367_Sample_577-EE-2_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138827" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237674" />
+  </Sample>
+
+  <Sample iid="GSM5134368">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Male_Rat18_AS</Title>
+    <Accession database="GEO">GSM5134368</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 18
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134368/suppl/GSM5134368_Sample_577-EE-3_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138826" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237675" />
+  </Sample>
+
+  <Sample iid="GSM5134369">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Male_Rat22_AS</Title>
+    <Accession database="GEO">GSM5134369</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 22
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134369/suppl/GSM5134369_Sample_577-EE-4_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138825" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237676" />
+  </Sample>
+
+  <Sample iid="GSM5134370">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Male_Rat29_AS</Title>
+    <Accession database="GEO">GSM5134370</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 29
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134370/suppl/GSM5134370_Sample_577-EE-5_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138824" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237677" />
+  </Sample>
+
+  <Sample iid="GSM5134371">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Male_Rat35_AS</Title>
+    <Accession database="GEO">GSM5134371</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 35
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134371/suppl/GSM5134371_Sample_577-EE-6_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138823" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237678" />
+  </Sample>
+
+  <Sample iid="GSM5134372">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Female_Rat3_AS</Title>
+    <Accession database="GEO">GSM5134372</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 3
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134372/suppl/GSM5134372_Sample_577-EE-7_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138822" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237679" />
+  </Sample>
+
+  <Sample iid="GSM5134373">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Female_Rat11_AS</Title>
+    <Accession database="GEO">GSM5134373</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 11
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134373/suppl/GSM5134373_Sample_577-EE-8_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138821" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237680" />
+  </Sample>
+
+  <Sample iid="GSM5134374">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Female_Rat18_AS</Title>
+    <Accession database="GEO">GSM5134374</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 18
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134374/suppl/GSM5134374_Sample_577-EE-9_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138820" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237681" />
+  </Sample>
+
+  <Sample iid="GSM5134375">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Female_Rat22_AS</Title>
+    <Accession database="GEO">GSM5134375</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 22
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134375/suppl/GSM5134375_Sample_577-EE-10_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138819" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237682" />
+  </Sample>
+
+  <Sample iid="GSM5134376">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Female_Rat29_AS</Title>
+    <Accession database="GEO">GSM5134376</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 29
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134376/suppl/GSM5134376_Sample_577-EE-11_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138818" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237683" />
+  </Sample>
+
+  <Sample iid="GSM5134377">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Control_Female_Rat35_AS</Title>
+    <Accession database="GEO">GSM5134377</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 35
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle control (corn oil)
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134377/suppl/GSM5134377_Sample_577-EE-12_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138817" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237684" />
+  </Sample>
+
+  <Sample iid="GSM5134378">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Male_Rat1_AS</Title>
+    <Accession database="GEO">GSM5134378</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 1
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134378/suppl/GSM5134378_Sample_577-EE-13_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138816" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237685" />
+  </Sample>
+
+  <Sample iid="GSM5134379">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Male_Rat9_AS</Title>
+    <Accession database="GEO">GSM5134379</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 9
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134379/suppl/GSM5134379_Sample_577-EE-14_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138815" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237686" />
+  </Sample>
+
+  <Sample iid="GSM5134380">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Male_Rat16_AS</Title>
+    <Accession database="GEO">GSM5134380</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 16
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134380/suppl/GSM5134380_Sample_577-EE-15_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138814" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237687" />
+  </Sample>
+
+  <Sample iid="GSM5134381">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Male_Rat24_AS</Title>
+    <Accession database="GEO">GSM5134381</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 24
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134381/suppl/GSM5134381_Sample_577-EE-16_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138813" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237688" />
+  </Sample>
+
+  <Sample iid="GSM5134382">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Male_Rat26_AS</Title>
+    <Accession database="GEO">GSM5134382</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 26
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134382/suppl/GSM5134382_Sample_577-EE-17_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138812" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237689" />
+  </Sample>
+
+  <Sample iid="GSM5134383">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Male_Rat36_AS</Title>
+    <Accession database="GEO">GSM5134383</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 36
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134383/suppl/GSM5134383_Sample_577-EE-18_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138804" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237690" />
+  </Sample>
+
+  <Sample iid="GSM5134384">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Female_Rat1_AS</Title>
+    <Accession database="GEO">GSM5134384</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 1
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134384/suppl/GSM5134384_Sample_577-EE-19_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138803" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237691" />
+  </Sample>
+
+  <Sample iid="GSM5134385">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Female_Rat9_AS</Title>
+    <Accession database="GEO">GSM5134385</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 9
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134385/suppl/GSM5134385_Sample_577-EE-20_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138802" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237692" />
+  </Sample>
+
+  <Sample iid="GSM5134386">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Female_Rat16_AS</Title>
+    <Accession database="GEO">GSM5134386</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 16
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134386/suppl/GSM5134386_Sample_577-EE-21_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138801" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237693" />
+  </Sample>
+
+  <Sample iid="GSM5134387">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Female_Rat24_AS</Title>
+    <Accession database="GEO">GSM5134387</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 24
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134387/suppl/GSM5134387_Sample_577-EE-22_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138800" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237694" />
+  </Sample>
+
+  <Sample iid="GSM5134388">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Female_Rat26_AS</Title>
+    <Accession database="GEO">GSM5134388</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 26
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134388/suppl/GSM5134388_Sample_577-EE-23_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138799" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237695" />
+  </Sample>
+
+  <Sample iid="GSM5134389">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_Female_Rat36_AS</Title>
+    <Accession database="GEO">GSM5134389</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 36
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 mg/kg/day trichloroethylene
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134389/suppl/GSM5134389_Sample_577-EE-24_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138798" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237696" />
+  </Sample>
+
+  <Sample iid="GSM5134390">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Male_Rat2_AS</Title>
+    <Accession database="GEO">GSM5134390</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 2
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134390/suppl/GSM5134390_Sample_577-EE-25_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138797" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237697" />
+  </Sample>
+
+  <Sample iid="GSM5134391">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Male_Rat7_AS</Title>
+    <Accession database="GEO">GSM5134391</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 7
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134391/suppl/GSM5134391_Sample_577-EE-26_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138796" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237698" />
+  </Sample>
+
+  <Sample iid="GSM5134392">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Male_Rat15_AS</Title>
+    <Accession database="GEO">GSM5134392</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 15
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134392/suppl/GSM5134392_Sample_577-EE-27_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138795" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237699" />
+  </Sample>
+
+  <Sample iid="GSM5134393">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Male_Rat23_AS</Title>
+    <Accession database="GEO">GSM5134393</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 23
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134393/suppl/GSM5134393_Sample_577-EE-28_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138794" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237700" />
+  </Sample>
+
+  <Sample iid="GSM5134394">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Male_Rat27_AS</Title>
+    <Accession database="GEO">GSM5134394</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 27
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134394/suppl/GSM5134394_Sample_577-EE-29_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138793" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237701" />
+  </Sample>
+
+  <Sample iid="GSM5134395">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Male_Rat37_AS</Title>
+    <Accession database="GEO">GSM5134395</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 37
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134395/suppl/GSM5134395_Sample_577-EE-30_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138792" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237702" />
+  </Sample>
+
+  <Sample iid="GSM5134396">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Female_Rat2_AS</Title>
+    <Accession database="GEO">GSM5134396</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 2
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134396/suppl/GSM5134396_Sample_577-EE-31_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138791" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237703" />
+  </Sample>
+
+  <Sample iid="GSM5134397">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Female_Rat7_AS</Title>
+    <Accession database="GEO">GSM5134397</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 7
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134397/suppl/GSM5134397_Sample_577-EE-32_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138790" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237704" />
+  </Sample>
+
+  <Sample iid="GSM5134398">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Female_Rat15_AS</Title>
+    <Accession database="GEO">GSM5134398</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 15
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134398/suppl/GSM5134398_Sample_577-EE-33_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138789" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237705" />
+  </Sample>
+
+  <Sample iid="GSM5134399">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Female_Rat23_AS</Title>
+    <Accession database="GEO">GSM5134399</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 23
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134399/suppl/GSM5134399_Sample_577-EE-34_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138788" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237706" />
+  </Sample>
+
+  <Sample iid="GSM5134400">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Female_Rat27_AS</Title>
+    <Accession database="GEO">GSM5134400</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 27
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134400/suppl/GSM5134400_Sample_577-EE-35_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138787" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237707" />
+  </Sample>
+
+  <Sample iid="GSM5134401">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>NAC_Female_Rat37_AS</Title>
+    <Accession database="GEO">GSM5134401</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 37
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+200 mg/kg/day N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134401/suppl/GSM5134401_Sample_577-EE-36_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138786" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237708" />
+  </Sample>
+
+  <Sample iid="GSM5134402">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Male_Rat5_AS</Title>
+    <Accession database="GEO">GSM5134402</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 5
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134402/suppl/GSM5134402_Sample_577-EE-37_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138785" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237709" />
+  </Sample>
+
+  <Sample iid="GSM5134403">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Male_Rat10_AS</Title>
+    <Accession database="GEO">GSM5134403</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 10
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134403/suppl/GSM5134403_Sample_577-EE-38_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138784" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237710" />
+  </Sample>
+
+  <Sample iid="GSM5134404">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Male_Rat17_AS</Title>
+    <Accession database="GEO">GSM5134404</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 17
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134404/suppl/GSM5134404_Sample_577-EE-39_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138783" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237711" />
+  </Sample>
+
+  <Sample iid="GSM5134405">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Male_Rat19_AS</Title>
+    <Accession database="GEO">GSM5134405</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 19
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134405/suppl/GSM5134405_Sample_577-EE-40_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138782" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237712" />
+  </Sample>
+
+  <Sample iid="GSM5134406">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Male_Rat30_AS</Title>
+    <Accession database="GEO">GSM5134406</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 30
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134406/suppl/GSM5134406_Sample_577-EE-41_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138781" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237713" />
+  </Sample>
+
+  <Sample iid="GSM5134407">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Male_Rat33_AS</Title>
+    <Accession database="GEO">GSM5134407</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 33
+      </Characteristics>
+      <Characteristics tag="Sex">
+male
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134407/suppl/GSM5134407_Sample_577-EE-42_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138780" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237714" />
+  </Sample>
+
+  <Sample iid="GSM5134408">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Female_Rat5_AS</Title>
+    <Accession database="GEO">GSM5134408</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 5
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134408/suppl/GSM5134408_Sample_577-EE-43_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138779" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237715" />
+  </Sample>
+
+  <Sample iid="GSM5134409">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Female_Rat10_AS</Title>
+    <Accession database="GEO">GSM5134409</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 10
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134409/suppl/GSM5134409_Sample_577-EE-44_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138778" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237716" />
+  </Sample>
+
+  <Sample iid="GSM5134410">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Female_Rat17_AS</Title>
+    <Accession database="GEO">GSM5134410</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 17
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134410/suppl/GSM5134410_Sample_577-EE-45_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138777" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237717" />
+  </Sample>
+
+  <Sample iid="GSM5134411">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Female_Rat19_AS</Title>
+    <Accession database="GEO">GSM5134411</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 19
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134411/suppl/GSM5134411_Sample_577-EE-46_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138776" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237718" />
+  </Sample>
+
+  <Sample iid="GSM5134412">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Female_Rat30_AS</Title>
+    <Accession database="GEO">GSM5134412</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 30
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134412/suppl/GSM5134412_Sample_577-EE-47_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138775" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237719" />
+  </Sample>
+
+  <Sample iid="GSM5134413">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>TCE_NAC_Female_Rat33_AS</Title>
+    <Accession database="GEO">GSM5134413</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placental tissue</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="strain">
+
+      </Characteristics>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="dam">
+dam 33
+      </Characteristics>
+      <Characteristics tag="Sex">
+female
+      </Characteristics>
+      <Characteristics tag="treatment">
+480 ml/kg trichloroethylene + N-acetylcysteine
+      </Characteristics>
+      <Characteristics tag="treatment duration">
+gestation days 6-16
+      </Characteristics>
+      <Treatment-Protocol>
+Timed-pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day).
+      </Treatment-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted from placental tissue using the RNeasy Plus Mini Kit (Qiagen) following the manufacturer’s recommended protocol with a modification. A FastPrep-24 tissue lyser (MP Biomedicals; Solon, OH, USA) was utilized prior to the gDNA elimination step to achieve maximum quality tissue homogenization. DNA was extracted from placental using the NucleoSpin Tissue kit (Machery-Nagel; Düren, Germany) according to the manufacture’s recommended protocol. RNA and DNA concentrations were determined using a NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific; Waltham, MA, USA). Isolated nucleic acids were subsequently stored at -80°C until further processing.
+RNA libraries were prepared for sequencing using standard Illumina protocols
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads were aligned to the rat genome using STAR, with the options &quot;outFilterMultimapNmax 10&quot; and &quot;sjdbScore 2&quot;.
+Aligned reads were assigned to Rnor_6.0 genes using featureCounts.
+Genes with mean read counts-per-million less than six across all samples were filtered out and excluded from the analysis to reduce dispersion due to low expression levels.
+Data were normalized using the median of ratios method .
+RUV(Remove Unwanted Variation) normalization factors were generated for each sample using the RUVSeq package RUVr function
+Differential gene expression testing was performed using the DESeq2 package (version 1.28.1) for R statistical computing. Negative binomial general linear modeling was used for differential gene expression testing.
+Genome_build: rn6
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM5134nnn/GSM5134413/suppl/GSM5134413_Sample_577-EE-48_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN18138774" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX10237720" />
+  </Sample>
+
+  <Series iid="GSE168232">
+    <Status database="GEO">
+      <Submission-Date>2021-03-04</Submission-Date>
+      <Release-Date>2022-06-01</Release-Date>
+      <Last-Update-Date>2022-06-01</Last-Update-Date>
+    </Status>
+    <Title>Transcriptional responses to maternal trichloroethylene and/or N-acetyl cysteine exposure in Wistar rat placental tissue</Title>
+    <Accession database="GEO">GSE168232</Accession>
+    <Summary>
+Trichloroethylene (TCE) is a persistent and pervasive environmental contaminant. N-acetyl cysteine (NAC) is an antioxidant that may reduce TCE effects. Pregnant Wistar rats were exposed to 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or co-exposure with both chemicals via ingestion (mini vanilla wafer) on gestation days 6-16 (tissue collection day). TCE- and/or NAC-induced changes to gene expression were evaluated in male and female rat placentae.
+    </Summary>
+    <Overall-Design>
+Timed-pregnant Wistar rats were exposed to vehicle control (PBS), trichloroethylene (TCE), N-acetyl cysteine (NAC) or co-exposure with both chemicals via ingestion (treated mini vanilla wafer) on gestation days 6-16 (tissue collection day). The doses were as follows: 480 mg TCE mg/kg/day, 200 mg/kg/day NAC or both doses together. There were 6 batches of rats (N=6) with 4 rats in each batch and 1 rat assigned to each treatment group (total of 24 dams). RNA was isolated from one male and one female placenta from each respective dam and sequenced (24 male and 24 female placental tissue samples). Differential gene expression comparisons were made between each treatment group and control tissues stratified by sex.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM5134366" />
+    <Sample-Ref ref="GSM5134367" />
+    <Sample-Ref ref="GSM5134368" />
+    <Sample-Ref ref="GSM5134369" />
+    <Sample-Ref ref="GSM5134370" />
+    <Sample-Ref ref="GSM5134371" />
+    <Sample-Ref ref="GSM5134372" />
+    <Sample-Ref ref="GSM5134373" />
+    <Sample-Ref ref="GSM5134374" />
+    <Sample-Ref ref="GSM5134375" />
+    <Sample-Ref ref="GSM5134376" />
+    <Sample-Ref ref="GSM5134377" />
+    <Sample-Ref ref="GSM5134378" />
+    <Sample-Ref ref="GSM5134379" />
+    <Sample-Ref ref="GSM5134380" />
+    <Sample-Ref ref="GSM5134381" />
+    <Sample-Ref ref="GSM5134382" />
+    <Sample-Ref ref="GSM5134383" />
+    <Sample-Ref ref="GSM5134384" />
+    <Sample-Ref ref="GSM5134385" />
+    <Sample-Ref ref="GSM5134386" />
+    <Sample-Ref ref="GSM5134387" />
+    <Sample-Ref ref="GSM5134388" />
+    <Sample-Ref ref="GSM5134389" />
+    <Sample-Ref ref="GSM5134390" />
+    <Sample-Ref ref="GSM5134391" />
+    <Sample-Ref ref="GSM5134392" />
+    <Sample-Ref ref="GSM5134393" />
+    <Sample-Ref ref="GSM5134394" />
+    <Sample-Ref ref="GSM5134395" />
+    <Sample-Ref ref="GSM5134396" />
+    <Sample-Ref ref="GSM5134397" />
+    <Sample-Ref ref="GSM5134398" />
+    <Sample-Ref ref="GSM5134399" />
+    <Sample-Ref ref="GSM5134400" />
+    <Sample-Ref ref="GSM5134401" />
+    <Sample-Ref ref="GSM5134402" />
+    <Sample-Ref ref="GSM5134403" />
+    <Sample-Ref ref="GSM5134404" />
+    <Sample-Ref ref="GSM5134405" />
+    <Sample-Ref ref="GSM5134406" />
+    <Sample-Ref ref="GSM5134407" />
+    <Sample-Ref ref="GSM5134408" />
+    <Sample-Ref ref="GSM5134409" />
+    <Sample-Ref ref="GSM5134410" />
+    <Sample-Ref ref="GSM5134411" />
+    <Sample-Ref ref="GSM5134412" />
+    <Sample-Ref ref="GSM5134413" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE168nnn/GSE168232/suppl/GSE168232_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA706597" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRP309262" />
+  </Series>
+
+</MINiML>

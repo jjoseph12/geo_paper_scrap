@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Brian</First><Middle>Joseph</Middle><Last>Cox</Last></Person>
+    <Email>b.cox@utoronto.ca</Email>
+    <Laboratory>Cox System Biology</Laboratory>
+    <Department>Physiology</Department>
+    <Organization>University of Toronto</Organization>
+    <Address>
+      <Line>1 King's College Circle, Rm 3360</Line>
+      <City>Toronto</City>
+      <State>Ontario</State>
+      <Postal-Code>M5S1A8</Postal-Code>
+      <Country>Canada</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Morgan</First><Last>Zych</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Brian</First><Last>Cox</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL34281">
+    <Status database="GEO">
+      <Submission-Date>2024-03-06</Submission-Date>
+      <Release-Date>2024-03-06</Release-Date>
+      <Last-Update-Date>2024-03-06</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq X (Homo sapiens)</Title>
+    <Accession database="GEO">GPL34281</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM8409410">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>Org_W_6.2_A</Title>
+    <Accession database="GEO">GSM8409410</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Org_W_6.2_A
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+whole
+      </Characteristics>
+      <Characteristics tag="batch">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655378" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392578" />
+  </Sample>
+
+  <Sample iid="GSM8409411">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>OrgNK_W_6.1_4</Title>
+    <Accession database="GEO">GSM8409411</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta_decidua</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta_decidua
+      </Characteristics>
+      <Characteristics tag="cell line">
+OrgNK_W_6.1_4
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast_dNK
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+whole
+      </Characteristics>
+      <Characteristics tag="batch">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655377" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392579" />
+  </Sample>
+
+  <Sample iid="GSM8409412">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>OrgNK_S_6.1_4</Title>
+    <Accession database="GEO">GSM8409412</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta_decidua</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta_decidua
+      </Characteristics>
+      <Characteristics tag="cell line">
+OrgNK_S_6.1_4
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast_dNK
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+sorted
+      </Characteristics>
+      <Characteristics tag="batch">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655376" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392580" />
+  </Sample>
+
+  <Sample iid="GSM8409413">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>OrgNK_W_6.2_6.1</Title>
+    <Accession database="GEO">GSM8409413</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta_decidua</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta_decidua
+      </Characteristics>
+      <Characteristics tag="cell line">
+OrgNK_W_6.2_6.1
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast_dNK
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+whole
+      </Characteristics>
+      <Characteristics tag="batch">
+2
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655375" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392581" />
+  </Sample>
+
+  <Sample iid="GSM8409414">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>Org_S_6.1_A</Title>
+    <Accession database="GEO">GSM8409414</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Org_S_6.1_A
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+sorted
+      </Characteristics>
+      <Characteristics tag="batch">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655374" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392582" />
+  </Sample>
+
+  <Sample iid="GSM8409415">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>OrgNK_S_6.2_6.1</Title>
+    <Accession database="GEO">GSM8409415</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta_decidua</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta_decidua
+      </Characteristics>
+      <Characteristics tag="cell line">
+OrgNK_S_6.2_6.1
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast_dNK
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+sorted
+      </Characteristics>
+      <Characteristics tag="batch">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655373" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392583" />
+  </Sample>
+
+  <Sample iid="GSM8409416">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>NK_W_A_4</Title>
+    <Accession database="GEO">GSM8409416</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+decidua
+      </Characteristics>
+      <Characteristics tag="cell line">
+NK_W_A_4
+      </Characteristics>
+      <Characteristics tag="cell type">
+dNK
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+whole
+      </Characteristics>
+      <Characteristics tag="batch">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655372" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392584" />
+  </Sample>
+
+  <Sample iid="GSM8409417">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>NK_W_A_6.1</Title>
+    <Accession database="GEO">GSM8409417</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>decidua</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+decidua
+      </Characteristics>
+      <Characteristics tag="cell line">
+NK_W_A_6.1
+      </Characteristics>
+      <Characteristics tag="cell type">
+dNK
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+whole
+      </Characteristics>
+      <Characteristics tag="batch">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655371" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392585" />
+  </Sample>
+
+  <Sample iid="GSM8409418">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>OrgNK_W_6.1_6.1</Title>
+    <Accession database="GEO">GSM8409418</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta_decidua</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta_decidua
+      </Characteristics>
+      <Characteristics tag="cell line">
+OrgNK_W_6.1_6.1
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast_dNK
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+whole
+      </Characteristics>
+      <Characteristics tag="batch">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655370" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392586" />
+  </Sample>
+
+  <Sample iid="GSM8409419">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>Org_W_6.1_A</Title>
+    <Accession database="GEO">GSM8409419</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell line">
+Org_W_6.1_A
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+whole
+      </Characteristics>
+      <Characteristics tag="batch">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655369" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392587" />
+  </Sample>
+
+  <Sample iid="GSM8409420">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>OrgNK_W_6.2_4</Title>
+    <Accession database="GEO">GSM8409420</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta_decidua</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta_decidua
+      </Characteristics>
+      <Characteristics tag="cell line">
+OrgNK_W_6.2_4
+      </Characteristics>
+      <Characteristics tag="cell type">
+trophoblast_dNK
+      </Characteristics>
+      <Characteristics tag="genotype">
+NA
+      </Characteristics>
+      <Characteristics tag="treatment">
+whole
+      </Characteristics>
+      <Characteristics tag="batch">
+1
+      </Characteristics>
+      <Treatment-Protocol>
+When co-cultures with dNKs or dNK monocultures were prepared, 50 000 dNKs were added to each 40mL Cultrex dome. This number of dNKs was selected because it was the largest number that could be accommodated before their presence caused the Cultrex gel to depolymerize.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+Trophoblast organoids were cultured according to the protocol described by ​(Turco et al., 2018)​, with the following modifications: mouse HGF (Sino Biological 50038-MNAH) rather than human HGF was used, cultures were performed using reduced growth factor Cultrex basement membrane extract (R&amp;D #3433), and cultures were maintained in hypoxia chambers (Billups-Rothenberg MIC-101) perfused with 2% O2, 5% CO2 for 5 minutes at a rate of 25 L/min. Media was pre-conditioned in the perfused hypoxia chamber in a 37oC incubator for one hour before being applied to cultures. Trophoblast organoid media was comprised of: 1X N2 supplement (Gibco 17502048), 1X B27 supplement minus vitamin A (Gibco 12587010), 2mM L-glutamine (R&amp;D B90010), 1.25 mM N-Acetyl-L-Cysteine (Cayman Chemical 20261), 50ng/mL human EGF (Gibco PHG0311L), 100ng/mL human FGF2 (Sigma-Aldrich F0291), 50ng/mL mouse HGF (Sino Biological 50038-MNAH), 80ng/mL human R-spondin (R&amp;D 4645-RS), 500nM A83-01 (Tocris 2939), 2.5uM prostaglandin E2 (Tocris 2296), 1.5uM CHIR99021 (Cell Signaling Technology #54290S), 2uM Y27632 (Cell Signaling Technology #13624), and  1X Antibiotic-Antimycotic (Gibco 15240062) added to Advanced DMEM/F12 (Gibco 12634010). Trophoblast organoid cultures were initiated by seeding each dome of Cultrex gel either with &lt;50 000 of thawed primary trophoblast cells or with thawed cryopreserved organoids from previous cultures. 40mL domes of Cultrex gel containing cultures were prepared in 24-well plates, allowed to polymerize upside-down, and were then overlaid with 500mL of trophoblast organoid media per dome.
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+All samples were collected and snap frozen following seven days of culture, then processed according to the manufacturer’s instructions using the RNeasy Micro Kit (Qiagen 74004) for total RNA isolation. The sample disruption and homogenization steps were performed using QIAShredders (Qiagen 79654).
+Libraries were prepared at the Donnelley Centre at the University of Toronto using Takara SMART-Seq v.4 Ultra Low Input RNA kits.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+FASTQ files were quality assessed by FASTQC, filtered for low quality reads and adapter sequences using cut adapt. Cleaned reads were aligned using HISAT2 (2.2.1), against the human genome build GRCH37. Sam files were converted to BAM files, sorted and indexed using samtools (1.13, htlib 1.13+ds). R (4.1) scripts were used to create a count table from BAM files and the human transcriptome G (including coding and non-coding RNA species) using the featureCounts function of Rsubread (2.8.2). Differential expression was calculated using a pipeline of EdgeR (4.2.1), and Limma (3.60.3) packages. Gene set enrichment was calculated by the camera function in the limma package. Human gene ontology files were obtained from the enrichment map resource (download.baderlab.org/EM_Genesets/). Human placental ontologies were from supplemental files from Naismith and Cox, 2021. Barcode graphs were generated using the barcode function in limma. Removal of dNK gene expression was accomplished using the granulator package in R applying the detanglr algorithm to estimate the transcriptional contribution of the NK cells to the co-cultured bulk mRNA signal. The dNK and organoid samples were used to estimate the pure signal. The estimated mean contribution was removed in limma as a fitted model.
+Assembly: GRCH37
+Supplementary files format and content: table of raw counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL34281" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq X</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN42655368" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX25392588" />
+  </Sample>
+
+  <Series iid="GSE272695">
+    <Status database="GEO">
+      <Submission-Date>2024-07-19</Submission-Date>
+      <Release-Date>2024-08-31</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>Decidual natural killer cells promote extravillus trophoblast developmental pathways: evidence from trophoblast organoid co-cultures</Title>
+    <Accession database="GEO">GSE272695</Accession>
+    <Summary>
+The placenta an essential extra-embryonic organ that supports the fetus throughout gestation. The interactions between the placenta and the maternal immune system during the first trimester have not been completely characterized, despite their close physical association and hem-allogeneic relationship to each other. The most abundant type of immune cell found in the uterus in the first trimester is the decidual natural killer cell (dNK). Despite their name, dNKs play supportive roles during pregnancy by remodelling uterine spiral arteries. We present evidence suggesting that the matrix metalloproteinases (MMPs) that dNKs secrete to promote this remodelling also drive placental development. This study was performed using a novel co-culture system of dNKs and trophoblast organoids, which are mini-organs that represent two to three different cell types of the human placenta. We found that co-cultures for one week led to significant (p=0.020) increases in organoid area. Through bulk RNA sequencing and immunohistochemical examinations we also observed significant decreases in trophoblast stemness markers, and upregulation of gene sets associated with extravillous trophoblast (EVT) development. These changes were accompanied by significant (p&lt;0.001) increases in collagen subunit gene expression in the organoids, with simultaneous significant decreases (p&lt;0.001) in the proportion of organoid area occupied by collagen as determined through Masson’s Trichrome. Cultures containing dNKs also contained significantly higher levels of MMP1, 3, 9, and 10 in their culture media, each of which can break down collagen. Collectively, these findings demonstrate that dNKs promote changes concordant with trophoblast differentiation towards EVTs and villous branching morphogenesis.
+    </Summary>
+    <Overall-Design>
+organoids grown under maintenance conditions in the presence or absence of decidual natural killer cells from allogenic donors
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM8409410" />
+    <Sample-Ref ref="GSM8409411" />
+    <Sample-Ref ref="GSM8409412" />
+    <Sample-Ref ref="GSM8409413" />
+    <Sample-Ref ref="GSM8409414" />
+    <Sample-Ref ref="GSM8409415" />
+    <Sample-Ref ref="GSM8409416" />
+    <Sample-Ref ref="GSM8409417" />
+    <Sample-Ref ref="GSM8409418" />
+    <Sample-Ref ref="GSM8409419" />
+    <Sample-Ref ref="GSM8409420" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE272nnn/GSE272695/suppl/GSE272695_counts_table_for_GEO.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1137979" />
+  </Series>
+
+</MINiML>

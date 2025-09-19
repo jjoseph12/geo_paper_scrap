@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Nobuhiko</First><Last>Hamazaki</Last></Person>
+    <Email>hamazaki0917@gmail.com</Email>
+    <Department>Genome Sciences</Department>
+    <Organization>University of Washington</Organization>
+    <Address>
+      <Line>Foege Building S-210 3720 15th Ave NE</Line>
+      <City>Seattle</City>
+      <State>Washington</State>
+      <Zip-Code>98195</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Bailey</First><Middle>A</Middle><Last>Weatherbee</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Carlos</First><Middle>W</Middle><Last>Gantner</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Riza</First><Middle>M</Middle><Last>Daza</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Lisa</First><Middle>K</Middle><Last>Iwamoto Stohl</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Jay</First><Last>Shendure</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Magdalena</First><Last>Zernicka-Goetz</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL30173">
+    <Status database="GEO">
+      <Submission-Date>2021-05-20</Submission-Date>
+      <Release-Date>2021-05-20</Release-Date>
+      <Last-Update-Date>2021-05-20</Last-Update-Date>
+    </Status>
+    <Title>NextSeq 2000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL30173</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6739283">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scRNA_Day_4_human_stem_cell_model_exp48</Title>
+    <Accession database="GEO">GSM6739283</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (RNA)
+human_model_RNA_matrix.rds
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785773" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306637" />
+  </Sample>
+
+  <Sample iid="GSM6739284">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scRNA_Day_6_human_stem_cell_model_exp48</Title>
+    <Accession database="GEO">GSM6739284</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (RNA)
+human_model_RNA_matrix.rds
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785772" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306638" />
+  </Sample>
+
+  <Sample iid="GSM6739285">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scRNA_Day_8_human_stem_cell_model_exp48</Title>
+    <Accession database="GEO">GSM6739285</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (RNA)
+human_model_RNA_matrix.rds
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785771" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306639" />
+  </Sample>
+
+  <Sample iid="GSM6739286">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scRNA_RSeT_Shef6_hESC</Title>
+    <Accession database="GEO">GSM6739286</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (RNA)
+cell_lines_RNA_matrix.rds
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785770" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306640" />
+  </Sample>
+
+  <Sample iid="GSM6739287">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scRNA_RSeT_induced_GATA3_AP2y_hESC</Title>
+    <Accession database="GEO">GSM6739287</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (RNA)
+cell_lines_RNA_matrix.rds
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785769" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306641" />
+  </Sample>
+
+  <Sample iid="GSM6739288">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scRNA_RSeT_induced_GATA6_SOX17_hESC</Title>
+    <Accession database="GEO">GSM6739288</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>polyA RNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (RNA)
+cell_lines_RNA_matrix.rds
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785768" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306642" />
+  </Sample>
+
+  <Sample iid="GSM6739289">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scATAC_Day_4_human_stem_cell_model_exp48</Title>
+    <Accession database="GEO">GSM6739289</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (ATAC)
+D4_model_atac_fragments.tsv.gz
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic single cell</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6739nnn/GSM6739289/suppl/GSM6739289_D4_model_atac_fragments.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785767" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306643" />
+  </Sample>
+
+  <Sample iid="GSM6739290">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scATAC_Day_6_human_stem_cell_model_exp48</Title>
+    <Accession database="GEO">GSM6739290</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (ATAC)
+D6_model_atac_fragments.tsv.gz
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic single cell</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6739nnn/GSM6739290/suppl/GSM6739290_D6_model_atac_fragments.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785766" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306644" />
+  </Sample>
+
+  <Sample iid="GSM6739291">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scATAC_Day_8_human_stem_cell_model_exp48</Title>
+    <Accession database="GEO">GSM6739291</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (ATAC)
+D8_model_atac_fragments.tsv.gz
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic single cell</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6739nnn/GSM6739291/suppl/GSM6739291_D8_model_atac_fragments.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785765" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306645" />
+  </Sample>
+
+  <Sample iid="GSM6739292">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scATAC_RSeT_Shef6_hESC</Title>
+    <Accession database="GEO">GSM6739292</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (ATAC)
+WT_RSeT_cells_atac_fragments.tsv.gz
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic single cell</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6739nnn/GSM6739292/suppl/GSM6739292_WT_RSeT_cells_atac_fragments.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785764" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306646" />
+  </Sample>
+
+  <Sample iid="GSM6739293">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scATAC_RSeT_induced_GATA3_AP2y_hESC</Title>
+    <Accession database="GEO">GSM6739293</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (ATAC)
+g3_ap2y_induced_cells_atac_fragments.tsv.gz
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic single cell</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6739nnn/GSM6739293/suppl/GSM6739293_g3_ap2y_induced_cells_atac_fragments.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785763" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306647" />
+  </Sample>
+
+  <Sample iid="GSM6739294">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-06-14</Last-Update-Date>
+    </Status>
+    <Title>scATAC_RSeT_induced_GATA6_SOX17_hESC</Title>
+    <Accession database="GEO">GSM6739294</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Shef6</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="cell line">
+Shef6
+      </Characteristics>
+      <Characteristics tag="cell type">
+Human ESC
+      </Characteristics>
+      <Treatment-Protocol>
+To generate the three-dimensional stem cell-derived model of the post-implantation embryo, RSeT cells between 2 and 6 passages post-conversion to RSeT media were passaged as normal, and the following day (Day -3) the media for extraembryonic-like cells (induced GATA6, induced GATA6-SOX17 or induced GATA3-AP2g) was changed to N2B27 with 5% Knockout Serum Replacement and 1µg/mL DOX. This media was refreshed every 24 hours for 3 days. On day 0 (the day of aggregation), an Aggrewell dish (34415, STEMCELL Technologies) was prepared by pre-coating with anti-adherance solution (07010, STEMCELL Technologies) and centrifuging at 2000g for 5 minutes. Wells were washed twice with PBS prior to the addition of experiment media. This media consists of N2B27 with 5% knockout serum replacement, 1µg/mL doxycycline and 10µM Y-27632. Induced cells and wild type ESCs were enzymatically dissociated 1 hour after addition of 10µM Y-27632 to wells containing cells for post-implantation embryo model generation. Dissociated cells were pelleted and resuspended in experiment media and placed in gelatin-coated wells for MEF depletion. After 15-30 minutes cells were counted, mixed, and plated into an Aggrewell dish with a final calculation of 8 wildtype-ESC, 8 hypoblast-like and 16 trophoblast-like cells plated per microwell in the Aggrewell. On day 1, the media was subjected to two two-third changes of N2B27 with 5% knockout serum replacement and 1µg/mL doxycycline. On day 2, Aggrewells were subjected to a half change with hIVC1 media with 1.25 µg/mL hIGF1 (78022.1 STEMCELL Technologies) and 1µg/mL doxycycline. hIVC1 media consists of Advanced DMEM/F12 (12634-010 ThermoFisher Scientific) supplemented with 20% inactivated FBS (10270106, ThermoFisher Scientific), 1x Glutamax, 1X NEAA, 1x Essential AA, 1x ITS-X, 25U/mL Pen/Strep, 1.8mM Glucose (G8644, Sigma-Aldrich), 0.22% sodium lactate (L7900, Sigma-Aldrich), 8nM b-estradiol (50-28-2, Tocris) and 200ng/mL progesterone (P0130, Sigma-Aldrich). This media is used in half changes each day from day 3. On day 4, aggregates were manually picked using a mouth pipette under a dissecting microscope into individual wells of ultra-low attachment 96 well plates (CLS7007, Corning) in hIVC1 media with IGF1 and doxycycline as above for subsequent culture.
+      </Treatment-Protocol>
+      <Growth-Protocol>
+All work presented here was approved by the Human Stem Cell Bank Steering Committee and adheres to the regulations of the UK Code of Practice for the Use of Human Stem Cell Lines.  Shef6 human ESCs were cultured on Matrigel-coated plates in mTESR medium (05825, STEMCELL Technologies) at 37°C, 20% O2, 5% CO2. Plates were coated with 1.6% growth-factor reduced Matrigel (356230, BD Biosciences) dissolved in DMEM/F12 (21331-020, Life Technologies) for 1 hour at at 37°C. hESCs were passaged with TrypLE (12604013, ThermoFisher Scientific). For the first 24 hours after passaging, 10 µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies) was added. Medium was changed every 24 hours. Cells were routinely tested for mycoplasma contamination by PCR (6601, Takara Bio). To convert primed hESCs to RSeT or PXGL culture conditions, cells were passaged to mitomycin-C inactivated CF-1 MEFs (3x103 cells/cm2; GSC-6101G, Amsbio) in media consisting of DMEM/F12 with 20% Knockout Serum Replacement (10828010, ThermoFisher Scientific), 100µM β-mercaptoethanol (31350-010, Thermo Fisher Scientific), 1x GlutaMAX (35050061, Thermo Fisher Scientific), 1x non-essential amino acids, 1x penicillin-streptomycin and 10ng/ml FGF2 (Department of Biochemistry, University of Cambridge) and 10µM ROCK inhibitor Y-27632 (72304, STEMCELL Technologies). For RSeT cells media was switched to RSeT media after 24 hours (05978, STEMCELL Technologies). Cells were maintained in RSeT and passaged as above every 4-5 days. For PXGL cells, conversion was performed as previously described (Bredenkamp, N. et al. 2019). Briefly, cells were cultured in 5% O2, 7% CO2 and media was switched to chemical resetting media 1 (cRM-1) consisting of N2B27 media supplemented with 1µM PD0325901 (University of Cambridge, Stem Cell Institute), 10ng/mL human recombinant LIF (300-05, PeproTech), and 1mM Valproic Acid. N2B27 contains 1:1 DMEM/F12 and Neurobasal A (10888-0222, Thermo Fisher Scientific) supplemented with 0.5x B27 (10889-038, Thermo Fisher Scientific), 0.5x N2 (made in house), 100µM β-mercaptoethanol, 1x GlutaMAX and 1x penicillin-streptomycin. cRM-1 media was changed every 48h for 4 days, after which media was changed to PXGL. PXGL media consists of N2B27 supplemented with 1µM PD0325901, 10ng/mL human recombinant LIF, 2µM Gö6983 (2285, Tocris) and 2µM XAV939 (X3004, Merck). PXGL cells were passaged every 4-6 days using TrypLE (12604013, Thermo Fisher Scientific) for 3 min. 10µM ROCK inhibitor Y-27632 and 1µL/cm2 Geltrex (A1413201, Thermo Fisher Scientific) were added at passage for 24 hours. For yolk sac-like cell or trophoblast differentiation, RSeT cells were passaged onto matrigel coated IBIDI chamber slides. 24 hours later, media was switched to ‘ACL’ (100ng/ml Activin-A, Qk001, QKINE, 3mM CHIR99021, 72052, STEMCELL Technologies, and 10ng/ml human LIF) for hypoblast induction or ‘PA’ (1mM PD0325901 and 1mM A83-01, 72022, STEMCELL Technologies) with or without 500nM lysophosphatidic acid – LPA (3854, Tocris).
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+To collect post-implantation embryo models for single cell sequencing, correctly organized embryoids at day 4, 6 and 8 were picked visually and washed through PBS twice in a 4-well dish before transfer to TrypLE. Samples were agitated by pipetting every 5 minutes for 10-20 minutes until dissociated. Enzymatic activity was inactivated through addition of 20% FBS in PBS at 2x volume. Cells were collected in a falcon tube, pelleted, and resuspended in freeze buffer consisting of 50 mM Tris at pH 8.0 (15-567-027, Fisher Scientific), 25% glycerol (G5516, Sigma-Aldrich), 5 mM Mg(OAc)2 (63052, Sigma-Aldrich), 0.1mM EDTA (15575020, ThermoFisher Scientific), 5mM DTT (R0861, ThermoFisher Scientific), 1x protease inhibitor cocktail (P8340, Sigma-Aldrich), 1:2500 dilution of superasin (AM2694, Invitrogen). For cell lines, 10,000 cells were counted, pelleted, resuspended in the freeze media above, snapped frozen in liquid nitrogen then stored at -80*C. For nuclei isolation and library construction, low input nuclei isolation protocol from 10x Genomics was performed. Briefly, frozen cell pellets were thawed in a 37°C water bath for 30 seconds, centrifuged (500g for 5 minutes at 4°C) to pellet the cells then the supernatant were aspirated. The cell pellets were washed with 200 ul 1x PBS with 0.04% BSA twice, centrifuged and aspirating the supernatant in between washes. Then, chilled lysis buffer (45 ul per sample) was added to the washed cell pellet and placed on ice for 3 minutes, then wash buffer (50 ul per sample) was added.
+Washed isolated nuclei were resuspended in a diluted nuclei buffer. In this study, the isolated nuclei were resuspended in 5 ul of diluted nuclei buffer and were directly added to the transposition reaction. All the steps proceeding, 10x Genomics’ Single Cell Multiome ATAC and Gene expression protocol were followed to manufacturer’s specifications and guidelines.
+The final libraries were loaded on the NextSeq 2000 using P2 100 cycle kit at 650 pM loading concentration with paired end sequencing following the recommended sequencing reads from 10x Genomics (28/10/10/90 cycles for gene expression libraries and 50/8/24/49 cycles for ATAC libraries). 
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell 10x multiome (ATAC)
+g6_s17_induced_cells_atac_fragments.tsv.gz
+    </Description>
+    <Data-Processing>
+Raw reads were analyzed using the CellRangerARC pipeline to generate ATAC and RNA fastq files for each sample, and then to align genomic and transcriptomic reads. Matrices were then read into Seurat and Signac using the Read10X_h5 command. For ATAC-seq data, peaks from standard chromosomes were used and peaks were additionally called using macs2 to add an additional Signac assay. Cells with &gt;500 RNA UMI counts, &lt;20% mitochondrial reads, &gt;500 ATAC reads, TSS enrichment &gt;1 and were called as singlets using scDblFinder were retained for downstream analysis. For UMAP projections, SCTransform was used for RNA counts with percent mitochondrial counts and cell cycle scores regressed. PCA and LSI graphs were used to generate a weighted nearest neighbor (wnn) embedding which accounts for both modalities. chromVAR was run to calculate motif accessibility score on the peaks assay.
+Assembly: hg38
+Supplementary files format and content: Subgroups of RNA/ATAC data were gathered and processed with cellrangerARC (Named &quot;RNA&quot; and &quot;ATAC&quot;).
+Supplementary files format and content: &quot;peaks&quot; matrix are the output of the macs2 peaks calling of the ATAC data
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic single cell</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6739nnn/GSM6739294/suppl/GSM6739294_g6_s17_induced_cells_atac_fragments.tsv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN31785762" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX18306648" />
+  </Sample>
+
+  <Series iid="GSE218314">
+    <Status database="GEO">
+      <Submission-Date>2022-11-18</Submission-Date>
+      <Release-Date>2023-06-14</Release-Date>
+      <Last-Update-Date>2023-07-02</Last-Update-Date>
+    </Status>
+    <Title>Transgene directed induction of a human embryo model from pluripotent stem cells</Title>
+    <Accession database="GEO">GSE218314</Accession>
+    <Pubmed-ID>37369347</Pubmed-ID>
+    <Summary>
+The human embryo undergoes morphogenetic transformations following implantation into the uterus and yet our knowledge of this crucial stage is limited by the inability to observe the embryo in vivo. Here, we establish a stem cell-derived human post-implantation embryo model comprised of embryonic and extraembryonic tissues. Overexpression of the transcription factors GATA6 and SOX17 or GATA3 and AP2g in hESCs allowed us to generate hypoblast-like and trophoblast-like cells, respectively. We established conditions to combine these extraembryonic-like cells with wildtype embryonic stem cells and promote their self-organization into structures that mimic aspects of the post-implantation human embryo. These aggregates contain an inner pluripotent epiblast-like domain surrounded by both hypoblast- and trophoblast-like tissues. We show that this human embryo stem cell model robustly generates several cell types, including amnion-, extraembryonic mesenchyme- and primordial germ cell-like cells. Using perturbation experiments, we demonstrated that these populations arise in response to BMP signaling. This model also allowed us to identify an inhibitory role for SOX17 in the specification of anterior hypoblast-like cells. Modulation of the subpopulations in the hypoblast-like compartment demonstrated that these extraembryonic-like cells impact epiblast-like domain differentiation, highlighting functional tissue-tissue crosstalk. In conclusion, this modular, tractable model of the human embryo that includes both embryonic- and extraembryonic-like cells has the potential to probe key questions of human post-implantation development.
+    </Summary>
+    <Overall-Design>
+single cell 10x multiome (RNA+ATAC) sequencing on transgene-directed human embryo models.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Type>Genome binding/occupancy profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib1" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contributor-Ref ref="contrib7" position="6" />
+    <Contributor-Ref ref="contrib8" position="7" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6739283" />
+    <Sample-Ref ref="GSM6739284" />
+    <Sample-Ref ref="GSM6739285" />
+    <Sample-Ref ref="GSM6739286" />
+    <Sample-Ref ref="GSM6739287" />
+    <Sample-Ref ref="GSM6739288" />
+    <Sample-Ref ref="GSM6739289" />
+    <Sample-Ref ref="GSM6739290" />
+    <Sample-Ref ref="GSM6739291" />
+    <Sample-Ref ref="GSM6739292" />
+    <Sample-Ref ref="GSM6739293" />
+    <Sample-Ref ref="GSM6739294" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_RAW.tar
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_cell_lines_ATAC_matrix.rds.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_cell_lines_RNA_matrix.rds.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_cell_lines_metadata.csv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_cell_lines_peaks_matrix.rds.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_cell_lines_umap.rds.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_human_model_ATAC_matrix.rds.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_human_model_RNA_matrix.rds.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_human_model_matrix.rds.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_human_model_metadata.csv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="RDS">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE218nnn/GSE218314/suppl/GSE218314_human_model_peaks_matrix.rds.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA903152" />
+  </Series>
+
+</MINiML>

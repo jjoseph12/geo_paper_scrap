@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>SUSANTA</First><Last>BEHURA</Last></Person>
+    <Email>behuras@missouri.edu</Email>
+    <Phone>5734769610</Phone>
+    <Organization>University of Missouri</Organization>
+    <Address>
+      <Line>920 East Campus Dr</Line>
+      <City>Columbia</City>
+      <State>MO</State>
+      <Zip-Code>65211</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24247">
+    <Status database="GEO">
+      <Submission-Date>2017-11-08</Submission-Date>
+      <Release-Date>2017-11-08</Release-Date>
+      <Last-Update-Date>2019-03-08</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Mus musculus)</Title>
+    <Accession database="GEO">GPL24247</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7905825">
+    <Status database="GEO">
+      <Submission-Date>2023-11-17</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>C5</Title>
+    <Accession database="GEO">GSM7905825</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+B6.Cg-Cav1tm1Mls/J
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from whole placenta using an AllPrep DNA/RNA Mini Kit (Qiagen, Cat No./ID: 80204) following the manufacturer’s instruction.
+Novogene workflow of RNA-seq library construction
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample1
+    </Description>
+    <Data-Processing>
+The raw sequence data were processed for quality control using the fastp tool.
+Read alignment to the reference mouse genome (GRCm39) was performed using the STAR aligner.
+Differential gene expression analysis was performed by edgeR.
+Assembly: GRCm39
+Supplementary files format and content: tab seprated text file with gene ID, gene symbol, sample ID and read counts as values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38300110" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22558549" />
+  </Sample>
+
+  <Sample iid="GSM7905826">
+    <Status database="GEO">
+      <Submission-Date>2023-11-17</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>C6</Title>
+    <Accession database="GEO">GSM7905826</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+B6.Cg-Cav1tm1Mls/J
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from whole placenta using an AllPrep DNA/RNA Mini Kit (Qiagen, Cat No./ID: 80204) following the manufacturer’s instruction.
+Novogene workflow of RNA-seq library construction
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample2
+    </Description>
+    <Data-Processing>
+The raw sequence data were processed for quality control using the fastp tool.
+Read alignment to the reference mouse genome (GRCm39) was performed using the STAR aligner.
+Differential gene expression analysis was performed by edgeR.
+Assembly: GRCm39
+Supplementary files format and content: tab seprated text file with gene ID, gene symbol, sample ID and read counts as values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38300109" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22558550" />
+  </Sample>
+
+  <Sample iid="GSM7905827">
+    <Status database="GEO">
+      <Submission-Date>2023-11-17</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>C9</Title>
+    <Accession database="GEO">GSM7905827</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="strain">
+B6.Cg-Cav1tm1Mls/J
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was extracted from whole placenta using an AllPrep DNA/RNA Mini Kit (Qiagen, Cat No./ID: 80204) following the manufacturer’s instruction.
+Novogene workflow of RNA-seq library construction
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Sample3
+    </Description>
+    <Data-Processing>
+The raw sequence data were processed for quality control using the fastp tool.
+Read alignment to the reference mouse genome (GRCm39) was performed using the STAR aligner.
+Differential gene expression analysis was performed by edgeR.
+Assembly: GRCm39
+Supplementary files format and content: tab seprated text file with gene ID, gene symbol, sample ID and read counts as values.
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38300108" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22558551" />
+  </Sample>
+
+  <Sample iid="GSM7906198">
+    <Status database="GEO">
+      <Submission-Date>2023-11-17</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>WT</Title>
+    <Accession database="GEO">GSM7906198</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="genotype">
+WT
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single nuclei from WT and Cav1-null placenta were isolated using Pure Prep Nuclei Isolation kit (Product No. NUC-201, Sigma, St. Louis, MO, USA) as per manufacturer’s instructions.
+The nuclei were used to prepare sequencing libraries using 10X Genomics Chromium Single Cell 3ʹ GEM, Library &amp; Gel Bead Kit v3.1 at the University of Missouri Genomics Technology Core according to manufacturer’s specifications.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics
+    </Description>
+    <Data-Processing>
+The base call (BCL) files were processed by the Cell Ranger pipeline (v. 3.0.1) to generate the FASTQ files. The processed data were  analyzed by R package Seurat to identify expression clusters, and to annotate cell types.
+Assembly: GRCm39
+Supplementary files format and content: Tab seprated value files and matrix file
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7906nnn/GSM7906198/suppl/GSM7906198_WT_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7906nnn/GSM7906198/suppl/GSM7906198_WT_features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7906nnn/GSM7906198/suppl/GSM7906198_WT_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38301588" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22560160" />
+  </Sample>
+
+  <Sample iid="GSM7906199">
+    <Status database="GEO">
+      <Submission-Date>2023-11-17</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-14</Last-Update-Date>
+    </Status>
+    <Title>Cav1-null</Title>
+    <Accession database="GEO">GSM7906199</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="tissue">
+Placenta
+      </Characteristics>
+      <Characteristics tag="genotype">
+Cav1-null
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Single nuclei from WT and Cav1-null placenta were isolated using Pure Prep Nuclei Isolation kit (Product No. NUC-201, Sigma, St. Louis, MO, USA) as per manufacturer’s instructions.
+The nuclei were used to prepare sequencing libraries using 10X Genomics Chromium Single Cell 3ʹ GEM, Library &amp; Gel Bead Kit v3.1 at the University of Missouri Genomics Technology Core according to manufacturer’s specifications.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10X Genomics
+    </Description>
+    <Data-Processing>
+The base call (BCL) files were processed by the Cell Ranger pipeline (v. 3.0.1) to generate the FASTQ files. The processed data were  analyzed by R package Seurat to identify expression clusters, and to annotate cell types.
+Assembly: GRCm39
+Supplementary files format and content: Tab seprated value files and matrix file
+    </Data-Processing>
+    <Platform-Ref ref="GPL24247" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic single cell</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7906nnn/GSM7906199/suppl/GSM7906199_Cav1_null_barcodes.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="TSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7906nnn/GSM7906199/suppl/GSM7906199_Cav1_null_features.tsv.gz
+    </Supplementary-Data>
+    <Supplementary-Data type="MTX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7906nnn/GSM7906199/suppl/GSM7906199_Cav1_null_matrix.mtx.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38301587" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22560161" />
+  </Sample>
+
+  <Series iid="GSE248127">
+    <Status database="GEO">
+      <Submission-Date>2023-11-17</Submission-Date>
+      <Release-Date>2024-02-14</Release-Date>
+      <Last-Update-Date>2024-02-15</Last-Update-Date>
+    </Status>
+    <Title>Single-cell transcriptional response of placenta to the ablation of Caveolin-1 in mice: insights into the regulation of brain-placental axis</Title>
+    <Accession database="GEO">GSE248127</Accession>
+    <Pubmed-ID>38334607</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the SubSeries listed below.
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7905825" />
+    <Sample-Ref ref="GSM7905826" />
+    <Sample-Ref ref="GSM7905827" />
+    <Sample-Ref ref="GSM7906198" />
+    <Sample-Ref ref="GSM7906199" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE248nnn/GSE248127/suppl/GSE248127_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SuperSeries of" target="GSE248093" />
+    <Relation type="SuperSeries of" target="GSE248126" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1041803" />
+  </Series>
+
+</MINiML>

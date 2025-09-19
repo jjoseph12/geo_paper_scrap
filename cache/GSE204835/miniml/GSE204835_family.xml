@@ -1,0 +1,2693 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Ashley</First><Last>Hesson</Last></Person>
+    <Email>ahesson@med.umich.edu</Email>
+    <Phone>(716) 348-9693</Phone>
+    <Organization>University of Michigan</Organization>
+    <Address>
+      <Line>1500 E Medical Center Dr.</Line>
+      <City>Ann Arbor</City>
+      <State>MI</State>
+      <Zip-Code>48109</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Elizabeth</First><Last>Langen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Plazyo</First><Last>Olesya</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Johann</First><Last>Gudjonsson</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Santhi</First><Last>Ganesh</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL30173">
+    <Status database="GEO">
+      <Submission-Date>2021-05-20</Submission-Date>
+      <Release-Date>2021-05-20</Release-Date>
+      <Last-Update-Date>2021-05-20</Last-Update-Date>
+    </Status>
+    <Title>NextSeq 2000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL30173</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6198397">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 2</Title>
+    <Accession database="GEO">GSM6198397</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+2.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666071" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464429" />
+  </Sample>
+
+  <Sample iid="GSM6198398">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 3</Title>
+    <Accession database="GEO">GSM6198398</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+3.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666070" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464430" />
+  </Sample>
+
+  <Sample iid="GSM6198399">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 4</Title>
+    <Accession database="GEO">GSM6198399</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+4.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666069" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464431" />
+  </Sample>
+
+  <Sample iid="GSM6198400">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 5</Title>
+    <Accession database="GEO">GSM6198400</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+5.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666068" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464432" />
+  </Sample>
+
+  <Sample iid="GSM6198401">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 6</Title>
+    <Accession database="GEO">GSM6198401</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+6.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666067" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464433" />
+  </Sample>
+
+  <Sample iid="GSM6198402">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 7</Title>
+    <Accession database="GEO">GSM6198402</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+7.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666066" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464434" />
+  </Sample>
+
+  <Sample iid="GSM6198403">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 8</Title>
+    <Accession database="GEO">GSM6198403</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+8.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666065" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464435" />
+  </Sample>
+
+  <Sample iid="GSM6198404">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 9</Title>
+    <Accession database="GEO">GSM6198404</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+9.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666064" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464436" />
+  </Sample>
+
+  <Sample iid="GSM6198405">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 10</Title>
+    <Accession database="GEO">GSM6198405</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+10.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666063" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464437" />
+  </Sample>
+
+  <Sample iid="GSM6198406">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 12</Title>
+    <Accession database="GEO">GSM6198406</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+12.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666062" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464438" />
+  </Sample>
+
+  <Sample iid="GSM6198407">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 13</Title>
+    <Accession database="GEO">GSM6198407</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+13.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666061" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464439" />
+  </Sample>
+
+  <Sample iid="GSM6198408">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 14</Title>
+    <Accession database="GEO">GSM6198408</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Control
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+14.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666060" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464440" />
+  </Sample>
+
+  <Sample iid="GSM6198409">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 18</Title>
+    <Accession database="GEO">GSM6198409</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Supermposed_preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+18.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666059" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464441" />
+  </Sample>
+
+  <Sample iid="GSM6198410">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 20</Title>
+    <Accession database="GEO">GSM6198410</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Supermposed_preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+20.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666058" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464442" />
+  </Sample>
+
+  <Sample iid="GSM6198411">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 25</Title>
+    <Accession database="GEO">GSM6198411</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+25.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666057" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464443" />
+  </Sample>
+
+  <Sample iid="GSM6198412">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 26</Title>
+    <Accession database="GEO">GSM6198412</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+26.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666056" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464444" />
+  </Sample>
+
+  <Sample iid="GSM6198413">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 27</Title>
+    <Accession database="GEO">GSM6198413</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+27.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666055" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464445" />
+  </Sample>
+
+  <Sample iid="GSM6198414">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 28</Title>
+    <Accession database="GEO">GSM6198414</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Supermposed_preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+28.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666054" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464446" />
+  </Sample>
+
+  <Sample iid="GSM6198415">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 29</Title>
+    <Accession database="GEO">GSM6198415</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Supermposed_preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+29.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666053" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464447" />
+  </Sample>
+
+  <Sample iid="GSM6198416">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 30</Title>
+    <Accession database="GEO">GSM6198416</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+30.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666052" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464448" />
+  </Sample>
+
+  <Sample iid="GSM6198417">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 32</Title>
+    <Accession database="GEO">GSM6198417</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+32.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666051" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464449" />
+  </Sample>
+
+  <Sample iid="GSM6198418">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 34</Title>
+    <Accession database="GEO">GSM6198418</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+34.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666050" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464450" />
+  </Sample>
+
+  <Sample iid="GSM6198419">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 35</Title>
+    <Accession database="GEO">GSM6198419</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+35.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666049" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464451" />
+  </Sample>
+
+  <Sample iid="GSM6198420">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 36</Title>
+    <Accession database="GEO">GSM6198420</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Supermposed_preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+36.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666048" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464452" />
+  </Sample>
+
+  <Sample iid="GSM6198421">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 37</Title>
+    <Accession database="GEO">GSM6198421</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+37.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666047" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464453" />
+  </Sample>
+
+  <Sample iid="GSM6198422">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 38</Title>
+    <Accession database="GEO">GSM6198422</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+38.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666046" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464454" />
+  </Sample>
+
+  <Sample iid="GSM6198423">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 39</Title>
+    <Accession database="GEO">GSM6198423</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+39.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666045" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464455" />
+  </Sample>
+
+  <Sample iid="GSM6198424">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 40</Title>
+    <Accession database="GEO">GSM6198424</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+40.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666044" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464456" />
+  </Sample>
+
+  <Sample iid="GSM6198425">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 41</Title>
+    <Accession database="GEO">GSM6198425</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+41.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666043" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464457" />
+  </Sample>
+
+  <Sample iid="GSM6198426">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 42</Title>
+    <Accession database="GEO">GSM6198426</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+42.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666042" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464458" />
+  </Sample>
+
+  <Sample iid="GSM6198427">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 43</Title>
+    <Accession database="GEO">GSM6198427</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+43.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666041" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464459" />
+  </Sample>
+
+  <Sample iid="GSM6198428">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 48</Title>
+    <Accession database="GEO">GSM6198428</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+48.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666040" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464460" />
+  </Sample>
+
+  <Sample iid="GSM6198429">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 50</Title>
+    <Accession database="GEO">GSM6198429</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+50.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666039" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464461" />
+  </Sample>
+
+  <Sample iid="GSM6198430">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 52</Title>
+    <Accession database="GEO">GSM6198430</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+52.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666038" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464462" />
+  </Sample>
+
+  <Sample iid="GSM6198431">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 55</Title>
+    <Accession database="GEO">GSM6198431</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+55.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666037" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464463" />
+  </Sample>
+
+  <Sample iid="GSM6198432">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 56</Title>
+    <Accession database="GEO">GSM6198432</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Supermposed_preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+56.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666036" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464464" />
+  </Sample>
+
+  <Sample iid="GSM6198433">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 57</Title>
+    <Accession database="GEO">GSM6198433</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+57.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666035" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464465" />
+  </Sample>
+
+  <Sample iid="GSM6198434">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 63</Title>
+    <Accession database="GEO">GSM6198434</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+63.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666034" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464466" />
+  </Sample>
+
+  <Sample iid="GSM6198435">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 64</Title>
+    <Accession database="GEO">GSM6198435</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Supermposed_preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+64.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666033" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464467" />
+  </Sample>
+
+  <Sample iid="GSM6198436">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 66</Title>
+    <Accession database="GEO">GSM6198436</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+66.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666032" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464468" />
+  </Sample>
+
+  <Sample iid="GSM6198437">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 69</Title>
+    <Accession database="GEO">GSM6198437</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+69.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666031" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464469" />
+  </Sample>
+
+  <Sample iid="GSM6198438">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 74</Title>
+    <Accession database="GEO">GSM6198438</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+74.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666030" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464470" />
+  </Sample>
+
+  <Sample iid="GSM6198439">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 76</Title>
+    <Accession database="GEO">GSM6198439</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+76.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666029" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464471" />
+  </Sample>
+
+  <Sample iid="GSM6198440">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 78</Title>
+    <Accession database="GEO">GSM6198440</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+78.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666028" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464472" />
+  </Sample>
+
+  <Sample iid="GSM6198441">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 81</Title>
+    <Accession database="GEO">GSM6198441</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+81.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666027" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464473" />
+  </Sample>
+
+  <Sample iid="GSM6198442">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 83</Title>
+    <Accession database="GEO">GSM6198442</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Term
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+83.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666026" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464474" />
+  </Sample>
+
+  <Sample iid="GSM6198443">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 85</Title>
+    <Accession database="GEO">GSM6198443</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Chronic_hypertension
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+85.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666025" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464475" />
+  </Sample>
+
+  <Sample iid="GSM6198444">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2022-05-30</Last-Update-Date>
+    </Status>
+    <Title>Human_paraffin-embedded_placental_tissue_Sample 87</Title>
+    <Accession database="GEO">GSM6198444</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="gestational age">
+Preterm
+      </Characteristics>
+      <Characteristics tag="disease state">
+Preeclampsia
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Placenta samples were formalin-fixed and paraffin-embedded; five 20-micron sections of each placenta sample were subjected to RNA extraction using the RNAstormTM kit (Cell Data Sciences, Fremont, CA, USA) as per the manufacturer’s instructions.
+Total RNA was processed for high-throughput sequencing using the QuantSeq 3′ mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH, USA). Following mRNA generation, fragmentation, and cDNA synthesis, adaptor barcodes were ligated and final cDNA libraries were amplified by PCR and assessed for quality and concentration.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+87.BAM
+    </Description>
+    <Data-Processing>
+An index of the hg38 reference genome was created and sequences were aligned to this index using the Rsubread package from the Bioconductor suite in R (Vienna, Austria)
+The alignment files were subsequently summarized and associated with their respective features and meta-data.  Initial quality control was performed in MultiQC.
+Read count extraction and normalization were performed using the Bioconductor suite and DESeq2 package in R
+Assembly: hg38
+Supplementary files format and content: counts
+    </Data-Processing>
+    <Platform-Ref ref="GPL30173" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>NextSeq 2000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28666024" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15464476" />
+  </Sample>
+
+  <Series iid="GSE204835">
+    <Status database="GEO">
+      <Submission-Date>2022-05-25</Submission-Date>
+      <Release-Date>2022-05-30</Release-Date>
+      <Last-Update-Date>2023-08-02</Last-Update-Date>
+    </Status>
+    <Title>Placental transcriptome analysis of hypertensive pregnancies identifies distinct gene expression profiles of preeclampsia superimposed on chronic hypertension</Title>
+    <Accession database="GEO">GSE204835</Accession>
+    <Pubmed-ID>37131171</Pubmed-ID>
+    <Summary>
+The pathogenesis of preeclampsia superimposed on chronic hypertension is poorly understood relative to preeclampsia occurring in pregnant people without chronic hypertension. Placental transcriptomes in pregnancies complicated by de novo preeclampsia and superimposed preeclampsia have not been previously compared.
+    </Summary>
+    <Overall-Design>
+The goal of this study is to investigate the transcriptomes of placentas from different types of hypertensive pregnancies.
+We identified pregnant people in the University of Michigan Biorepository for Understanding Maternal and Pediatric Health with hypertensive disorders affecting singleton, euploid gestations (N=36) along with non-hypertensive control subjects (N=12). Subjects were grouped as: (1) normotensive (N=12), (2) chronic hypertensive (N=13), (3) preterm preeclampsia with severe features (N=5), (4) term preeclampsia with severe features (N=11), (5) preterm superimposed preeclampsia (N=3), or (6) term superimposed preeclampsia (N=4). Bulk RNA sequencing of paraffin-embedded placental tissue was performed.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contributor-Ref ref="contrib6" position="5" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6198397" />
+    <Sample-Ref ref="GSM6198398" />
+    <Sample-Ref ref="GSM6198399" />
+    <Sample-Ref ref="GSM6198400" />
+    <Sample-Ref ref="GSM6198401" />
+    <Sample-Ref ref="GSM6198402" />
+    <Sample-Ref ref="GSM6198403" />
+    <Sample-Ref ref="GSM6198404" />
+    <Sample-Ref ref="GSM6198405" />
+    <Sample-Ref ref="GSM6198406" />
+    <Sample-Ref ref="GSM6198407" />
+    <Sample-Ref ref="GSM6198408" />
+    <Sample-Ref ref="GSM6198409" />
+    <Sample-Ref ref="GSM6198410" />
+    <Sample-Ref ref="GSM6198411" />
+    <Sample-Ref ref="GSM6198412" />
+    <Sample-Ref ref="GSM6198413" />
+    <Sample-Ref ref="GSM6198414" />
+    <Sample-Ref ref="GSM6198415" />
+    <Sample-Ref ref="GSM6198416" />
+    <Sample-Ref ref="GSM6198417" />
+    <Sample-Ref ref="GSM6198418" />
+    <Sample-Ref ref="GSM6198419" />
+    <Sample-Ref ref="GSM6198420" />
+    <Sample-Ref ref="GSM6198421" />
+    <Sample-Ref ref="GSM6198422" />
+    <Sample-Ref ref="GSM6198423" />
+    <Sample-Ref ref="GSM6198424" />
+    <Sample-Ref ref="GSM6198425" />
+    <Sample-Ref ref="GSM6198426" />
+    <Sample-Ref ref="GSM6198427" />
+    <Sample-Ref ref="GSM6198428" />
+    <Sample-Ref ref="GSM6198429" />
+    <Sample-Ref ref="GSM6198430" />
+    <Sample-Ref ref="GSM6198431" />
+    <Sample-Ref ref="GSM6198432" />
+    <Sample-Ref ref="GSM6198433" />
+    <Sample-Ref ref="GSM6198434" />
+    <Sample-Ref ref="GSM6198435" />
+    <Sample-Ref ref="GSM6198436" />
+    <Sample-Ref ref="GSM6198437" />
+    <Sample-Ref ref="GSM6198438" />
+    <Sample-Ref ref="GSM6198439" />
+    <Sample-Ref ref="GSM6198440" />
+    <Sample-Ref ref="GSM6198441" />
+    <Sample-Ref ref="GSM6198442" />
+    <Sample-Ref ref="GSM6198443" />
+    <Sample-Ref ref="GSM6198444" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE204nnn/GSE204835/suppl/GSE204835_Human_paraffin-embedded_placental_tissue_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA842427" />
+  </Series>
+
+</MINiML>

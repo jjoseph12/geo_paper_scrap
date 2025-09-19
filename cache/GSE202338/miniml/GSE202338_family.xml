@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Khursheed</First><Last>Iqbal</Last></Person>
+    <Email>kiqbal@kumc.edu</Email>
+    <Phone>913 588 5690</Phone>
+    <Department>Pathology</Department>
+    <Organization>University of Kansas Medical Center</Organization>
+    <Address>
+      <Line>3901 Rainbow Blvd</Line>
+      <City>Kansas City</City>
+      <State>Kansas</State>
+      <Zip-Code>66160</Zip-Code>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Kuna</First><Last>Marija</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Dhakal</First><Last>Pramod</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Michael</First><Middle>J</Middle><Last>Soares</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL25947">
+    <Status database="GEO">
+      <Submission-Date>2018-12-18</Submission-Date>
+      <Release-Date>2018-12-18</Release-Date>
+      <Last-Update-Date>2018-12-18</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Rattus norvegicus)</Title>
+    <Accession database="GEO">GPL25947</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10116">Rattus norvegicus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6108647">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>MNJ-1</Title>
+    <Accession database="GEO">GSM6108647</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rat junctional zone</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="gestation day">
+14.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzol reagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+Complementary DNA libraries from total RNA samples were prepared with Illumina TruSeq RNA preparation kits (Illumina, San Diego, CA). Barcoded cDNA libraries were multiplexed and sequenced with a HiSeq2000 DNA sequencer (100-bp paired-end reads) using a TruSeq 200-cycle SBS kit (Illumina) at the KUMC Genome Sequencing Facility. Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA). mRNA abundance was expressed in reads per kb of exon per million reads mapped.  A false discovery rate of 0.05 was used as a cutoff for significant differential expression (wild type versus null).
+RACE
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Holtzman Sprague-Dawley rats were housed in an environmentally controlled facility at the University of Kansas Medical Center (KUMC) with lights on from 0600 to 2000 h and allowed free access to food and water. Female rats (8-10 weeks of age) were mated with adult male rats (&gt;3 months of age).  Mating was assessed by inspection of vaginal lavages. ­The presence of sperm in the vagina was designated gd 0.5. Placentation sites were dissected on gestation day 12.5 and placental discs were isolated. Dissected placental disc tissues were snap-frozen in liquid nitrogen and stored at -80°C until processing for RNA isolation. Total RNA was isolated from tissues using TRIzol reagent (Thermo Fisher Scientific, catalog No. 15596018). All rats were maintained in accordance with institutional policies for the care and use of vertebrate animals in research using protocols approved by the KUMC Animal Care and Use Committee.
+    </Description>
+    <Data-Processing>
+Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA).
+mRNA abundance was expressed in reads per kb of exon per million reads mapped.
+A false discovery rate of 0.05 was used as a cutoff for significant differential expression.
+Functional patterns of transcript expression were analyzed using Ingenuity Pathway Analysis (Qiagen).
+Assembly: rat reference genome (Rnor_6.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>RACE</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28103361" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15168857" />
+  </Sample>
+
+  <Sample iid="GSM6108648">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>MNJ-2</Title>
+    <Accession database="GEO">GSM6108648</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rat junctional zone</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="gestation day">
+14.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzol reagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+Complementary DNA libraries from total RNA samples were prepared with Illumina TruSeq RNA preparation kits (Illumina, San Diego, CA). Barcoded cDNA libraries were multiplexed and sequenced with a HiSeq2000 DNA sequencer (100-bp paired-end reads) using a TruSeq 200-cycle SBS kit (Illumina) at the KUMC Genome Sequencing Facility. Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA). mRNA abundance was expressed in reads per kb of exon per million reads mapped.  A false discovery rate of 0.05 was used as a cutoff for significant differential expression (wild type versus null).
+RACE
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Holtzman Sprague-Dawley rats were housed in an environmentally controlled facility at the University of Kansas Medical Center (KUMC) with lights on from 0600 to 2000 h and allowed free access to food and water. Female rats (8-10 weeks of age) were mated with adult male rats (&gt;3 months of age).  Mating was assessed by inspection of vaginal lavages. ­The presence of sperm in the vagina was designated gd 0.5. Placentation sites were dissected on gestation day 12.5 and placental discs were isolated. Dissected placental disc tissues were snap-frozen in liquid nitrogen and stored at -80°C until processing for RNA isolation. Total RNA was isolated from tissues using TRIzol reagent (Thermo Fisher Scientific, catalog No. 15596018). All rats were maintained in accordance with institutional policies for the care and use of vertebrate animals in research using protocols approved by the KUMC Animal Care and Use Committee.
+    </Description>
+    <Data-Processing>
+Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA).
+mRNA abundance was expressed in reads per kb of exon per million reads mapped.
+A false discovery rate of 0.05 was used as a cutoff for significant differential expression.
+Functional patterns of transcript expression were analyzed using Ingenuity Pathway Analysis (Qiagen).
+Assembly: rat reference genome (Rnor_6.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>RACE</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28103360" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15168850" />
+  </Sample>
+
+  <Sample iid="GSM6108649">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>MNJ-3</Title>
+    <Accession database="GEO">GSM6108649</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rat junctional zone</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="gestation day">
+14.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzol reagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+Complementary DNA libraries from total RNA samples were prepared with Illumina TruSeq RNA preparation kits (Illumina, San Diego, CA). Barcoded cDNA libraries were multiplexed and sequenced with a HiSeq2000 DNA sequencer (100-bp paired-end reads) using a TruSeq 200-cycle SBS kit (Illumina) at the KUMC Genome Sequencing Facility. Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA). mRNA abundance was expressed in reads per kb of exon per million reads mapped.  A false discovery rate of 0.05 was used as a cutoff for significant differential expression (wild type versus null).
+RACE
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Holtzman Sprague-Dawley rats were housed in an environmentally controlled facility at the University of Kansas Medical Center (KUMC) with lights on from 0600 to 2000 h and allowed free access to food and water. Female rats (8-10 weeks of age) were mated with adult male rats (&gt;3 months of age).  Mating was assessed by inspection of vaginal lavages. ­The presence of sperm in the vagina was designated gd 0.5. Placentation sites were dissected on gestation day 12.5 and placental discs were isolated. Dissected placental disc tissues were snap-frozen in liquid nitrogen and stored at -80°C until processing for RNA isolation. Total RNA was isolated from tissues using TRIzol reagent (Thermo Fisher Scientific, catalog No. 15596018). All rats were maintained in accordance with institutional policies for the care and use of vertebrate animals in research using protocols approved by the KUMC Animal Care and Use Committee.
+    </Description>
+    <Data-Processing>
+Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA).
+mRNA abundance was expressed in reads per kb of exon per million reads mapped.
+A false discovery rate of 0.05 was used as a cutoff for significant differential expression.
+Functional patterns of transcript expression were analyzed using Ingenuity Pathway Analysis (Qiagen).
+Assembly: rat reference genome (Rnor_6.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>RACE</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28103359" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15168851" />
+  </Sample>
+
+  <Sample iid="GSM6108650">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>MNJ-4</Title>
+    <Accession database="GEO">GSM6108650</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rat junctional zone</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="gestation day">
+14.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzol reagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+Complementary DNA libraries from total RNA samples were prepared with Illumina TruSeq RNA preparation kits (Illumina, San Diego, CA). Barcoded cDNA libraries were multiplexed and sequenced with a HiSeq2000 DNA sequencer (100-bp paired-end reads) using a TruSeq 200-cycle SBS kit (Illumina) at the KUMC Genome Sequencing Facility. Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA). mRNA abundance was expressed in reads per kb of exon per million reads mapped.  A false discovery rate of 0.05 was used as a cutoff for significant differential expression (wild type versus null).
+RACE
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Holtzman Sprague-Dawley rats were housed in an environmentally controlled facility at the University of Kansas Medical Center (KUMC) with lights on from 0600 to 2000 h and allowed free access to food and water. Female rats (8-10 weeks of age) were mated with adult male rats (&gt;3 months of age).  Mating was assessed by inspection of vaginal lavages. ­The presence of sperm in the vagina was designated gd 0.5. Placentation sites were dissected on gestation day 12.5 and placental discs were isolated. Dissected placental disc tissues were snap-frozen in liquid nitrogen and stored at -80°C until processing for RNA isolation. Total RNA was isolated from tissues using TRIzol reagent (Thermo Fisher Scientific, catalog No. 15596018). All rats were maintained in accordance with institutional policies for the care and use of vertebrate animals in research using protocols approved by the KUMC Animal Care and Use Committee.
+    </Description>
+    <Data-Processing>
+Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA).
+mRNA abundance was expressed in reads per kb of exon per million reads mapped.
+A false discovery rate of 0.05 was used as a cutoff for significant differential expression.
+Functional patterns of transcript expression were analyzed using Ingenuity Pathway Analysis (Qiagen).
+Assembly: rat reference genome (Rnor_6.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>RACE</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28103358" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15168852" />
+  </Sample>
+
+  <Sample iid="GSM6108651">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>MWJ-1</Title>
+    <Accession database="GEO">GSM6108651</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rat junctional zone</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="gestation day">
+14.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzol reagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+Complementary DNA libraries from total RNA samples were prepared with Illumina TruSeq RNA preparation kits (Illumina, San Diego, CA). Barcoded cDNA libraries were multiplexed and sequenced with a HiSeq2000 DNA sequencer (100-bp paired-end reads) using a TruSeq 200-cycle SBS kit (Illumina) at the KUMC Genome Sequencing Facility. Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA). mRNA abundance was expressed in reads per kb of exon per million reads mapped.  A false discovery rate of 0.05 was used as a cutoff for significant differential expression (wild type versus null).
+RACE
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA).
+mRNA abundance was expressed in reads per kb of exon per million reads mapped.
+A false discovery rate of 0.05 was used as a cutoff for significant differential expression.
+Functional patterns of transcript expression were analyzed using Ingenuity Pathway Analysis (Qiagen).
+Assembly: rat reference genome (Rnor_6.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>RACE</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28103357" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15168853" />
+  </Sample>
+
+  <Sample iid="GSM6108652">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>MWJ-2</Title>
+    <Accession database="GEO">GSM6108652</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rat junctional zone</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="gestation day">
+14.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzol reagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+Complementary DNA libraries from total RNA samples were prepared with Illumina TruSeq RNA preparation kits (Illumina, San Diego, CA). Barcoded cDNA libraries were multiplexed and sequenced with a HiSeq2000 DNA sequencer (100-bp paired-end reads) using a TruSeq 200-cycle SBS kit (Illumina) at the KUMC Genome Sequencing Facility. Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA). mRNA abundance was expressed in reads per kb of exon per million reads mapped.  A false discovery rate of 0.05 was used as a cutoff for significant differential expression (wild type versus null).
+RACE
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Holtzman Sprague-Dawley rats were housed in an environmentally controlled facility at the University of Kansas Medical Center (KUMC) with lights on from 0600 to 2000 h and allowed free access to food and water. Female rats (8-10 weeks of age) were mated with adult male rats (&gt;3 months of age).  Mating was assessed by inspection of vaginal lavages. ­The presence of sperm in the vagina was designated gd 0.5. Placentation sites were dissected on gestation day 12.5 and placental discs were isolated. Dissected placental disc tissues were snap-frozen in liquid nitrogen and stored at -80°C until processing for RNA isolation. Total RNA was isolated from tissues using TRIzol reagent (Thermo Fisher Scientific, catalog No. 15596018). All rats were maintained in accordance with institutional policies for the care and use of vertebrate animals in research using protocols approved by the KUMC Animal Care and Use Committee.
+    </Description>
+    <Data-Processing>
+Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA).
+mRNA abundance was expressed in reads per kb of exon per million reads mapped.
+A false discovery rate of 0.05 was used as a cutoff for significant differential expression.
+Functional patterns of transcript expression were analyzed using Ingenuity Pathway Analysis (Qiagen).
+Assembly: rat reference genome (Rnor_6.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>RACE</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28103356" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15168854" />
+  </Sample>
+
+  <Sample iid="GSM6108653">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>MWJ-3</Title>
+    <Accession database="GEO">GSM6108653</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rat junctional zone</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="gestation day">
+14.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzol reagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+Complementary DNA libraries from total RNA samples were prepared with Illumina TruSeq RNA preparation kits (Illumina, San Diego, CA). Barcoded cDNA libraries were multiplexed and sequenced with a HiSeq2000 DNA sequencer (100-bp paired-end reads) using a TruSeq 200-cycle SBS kit (Illumina) at the KUMC Genome Sequencing Facility. Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA). mRNA abundance was expressed in reads per kb of exon per million reads mapped.  A false discovery rate of 0.05 was used as a cutoff for significant differential expression (wild type versus null).
+RACE
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Holtzman Sprague-Dawley rats were housed in an environmentally controlled facility at the University of Kansas Medical Center (KUMC) with lights on from 0600 to 2000 h and allowed free access to food and water. Female rats (8-10 weeks of age) were mated with adult male rats (&gt;3 months of age).  Mating was assessed by inspection of vaginal lavages. ­The presence of sperm in the vagina was designated gd 0.5. Placentation sites were dissected on gestation day 12.5 and placental discs were isolated. Dissected placental disc tissues were snap-frozen in liquid nitrogen and stored at -80°C until processing for RNA isolation. Total RNA was isolated from tissues using TRIzol reagent (Thermo Fisher Scientific, catalog No. 15596018). All rats were maintained in accordance with institutional policies for the care and use of vertebrate animals in research using protocols approved by the KUMC Animal Care and Use Committee.
+    </Description>
+    <Data-Processing>
+Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA).
+mRNA abundance was expressed in reads per kb of exon per million reads mapped.
+A false discovery rate of 0.05 was used as a cutoff for significant differential expression.
+Functional patterns of transcript expression were analyzed using Ingenuity Pathway Analysis (Qiagen).
+Assembly: rat reference genome (Rnor_6.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>RACE</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28103355" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15168856" />
+  </Sample>
+
+  <Sample iid="GSM6108654">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>MWJ-4</Title>
+    <Accession database="GEO">GSM6108654</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>rat junctional zone</Source>
+      <Organism taxid="10116">Rattus norvegicus</Organism>
+      <Characteristics tag="gestation day">
+14.5
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Total RNA was isolated from cells and tissues using TRIzol reagent (cat no. 15596018, Thermo Fisher, Waltham, MA).
+Complementary DNA libraries from total RNA samples were prepared with Illumina TruSeq RNA preparation kits (Illumina, San Diego, CA). Barcoded cDNA libraries were multiplexed and sequenced with a HiSeq2000 DNA sequencer (100-bp paired-end reads) using a TruSeq 200-cycle SBS kit (Illumina) at the KUMC Genome Sequencing Facility. Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA). mRNA abundance was expressed in reads per kb of exon per million reads mapped.  A false discovery rate of 0.05 was used as a cutoff for significant differential expression (wild type versus null).
+RACE
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+Holtzman Sprague-Dawley rats were housed in an environmentally controlled facility at the University of Kansas Medical Center (KUMC) with lights on from 0600 to 2000 h and allowed free access to food and water. Female rats (8-10 weeks of age) were mated with adult male rats (&gt;3 months of age).  Mating was assessed by inspection of vaginal lavages. ­The presence of sperm in the vagina was designated gd 0.5. Placentation sites were dissected on gestation day 12.5 and placental discs were isolated. Dissected placental disc tissues were snap-frozen in liquid nitrogen and stored at -80°C until processing for RNA isolation. Total RNA was isolated from tissues using TRIzol reagent (Thermo Fisher Scientific, catalog No. 15596018). All rats were maintained in accordance with institutional policies for the care and use of vertebrate animals in research using protocols approved by the KUMC Animal Care and Use Committee.
+    </Description>
+    <Data-Processing>
+Reads from *.fastq files were mapped to the rat reference genome (Rnor_6.0) using CLC Genomics Workbench 20.0.4 (Qiagen, Redwood City, CA).
+mRNA abundance was expressed in reads per kb of exon per million reads mapped.
+A false discovery rate of 0.05 was used as a cutoff for significant differential expression.
+Functional patterns of transcript expression were analyzed using Ingenuity Pathway Analysis (Qiagen).
+Assembly: rat reference genome (Rnor_6.0)
+    </Data-Processing>
+    <Platform-Ref ref="GPL25947" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>RACE</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN28103354" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX15168855" />
+  </Sample>
+
+  <Series iid="GSE202338">
+    <Status database="GEO">
+      <Submission-Date>2022-05-05</Submission-Date>
+      <Release-Date>2023-05-18</Release-Date>
+      <Last-Update-Date>2023-05-18</Last-Update-Date>
+    </Status>
+    <Title>CITED2 is a conserved regulator of deep placentation (Rat II)</Title>
+    <Accession database="GEO">GSE202338</Accession>
+    <Pubmed-ID>36626551</Pubmed-ID>
+    <Summary>
+Establishment of the hemochorial placentation site requires the exodus of trophoblast cells from the placenta and their transformative actions on the uterine vasculature, which is a critical but poorly understood developmental process. CBP/p300-interacting transactivator with glutamic acid/aspartic acid-rich carboxyl terminal domain 2 (CITED2) is a member of the CITED protein family of co-regulators and has been shown to possess roles in embryogenesis, including placenta development. We examined the involvement of CITED2 in the rat, which exhibits deep hemochorial placentation, a feature it shares with the human. CITED2 is distinctively expressed in the junctional zone compartment of the rat placentation site and in intrauterine invasive trophoblast cells. Homozygous disruption of the rat Cited2 locus resulted in placental and fetal growth restriction and abnormalities in heart and lung development, which are also characteristic of the CITED deficient mouse model. However, other features of the mouse Cited2 null phenotype, including exencephaly, adrenal gland agenesis, and prenatal lethality were not associated with CITED2 deficiency in the rat. Trophoblast-specific lentiviral CITED2 knockdown in the rat yielded a growth arrested placental phenotype. Smaller Cited2 null placentas were associated with a growth restricted junctional zone and coincided with a delay in intrauterine trophoblast cell invasion. Invasive trophoblast cells arise from the junctional zone. Transcriptomes of the junctional zone, the invasive trophoblast cell lineage, and differentiating trophoblast stem cells were affected by CITED2 disruption, as were placental adaptations to hypoxia and exposure to viral mimetics. Evidence for the conservation of CITED2 expression in human placental tissue and conserved actions in invasive/extravillous trophoblast cell development were demonstrated. We conclude that CITED2 is a conserved regulator of deep hemochorial placentation.
+    </Summary>
+    <Overall-Design>
+Rat placental junctional zone tissues were dissected on gd14.5 from heterozygous breeding of Cited2 mutant rats. Dissected junctional zone compartments from wild type and Cited2 null fetuses were snap-frozen in liquid nitrogen and stored at -80°C until processing for RNA isolation. 4 samples for wild type and 4 samples for null junctional zone tisue was analyzed.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib1" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6108647" />
+    <Sample-Ref ref="GSM6108648" />
+    <Sample-Ref ref="GSM6108649" />
+    <Sample-Ref ref="GSM6108650" />
+    <Sample-Ref ref="GSM6108651" />
+    <Sample-Ref ref="GSM6108652" />
+    <Sample-Ref ref="GSM6108653" />
+    <Sample-Ref ref="GSM6108654" />
+    <Supplementary-Data type="XLSX">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE202nnn/GSE202338/suppl/GSE202338_Rat_Cited2_14-5_JZ.xlsx
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE202339" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA835484" />
+  </Series>
+
+</MINiML>

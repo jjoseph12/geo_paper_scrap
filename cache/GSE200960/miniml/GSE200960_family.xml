@@ -1,0 +1,2514 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Giovanni</First><Last>Sestini</Last></Person>
+    <Organization>IMBA - Institute of Molecular Biotechnology</Organization>
+    <Address>
+      <Line>Dr.-Bohr-Gasse 3, 1030 Wien</Line>
+      <City>Vienna</City>
+      <Postal-Code>1030</Postal-Code>
+      <Country>Austria</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Nicolas</First><Last>Rivron</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jinwoo</First><Last>Seong</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Javier</First><Last>Frias-Aldeguer</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib6">
+    <Person><First>Viktoria</First><Last>Holzmann</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib7">
+    <Person><First>Harunobu</First><Last>Kagawa</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib8">
+    <Person><First>Heidar</First><Middle>H</Middle><Last>Khoei</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib9">
+    <Person><First>Yvonne</First><Middle>S</Middle><Last>ReimerOp</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib10">
+    <Person><First>Maarten</First><Last>Kip</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib11">
+    <Person><First>Lucas</First><Last>Verwegen</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib12">
+    <Person><First>Judith</First><Last>Vivié</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib13">
+    <Person><First>Linfeng</First><Last>Li</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib14">
+    <Person><First>Anna</First><Last>Alemany</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib15">
+    <Person><First>Jeroen</First><Last>Korving</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib16">
+    <Person><First>Frank</First><Last>Darmis</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib17">
+    <Person><First>Alexander</First><Last>van Oudenaarden</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib18">
+    <Person><First>Derk</First><Last>ten Berge</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib19">
+    <Person><First>Niels</First><Last>Geijsen</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL17021">
+    <Status database="GEO">
+      <Submission-Date>2013-04-16</Submission-Date>
+      <Release-Date>2013-04-16</Release-Date>
+      <Last-Update-Date>2019-03-21</Last-Update-Date>
+    </Status>
+    <Title>Illumina HiSeq 2500 (Mus musculus)</Title>
+    <Accession database="GEO">GPL17021</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="10090">Mus musculus</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6047350">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_H-127819</Title>
+    <Accession database="GEO">GSM6047350</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+H
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127819
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047350/suppl/GSM6047350_127819_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620137" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889850" />
+  </Sample>
+
+  <Sample iid="GSM6047351">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_L-127820</Title>
+    <Accession database="GEO">GSM6047351</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+L
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127820
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047351/suppl/GSM6047351_127820_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620136" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889851" />
+  </Sample>
+
+  <Sample iid="GSM6047352">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_HH-127821</Title>
+    <Accession database="GEO">GSM6047352</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+HH
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127821
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047352/suppl/GSM6047352_127821_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620135" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889852" />
+  </Sample>
+
+  <Sample iid="GSM6047353">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_HL-127822</Title>
+    <Accession database="GEO">GSM6047353</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+HL
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127822
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047353/suppl/GSM6047353_127822_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620134" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889853" />
+  </Sample>
+
+  <Sample iid="GSM6047354">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_LH-127823</Title>
+    <Accession database="GEO">GSM6047354</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+LH
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127823
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047354/suppl/GSM6047354_127823_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620133" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889854" />
+  </Sample>
+
+  <Sample iid="GSM6047355">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_LL-127824</Title>
+    <Accession database="GEO">GSM6047355</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+LL
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127824
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047355/suppl/GSM6047355_127824_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620132" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889855" />
+  </Sample>
+
+  <Sample iid="GSM6047356">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_HHH-127825</Title>
+    <Accession database="GEO">GSM6047356</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+HHH
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127825
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047356/suppl/GSM6047356_127825_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620131" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889856" />
+  </Sample>
+
+  <Sample iid="GSM6047357">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_HHL-127826</Title>
+    <Accession database="GEO">GSM6047357</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+HHL
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127826
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047357/suppl/GSM6047357_127826_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620130" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889857" />
+  </Sample>
+
+  <Sample iid="GSM6047358">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_HLH-127827</Title>
+    <Accession database="GEO">GSM6047358</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+HLH
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127827
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047358/suppl/GSM6047358_127827_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620129" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889858" />
+  </Sample>
+
+  <Sample iid="GSM6047359">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_HLL-127828</Title>
+    <Accession database="GEO">GSM6047359</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+HLL
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127828
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047359/suppl/GSM6047359_127828_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620128" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889859" />
+  </Sample>
+
+  <Sample iid="GSM6047360">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_LHH-127829</Title>
+    <Accession database="GEO">GSM6047360</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+LHH
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127829
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047360/suppl/GSM6047360_127829_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620127" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889860" />
+  </Sample>
+
+  <Sample iid="GSM6047361">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_LHL-127830</Title>
+    <Accession database="GEO">GSM6047361</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+LHL
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127830
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047361/suppl/GSM6047361_127830_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620126" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889861" />
+  </Sample>
+
+  <Sample iid="GSM6047362">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_LLH-127831</Title>
+    <Accession database="GEO">GSM6047362</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+LLH
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127831
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047362/suppl/GSM6047362_127831_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620125" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889862" />
+  </Sample>
+
+  <Sample iid="GSM6047363">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_LLL-127832</Title>
+    <Accession database="GEO">GSM6047363</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+LLL
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127832
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047363/suppl/GSM6047363_127832_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620124" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889863" />
+  </Sample>
+
+  <Sample iid="GSM6047364">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_no-sort-127833</Title>
+    <Accession database="GEO">GSM6047364</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127833
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047364/suppl/GSM6047364_127833_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620123" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889864" />
+  </Sample>
+
+  <Sample iid="GSM6047365">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>G4_ES-127834</Title>
+    <Accession database="GEO">GSM6047365</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+G4_ES
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+2iLIF
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127834
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047365/suppl/GSM6047365_127834_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620122" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889865" />
+  </Sample>
+
+  <Sample iid="GSM6047366">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>G4_ES-127835</Title>
+    <Accession database="GEO">GSM6047366</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+G4_ES
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+2iLIF
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127835
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047366/suppl/GSM6047366_127835_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620121" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889866" />
+  </Sample>
+
+  <Sample iid="GSM6047367">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>G4_ES-127836</Title>
+    <Accession database="GEO">GSM6047367</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+G4_ES
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+2iLIF
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127836
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047367/suppl/GSM6047367_127836_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620120" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889867" />
+  </Sample>
+
+  <Sample iid="GSM6047368">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_TX-127837</Title>
+    <Accession database="GEO">GSM6047368</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127837
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047368/suppl/GSM6047368_127837_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620119" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889868" />
+  </Sample>
+
+  <Sample iid="GSM6047369">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_TX-127838</Title>
+    <Accession database="GEO">GSM6047369</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127838
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047369/suppl/GSM6047369_127838_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620118" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889869" />
+  </Sample>
+
+  <Sample iid="GSM6047370">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_TX-127839</Title>
+    <Accession database="GEO">GSM6047370</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127839
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047370/suppl/GSM6047370_127839_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620117" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889870" />
+  </Sample>
+
+  <Sample iid="GSM6047371">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_pTX-127840</Title>
+    <Accession database="GEO">GSM6047371</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127840
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047371/suppl/GSM6047371_127840_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620116" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889871" />
+  </Sample>
+
+  <Sample iid="GSM6047372">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_pTX-127841</Title>
+    <Accession database="GEO">GSM6047372</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127841
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047372/suppl/GSM6047372_127841_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620115" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889872" />
+  </Sample>
+
+  <Sample iid="GSM6047373">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_pTX-127842</Title>
+    <Accession database="GEO">GSM6047373</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127842
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047373/suppl/GSM6047373_127842_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620114" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889873" />
+  </Sample>
+
+  <Sample iid="GSM6047374">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_TX_DOX-127843</Title>
+    <Accession database="GEO">GSM6047374</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX_DOX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127843
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047374/suppl/GSM6047374_127843_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620113" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889874" />
+  </Sample>
+
+  <Sample iid="GSM6047375">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_TX_DOX-127844</Title>
+    <Accession database="GEO">GSM6047375</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX_DOX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127844
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047375/suppl/GSM6047375_127844_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620112" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889875" />
+  </Sample>
+
+  <Sample iid="GSM6047376">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_TX_DOX-127845</Title>
+    <Accession database="GEO">GSM6047376</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX_DOX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127845
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047376/suppl/GSM6047376_127845_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620111" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889876" />
+  </Sample>
+
+  <Sample iid="GSM6047377">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_HI_FGF-127846</Title>
+    <Accession database="GEO">GSM6047377</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX_HI_FGF
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127846
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047377/suppl/GSM6047377_127846_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620110" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889877" />
+  </Sample>
+
+  <Sample iid="GSM6047378">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_HI_FGF-127847</Title>
+    <Accession database="GEO">GSM6047378</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX_HI_FGF
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127847
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047378/suppl/GSM6047378_127847_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620109" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889878" />
+  </Sample>
+
+  <Sample iid="GSM6047379">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_HI_FGF-127848</Title>
+    <Accession database="GEO">GSM6047379</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX_HI_FGF
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127848
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047379/suppl/GSM6047379_127848_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620108" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889879" />
+  </Sample>
+
+  <Sample iid="GSM6047380">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_pTX-long-127849</Title>
+    <Accession database="GEO">GSM6047380</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX-long
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127849
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047380/suppl/GSM6047380_127849_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620107" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889880" />
+  </Sample>
+
+  <Sample iid="GSM6047381">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_pTX-long-127850</Title>
+    <Accession database="GEO">GSM6047381</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX-long
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127850
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047381/suppl/GSM6047381_127850_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620106" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889881" />
+  </Sample>
+
+  <Sample iid="GSM6047382">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>F4-GFP_iCDX2_pTX-long-127851</Title>
+    <Accession database="GEO">GSM6047382</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+F4-GFP_iCDX2
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX-long
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127851
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047382/suppl/GSM6047382_127851_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620105" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889882" />
+  </Sample>
+
+  <Sample iid="GSM6047383">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-TX-127852</Title>
+    <Accession database="GEO">GSM6047383</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127852
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047383/suppl/GSM6047383_127852_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620104" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889883" />
+  </Sample>
+
+  <Sample iid="GSM6047384">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-TX-127853</Title>
+    <Accession database="GEO">GSM6047384</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127853
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047384/suppl/GSM6047384_127853_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620103" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889884" />
+  </Sample>
+
+  <Sample iid="GSM6047385">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-TX-127854</Title>
+    <Accession database="GEO">GSM6047385</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+TX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127854
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047385/suppl/GSM6047385_127854_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620102" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889885" />
+  </Sample>
+
+  <Sample iid="GSM6047386">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-pTX-127855</Title>
+    <Accession database="GEO">GSM6047386</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127855
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047386/suppl/GSM6047386_127855_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620101" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889886" />
+  </Sample>
+
+  <Sample iid="GSM6047387">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-pTX-127856</Title>
+    <Accession database="GEO">GSM6047387</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127856
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047387/suppl/GSM6047387_127856_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620100" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889887" />
+  </Sample>
+
+  <Sample iid="GSM6047388">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-pTX-127857</Title>
+    <Accession database="GEO">GSM6047388</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127857
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047388/suppl/GSM6047388_127857_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620099" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889888" />
+  </Sample>
+
+  <Sample iid="GSM6047389">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-pTX-long-127858</Title>
+    <Accession database="GEO">GSM6047389</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX-long
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127858
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047389/suppl/GSM6047389_127858_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620098" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889889" />
+  </Sample>
+
+  <Sample iid="GSM6047390">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-pTX-long-127859</Title>
+    <Accession database="GEO">GSM6047390</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX-long
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127859
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047390/suppl/GSM6047390_127859_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620097" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889890" />
+  </Sample>
+
+  <Sample iid="GSM6047391">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-06-07</Last-Update-Date>
+    </Status>
+    <Title>C3.1_-pTX-long-127860</Title>
+    <Accession database="GEO">GSM6047391</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>stem cells</Source>
+      <Organism taxid="10090">Mus musculus</Organism>
+      <Characteristics tag="cell type">
+stem cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+C3.1
+      </Characteristics>
+      <Characteristics tag="sorting definition cdx2-gfp expression">
+no-sort
+      </Characteristics>
+      <Characteristics tag="culture condition">
+pTX-long
+      </Characteristics>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Smart-Seq protocol
+Smart-Seq
+Bulk RNA-seq
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+127860
+    </Description>
+    <Data-Processing>
+RNA-seq reads were first trimmed using trimgalore v0.5.0 and reads mapping to abundant sequences included in the iGenomes Ensembl GRCm38 bundle (rDNA, mitochondrial chromosome, phiX174 genome, adapter) were removed using bowtie2 v2.3.4.1 alignment. Remaining reads were analyzed using genome and gene annotation for the GRCh38/hg38 assembly obtained from Ensembl release 94. Reads were aligned to the genome using star v2.6.0c and reads in genes were counted with featureCounts (subread v1.6.2) and parameter -s 0. Differential gene-expression analysis on raw counts and variance-stabilized transformation of count data for heatmap visualization were performed using DESeq2 v1.18.1.
+Assembly: mm10
+Supplementary files format and content: tsv of read counts per gene
+    </Data-Processing>
+    <Platform-Ref ref="GPL17021" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina HiSeq 2500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="TXT">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6047nnn/GSM6047391/suppl/GSM6047391_127860_counts.txt.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27620096" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX14889891" />
+  </Sample>
+
+  <Series iid="GSE200960">
+    <Status database="GEO">
+      <Submission-Date>2022-04-18</Submission-Date>
+      <Release-Date>2022-06-07</Release-Date>
+      <Last-Update-Date>2022-07-08</Last-Update-Date>
+    </Status>
+    <Title>Epiblast inducers capture mouse Trophectoderm Stem Cells in vitro and pattern blastoids for implantation in utero. [bulk RNA-Seq]</Title>
+    <Accession database="GEO">GSE200960</Accession>
+    <Summary>
+The embryo instructs the allocation of cell states to spatially regulate growth and functions. In the blastocyst, the formation and divergence of the trophoblast lineage ensures successful implantation and placental development. Here, we defined an optimal set of molecules secreted by the inner epiblast cells (inducers) that captures stable, highly self-renewing, pre-implantation-like mouse trophectoderm stem cells (TESCs). When exposed to suboptimal inducers, these stem cells form interconvertible subpopulations with reduced self-renewal, known as trophoblast stem cells (TSCs), and resembling peri-implantation progenitors. TECSs have an enhanced capacity to form blastoids that implant more efficiently in utero. We find that this enhanced capacity is due to epiblast inducers not only controlling trophoblast growth but also trophoblast secretion of WNT6/7B that stimulates uterine decidualization. Thus, the embryo leverages epiblast inductions to drive both the growth and decidualization potential of trophoblasts required for implantation and development.
+    </Summary>
+    <Overall-Design>
+For each sample, we analyzed three thecnical replicates except for the sorted populations (in the sample description, H correspond to &quot;high&quot; whereas L to &quot;low&quot;). C3.1 cell line was cultured in TX condition and used as a non-treated control.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib3" position="1" />
+    <Contributor-Ref ref="contrib4" position="2" />
+    <Contributor-Ref ref="contrib5" position="3" />
+    <Contributor-Ref ref="contrib6" position="4" />
+    <Contributor-Ref ref="contrib7" position="5" />
+    <Contributor-Ref ref="contrib1" position="6" />
+    <Contributor-Ref ref="contrib8" position="7" />
+    <Contributor-Ref ref="contrib9" position="8" />
+    <Contributor-Ref ref="contrib10" position="9" />
+    <Contributor-Ref ref="contrib11" position="10" />
+    <Contributor-Ref ref="contrib12" position="11" />
+    <Contributor-Ref ref="contrib13" position="12" />
+    <Contributor-Ref ref="contrib14" position="13" />
+    <Contributor-Ref ref="contrib15" position="14" />
+    <Contributor-Ref ref="contrib16" position="15" />
+    <Contributor-Ref ref="contrib17" position="16" />
+    <Contributor-Ref ref="contrib18" position="17" />
+    <Contributor-Ref ref="contrib19" position="18" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6047350" />
+    <Sample-Ref ref="GSM6047351" />
+    <Sample-Ref ref="GSM6047352" />
+    <Sample-Ref ref="GSM6047353" />
+    <Sample-Ref ref="GSM6047354" />
+    <Sample-Ref ref="GSM6047355" />
+    <Sample-Ref ref="GSM6047356" />
+    <Sample-Ref ref="GSM6047357" />
+    <Sample-Ref ref="GSM6047358" />
+    <Sample-Ref ref="GSM6047359" />
+    <Sample-Ref ref="GSM6047360" />
+    <Sample-Ref ref="GSM6047361" />
+    <Sample-Ref ref="GSM6047362" />
+    <Sample-Ref ref="GSM6047363" />
+    <Sample-Ref ref="GSM6047364" />
+    <Sample-Ref ref="GSM6047365" />
+    <Sample-Ref ref="GSM6047366" />
+    <Sample-Ref ref="GSM6047367" />
+    <Sample-Ref ref="GSM6047368" />
+    <Sample-Ref ref="GSM6047369" />
+    <Sample-Ref ref="GSM6047370" />
+    <Sample-Ref ref="GSM6047371" />
+    <Sample-Ref ref="GSM6047372" />
+    <Sample-Ref ref="GSM6047373" />
+    <Sample-Ref ref="GSM6047374" />
+    <Sample-Ref ref="GSM6047375" />
+    <Sample-Ref ref="GSM6047376" />
+    <Sample-Ref ref="GSM6047377" />
+    <Sample-Ref ref="GSM6047378" />
+    <Sample-Ref ref="GSM6047379" />
+    <Sample-Ref ref="GSM6047380" />
+    <Sample-Ref ref="GSM6047381" />
+    <Sample-Ref ref="GSM6047382" />
+    <Sample-Ref ref="GSM6047383" />
+    <Sample-Ref ref="GSM6047384" />
+    <Sample-Ref ref="GSM6047385" />
+    <Sample-Ref ref="GSM6047386" />
+    <Sample-Ref ref="GSM6047387" />
+    <Sample-Ref ref="GSM6047388" />
+    <Sample-Ref ref="GSM6047389" />
+    <Sample-Ref ref="GSM6047390" />
+    <Sample-Ref ref="GSM6047391" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE200nnn/GSE200960/suppl/GSE200960_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SubSeries of" target="GSE200961" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA827773" />
+  </Series>
+
+</MINiML>

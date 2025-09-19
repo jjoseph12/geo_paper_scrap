@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>laura</First><Last>sormani</Last></Person>
+    <Email>l.sormani@uq.edu.au, sormani.lau@gmail.com</Email>
+    <Phone>+61 0415192591</Phone>
+    <Department>Diamantina Institute</Department>
+    <Organization>The University of Queensland Diamantina Institute</Organization>
+    <Address>
+      <Line>37 kent street</Line>
+      <City>woolloongabba</City>
+      <State>QLD</State>
+      <Postal-Code>4102</Postal-Code>
+      <Country>Australia</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL18573">
+    <Status database="GEO">
+      <Submission-Date>2014-04-15</Submission-Date>
+      <Release-Date>2014-04-15</Release-Date>
+      <Last-Update-Date>2019-03-26</Last-Update-Date>
+    </Status>
+    <Title>Illumina NextSeq 500 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL18573</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM7899158">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>ATAC_201_oxLDL</Title>
+    <Accession database="GEO">GSM7899158</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+oxLDL(25ug/ul) 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+50,000 ECFCs were trypsinized and washed twice in cold PBS. Pelleted cells were lysed and then directly transposed using the TDE1 DNA Enzyme and Buffer kit (Illumina, CA, US). The transposition reaction was completed with thermomixing at 37°C for 30 minutes at 300 rpm. Transposed DNA was purified with MinElute column cleanup (Qiagen, Valencia, CA)
+Prepared libraries were purified with MinElute column clean-up (Qiagen). The ATAC-seq library pool was quantified on the Agilent Bioanalyzer with the High Sensitivity DNA kit (Agilent Technologies, 4067-4626). Sequencing was performed using the Illumina NextSeq500 (NextSeq control software v4.0.0 / Real Time Analysis v2.11.3). The library pool was diluted and denatured according to the standard NextSeq protocol (Document # 15048776 v16) and sequenced to generate paired-end 76 bp reads using a 150 cycle NextSeq500/550 Mid Output reagent Kit v2.5 (Illumina, 20024904). After sequencing, fastq files were generated using bcl2fastq2 (v2.20.0.422).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw paired-end sequencing reads were aligned to the hg19 reference genome using Bowtie273(version 2.2.9), after removing sequencing adapters with Cutadapt (version 1.13). Samtools (version 1.9) and Picard were used to filter duplicates, remove reads with mapping quality &lt; 30, unmapped reads, reads aligning to the mitochondrial chromosome and unplaced contigs. Quality of library enrichment was evaluated using ENCODE metrics, including Transcription Start Site signal &gt; 10, and sample concordance examined using clustering analysis. Peaks were called for each sample using MACS2 (version 2.1.2), with parameters“-p 0.01–-nomodel–-shift 0–-extsize 14”. Differentially accessible regions between treated and untreated samples were called using DiffBind version 2.14.0, where treatment-dependent peaks were selected as those exhibiting a log fold change &gt; 1. Over-represented transcription factor binding motifs within ATAC-seq peaks were identified using HOMER version 4.8. We also employed a permutation-based strategy using ENCODE dNase-seq footprinting data
+Assembly: human hg19
+Supplementary files format and content: Narrowpeak file
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NARROWPEAK">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7899nnn/GSM7899158/suppl/GSM7899158_ATAC_201_oxLDL.p0.01_peaks.narrowPeak.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38251305" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522081" />
+  </Sample>
+
+  <Sample iid="GSM7899159">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>ATAC_137_oxLDL</Title>
+    <Accession database="GEO">GSM7899159</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+oxLDL(25ug/ul) 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+50,000 ECFCs were trypsinized and washed twice in cold PBS. Pelleted cells were lysed and then directly transposed using the TDE1 DNA Enzyme and Buffer kit (Illumina, CA, US). The transposition reaction was completed with thermomixing at 37°C for 30 minutes at 300 rpm. Transposed DNA was purified with MinElute column cleanup (Qiagen, Valencia, CA)
+Prepared libraries were purified with MinElute column clean-up (Qiagen). The ATAC-seq library pool was quantified on the Agilent Bioanalyzer with the High Sensitivity DNA kit (Agilent Technologies, 4067-4626). Sequencing was performed using the Illumina NextSeq500 (NextSeq control software v4.0.0 / Real Time Analysis v2.11.3). The library pool was diluted and denatured according to the standard NextSeq protocol (Document # 15048776 v16) and sequenced to generate paired-end 76 bp reads using a 150 cycle NextSeq500/550 Mid Output reagent Kit v2.5 (Illumina, 20024904). After sequencing, fastq files were generated using bcl2fastq2 (v2.20.0.422).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw paired-end sequencing reads were aligned to the hg19 reference genome using Bowtie273(version 2.2.9), after removing sequencing adapters with Cutadapt (version 1.13). Samtools (version 1.9) and Picard were used to filter duplicates, remove reads with mapping quality &lt; 30, unmapped reads, reads aligning to the mitochondrial chromosome and unplaced contigs. Quality of library enrichment was evaluated using ENCODE metrics, including Transcription Start Site signal &gt; 10, and sample concordance examined using clustering analysis. Peaks were called for each sample using MACS2 (version 2.1.2), with parameters“-p 0.01–-nomodel–-shift 0–-extsize 14”. Differentially accessible regions between treated and untreated samples were called using DiffBind version 2.14.0, where treatment-dependent peaks were selected as those exhibiting a log fold change &gt; 1. Over-represented transcription factor binding motifs within ATAC-seq peaks were identified using HOMER version 4.8. We also employed a permutation-based strategy using ENCODE dNase-seq footprinting data
+Assembly: human hg19
+Supplementary files format and content: Narrowpeak file
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NARROWPEAK">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7899nnn/GSM7899159/suppl/GSM7899159_ATAC_137_oxLDL.p0.01_peaks.narrowPeak.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38251304" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522082" />
+  </Sample>
+
+  <Sample iid="GSM7899160">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>ATAC_KK_oxLDL</Title>
+    <Accession database="GEO">GSM7899160</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+oxLDL(25ug/ul) 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+50,000 ECFCs were trypsinized and washed twice in cold PBS. Pelleted cells were lysed and then directly transposed using the TDE1 DNA Enzyme and Buffer kit (Illumina, CA, US). The transposition reaction was completed with thermomixing at 37°C for 30 minutes at 300 rpm. Transposed DNA was purified with MinElute column cleanup (Qiagen, Valencia, CA)
+Prepared libraries were purified with MinElute column clean-up (Qiagen). The ATAC-seq library pool was quantified on the Agilent Bioanalyzer with the High Sensitivity DNA kit (Agilent Technologies, 4067-4626). Sequencing was performed using the Illumina NextSeq500 (NextSeq control software v4.0.0 / Real Time Analysis v2.11.3). The library pool was diluted and denatured according to the standard NextSeq protocol (Document # 15048776 v16) and sequenced to generate paired-end 76 bp reads using a 150 cycle NextSeq500/550 Mid Output reagent Kit v2.5 (Illumina, 20024904). After sequencing, fastq files were generated using bcl2fastq2 (v2.20.0.422).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw paired-end sequencing reads were aligned to the hg19 reference genome using Bowtie273(version 2.2.9), after removing sequencing adapters with Cutadapt (version 1.13). Samtools (version 1.9) and Picard were used to filter duplicates, remove reads with mapping quality &lt; 30, unmapped reads, reads aligning to the mitochondrial chromosome and unplaced contigs. Quality of library enrichment was evaluated using ENCODE metrics, including Transcription Start Site signal &gt; 10, and sample concordance examined using clustering analysis. Peaks were called for each sample using MACS2 (version 2.1.2), with parameters“-p 0.01–-nomodel–-shift 0–-extsize 14”. Differentially accessible regions between treated and untreated samples were called using DiffBind version 2.14.0, where treatment-dependent peaks were selected as those exhibiting a log fold change &gt; 1. Over-represented transcription factor binding motifs within ATAC-seq peaks were identified using HOMER version 4.8. We also employed a permutation-based strategy using ENCODE dNase-seq footprinting data
+Assembly: human hg19
+Supplementary files format and content: Narrowpeak file
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NARROWPEAK">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7899nnn/GSM7899160/suppl/GSM7899160_ATAC_KK_oxLDL.p0.01_peaks.narrowPeak.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38251303" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522083" />
+  </Sample>
+
+  <Sample iid="GSM7899161">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>ATAC_MG_oxLDL</Title>
+    <Accession database="GEO">GSM7899161</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+oxLDL(25ug/ul) 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+50,000 ECFCs were trypsinized and washed twice in cold PBS. Pelleted cells were lysed and then directly transposed using the TDE1 DNA Enzyme and Buffer kit (Illumina, CA, US). The transposition reaction was completed with thermomixing at 37°C for 30 minutes at 300 rpm. Transposed DNA was purified with MinElute column cleanup (Qiagen, Valencia, CA)
+Prepared libraries were purified with MinElute column clean-up (Qiagen). The ATAC-seq library pool was quantified on the Agilent Bioanalyzer with the High Sensitivity DNA kit (Agilent Technologies, 4067-4626). Sequencing was performed using the Illumina NextSeq500 (NextSeq control software v4.0.0 / Real Time Analysis v2.11.3). The library pool was diluted and denatured according to the standard NextSeq protocol (Document # 15048776 v16) and sequenced to generate paired-end 76 bp reads using a 150 cycle NextSeq500/550 Mid Output reagent Kit v2.5 (Illumina, 20024904). After sequencing, fastq files were generated using bcl2fastq2 (v2.20.0.422).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw paired-end sequencing reads were aligned to the hg19 reference genome using Bowtie273(version 2.2.9), after removing sequencing adapters with Cutadapt (version 1.13). Samtools (version 1.9) and Picard were used to filter duplicates, remove reads with mapping quality &lt; 30, unmapped reads, reads aligning to the mitochondrial chromosome and unplaced contigs. Quality of library enrichment was evaluated using ENCODE metrics, including Transcription Start Site signal &gt; 10, and sample concordance examined using clustering analysis. Peaks were called for each sample using MACS2 (version 2.1.2), with parameters“-p 0.01–-nomodel–-shift 0–-extsize 14”. Differentially accessible regions between treated and untreated samples were called using DiffBind version 2.14.0, where treatment-dependent peaks were selected as those exhibiting a log fold change &gt; 1. Over-represented transcription factor binding motifs within ATAC-seq peaks were identified using HOMER version 4.8. We also employed a permutation-based strategy using ENCODE dNase-seq footprinting data
+Assembly: human hg19
+Supplementary files format and content: Narrowpeak file
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NARROWPEAK">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7899nnn/GSM7899161/suppl/GSM7899161_ATAC_MG_oxLDL.p0.01_peaks.narrowPeak.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38251302" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522084" />
+  </Sample>
+
+  <Sample iid="GSM7899162">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>ATAC_201_veh</Title>
+    <Accession database="GEO">GSM7899162</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+50,000 ECFCs were trypsinized and washed twice in cold PBS. Pelleted cells were lysed and then directly transposed using the TDE1 DNA Enzyme and Buffer kit (Illumina, CA, US). The transposition reaction was completed with thermomixing at 37°C for 30 minutes at 300 rpm. Transposed DNA was purified with MinElute column cleanup (Qiagen, Valencia, CA)
+Prepared libraries were purified with MinElute column clean-up (Qiagen). The ATAC-seq library pool was quantified on the Agilent Bioanalyzer with the High Sensitivity DNA kit (Agilent Technologies, 4067-4626). Sequencing was performed using the Illumina NextSeq500 (NextSeq control software v4.0.0 / Real Time Analysis v2.11.3). The library pool was diluted and denatured according to the standard NextSeq protocol (Document # 15048776 v16) and sequenced to generate paired-end 76 bp reads using a 150 cycle NextSeq500/550 Mid Output reagent Kit v2.5 (Illumina, 20024904). After sequencing, fastq files were generated using bcl2fastq2 (v2.20.0.422).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw paired-end sequencing reads were aligned to the hg19 reference genome using Bowtie273(version 2.2.9), after removing sequencing adapters with Cutadapt (version 1.13). Samtools (version 1.9) and Picard were used to filter duplicates, remove reads with mapping quality &lt; 30, unmapped reads, reads aligning to the mitochondrial chromosome and unplaced contigs. Quality of library enrichment was evaluated using ENCODE metrics, including Transcription Start Site signal &gt; 10, and sample concordance examined using clustering analysis. Peaks were called for each sample using MACS2 (version 2.1.2), with parameters“-p 0.01–-nomodel–-shift 0–-extsize 14”. Differentially accessible regions between treated and untreated samples were called using DiffBind version 2.14.0, where treatment-dependent peaks were selected as those exhibiting a log fold change &gt; 1. Over-represented transcription factor binding motifs within ATAC-seq peaks were identified using HOMER version 4.8. We also employed a permutation-based strategy using ENCODE dNase-seq footprinting data
+Assembly: human hg19
+Supplementary files format and content: Narrowpeak file
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NARROWPEAK">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7899nnn/GSM7899162/suppl/GSM7899162_ATAC_201_veh.p0.01_peaks.narrowPeak.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38251301" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522085" />
+  </Sample>
+
+  <Sample iid="GSM7899163">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>ATAC_137_veh</Title>
+    <Accession database="GEO">GSM7899163</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+50,000 ECFCs were trypsinized and washed twice in cold PBS. Pelleted cells were lysed and then directly transposed using the TDE1 DNA Enzyme and Buffer kit (Illumina, CA, US). The transposition reaction was completed with thermomixing at 37°C for 30 minutes at 300 rpm. Transposed DNA was purified with MinElute column cleanup (Qiagen, Valencia, CA)
+Prepared libraries were purified with MinElute column clean-up (Qiagen). The ATAC-seq library pool was quantified on the Agilent Bioanalyzer with the High Sensitivity DNA kit (Agilent Technologies, 4067-4626). Sequencing was performed using the Illumina NextSeq500 (NextSeq control software v4.0.0 / Real Time Analysis v2.11.3). The library pool was diluted and denatured according to the standard NextSeq protocol (Document # 15048776 v16) and sequenced to generate paired-end 76 bp reads using a 150 cycle NextSeq500/550 Mid Output reagent Kit v2.5 (Illumina, 20024904). After sequencing, fastq files were generated using bcl2fastq2 (v2.20.0.422).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw paired-end sequencing reads were aligned to the hg19 reference genome using Bowtie273(version 2.2.9), after removing sequencing adapters with Cutadapt (version 1.13). Samtools (version 1.9) and Picard were used to filter duplicates, remove reads with mapping quality &lt; 30, unmapped reads, reads aligning to the mitochondrial chromosome and unplaced contigs. Quality of library enrichment was evaluated using ENCODE metrics, including Transcription Start Site signal &gt; 10, and sample concordance examined using clustering analysis. Peaks were called for each sample using MACS2 (version 2.1.2), with parameters“-p 0.01–-nomodel–-shift 0–-extsize 14”. Differentially accessible regions between treated and untreated samples were called using DiffBind version 2.14.0, where treatment-dependent peaks were selected as those exhibiting a log fold change &gt; 1. Over-represented transcription factor binding motifs within ATAC-seq peaks were identified using HOMER version 4.8. We also employed a permutation-based strategy using ENCODE dNase-seq footprinting data
+Assembly: human hg19
+Supplementary files format and content: Narrowpeak file
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NARROWPEAK">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7899nnn/GSM7899163/suppl/GSM7899163_ATAC_137_veh.p0.01_peaks.narrowPeak.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38251300" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522086" />
+  </Sample>
+
+  <Sample iid="GSM7899164">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>ATAC_KK_veh</Title>
+    <Accession database="GEO">GSM7899164</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+50,000 ECFCs were trypsinized and washed twice in cold PBS. Pelleted cells were lysed and then directly transposed using the TDE1 DNA Enzyme and Buffer kit (Illumina, CA, US). The transposition reaction was completed with thermomixing at 37°C for 30 minutes at 300 rpm. Transposed DNA was purified with MinElute column cleanup (Qiagen, Valencia, CA)
+Prepared libraries were purified with MinElute column clean-up (Qiagen). The ATAC-seq library pool was quantified on the Agilent Bioanalyzer with the High Sensitivity DNA kit (Agilent Technologies, 4067-4626). Sequencing was performed using the Illumina NextSeq500 (NextSeq control software v4.0.0 / Real Time Analysis v2.11.3). The library pool was diluted and denatured according to the standard NextSeq protocol (Document # 15048776 v16) and sequenced to generate paired-end 76 bp reads using a 150 cycle NextSeq500/550 Mid Output reagent Kit v2.5 (Illumina, 20024904). After sequencing, fastq files were generated using bcl2fastq2 (v2.20.0.422).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw paired-end sequencing reads were aligned to the hg19 reference genome using Bowtie273(version 2.2.9), after removing sequencing adapters with Cutadapt (version 1.13). Samtools (version 1.9) and Picard were used to filter duplicates, remove reads with mapping quality &lt; 30, unmapped reads, reads aligning to the mitochondrial chromosome and unplaced contigs. Quality of library enrichment was evaluated using ENCODE metrics, including Transcription Start Site signal &gt; 10, and sample concordance examined using clustering analysis. Peaks were called for each sample using MACS2 (version 2.1.2), with parameters“-p 0.01–-nomodel–-shift 0–-extsize 14”. Differentially accessible regions between treated and untreated samples were called using DiffBind version 2.14.0, where treatment-dependent peaks were selected as those exhibiting a log fold change &gt; 1. Over-represented transcription factor binding motifs within ATAC-seq peaks were identified using HOMER version 4.8. We also employed a permutation-based strategy using ENCODE dNase-seq footprinting data
+Assembly: human hg19
+Supplementary files format and content: Narrowpeak file
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NARROWPEAK">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7899nnn/GSM7899164/suppl/GSM7899164_ATAC_KK_veh.p0.01_peaks.narrowPeak.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38251299" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522087" />
+  </Sample>
+
+  <Sample iid="GSM7899165">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>ATAC_MG_veh</Title>
+    <Accession database="GEO">GSM7899165</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>genomic DNA</Molecule>
+      <Extract-Protocol>
+50,000 ECFCs were trypsinized and washed twice in cold PBS. Pelleted cells were lysed and then directly transposed using the TDE1 DNA Enzyme and Buffer kit (Illumina, CA, US). The transposition reaction was completed with thermomixing at 37°C for 30 minutes at 300 rpm. Transposed DNA was purified with MinElute column cleanup (Qiagen, Valencia, CA)
+Prepared libraries were purified with MinElute column clean-up (Qiagen). The ATAC-seq library pool was quantified on the Agilent Bioanalyzer with the High Sensitivity DNA kit (Agilent Technologies, 4067-4626). Sequencing was performed using the Illumina NextSeq500 (NextSeq control software v4.0.0 / Real Time Analysis v2.11.3). The library pool was diluted and denatured according to the standard NextSeq protocol (Document # 15048776 v16) and sequenced to generate paired-end 76 bp reads using a 150 cycle NextSeq500/550 Mid Output reagent Kit v2.5 (Illumina, 20024904). After sequencing, fastq files were generated using bcl2fastq2 (v2.20.0.422).
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Raw paired-end sequencing reads were aligned to the hg19 reference genome using Bowtie273(version 2.2.9), after removing sequencing adapters with Cutadapt (version 1.13). Samtools (version 1.9) and Picard were used to filter duplicates, remove reads with mapping quality &lt; 30, unmapped reads, reads aligning to the mitochondrial chromosome and unplaced contigs. Quality of library enrichment was evaluated using ENCODE metrics, including Transcription Start Site signal &gt; 10, and sample concordance examined using clustering analysis. Peaks were called for each sample using MACS2 (version 2.1.2), with parameters“-p 0.01–-nomodel–-shift 0–-extsize 14”. Differentially accessible regions between treated and untreated samples were called using DiffBind version 2.14.0, where treatment-dependent peaks were selected as those exhibiting a log fold change &gt; 1. Over-represented transcription factor binding motifs within ATAC-seq peaks were identified using HOMER version 4.8. We also employed a permutation-based strategy using ENCODE dNase-seq footprinting data
+Assembly: human hg19
+Supplementary files format and content: Narrowpeak file
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>ATAC-seq</Library-Strategy>
+    <Library-Source>genomic</Library-Source>
+    <Library-Selection>other</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="NARROWPEAK">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM7899nnn/GSM7899165/suppl/GSM7899165_ATAC_MG_veh.p0.01_peaks.narrowPeak.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38251298" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522088" />
+  </Sample>
+
+  <Sample iid="GSM7899178">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>RNA_KK_veh</Title>
+    <Accession database="GEO">GSM7899178</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Rneasy mini plus kit (Qiagen)
+RNA-Seq libraries were prepared using the Illumina stranded total RNA prep ligation with Ribo-Zero plus kit (Illumina, 20040529) and IDT for Illumina RNA UD Indexes (Illumina, 20040553/20040554/20040555/20040556) according to the standard manufacturer’s protocol (Illumina, Document # 1000000124514 v01).The libraries were quantified on the Perkin Elmer LabChip GX Touch with the DNA High Sensitivity Reagent kit (Perkin Elmer, CLS760672). Libraries were pooled in equimolar ratios, and the pool was quantified by qPCR using the KAPA Library Quantification Kit – Illumina/Universal (KAPA Biosystems, KK4824) in combination with the Life Technologies Viia 7 real time PCR instrument.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Read sequences in compressed (gzipped) FASTQ files were aligned to the human genome (GRCh38) in the Rsubread (v2.8.0) package. The alignment produces a BAM file for each library. The featureCounts function of Rsubread takes all the BAM files and produces the gene count matrix. Each sample is a separate column and each row is a gene. Entrez Gene ID was converted to gene symbol using biomaRt (v 2.56.1) package. Gene counts were TMM normalised in the edgeR package (version 3.42.4) for downstream analysis.
+Assembly: human genome (GRCh38)
+Supplementary files format and content: Comma-separated values; raw counts of sequencing reads; matrix table
+Supplementary files format and content: Comma-separated values; normalized abundance measurments; matrix table
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38250502" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522069" />
+  </Sample>
+
+  <Sample iid="GSM7899179">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>RNA_201_oxLDL</Title>
+    <Accession database="GEO">GSM7899179</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+oxLDL(25ug/ul) 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Rneasy mini plus kit (Qiagen)
+RNA-Seq libraries were prepared using the Illumina stranded total RNA prep ligation with Ribo-Zero plus kit (Illumina, 20040529) and IDT for Illumina RNA UD Indexes (Illumina, 20040553/20040554/20040555/20040556) according to the standard manufacturer’s protocol (Illumina, Document # 1000000124514 v01).The libraries were quantified on the Perkin Elmer LabChip GX Touch with the DNA High Sensitivity Reagent kit (Perkin Elmer, CLS760672). Libraries were pooled in equimolar ratios, and the pool was quantified by qPCR using the KAPA Library Quantification Kit – Illumina/Universal (KAPA Biosystems, KK4824) in combination with the Life Technologies Viia 7 real time PCR instrument.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Read sequences in compressed (gzipped) FASTQ files were aligned to the human genome (GRCh38) in the Rsubread (v2.8.0) package. The alignment produces a BAM file for each library. The featureCounts function of Rsubread takes all the BAM files and produces the gene count matrix. Each sample is a separate column and each row is a gene. Entrez Gene ID was converted to gene symbol using biomaRt (v 2.56.1) package. Gene counts were TMM normalised in the edgeR package (version 3.42.4) for downstream analysis.
+Assembly: human genome (GRCh38)
+Supplementary files format and content: Comma-separated values; raw counts of sequencing reads; matrix table
+Supplementary files format and content: Comma-separated values; normalized abundance measurments; matrix table
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38250501" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522070" />
+  </Sample>
+
+  <Sample iid="GSM7899180">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>RNA_137_oxLDL</Title>
+    <Accession database="GEO">GSM7899180</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+oxLDL(25ug/ul) 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Rneasy mini plus kit (Qiagen)
+RNA-Seq libraries were prepared using the Illumina stranded total RNA prep ligation with Ribo-Zero plus kit (Illumina, 20040529) and IDT for Illumina RNA UD Indexes (Illumina, 20040553/20040554/20040555/20040556) according to the standard manufacturer’s protocol (Illumina, Document # 1000000124514 v01).The libraries were quantified on the Perkin Elmer LabChip GX Touch with the DNA High Sensitivity Reagent kit (Perkin Elmer, CLS760672). Libraries were pooled in equimolar ratios, and the pool was quantified by qPCR using the KAPA Library Quantification Kit – Illumina/Universal (KAPA Biosystems, KK4824) in combination with the Life Technologies Viia 7 real time PCR instrument.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Read sequences in compressed (gzipped) FASTQ files were aligned to the human genome (GRCh38) in the Rsubread (v2.8.0) package. The alignment produces a BAM file for each library. The featureCounts function of Rsubread takes all the BAM files and produces the gene count matrix. Each sample is a separate column and each row is a gene. Entrez Gene ID was converted to gene symbol using biomaRt (v 2.56.1) package. Gene counts were TMM normalised in the edgeR package (version 3.42.4) for downstream analysis.
+Assembly: human genome (GRCh38)
+Supplementary files format and content: Comma-separated values; raw counts of sequencing reads; matrix table
+Supplementary files format and content: Comma-separated values; normalized abundance measurments; matrix table
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38250500" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522071" />
+  </Sample>
+
+  <Sample iid="GSM7899181">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>RNA_KK_oxLDL</Title>
+    <Accession database="GEO">GSM7899181</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+oxLDL(25ug/ul) 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Rneasy mini plus kit (Qiagen)
+RNA-Seq libraries were prepared using the Illumina stranded total RNA prep ligation with Ribo-Zero plus kit (Illumina, 20040529) and IDT for Illumina RNA UD Indexes (Illumina, 20040553/20040554/20040555/20040556) according to the standard manufacturer’s protocol (Illumina, Document # 1000000124514 v01).The libraries were quantified on the Perkin Elmer LabChip GX Touch with the DNA High Sensitivity Reagent kit (Perkin Elmer, CLS760672). Libraries were pooled in equimolar ratios, and the pool was quantified by qPCR using the KAPA Library Quantification Kit – Illumina/Universal (KAPA Biosystems, KK4824) in combination with the Life Technologies Viia 7 real time PCR instrument.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Read sequences in compressed (gzipped) FASTQ files were aligned to the human genome (GRCh38) in the Rsubread (v2.8.0) package. The alignment produces a BAM file for each library. The featureCounts function of Rsubread takes all the BAM files and produces the gene count matrix. Each sample is a separate column and each row is a gene. Entrez Gene ID was converted to gene symbol using biomaRt (v 2.56.1) package. Gene counts were TMM normalised in the edgeR package (version 3.42.4) for downstream analysis.
+Assembly: human genome (GRCh38)
+Supplementary files format and content: Comma-separated values; raw counts of sequencing reads; matrix table
+Supplementary files format and content: Comma-separated values; normalized abundance measurments; matrix table
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38250499" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522072" />
+  </Sample>
+
+  <Sample iid="GSM7899182">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>RNA_MG_oxLDL</Title>
+    <Accession database="GEO">GSM7899182</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+oxLDL(25ug/ul) 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Rneasy mini plus kit (Qiagen)
+RNA-Seq libraries were prepared using the Illumina stranded total RNA prep ligation with Ribo-Zero plus kit (Illumina, 20040529) and IDT for Illumina RNA UD Indexes (Illumina, 20040553/20040554/20040555/20040556) according to the standard manufacturer’s protocol (Illumina, Document # 1000000124514 v01).The libraries were quantified on the Perkin Elmer LabChip GX Touch with the DNA High Sensitivity Reagent kit (Perkin Elmer, CLS760672). Libraries were pooled in equimolar ratios, and the pool was quantified by qPCR using the KAPA Library Quantification Kit – Illumina/Universal (KAPA Biosystems, KK4824) in combination with the Life Technologies Viia 7 real time PCR instrument.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Read sequences in compressed (gzipped) FASTQ files were aligned to the human genome (GRCh38) in the Rsubread (v2.8.0) package. The alignment produces a BAM file for each library. The featureCounts function of Rsubread takes all the BAM files and produces the gene count matrix. Each sample is a separate column and each row is a gene. Entrez Gene ID was converted to gene symbol using biomaRt (v 2.56.1) package. Gene counts were TMM normalised in the edgeR package (version 3.42.4) for downstream analysis.
+Assembly: human genome (GRCh38)
+Supplementary files format and content: Comma-separated values; raw counts of sequencing reads; matrix table
+Supplementary files format and content: Comma-separated values; normalized abundance measurments; matrix table
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38250498" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522073" />
+  </Sample>
+
+  <Sample iid="GSM7899183">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>RNA_201_veh</Title>
+    <Accession database="GEO">GSM7899183</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Rneasy mini plus kit (Qiagen)
+RNA-Seq libraries were prepared using the Illumina stranded total RNA prep ligation with Ribo-Zero plus kit (Illumina, 20040529) and IDT for Illumina RNA UD Indexes (Illumina, 20040553/20040554/20040555/20040556) according to the standard manufacturer’s protocol (Illumina, Document # 1000000124514 v01).The libraries were quantified on the Perkin Elmer LabChip GX Touch with the DNA High Sensitivity Reagent kit (Perkin Elmer, CLS760672). Libraries were pooled in equimolar ratios, and the pool was quantified by qPCR using the KAPA Library Quantification Kit – Illumina/Universal (KAPA Biosystems, KK4824) in combination with the Life Technologies Viia 7 real time PCR instrument.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Read sequences in compressed (gzipped) FASTQ files were aligned to the human genome (GRCh38) in the Rsubread (v2.8.0) package. The alignment produces a BAM file for each library. The featureCounts function of Rsubread takes all the BAM files and produces the gene count matrix. Each sample is a separate column and each row is a gene. Entrez Gene ID was converted to gene symbol using biomaRt (v 2.56.1) package. Gene counts were TMM normalised in the edgeR package (version 3.42.4) for downstream analysis.
+Assembly: human genome (GRCh38)
+Supplementary files format and content: Comma-separated values; raw counts of sequencing reads; matrix table
+Supplementary files format and content: Comma-separated values; normalized abundance measurments; matrix table
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38250497" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522074" />
+  </Sample>
+
+  <Sample iid="GSM7899184">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>RNA_137_veh</Title>
+    <Accession database="GEO">GSM7899184</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Rneasy mini plus kit (Qiagen)
+RNA-Seq libraries were prepared using the Illumina stranded total RNA prep ligation with Ribo-Zero plus kit (Illumina, 20040529) and IDT for Illumina RNA UD Indexes (Illumina, 20040553/20040554/20040555/20040556) according to the standard manufacturer’s protocol (Illumina, Document # 1000000124514 v01).The libraries were quantified on the Perkin Elmer LabChip GX Touch with the DNA High Sensitivity Reagent kit (Perkin Elmer, CLS760672). Libraries were pooled in equimolar ratios, and the pool was quantified by qPCR using the KAPA Library Quantification Kit – Illumina/Universal (KAPA Biosystems, KK4824) in combination with the Life Technologies Viia 7 real time PCR instrument.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Read sequences in compressed (gzipped) FASTQ files were aligned to the human genome (GRCh38) in the Rsubread (v2.8.0) package. The alignment produces a BAM file for each library. The featureCounts function of Rsubread takes all the BAM files and produces the gene count matrix. Each sample is a separate column and each row is a gene. Entrez Gene ID was converted to gene symbol using biomaRt (v 2.56.1) package. Gene counts were TMM normalised in the edgeR package (version 3.42.4) for downstream analysis.
+Assembly: human genome (GRCh38)
+Supplementary files format and content: Comma-separated values; raw counts of sequencing reads; matrix table
+Supplementary files format and content: Comma-separated values; normalized abundance measurments; matrix table
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38250496" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522075" />
+  </Sample>
+
+  <Sample iid="GSM7899185">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-30</Last-Update-Date>
+    </Status>
+    <Title>RNA_MG_veh</Title>
+    <Accession database="GEO">GSM7899185</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>placenta</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+placenta
+      </Characteristics>
+      <Characteristics tag="cell type">
+Endothelial colony-forming cells
+      </Characteristics>
+      <Characteristics tag="treatment">
+vehicle 5 days
+      </Characteristics>
+      <Treatment-Protocol>
+Endothelial to mesenchymal transition was induced by treatment of 5-day with 25ug/ul oxLDL
+      </Treatment-Protocol>
+      <Growth-Protocol>
+ECFC cells were maintained in EGM2 supplemented with antibiotics in humidified atmosphere with 5% CO2 at 37C
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+RNA was extracted using Rneasy mini plus kit (Qiagen)
+RNA-Seq libraries were prepared using the Illumina stranded total RNA prep ligation with Ribo-Zero plus kit (Illumina, 20040529) and IDT for Illumina RNA UD Indexes (Illumina, 20040553/20040554/20040555/20040556) according to the standard manufacturer’s protocol (Illumina, Document # 1000000124514 v01).The libraries were quantified on the Perkin Elmer LabChip GX Touch with the DNA High Sensitivity Reagent kit (Perkin Elmer, CLS760672). Libraries were pooled in equimolar ratios, and the pool was quantified by qPCR using the KAPA Library Quantification Kit – Illumina/Universal (KAPA Biosystems, KK4824) in combination with the Life Technologies Viia 7 real time PCR instrument.
+      </Extract-Protocol>
+    </Channel>
+    <Data-Processing>
+Read sequences in compressed (gzipped) FASTQ files were aligned to the human genome (GRCh38) in the Rsubread (v2.8.0) package. The alignment produces a BAM file for each library. The featureCounts function of Rsubread takes all the BAM files and produces the gene count matrix. Each sample is a separate column and each row is a gene. Entrez Gene ID was converted to gene symbol using biomaRt (v 2.56.1) package. Gene counts were TMM normalised in the edgeR package (version 3.42.4) for downstream analysis.
+Assembly: human genome (GRCh38)
+Supplementary files format and content: Comma-separated values; raw counts of sequencing reads; matrix table
+Supplementary files format and content: Comma-separated values; normalized abundance measurments; matrix table
+    </Data-Processing>
+    <Platform-Ref ref="GPL18573" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NextSeq 500</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="unknown">
+NONE
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN38250495" />
+    <Relation type="SRA" target="https://www.ncbi.nlm.nih.gov/sra?term=SRX22522076" />
+  </Sample>
+
+  <Series iid="GSE247712">
+    <Status database="GEO">
+      <Submission-Date>2023-11-14</Submission-Date>
+      <Release-Date>2024-08-30</Release-Date>
+      <Last-Update-Date>2024-08-31</Last-Update-Date>
+    </Status>
+    <Title>Distinct roles of SOX9 in self-renewal of progenitors and mesenchymal transition of the endothelium</Title>
+    <Accession database="GEO">GSE247712</Accession>
+    <Pubmed-ID>38733496</Pubmed-ID>
+    <Summary>
+This SuperSeries is composed of the SubSeries listed below.
+    </Summary>
+    <Overall-Design>
+Refer to individual Series
+    </Overall-Design>
+    <Type>Genome binding/occupancy profiling by high throughput sequencing</Type>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM7899158" />
+    <Sample-Ref ref="GSM7899159" />
+    <Sample-Ref ref="GSM7899160" />
+    <Sample-Ref ref="GSM7899161" />
+    <Sample-Ref ref="GSM7899162" />
+    <Sample-Ref ref="GSM7899163" />
+    <Sample-Ref ref="GSM7899164" />
+    <Sample-Ref ref="GSM7899165" />
+    <Sample-Ref ref="GSM7899178" />
+    <Sample-Ref ref="GSM7899179" />
+    <Sample-Ref ref="GSM7899180" />
+    <Sample-Ref ref="GSM7899181" />
+    <Sample-Ref ref="GSM7899182" />
+    <Sample-Ref ref="GSM7899183" />
+    <Sample-Ref ref="GSM7899184" />
+    <Sample-Ref ref="GSM7899185" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE247nnn/GSE247712/suppl/GSE247712_RAW.tar
+    </Supplementary-Data>
+    <Relation type="SuperSeries of" target="GSE247709" />
+    <Relation type="SuperSeries of" target="GSE247711" />
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA1040198" />
+  </Series>
+
+</MINiML>

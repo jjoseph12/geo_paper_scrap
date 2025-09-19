@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<MINiML
+   xmlns="http://www.ncbi.nlm.nih.gov/geo/info/MINiML"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.ncbi.nlm.nih.gov/geo/info/MINiML http://www.ncbi.nlm.nih.gov/geo/info/MINiML.xsd"
+   version="0.5.0" >
+
+  <Contributor iid="contrib1">
+    <Person><First>Yuchen</First><Last>Gao</Last></Person>
+    <Email>gaoyuchen@ihcams.ac.cn</Email>
+    <Organization>Institute of Hematology &amp;Blood Disease Hospital,Chinese Academy of Medical Sciences</Organization>
+    <Address>
+      <Line>288 Nanjin Road, Tianjin</Line>
+      <City>TianJin</City>
+      <Postal-Code>300020</Postal-Code>
+      <Country>China</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib2">
+    <Organization>GEO</Organization>
+    <Address>
+      <City></City>
+      <Country>USA</Country>
+    </Address>
+  </Contributor>
+
+  <Contributor iid="contrib3">
+    <Person><First>Ying</First><Last>Chi</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib4">
+    <Person><First>Jun</First><Last>Wei</Last></Person>
+  </Contributor>
+
+  <Contributor iid="contrib5">
+    <Person><First>Lei</First><Last>Zhang</Last></Person>
+  </Contributor>
+
+  <Database iid="GEO">
+    <Name>Gene Expression Omnibus (GEO)</Name>
+    <Public-ID>GEO</Public-ID>
+    <Organization>NCBI NLM NIH</Organization>
+    <Web-Link>http://www.ncbi.nlm.nih.gov/geo</Web-Link>
+    <Email>geo@ncbi.nlm.nih.gov</Email>
+  </Database>
+
+  <Platform iid="GPL24676">
+    <Status database="GEO">
+      <Submission-Date>2018-03-02</Submission-Date>
+      <Release-Date>2018-03-02</Release-Date>
+      <Last-Update-Date>2018-11-05</Last-Update-Date>
+    </Status>
+    <Title>Illumina NovaSeq 6000 (Homo sapiens)</Title>
+    <Accession database="GEO">GPL24676</Accession>
+    <Technology>high-throughput sequencing</Technology>
+    <Distribution>virtual</Distribution>
+    <Organism taxid="9606">Homo sapiens</Organism>
+    <Manufacturer></Manufacturer>
+    <Manufacture-Protocol>
+    </Manufacture-Protocol>
+    <Contact-Ref ref="contrib2" />
+  </Platform>
+
+  <Sample iid="GSM6016320">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Adipose Tissue MSC rep1</Title>
+    <Accession database="GEO">GSM6016320</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Adipose tissue mesenchyaml stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Adipose tissue
+      </Characteristics>
+      <Characteristics tag="age">
+40
+      </Characteristics>
+      <Characteristics tag="gender">
+male
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016320/suppl/GSM6016320_AD1_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297406" />
+  </Sample>
+
+  <Sample iid="GSM6016321">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Adipose Tissue MSC rep2</Title>
+    <Accession database="GEO">GSM6016321</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Adipose tissue mesenchyaml stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Adipose tissue
+      </Characteristics>
+      <Characteristics tag="age">
+35
+      </Characteristics>
+      <Characteristics tag="gender">
+female
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016321/suppl/GSM6016321_AD2_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297407" />
+  </Sample>
+
+  <Sample iid="GSM6016322">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Adipose Tissue MSC rep3</Title>
+    <Accession database="GEO">GSM6016322</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Adipose tissue mesenchyaml stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Adipose tissue
+      </Characteristics>
+      <Characteristics tag="age">
+42
+      </Characteristics>
+      <Characteristics tag="gender">
+female
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016322/suppl/GSM6016322_AD3_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297408" />
+  </Sample>
+
+  <Sample iid="GSM6016323">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Bone Marrow MSC rep1</Title>
+    <Accession database="GEO">GSM6016323</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bone marrow mesenchyaml stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Bone marrow
+      </Characteristics>
+      <Characteristics tag="age">
+53
+      </Characteristics>
+      <Characteristics tag="gender">
+male
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016323/suppl/GSM6016323_BM1_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297409" />
+  </Sample>
+
+  <Sample iid="GSM6016324">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Bone Marrow MSC rep2</Title>
+    <Accession database="GEO">GSM6016324</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bone marrow mesenchyaml stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Bone marrow
+      </Characteristics>
+      <Characteristics tag="age">
+43
+      </Characteristics>
+      <Characteristics tag="gender">
+male
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016324/suppl/GSM6016324_BM2_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297410" />
+  </Sample>
+
+  <Sample iid="GSM6016325">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Bone Marrow MSC rep3</Title>
+    <Accession database="GEO">GSM6016325</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Bone marrow mesenchyaml stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Bone marrow
+      </Characteristics>
+      <Characteristics tag="age">
+32
+      </Characteristics>
+      <Characteristics tag="gender">
+male
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016325/suppl/GSM6016325_BM3_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297411" />
+  </Sample>
+
+  <Sample iid="GSM6016326">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Placenta Chorionic Membrane MSC rep1</Title>
+    <Accession database="GEO">GSM6016326</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta chorionic membrane mesenchymal stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Chorion of placenta
+      </Characteristics>
+      <Characteristics tag="age">
+0
+      </Characteristics>
+      <Characteristics tag="gender">
+male
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016326/suppl/GSM6016326_PM1_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297412" />
+  </Sample>
+
+  <Sample iid="GSM6016327">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Placenta Chorionic Membrane MSC rep2</Title>
+    <Accession database="GEO">GSM6016327</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta chorionic membrane mesenchymal stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Chorion of placenta
+      </Characteristics>
+      <Characteristics tag="age">
+0
+      </Characteristics>
+      <Characteristics tag="gender">
+female
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016327/suppl/GSM6016327_PM2_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297413" />
+  </Sample>
+
+  <Sample iid="GSM6016328">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Placenta Chorionic Membrane MSC rep3</Title>
+    <Accession database="GEO">GSM6016328</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Placenta chorionic membrane mesenchymal stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Chorion of placenta
+      </Characteristics>
+      <Characteristics tag="age">
+0
+      </Characteristics>
+      <Characteristics tag="gender">
+female
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016328/suppl/GSM6016328_PM3_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297414" />
+  </Sample>
+
+  <Sample iid="GSM6016329">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Umbilical Cord MSC rep1</Title>
+    <Accession database="GEO">GSM6016329</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Umbilical cord mesenchymal stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Wharton's Jelly of umbilical cord
+      </Characteristics>
+      <Characteristics tag="age">
+0
+      </Characteristics>
+      <Characteristics tag="gender">
+male
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016329/suppl/GSM6016329_UC1_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297403" />
+  </Sample>
+
+  <Sample iid="GSM6016330">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Umbilical Cord MSC rep2</Title>
+    <Accession database="GEO">GSM6016330</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Umbilical cord mesenchymal stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Wharton's Jelly of umbilical cord
+      </Characteristics>
+      <Characteristics tag="age">
+0
+      </Characteristics>
+      <Characteristics tag="gender">
+female
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016330/suppl/GSM6016330_UC2_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297404" />
+  </Sample>
+
+  <Sample iid="GSM6016331">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-06-19</Last-Update-Date>
+    </Status>
+    <Title>Umbilical Cord MSC rep3</Title>
+    <Accession database="GEO">GSM6016331</Accession>
+    <Type>SRA</Type>
+    <Channel-Count>1</Channel-Count>
+    <Channel position="1">
+      <Source>Umbilical cord mesenchymal stroma cells</Source>
+      <Organism taxid="9606">Homo sapiens</Organism>
+      <Characteristics tag="tissue">
+Wharton's Jelly of umbilical cord
+      </Characteristics>
+      <Characteristics tag="age">
+0
+      </Characteristics>
+      <Characteristics tag="gender">
+female
+      </Characteristics>
+      <Growth-Protocol>
+The collected MSCs from different tissue origins were separately seeded into 75cm2 cell culture flask at the density of 1×106/cm2 with DMEM/F12 medium plus 10% FBS, 2mM L-glutamine and 1% penicillin/streptomycin solution. Cells were cultivated at 37°C in a saturated humidified atmosphere containing 5% CO2 in the incubator . After 72 h, the non-adherent cells were removed by washing with PBS solution, after then the medium was changed every three days. The collection of MSCs from each sample was performed at P3 when the cells reached 80% confluence. Samples were treated with 0.05% trypsin for 3 min at 37˚C, the digestion was then stopped by washing twice and re-suspending in PBS containing 0.04% BSA. Cell viability and counting were assessed with trypan blue by microscopy, and single cell suspensions with viabilities &gt;85% were used for library preparation.
+      </Growth-Protocol>
+      <Molecule>total RNA</Molecule>
+      <Extract-Protocol>
+Each sample was calculated to an appropriate volume for a target capture of 5000 cells. Single cells were then encapsulated into emulsion droplets using Chromium Controller (10x Genomics).
+scRNA-seq libraries were prepared using the Chromium Single Cell 3’ Reagent Kits V2 (10x Genomics; Pleasanton, CA, USA) according to the manufacturer’s protocol.
+      </Extract-Protocol>
+    </Channel>
+    <Description>
+single cell rna
+    </Description>
+    <Data-Processing>
+Basecalls performed using bcl2fastq version 2.1.9
+The quality of raw sequencing data was evaluated by FastQC. The Cellranger toolkit (version 2.2.0, 10X Genomics) was used to perform sample demultiplexing and mapping reads to the human genome reference data with default settings
+Each sample was generated with a gene expression matrix which records the UMI counts per gene associated with each cell barcode. Further analysis (data filtering and normalizing, identification of highly variable genes, dimensionality reduction and clustering, discovery of differentially expressed genes) was performed using R (version 3.6.1) and the Seurat R package (version 3.1.0). Cells with low-quality and very high mitochondrial genome transcripts were removed according to a sample specific cutoff.
+Assembly: hg38
+Supplementary files format and content: Matrix table with raw gene counts for every gene and every single cell
+    </Data-Processing>
+    <Platform-Ref ref="GPL24676" />
+    <Library-Strategy>RNA-Seq</Library-Strategy>
+    <Library-Source>transcriptomic</Library-Source>
+    <Library-Selection>cDNA</Library-Selection>
+    <Instrument-Model>
+      <Predefined>Illumina NovaSeq 6000</Predefined>
+    </Instrument-Model>
+    <Contact-Ref ref="contrib1" />
+    <Supplementary-Data type="CSV">
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM6016nnn/GSM6016331/suppl/GSM6016331_UC3_gene_counts.csv.gz
+    </Supplementary-Data>
+    <Relation type="BioSample" target="https://www.ncbi.nlm.nih.gov/biosample/SAMN27297405" />
+  </Sample>
+
+  <Series iid="GSE200161">
+    <Status database="GEO">
+      <Submission-Date>2022-04-04</Submission-Date>
+      <Release-Date>2023-06-19</Release-Date>
+      <Last-Update-Date>2023-07-22</Last-Update-Date>
+    </Status>
+    <Title>Single Cell Transcriptomic Analysis of Clinical-used MSCs Derived From Adipose Tissue, Bone Marrow, Placenta Membrane and Umbilical Cord</Title>
+    <Accession database="GEO">GSE200161</Accession>
+    <Pubmed-ID>37474525</Pubmed-ID>
+    <Web-Link>https://www.nature.com/articles/s41467-023-39958-5</Web-Link>
+    <Summary>
+Here, we use single cell transcriptomics to characterize a dynamic senescence process of in vitro expanded MSC products from adipose tissue (AD), bone marrow (BM), placenta membrane (PM) and umbilical cord (UC). We found that cultured MSCs underwent progressive cell aging. As compared to perinatal MSCs (derived from PM and UC), adult MSCs (derived from AD and BM)  showed higher degree of senescence and impaired immunosuppressive function. Moreover, we identified the transcriptional network regulating the intra-population functional diversity, which provides us guidance to drive reprogramming of determined MSCs lineage with specific cellular functions for a particular therapeutic intent.
+    </Summary>
+    <Overall-Design>
+We performed droplet-based scRNA-seq of over 40,000 cells to construct a molecular landscape and dissecting the heterogeneity of MSCs from perinatal and adult human tissues.
+    </Overall-Design>
+    <Type>Expression profiling by high throughput sequencing</Type>
+    <Contributor-Ref ref="contrib1" position="1" />
+    <Contributor-Ref ref="contrib3" position="2" />
+    <Contributor-Ref ref="contrib4" position="3" />
+    <Contributor-Ref ref="contrib5" position="4" />
+    <Contact-Ref ref="contrib1" />
+    <Sample-Ref ref="GSM6016320" />
+    <Sample-Ref ref="GSM6016321" />
+    <Sample-Ref ref="GSM6016322" />
+    <Sample-Ref ref="GSM6016323" />
+    <Sample-Ref ref="GSM6016324" />
+    <Sample-Ref ref="GSM6016325" />
+    <Sample-Ref ref="GSM6016326" />
+    <Sample-Ref ref="GSM6016327" />
+    <Sample-Ref ref="GSM6016328" />
+    <Sample-Ref ref="GSM6016329" />
+    <Sample-Ref ref="GSM6016330" />
+    <Sample-Ref ref="GSM6016331" />
+    <Supplementary-Data type="TAR">
+ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE200nnn/GSE200161/suppl/GSE200161_RAW.tar
+    </Supplementary-Data>
+    <Relation type="BioProject" target="https://www.ncbi.nlm.nih.gov/bioproject/PRJNA823376" />
+  </Series>
+
+</MINiML>
